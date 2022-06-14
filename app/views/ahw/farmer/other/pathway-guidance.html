@@ -2,19 +2,10 @@
 
 {% set mainClasses = "guide govuk-!-padding-top-0 govuk-!-padding-bottom-0" %}
 
-{% extends "../../layouts/layout.html" %}
-
-{% block head %}
-{% include "../../includes/publisher/head.html" %}
-{% endblock %}
+{% extends "layouts/layout.html" %}
 
 {% block pageTitle %}
 Get funding for a vet visit
-{% endblock %}
-
-{% block header %}
-{% include "../../includes/publisher/header.html" %}
-{% include "../../includes/publisher/global-bar.html" %}
 {% endblock %}
 
 {% block beforeContent %}
@@ -314,17 +305,11 @@ Get funding for a vet visit
   <div class="govuk-grid-column-one-third">
     <div class="gem-c-contextual-sidebar">
       {% block sidebar %}
-      {% include "../../includes/publisher/transition-countdown.html" %}
-      {% include "../../includes/publisher/related-content.html" %}
+      {% include "includes/publisher/related-content.html" %}
       {% endblock %}
     </div>
   </div>
 
 </div>
 
-{% endblock %}
-
-{% block footer %}
-{% include "../../includes/publisher/feedback.html" %}
-{% include "../../includes/publisher/footer.html" %}
 {% endblock %}
