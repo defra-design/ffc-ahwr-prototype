@@ -1,7 +1,7 @@
 {
-  "name": "govuk-prototype-kit",
-  "description": "Rapidly create HTML prototypes of GOV.UK services",
-  "version": "12.0.4",
+  "name": "ffc-ahwr-prototype",
+  "description": "Future Farming & Countryside - Annual Health and Welfare Review prototype",
+  "version": "1.0.0",
   "private": true,
   "engines": {
     "node": ">=12.0.0 <17.0.0"
