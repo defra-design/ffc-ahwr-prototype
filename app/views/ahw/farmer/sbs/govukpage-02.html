@@ -1,0 +1,95 @@
+{% set tocPage = "guide" %}
+
+{% set mainClasses = "guide govuk-!-padding-top-0 govuk-!-padding-bottom-0" %}
+
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Funding for the Annual Health and Welfare Review
+{% endblock %}
+
+{% block beforeContent %}
+
+<!--<div id="global-header-bar"></div>-->
+
+<div class="gem-c-contextual-breadcrumbs">
+
+  <div class="gem-c-breadcrumbs govuk-breadcrumbs " data-module="track-click">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item" aria-current="false">
+        <a data-track-category="homeLinkClicked" data-track-action="homeBreadcrumb" data-track-label="" data-track-options="{}" class="govuk-breadcrumbs__link" aria-current="false" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="false">
+        <a data-track-category="breadcrumbClicked" data-track-action="2" data-track-label="#" data-track-options="{}" class="govuk-breadcrumbs__link" aria-current="false" href="#">Rural grants and payments </a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="false">
+        <a data-track-category="breadcrumbClicked" data-track-action="2" data-track-label="#" data-track-options="{}" class="govuk-breadcrumbs__link" aria-current="false" href="pathway-guidance">Funding for the Annual Health and Welfare Review 
+</a>
+      </li>
+    </ol>
+  </div>
+
+</div>
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="gem-c-title govuk-!-margin-top-8 govuk-!-margin-bottom-8">
+      <h1 class="gem-c-title__text">
+        Annual health and welfare reviews for cattle, sheep and pigs
+      </h1>
+    </div>
+
+    <div class="govuk-inset-text">
+      <p class="govuk-body">Applies to England</p>
+    </div>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="gem-c-govspeak govuk-govspeak " data-module="govspeak">
+      <h2 class="govuk-!-margin-top-4" id="overview">About the review</h2>
+      <p class="govuk-body">Farmers can get funding for a vet or vet-led team to carry out an annual livestock health and welfare review.</p>
+      <p class="govuk-body">This review is designed to:</p>
+      <ul>
+      <li>reduce endemic diseases such as bovine viral disease (BVD) in cattle, porcine reproductive and respiratory disease (PRRS) in pigs and resistance to parasite treatments in sheep</li>
+      <li>improve the welfare of animals</li>
+      <li>increase productivity</li>
+      <li>ensure the use of veterinary medicines and vaccines is appropriate</li>
+      <li>be primarily for the farmer, and not used for inspections or compliance</li>
+      </ul>
+      <p class="govuk-body">The vet will also collect data that will be used to improve understanding of the health and welfare of the national stock. The data will not be used for inspection purposes.
+</p>
+
+      <h2 class="govuk-!-margin-top-4" id="farmers">Farmers</h2>
+      <p class="govuk-body"><a href="guidance-for-farmers">Get an annual livestock health and welfare review</a></p>
+
+
+      <h2 class="govuk-!-margin-top-4" id="vets">Vets</h2>
+      <p class="govuk-body"><a href="guidance-for-vets">How to carry out an annual livestock health and welfare review</a></p>
+
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <div class="gem-c-contextual-sidebar">
+      {% block sidebar %}
+      {% include "includes/publisher/related-content.html" %}
+      {% endblock %}
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}
+
+{% block footer %}
+{% include "includes/publisher/feedback.html" %}
+{% include "includes/publisher/footer.html" %}
+{% endblock %}

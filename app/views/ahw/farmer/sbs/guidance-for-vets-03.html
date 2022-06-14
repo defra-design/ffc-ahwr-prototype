@@ -1,0 +1,148 @@
+{% extends "layouts/layout.html" %}
+
+
+{% block pageTitle %}
+Guidance for vets
+{% endblock %}
+{% set serviceName %}
+Get a livestock health and welfare review
+{% endset%}
+
+
+{% block beforeContent %}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Section</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link">Subsection</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+
+{% block content %}
+
+<style>
+  .navigation-container {
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #b1b4b6
+  }
+  .list-item--dashed:before {
+    content: "—";
+    position: relative ;
+    left: 0;
+    width: 20px;
+    padding-right: 10px;
+    overflow: hidden;
+  }
+  .pagination {
+    display: block;
+    margin: 50px 0;
+    border-top: 1px solid #b1b4b6
+  }
+  .pagination__list {
+      margin-block-start: 0;
+      padding-inline-start: 0
+  }
+  .pagination__link-text {
+    margin-left: 10px
+  }
+  .pagination__item {
+      margin: 0
+  }
+  .pagination__item--next {
+    list-style: none;
+    display: block
+  }
+  .pagination__link {
+    display: block;
+    padding: 15px 0 5px 0;
+    margin: 0
+  }
+  .pagination__link:hover, .pagination__link:active {
+    background-color: #f3f2f1;
+  }
+  .pagination__link:hover, a.pagination__link:focus {
+    outline: none !important;
+  }
+  .pagination__link:hover, .pagination__link:active, .pagination__link:visited {
+    color: #1d70b8;
+  }
+  .pagination__link-label {
+    display: block;
+    padding-left: 28px;
+    text-decoration: underline;
+    color: #1d70b8
+  }
+</style>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+        Vets: how to carry out an annual livestock health and welfare review
+    </h1>
+
+    <aside class="navigation-container">
+
+      <ul class="govuk-list govuk-body-s">
+      <li>Contents</li>
+      <li class="list-item--dashed"><a href="guidance-for-vets-01.html">Before you visit the farm</a></li>
+      <!--<li class="list-item--dashed"><a href="guidance-for-vets-02.html">Carry out disease testing</a></li>-->
+      <li class="list-item--dashed">Carry out a review</li>
+      <!--<li class="list-item--dashed"><a href="guidance-for-vets-04.html">When to visit</a></li>-->
+      <li class="list-item--dashed"><a href="guidance-for-vets-05.html">After the review</a></li>
+    </ul>
+
+  </aside>
+
+  <h2 id="checkeligibility" class="govuk-heading-m">Carry out a review</h2>
+  <p class="govuk-body">You should agree with the farmer how you will carry out the review and what you will check.</p>
+  <p class="govuk-body">Depending on the farm, you may choose to review:</p>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>biosecurity on the farm - check current measures and provide recommendations for improvements</li>
+    <li>health and welfare - work with the farmer to improve the health and productivity of their animals and give advice where there are issues such as lameness, body conditioning or mobility scoring</li>
+    <li>farm medicines - how to prescribe and use medicines, control and treat disease including how to register and submit data on the <a href="https://ahdb.org.uk/medicine-hub" target="_blank">Medicine Hub (Agriculture and Horticulture Development Board (AHDB) Medicine Hub</a></li>
+    <li>endemic disease and condition testing - discuss test results and follow-up actions</li>
+    <li>grants and funding - support and advice on government grants and other funding available</li>
+  </ul>
+  <p class="govuk-body">At the end of the review, you must agree actions and recommendations with the farmer. This information will not be used for any regulatory or inspection purposes.</p>
+
+  <h3 class="govuk-heading-s">When to visit</h2>
+  <p class="govuk-body">You can spread the review over several regular visits to the farm or carry out a single visit.</p>
+  <p class="govuk-body">A farmer may need to book multiple reviews if:</p>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>they have more than one animal type - for example, if they have cattle and sheep</li>
+    <li>have livestock in multiple places</li>
+  </ul>
+  <p class="govuk-body">If the farm has booked multiple reviews, you can do them in one visit or separately.</p>
+
+  <nav class="pagination" role="navigation" aria-label="pagination">
+    <ul class="pagination__list">
+      <li class="pagination__item pagination__item--next">
+          <a class="govuk-link pagination__link" href="guidance-for-vets-05.html">
+              <span class="pagination__link-title">
+                  <svg class="pagination__link-icon" height="13" width="17" viewBox="0 0 17 13">
+                      <path d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+                  </svg>
+                  <span class="pagination__link-text govuk-!-font-size-19 govuk-!-font-weight-bold">Next</span>
+              </span>
+              <span class="pagination__link-divider visually-hidden">:</span>
+              <span class="pagination__link-label govuk-body">After the review</span>
+          </a>
+      </li>
+    </ul>
+  </nav>
+
+</div>
+</div>
+
+{% endblock %}

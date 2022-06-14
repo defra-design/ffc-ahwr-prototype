@@ -1,0 +1,177 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+{% set serviceName %}
+Apply for the Annual Health and Welfare Review funding
+{% endset%}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-width-container">
+
+
+      <h1 class="govuk-heading-l">
+        <span class="govuk-caption-l">Your farming profile</span>
+        Jack Brook
+      </h1>
+
+
+      <p>Before you start your application please ensure the details we have are correct.</p>
+
+      <!-- <h2 class="govuk-heading-m">Personal details</h2> -->
+
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Email address
+              </dt>
+              <dd class="govuk-summary-list__value">
+                email@hotmail.com
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  <span class="govuk-visually-hidden">name</span>
+                </a>
+              </dd>
+            </div>
+
+
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Business owner
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  DG Groves & Son Ltd
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    <span class="govuk-visually-hidden">name</span>
+                  </a>
+                </dd>
+              </div>
+
+
+
+
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                SBI number
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">2345566098</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  <span class="govuk-visually-hidden"> date of birth</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Livestock keeper
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">Beef cattle and sheep</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  <span class="govuk-visually-hidden"> address</span>
+                </a>
+              </dd>
+            </div>
+
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                CPH number
+              </dt>
+              <dd class="govuk-summary-list__value">
+                12/345/6789
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  <span class="govuk-visually-hidden"> licence type</span>
+                </a>
+              </dd>
+            </div>
+
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Livestock address
+              </dt>
+              <dd class="govuk-summary-list__value">
+                (postcode, map reference)
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  <span class="govuk-visually-hidden"> licence type</span>
+                </a>
+              </dd>
+            </div>
+
+            <!-- <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Vet practice
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Westpoint Farm vets
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  <span class="govuk-visually-hidden"> licence type</span>
+                </a>
+              </dd>
+            </div> -->
+
+          </dl>
+
+
+
+
+
+
+
+
+
+          <form class="form" method="post">
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="details-correct-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                  <h1 class="govuk-fieldset__heading">
+                    Are your details correct?
+                  </h1>
+                </legend>
+                <!-- <div id="vet-registered-hint" class="govuk-hint">
+                  This includes changing your last name or spelling your name differently.
+                </div> -->
+                <div class="govuk-radios govuk-radios--inline">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="details-correct" name="details-correct" type="radio" value="eligibility-cattle" onclick="setLocation(this);" {{ checked("eligibility-cattle", "eligibility-bps-yes") }}>
+                    <label class="govuk-label govuk-radios__label" for="details-correct">
+                      Yes
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="details-correct-2" name="details-correct-2" type="radio" value="" onclick="setLocation(this);" {{ checked("eligibility-cattle", "eligibility-bps-no") }}>
+                    <label class="govuk-label govuk-radios__label" for="details-correct-2">
+                      No
+                    </label>
+                  </div>
+                </div>
+
+              </fieldset>
+            </div>
+
+            <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+          </form>
+
+
+{% endblock %}

@@ -1,0 +1,309 @@
+{% extends "layouts/layout.html" %}
+
+
+{% block pageTitle %}
+Tell us about a livestock review
+{% endblock %}
+{% set serviceName %}
+Do a livestock health and welfare review
+{% endset%}
+
+
+{% block pageScripts %}
+<script src="/public/javascripts/step-by-step-nav.js"></script>
+<script type="text/javascript">
+  var $element = $('#step-by-step-navigation')
+  var stepByStepNavigation = new GOVUK.Modules.AppStepNav()
+  stepByStepNavigation.start($element)
+</script>
+{% endblock %} {% block beforeContent %}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Section</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link">Subsection</a>
+    </li>
+  </ol>
+</div>
+
+<div class="app-step-nav-header">
+  <span class="app-step-nav-header__part-of">Part of</span>
+  <a class="app-step-nav-header__title" href="vet">
+    Do a livestock health and welfare review
+  </a>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      Tell us about a livestock review
+    </h1>
+
+    <p>Use this service to tell us about a livestock review.</p>
+
+    <p>Recording information takes around X minutes.</p>
+
+    <p>After you submit the information the farmer can claim funding.</p>
+
+
+
+    {{ govukButton({
+      text: "Start now",
+      href: "#",
+      isStartButton: true
+    }) }}
+
+
+    <h2 class="govuk-heading-m">Before you start</h2>
+    <p>You'll need the:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>livestock review booking reference number </li>
+      <li>name of the vet who did the review</li>
+      <li>name of the vet practice</li>
+      <li>vet's Royal College of Veterinary Surgeons (RCVS) registration number</li>
+      <li>date of livestock review</li>
+      <li>disease test results</li>
+      <li>animal numbers</li>
+    </ul>
+
+
+
+
+
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+
+    <div class="app-step-nav-related app-step-nav-related--singular">
+      <h2 class="app-step-nav-related__heading">
+        <span class="app-step-nav-related__pretitle">Part of</span>
+        <a href="vet">
+          Do a livestock health and welfare review
+        </a>
+      </h2>
+    </div>
+
+    <div id="step-by-step-navigation" data-module="gemstepnav" class="app-step-nav js-hidden " data-id="e01e924b-9c7c-4c71-8241-66a575c2f61f" data-show-text="show" data-hide-text="hide" data-show-all-text="Show all" data-hide-all-text="Hide all">
+
+      <ol class="app-step-nav__steps">
+
+
+        <!-- STEP 1 -->
+        <li class="app-step-nav__step js-step" id="check-what-you-need-to-do" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="1">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 1
+                    <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Check what you need to do
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-check-what-you-need-to-do-1">
+            <p class="app-step-nav__paragraph">Find out what you need to do in the review.</p>
+            <ol class="app-step-nav__list " data-length="3">
+              <li class="app-step-nav__list-item js-list-item">
+                <a data-position="1.1" class="app-step-nav__link js-link" href="vet-step-1">
+                  <span class="app-step-nav__link-active-context govuk-visually-hidden">You are currently viewing: </span>Check what you need to do</a>
+              </li>
+            </ol>
+          </div>
+        </li>
+
+
+
+        <!-- STEP 2 -->
+        <li class="app-step-nav__step js-step" id="arrange-a-review" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="2">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 2
+                    <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Arrange a livestock review with the farmer
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-arrange-a-review-2">
+            <p class="app-step-nav__paragraph">Get a reference number from the farmer and book a visit.</p>
+            <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item">
+                <a data-position="2.1" class="app-step-nav__link js-link" href="#content">Arrange a livestock review with the farmer </span>
+                </a>
+              </li>
+            </ol>
+
+          </div>
+        </li>
+
+
+
+        <!-- STEP 3 -->
+        <li class="app-step-nav__step js-step" id="get-ready-for-the-review" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="3">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 3
+                    <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Get ready for a livestock review
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-get-ready-for-the-review-3">
+            <p class="app-step-nav__paragraph">Arrange disease testing and ask the farmer any pre-visit questions.</p>
+            <ol class="app-step-nav__list " data-length="4">
+              <li class="app-step-nav__list-item js-list-item">
+                <a data-position="3.1" class="app-step-nav__link js-link" href="vet-step-3">Get ready for a livestock review </a>
+              </li>
+
+            </ol>
+          </div>
+        </li>
+
+
+
+        <!-- STEP 4 -->
+        <li class="app-step-nav__step js-step" id="do-the-review">
+          <div class="app-step-nav__header js-toggle-panel" data-position="4">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 4
+                    <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Do a livestock review
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-do-the-review-4">
+            <p class="app-step-nav__paragraph">Discuss biosecurity, medicines, health and welfare of livestock and disease testing results with the farmer. </p>
+
+            <ol class="app-step-nav__list " data-length="5">
+              <li class="app-step-nav__list-item js-list-item">
+                <a data-position="5.1" class="app-step-nav__link js-link" href="vet-step-4">Do a livestock review </a>
+              </li>
+            </ol>
+
+          </div>
+        </li>
+
+
+
+
+         <!-- STEP 5 -->
+         <li class="app-step-nav__step js-step app-step-nav__step--active" data-show aria-current="step" id="tell-us-about-a-health-and-welfare-review" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="5">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 5
+                    <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Tell us about a livestock review
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-tell-us-about-a-health-and-welfare-review-5">
+            <p class="app-step-nav__paragraph">Sign in to tell us about the review and record any data.</p>
+
+            <ol class="app-step-nav__list " data-length="5">
+              <li class="app-step-nav__list-item js-list-item app-step-nav__list-item--active">
+                <a data-position="6.1" class="app-step-nav__link js-link" href="vet-step-5">Tell us about a livestock review</a>
+              </li>
+            </ol>
+          </div>
+        </li>
+
+
+
+
+        <!-- STEP 6 -->
+        <li class="app-step-nav__step js-step" id="get-paid" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="6">
+            <h3 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="app-step-nav__circle-step-label govuk-visually-hidden">Step</span> 6
+                    <span class="app-step-nav__circle-step-colon govuk-visually-hidden" aria-hidden="true">:</span>
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Get paid
+              </span>
+            </h3>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="get-paid-6">
+            <p class="app-step-nav__paragraph">Arrange payment with the farmer.</p>
+
+            <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="7.1" class="app-step-nav__link js-link" href="vet-step-6">Get paid</a>
+              </li>
+            </ol>
+
+          </div>
+        </li>
+
+
+
+      </ol>
+    </div>
+
+
+  </div>
+
+</div>
+
+
+</div>
+</div>
+{% endblock %}

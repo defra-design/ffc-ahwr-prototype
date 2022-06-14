@@ -1,0 +1,35 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+{% set serviceName %}
+Apply for the Annual Health and Welfare Review funding
+{% endset%}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-width-container">
+
+
+
+      <div class="govuk-width-container">
+      <h1 class="govuk-heading-l">Declaration</h1>
+      <p class="govuk-body">
+By submitting the application, you confirm that the information you have given is correct and complete.
+
+        <p>If you give the wrong information, you may be refused funding.</p>
+
+      <a href="confirmation" role="button" draggable="false" class="govuk-button docs-creator" data-module="govuk-button">
+      Submit my application
+      </a>
+      </div>
+
+
+{% endblock %}

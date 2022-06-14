@@ -1,0 +1,430 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Apply for the Annual Health and Welfare Review funding
+{% endblock %}
+
+{% block header %}
+<!-- Blank header with no service name for the start page -->
+{{ govukHeader() }}
+{% endblock %}
+
+<!-- Adds spacing for pages without a back button -->
+{% set mainClasses = "govuk-main-wrapper--l" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <span class="govuk-caption-xl">Prototypes</span>
+    <h1 class="govuk-heading-xl">Apply for the Annual Health and Welfare Review funding</h1>
+
+    <h2 class="govuk-heading-m govuk-!-margin-top-6">
+      Exploring the 'apply' journey
+    </h2>
+
+
+    <table class="govuk-table">
+
+
+
+      <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Sprint 10</th>
+      <th class="govuk-table__header" scope="col">User journeys</th>
+      <th class="govuk-table__header" scope="col">What we want to learn</th>
+      </tr>
+      </thead>
+
+
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header"><p>February</p></th>
+          <td class="govuk-table__cell">
+            <ul class="govuk-list">
+              <li><a href="../ahw/apply/11/start">MVP 1 - Livestock keeper apply</a></li>
+            </ul>
+          </td>
+          <td class="govuk-table__cell">
+            <ul class="govuk-list">
+              <li>Hypothesis - If we ensure a persons details are correct before they apply, we can automate most of the business process.</li>
+              <li>Assumption to test - MVP 1 applicants are the registered keeper, they own the business and have correct permissions to claim a payment</li>
+          </ul></td>
+        </tr>
+
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header"><p>February</p></th>
+          <td class="govuk-table__cell">
+            <ul class="govuk-list">
+              <li><a href="../ahw/apply/10/farmer-step-2">Livestock keeper apply</a></li>
+            </ul>
+          </td>
+          <td class="govuk-table__cell">
+            <ul class="govuk-list">
+              <li>Hypothesis - If we ensure a persons details are correct before they apply, we can automate most of the business process. Updated business requirements. Exploring policy options - keeper per visit per year, and/or a business per keeper per year. Might both journeys be required? How might we define the policy.</li>
+          </ul></td>
+        </tr>
+
+
+
+        <th scope="row"><p></p><br><br></th>
+
+
+
+
+
+
+      <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Sprint 8</th>
+      <th class="govuk-table__header" scope="col">User journeys</th>
+      <th class="govuk-table__header" scope="col">What we want to learn</th>
+      </tr>
+      </thead>
+
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header"><p>November</p></th>
+          <td class="govuk-table__cell">
+            <ul class="govuk-list">
+              <li><a href="">Eligibility checker</a></li>
+            </ul>
+          </td>
+          <td class="govuk-table__cell">
+            <ul class="govuk-list">
+              <li>Design hypothesis - If we support farmers in understanding their eligibility, we can allow them to contact their vet to arrange a health and welfare review without the need to apply.</li>
+              <li>If vets understand the scheme they can check or may already know if the farm meets the eligible numbers. How would we check BPS and are payment details set up for release 1 though?</li>
+          </ul></td>
+        </tr>
+
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><p>November</p></th>
+            <td class="govuk-table__cell">
+              <ul class="govuk-list">
+                <li><a href="">Email/letter</a></li>
+              </ul>
+            </td>
+            <td class="govuk-table__cell">
+              <ul class="govuk-list">
+                <li>Design hypothesis - If we have eligibilty data for checks (CPH and BPS), we have enough to inform farmers of their eligibility for the scheme, saving them the effort of awareness, understanding eligibilty and apply. We know letters can be sent from SAM (Livestock keepers CPH system) and that farmers that claim BPS are used to recieving emails. If the anaysis is done to link CPH to BPS claims we could contact that group and test guidance and next steps and understand if this approach works, also mitegating any risk of ineligible claims.</li>
+            </ul></td>
+          </tr>
+
+<tbody class="govuk-table__body">
+  <tr class="govuk-table__row">
+    <th scope="row" class="govuk-table__header"><p>November</p></th>
+    <td class="govuk-table__cell">
+      <ul class="govuk-list">
+        <li><a href="../ahw/apply/8/pathway-guidance">GOV.UK guidance</a></li>
+      </ul>
+    </td>
+    <td class="govuk-table__cell">
+      <ul class="govuk-list">
+        <li>Understand if at the point of 'apply' farmers expect to use their legally registered vet for the annual health and welfare review.</li>
+        <li>Removed duplicated eligibilty content on start screen.</li>
+    </ul></td>
+  </tr>
+
+
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header"><p>November</p></th>
+          <td class="govuk-table__cell">
+            <ul class="govuk-list">
+              <li><a href="../ahw/apply/8/email-application-successful">Email guidance - success</a></li>
+            </ul>
+          </td>
+          <td class="govuk-table__cell">
+            <ul class="govuk-list">
+              <li>Updated service name.</li>
+          </ul></td>
+        </tr>
+
+
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><p>November</p></th>
+            <td class="govuk-table__cell">
+              <ul class="govuk-list">
+                <li><a href="../ahw/apply/8/email-application-not-successful">Email guidance - not successful</a></li>
+              </ul>
+            </td>
+            <td class="govuk-table__cell">
+              <ul class="govuk-list">
+                <li>Updated service name.</li>
+            </ul></td>
+          </tr>
+
+
+          <th scope="row"><p></p><br><br></th>
+
+
+
+
+
+<thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Sprint 6-7</th>
+      <th class="govuk-table__header" scope="col">User journeys</th>
+      <th class="govuk-table__header" scope="col">What we want to learn</th>
+      </tr>
+      </thead>
+
+
+
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header"><p>November</p></th>
+          <td class="govuk-table__cell">
+            <ul class="govuk-list">
+              <li><a href="../ahw/apply/7/pathway-guidance">GOV.UK guidance</a></li>
+            </ul>
+          </td>
+          <td class="govuk-table__cell">
+            <ul class="govuk-list">
+              <li>Simplifying guidance. Is this all that is needed at this point in the journey to make a decision to apply? Test response to 'you'll be paid into same account as your current BPS'.</li>
+              <li>Changes based upon UR - Test contact name rather than registered livestock keepers name.</li>
+              <li>Updated journey to collect 'vet practice name', new service name, removed red tractor scheme from policy as well as design based on co-design and user feedback. Payment rates changed to reflect.'</li>
+<li>Updated payments and removed red tractor question</li>
+          </ul></td>
+        </tr>
+
+
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><p>November</p></th>
+            <td class="govuk-table__cell">
+              <ul class="govuk-list">
+                <li><a href="../ahw/apply/7/vet-practise">Vet practice register</a></li>
+              </ul>
+            </td>
+            <td class="govuk-table__cell">
+              <ul class="govuk-list">
+                <li>Assumption - asking for vet practice as part of apply allows us to explore a 'passwordless' digital entry for vets to record data (shortening the time required to register)</li>
+                <li>Assumption - farmer knows this and the vet they currently use is the one they would use for this scheme.</li>
+                <li>Assumption - we can link to the RCVS vet register (API)</li>
+            </ul></td>
+          </tr>
+
+
+          <th scope="row"><p></p><br><br></th>
+
+
+
+
+
+
+
+      <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Sprint 4-5</th>
+      <th class="govuk-table__header" scope="col">User journeys</th>
+      <th class="govuk-table__header" scope="col">What we want to learn</th>
+      </tr>
+      </thead>
+
+
+
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header"><p>October</p></th>
+          <td class="govuk-table__cell">
+            <ul class="govuk-list">
+              <li><a href="../ahw/apply/v2/email-application-successful">Email guidance - success</a></li>
+            </ul>
+          </td>
+          <td class="govuk-table__cell">
+            <ul class="govuk-list">
+              <li>Exploring guidance. Do applicants understand what to do next.</li>
+          </ul></td>
+        </tr>
+
+
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><p>October</p></th>
+            <td class="govuk-table__cell">
+              <ul class="govuk-list">
+                <li><a href="../ahw/apply/v2/email-application-not-successful">Email guidance - not successful</a></li>
+              </ul>
+            </td>
+            <td class="govuk-table__cell">
+              <ul class="govuk-list">
+                <li>Exploring guidance. Do applicants understand what to do next.</li>
+            </ul></td>
+          </tr>
+
+
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"><p>October</p></th>
+              <td class="govuk-table__cell">
+                <ul class="govuk-list">
+                  <li><a href="../ahw/apply/v2/pathway-guidance">Update Gov guidance</a></li>
+                </ul>
+              </td>
+              <td class="govuk-table__cell">
+                <ul class="govuk-list">
+                  <li>Updated following research and relating to guidance emails on what the farmer needs to do.</li>
+              </ul></td>
+            </tr>
+
+
+
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"><p>October</p></th>
+              <td class="govuk-table__cell">
+                <ul class="govuk-list">
+                  <li>Apply for multiple holdings as one business</li>
+                </ul>
+              </td>
+              <td class="govuk-table__cell">
+                <ul class="govuk-list">
+                  <li>Exploring if there is a user need to apply on behalf of more than one holding. Data suggests 80% of livestock keepers have one holding. We understand there may be a need from the steering group and the pig sector are on the whole bigger businesses with multiple holdings suggests one application for all farms would be a better approach. Challenges are - can we link back and understand all holdings from current business level data?</li>
+              </ul></td>
+            </tr>
+
+
+
+
+
+
+            <th scope="row"><p></p><br><br></th>
+
+
+
+
+
+
+
+
+
+
+
+
+      <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Sprint 2-3</th>
+      <th class="govuk-table__header" scope="col">User journeys</th>
+      <th class="govuk-table__header" scope="col">What we want to learn</th>
+    </tr>
+  </thead>
+
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><p>September</p></th>
+      <td class="govuk-table__cell">
+        <ul class="govuk-list">
+          <li><a href="../ahw/apply/start">Simple apply journey</a></li>
+        </ul>
+      </td>
+      <td class="govuk-table__cell">
+        <ul class="govuk-list">
+          <li>Can we design an apply journey for livestock keepers that is so easy to use uptake is more likely. Learn and improve on known pain points across farming scheme landscape.</li>
+        <li>Assumption - collecting one identifier is enough to validate a farmers identity and eligibility and link to existing livestock, location and customer details information we know has already been given during regsitration process.</li>
+        <li>Assumption - starting with livestock owner whom has to be registered with APHA will provide assurance throughout process and may be only ID verify on the individual the service needs. We can link this to an SBI linking both customer data with business and payment data.</li>
+      </ul></td>
+    </tr>
+
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header"><p>September</p></th>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list">
+            <li><a href="../ahw/apply/pathway-guidance">GOV.UK guidance</a></li>
+          </ul>
+        </td>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list">
+            <li>Start from GOV.UK guidance</li>
+          </ul>
+          </td>
+      </tr>
+    </tbody>
+
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header"><p>September</p></th>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list">
+            <li><a href="../ahw/apply/all/pathway-guidance">Non BPS eligible</a></li>
+          </ul>
+        </td>
+        <td class="govuk-table__cell">
+          <ul class="govuk-list">
+            <li>Capturing what we have learnt so far and how we might explore future 'payment' journeys. BPS as the happy path for ops, but learn how we get others into DAX for payment. Understand if journey to a point works for non BPS as well so we are solving the 'apply' journey for all.</li>
+          </ul>
+          </td>
+      </tr>
+  </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="govuk-grid-column-one-third">
+    <aside class="app-related-items" role="complementary">
+      <h2 class="govuk-heading-m" id="subsection-title">
+        Related content
+      </h2>
+      <nav role="navigation" aria-labelledby="subsection-title">
+        <h3 class="govuk-heading-s">Resources</h3>
+        <ul class="govuk-list govuk-!-font-size-16">
+          <li>
+            <a href="https://defra.sharepoint.com/:x:/r/sites/MST-Defra-SustainableFarmingIncentive2022ProductTeam/_layouts/15/Doc.aspx?sourcedoc=%7BB2E55787-6DC5-46B2-BCBC-3F986E87CC46%7D&file=User%20insights%20and%20needs.xlsx&action=default&mobileredirect=true" target="_blank">
+              User insight and needs
+            </a>
+          </li>
+          <li>
+            <a href="https://eaflood.atlassian.net/wiki/spaces/SFI/pages/3588849665/Vet+Visits" target="_blank">
+              Project Confluence
+            </a>
+          </li>
+          <li>
+            <a href="https://defra.sharepoint.com/sites/MST-Defra-SustainableFarmingIncentive2022ProductTeam/Shared%20Documents/Forms/AllItems.aspx?viewid=c001e37e%2D0f18%2D46ce%2D96ab%2D4070d6882140&id=%2Fsites%2FMST%2DDefra%2DSustainableFarmingIncentive2022ProductTeam%2FShared%20Documents%2FAnimal%20Health%20and%20Welfare&CT=1631111182054&OR=OWA%2DNT&CID=770c6880%2Daf78%2D57d2%2D1344%2Ddb0aacf43184" target="_blank">
+              Team Sharepoint
+            </a>
+          </li>
+        </ul>
+        <h3 class="govuk-heading-s">Design assets</h3>
+        <ul class="govuk-list govuk-!-font-size-16">
+          <li>
+            <a href="https://docs.google.com/drawings/d/1dJIH_7FlDCVj9FPC81DJtrJRtm9TfHJh4p1cxyoT1gs/edit" target="_blank">
+              FFC funding landscape</a>
+          </li>
+          <li>
+            <a href="https://miro.com/app/board/o9J_l8p42uA=/">Miro board</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
+
+</div>
+
+{% endblock %}

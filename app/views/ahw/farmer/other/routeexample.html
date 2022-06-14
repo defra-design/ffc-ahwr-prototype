@@ -1,0 +1,56 @@
+
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-radios govuk-!-margin-top-5">
+<div class="govuk-radios__item">
+<input class="govuk-radios__input" id="gender-1" name="gender" type="radio" value="check-answers-positive" onclick="setLocation(this);" {{ checked("choose-result", "Positive") }}>
+<label class="govuk-label govuk-radios__label" for="gender-1">
+Positive
+</label>
+</div>
+<div class="govuk-radios__item">
+<input class="govuk-radios__input" id="gender-2" name="gender" type="radio" value="check-answers-negative" onclick="setLocation(this);" {{ checked("choose-result", "Negative") }}>
+<label class="govuk-label govuk-radios__label" for="gender-2">
+Negative
+</label>
+</div>
+<div class="govuk-radios__item">
+<input class="govuk-radios__input" id="gender-3" name="gender" type="radio" value="check-answers-invalid" onclick="setLocation(this);" {{ checked("choose-result", "Invalid") }}>
+<label class="govuk-label govuk-radios__label" for="gender-3">
+Void (sometimes called Invalid)
+</label>
+</div>
+</div>
+
+<div class="govuk-radios govuk-!-margin-top-5">
+<div class="govuk-radios__item">
+<input class="govuk-radios__input" id="gender-1" name="gender" type="radio" value="check-answers-positive" onclick="setLocation(this);" {{ checked("choose-result", "Positive") }}>
+<label class="govuk-label govuk-radios__label" for="gender-1">
+Positive
+</label>
+</div>
+<div class="govuk-radios__item">
+<input class="govuk-radios__input" id="gender-2" name="gender" type="radio" value="check-answers-negative" onclick="setLocation(this);" {{ checked("choose-result", "Negative") }}>
+<label class="govuk-label govuk-radios__label" for="gender-2">
+Negative
+</label>
+</div>
+<div class="govuk-radios__item">
+<input class="govuk-radios__input" id="gender-3" name="gender" type="radio" value="check-answers-invalid" onclick="setLocation(this);" {{ checked("choose-result", "Invalid") }}>
+<label class="govuk-label govuk-radios__label" for="gender-3">
+Void (sometimes called Invalid)
+</label>
+</div>
+</div>
+    </div>
+  </div>
+
+{% endblock %}
