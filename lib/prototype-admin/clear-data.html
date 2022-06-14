@@ -1,5 +1,4 @@
-
-{% extends "layout.html" %}
+{% extends "layouts/layout.html" %}
 
 {% block pageTitle %}
   Clear session data – GOV.UK Prototype Kit
@@ -9,7 +8,7 @@
   {{ govukBackLink({
       "text": "Back",
       "href": "javascript: window.history.go(-1)"
-    }) 
+    })
   }}
 {% endblock %}
 
