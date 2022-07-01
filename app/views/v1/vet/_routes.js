@@ -71,4 +71,16 @@ router.get('*/sfi-summary-validation', function (req, res) {
   }
 })
 
+// Vet - reference number details
+
+router.post('*/check-details', function (req, res) {
+  const option = req.session.data['review-details-correct-check']
+
+  if (option === 'no') {
+    res.redirect('review/reference')
+  } else {
+    res.redirect('review/beef/visit-date')
+  }
+})
+
 module.exports = router

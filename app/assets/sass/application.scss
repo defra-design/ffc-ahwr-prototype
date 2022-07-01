@@ -16,3 +16,288 @@ $govuk-assets-path: '/govuk/assets/';
 @import "patterns/related-items";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+// spinner
+
+.spinner {
+  background-image: url("../images/spinner.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  margin-bottom: 2rem;
+}
+
+.spinner-text {
+  text-align: center;
+}
+
+.govuk-checkboxes__conditional {
+	.govuk-details__text {
+		border:none;
+	}
+}
+
+// Interruption panel
+.guidance-layout {
+  word-wrap: break-word;
+  background-color: #005ea5;
+  padding: 50px 30px 30px;
+  display: block;
+}
+.guidance-layout h1, .guidance-layout p, .guidance-layout ul, .guidance-layout h2, .guidance-layout .govuk-summary-list{
+  color:#fff;
+}
+
+.guidance-layout .govuk-button, .guidance-layout .drop-area__btn, .guidance-layout .js-enabled .dft-fu__add-file-btn, .js-enabled .guidance-layout .dft-fu__add-file-btn {
+  color: #005ea5;
+  background-color: #fff;
+}
+
+.guidance-layout .govuk-warning-text{
+  color:#fff;
+}
+.guidance-layout .govuk-warning-text__icon{
+  border: 3px solid #fff;
+  border-radius: 50%;
+  color: #005ea5;
+  background: #fff;
+}
+
+.olis-blue-bar-container {
+    background: #1d70b8;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    margin-top: -10px;
+}
+.olis-blue-bar-container h1 {
+    color: white;
+    margin-bottom: 50px;
+
+}
+.olis-blue-bar-container p {
+    color: white;
+    margin-bottom: 50px;
+}
+.gem-c-breadcrumbs--inverse .govuk-breadcrumbs__list-item:before {
+  border-color: #fff;
+}
+.olisBlue2.govuk-header__container {
+border-bottom: 0px;
+margin-bottom: 0px;
+}
+
+
+/**
+ * Dashboard cards
+ */
+
+ .govuk-cards__item {
+  box-sizing: border-box;
+
+  @include govuk-media-query($until: tablet) {
+      margin-bottom: 20px;
+  }
+
+  @include govuk-media-query($from: tablet) {
+      float: left;
+      margin-bottom: 40px;
+  }
+
+  @include govuk-media-query($from: desktop) {
+      width: 33.333333%;
+
+      &:not(:nth-child(3n+3)) {
+          padding-right: 20px;
+      }
+  }
+
+  @include govuk-media-query($from: tablet, $until: desktop) {
+      width: 50%;
+
+      &:not(:nth-child(2n+2)) {
+          padding-right: 15px;
+      }
+  }
+}
+
+/**
+* V2 cards with background colour
+*/
+.govuk-cards::after,
+.govuk-cards--2::after,
+.govuk-cards--3::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.govuk-cards--2__item {
+  box-sizing: border-box;
+  border: 1px solid #b1b4b6;
+  background-color: #f3f2f1;
+  padding: 20px;
+  margin-bottom: 20px;
+  float: left;
+
+  :last-child {
+      margin-bottom: 0;
+  }
+
+  @include govuk-media-query($from: desktop) {
+      width: calc(33% - 11px);
+      min-height: 220px;
+
+      &.govuk-card--company {
+          width: calc(66.8% - 10px);
+      }
+
+      &:not(:nth-child(3n+3)) {
+          margin-right: 20px;
+      }
+
+      .govuk-cards--3 &.govuk-card--contacts {
+          margin-right: 0;
+      }
+  }
+
+  @include govuk-media-query($from: tablet, $until: desktop) {
+      width: calc(50% - 8px);
+      min-height: 220px;
+
+      &.govuk-card--company {
+          width: calc(66% - 8px);
+      }
+
+      &:not(:nth-child(2n+2)) {
+          margin-right: 15px;
+      }
+
+      .govuk-cards--3 &.govuk-card--contacts {
+          margin-right: 0;
+      }
+  }
+
+  @include govuk-media-query($until: tablet) {
+      width: 100%;
+
+      &.govuk-card--company {
+          width: 100%;
+      }
+  }
+}
+
+
+/**
+ * user search box
+ */
+ .user-search-box .govuk-form-group {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.user-search-box {
+  position: relative;
+}
+
+.user-search-box .govuk-input {
+  padding-right: 45px;
+  width: 100%;
+}
+
+.user-search-box .search-button,
+.user-search-box .search-button:active {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  border-width: 0 0 0 2px;
+  border-style: solid;
+  border-left-color: #000;
+  box-sizing: border-box;
+  margin-bottom: 0;
+  cursor: pointer;
+  border-radius: 0;
+  padding: 0;
+  width: 38px;
+  height: 36px;
+  background-image: url(../images/search-icon.png);
+  background-repeat: no-repeat;
+  background-position: 2px 50%;
+  text-indent: 115%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #1d70b8;
+  box-shadow: none;
+
+  &:hover,
+  &:focus {
+      background-color: $govuk-link-hover-colour;
+  }
+}
+
+.filter-block {
+  padding-top: 30px;
+  border-top: 1px solid #b1b4b6;
+  margin: 30px 0 1px 0;
+}
+
+
+/**
+ * pagination from: https://home-office-digital-patterns.herokuapp.com/components/pagination
+ */
+ .pagination {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.pagination__item {
+  display: inline-block;
+  list-style: none;
+}
+
+.pagination__link {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #005EA5;
+    display: inline-block;
+    margin-right: 15px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background: #F8F8F8;
+        outline: 3px solid #FFBF47;
+    }
+
+    &.current {
+        font-weight: 700;
+    }
+
+    &.current,
+    &.disabled {
+        color: #0B0C0C;
+        border: none;
+        pointer-events: none;
+        cursor: default;
+        font-family: $govuk-font-family;
+    }
+}
+
+a.pagination__link:hover,
+a.pagination__link:focus {
+  background: #F8F8F8;
+  outline: 3px solid #FFBF47;
+}
+
+.pagination__summary {
+  font-family: $govuk-font-family;
+  line-height: 30px;
+
+  @media (min-width: 642px) {
+    float: right;
+  }
+}
