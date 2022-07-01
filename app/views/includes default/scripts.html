@@ -10,16 +10,3 @@
 {% if useAutoStoreData %}
   <script src="/public/javascripts/auto-store-data.js"></script>
 {% endif %}
-
-{% if tocPage == "specialist" %}
-  <script src="/public/javascripts/toc-specialist.js"></script>
-{% elif tocPage == "guide" %}
-  <script src="/public/javascripts/toc.js"></script>
-{% endif %}
-
-<!-- Routing hack -->
-<script>
-  function setLocation(element) {
-          document.forms[0].action = element.value;
-  }
-</script>

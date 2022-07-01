@@ -1,0 +1,42 @@
+{% extends "layouts/layout.html" %}
+{% set mainClasses = (mainClasses | default("govuk-main-wrapper--auto-spacing")) + " olis-layout" %}
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+    homepageUrl: "/",
+    serviceName: serviceName,
+    serviceUrl: "/",
+    containerClasses: "govuk-width-container olisBlue2"
+  }) }}
+<div class="olis-blue-bar-container">
+  <header class="gem-c-inverse-header  gem-c-inverse-header--full-width  gem-c-inverse-header--padding-top ">
+    <div class= "govuk-width-container">
+
+<!--      <div class= "gem-c-contextual-breadcrumbs">
+
+        <div class="gem-c-breadcrumbs govuk-breadcrumbs">
+          <ol class="govuk-breadcrumbs__list" style="color:white;">
+            <li class="govuk-breadcrumbs__list-item" >
+            <a  class="govuk-breadcrumbs__link"  href="govuk" style="color:white;">Home</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link"  href="environment" style="color:white;">Environment</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link"  href="food-farming" style="color:white;">Food and Farming</a>
+            </li>
+          </ol>
+
+        </div>
+      </div>
+
+-->
+{% block olisBreadcrumbs %}
+
+{% endblock %}
+      <h1 class="govuk-heading-l">{{_olisText}}</h1>
+    </div>
+    </header>
+</div>
+{% endblock %}
