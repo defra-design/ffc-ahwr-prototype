@@ -1,4 +1,4 @@
-{% extends "layouts/layout_unbranded.html" %}
+{% extends "layouts/layout-defra.html" %}
 
 {% block pageTitle %}
 Back office: Applications
@@ -8,9 +8,10 @@ Annual Health and Welfare Back Office
 {% endset%}
 
 {% block beforeContent %}
+<!--
 <div class="govuk-phase-banner">
   <p class="govuk-phase-banner__content">
-    <strong class="govuk-tag govuk-phase-banner__content__tag">
+    <strong style="background-color:#00a33b;" class="govuk-tag govuk-phase-banner__content__tag">
       beta
     </strong>
     <span class="govuk-phase-banner__text">
@@ -18,6 +19,7 @@ Annual Health and Welfare Back Office
     </span>
   </p>
 </div>
+-->
 {% endblock %}
 
 {% block content %}
@@ -38,7 +40,7 @@ Annual Health and Welfare Back Office
       </div>
       <form action="/v7/l2/users/search/search-results-none" method="post" class="form">
           <input class="govuk-input" id="user-search" name="user-search" type="text" aria-describedby="user-search-hint" spellcheck="false">
-          <button class="search-button" data-module="govuk-button">
+          <button style="background-color:#008938;" class="search-button" data-module="govuk-button">
               Search
           </button>
       </form>
@@ -71,9 +73,6 @@ Annual Health and Welfare Back Office
           },
           {
             text: "Details"
-          },
-          {
-            text: " "
           }
         ],
 
@@ -288,25 +287,21 @@ Annual Health and Welfare Back Office
             </li>
 
             <li class="pagination__item">
-                <a class="pagination__link" href="all-2" aria-label="Page 2">2</a>
+                <a style="color:#008938;" class="pagination__link" href="all-2" aria-label="Page 2">2</a>
             </li>
 
             <li class="pagination__item">
-                <a class="pagination__link" href="all-3" aria-label="Page 3">3</a>
+                <a style="color:#008938;" class="pagination__link" href="all-3" aria-label="Page 3">3</a>
             </li>
 
-            
-
             <li class="pagination__item">
-                <a class="pagination__link" href="all-2" aria-label="Next page">
+                <a style="color:#008938;" class="pagination__link" href="all-2" aria-label="Next page">
                     Next <span aria-hidden="true" role="presentation">&raquo;</span>
                 </a>
             </li>
         </ul>
     </nav>
-        
-
-   
+    
   </div>
 </div>
 
