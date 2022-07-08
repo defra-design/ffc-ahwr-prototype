@@ -8,8 +8,7 @@ Annual Health and Welfare Back Office
 {% endset%}
 
 {% block beforeContent %}
-<!--
-<div class="govuk-phase-banner">
+<div class="govuk-phase-banner govuk-!-padding-top-0">
   <p class="govuk-phase-banner__content">
     <strong style="background-color:#00a33b;" class="govuk-tag govuk-phase-banner__content__tag">
       beta
@@ -19,7 +18,6 @@ Annual Health and Welfare Back Office
     </span>
   </p>
 </div>
--->
 
 <a class="govuk-back-link govuk-!-margin-bottom-0" href="../applications">Back</a>
 {% endblock %}
@@ -30,7 +28,7 @@ Annual Health and Welfare Back Office
   <div class="govuk-grid-column-two-thirds">
     
     <h1 class="govuk-caption-l govuk-!-margin-bottom-3">
-      Application HDJ2123F
+      Reference: VV-021-23D
     </h1>
 
     <h2 class="govuk-heading-l">
@@ -44,13 +42,19 @@ Annual Health and Welfare Back Office
     <dl class="govuk-summary-list govuk-!-margin-bottom-9">
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
+          Name of applicant:
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p>Douglas Smith</p>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
           SBI number:
         </dt>
         <dd class="govuk-summary-list__value">
           106599006
-        </dd>
-        <dd class="govuk-summary-list__actions">
-
         </dd>
       </div>
 <!--
@@ -74,8 +78,6 @@ Annual Health and Welfare Back Office
         </dt>
         <dd class="govuk-summary-list__value">
           Arthington Ln, Arthington, Otley LS21 1PH
-        <dd class="govuk-summary-list__actions">
-
         </dd>
       </div>
 
@@ -85,9 +87,6 @@ Annual Health and Welfare Back Office
         </dt>
         <dd class="govuk-summary-list__value">
           <p>d.smith@yahoo.com</p>
-        </dd>
-        <dd class="govuk-summary-list__actions">
-
         </dd>
       </div>
     </dl>
@@ -155,7 +154,7 @@ Annual Health and Welfare Back Office
     
       </div>
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="reviewed">
-        <h2 class="govuk-heading-l">Not yet reviewed</h2>
+        <h2 class="govuk-heading-l">Data inputted</h2>
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
@@ -190,7 +189,7 @@ Annual Health and Welfare Back Office
     
       </div>
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-        <h2 class="govuk-heading-l">Not yet able to claim</h2>
+        <h2 class="govuk-heading-l">Awaiting claim</h2>
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
@@ -202,17 +201,7 @@ Annual Health and Welfare Back Office
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
               <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell"></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell"></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">Details correct?</td>
               <td class="govuk-table__cell"></td>
             </tr>
           </tbody>
@@ -220,29 +209,25 @@ Annual Health and Welfare Back Office
     
       </div>
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="paid">
-        <h2 class="govuk-heading-l">Not yet paid</h2>
+        <h2 class="govuk-heading-l">Cannot be paid yet</h2>
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Date</th>
               <th scope="col" class="govuk-table__header">Data requested</th>
               <th scope="col" class="govuk-table__header">Data entered</th>
             </tr>
           </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell"></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">Payment due</td>
               <td class="govuk-table__cell"></td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">Payment amount</td>
+              <td class="govuk-table__cell">£372</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Payment sent</td>
               <td class="govuk-table__cell"></td>
             </tr>
           </tbody>

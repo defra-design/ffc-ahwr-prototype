@@ -8,8 +8,7 @@ Annual Health and Welfare Back Office
 {% endset%}
 
 {% block beforeContent %}
-<!--
-<div class="govuk-phase-banner">
+<div class="govuk-phase-banner govuk-!-padding-top-0">
   <p class="govuk-phase-banner__content">
     <strong style="background-color:#00a33b;" class="govuk-tag govuk-phase-banner__content__tag">
       beta
@@ -19,7 +18,7 @@ Annual Health and Welfare Back Office
     </span>
   </p>
 </div>
--->
+
 <a class="govuk-back-link govuk-!-margin-bottom-0" href="../applications">Back</a>
 {% endblock %}
 
@@ -29,7 +28,7 @@ Annual Health and Welfare Back Office
   <div class="govuk-grid-column-two-thirds">
     
     <h1 class="govuk-caption-l govuk-!-margin-bottom-3">
-      Application HDJ2120F
+      Reference: VV-021-20D
     </h1>
 
     <h2 class="govuk-heading-l">
@@ -41,6 +40,15 @@ Annual Health and Welfare Back Office
 
     <!--User details-->
     <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Name of applicant:
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p>Sophie Lewis</p>
+        </dd>
+      </div>
+
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           SBI number:
@@ -179,43 +187,40 @@ Annual Health and Welfare Back Office
           </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">12/08/2022</td>
+              <td class="govuk-table__cell">11/08/2022</td>
               <td class="govuk-table__cell">Details correct?</td>
               <td class="govuk-table__cell">Yes</td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">12/08/2022</td>
-              <td class="govuk-table__cell">Invoice</td>
-              <td class="govuk-table__cell"><a href="#">File name</a></td>
+              <td class="govuk-table__cell">11/08/2022</td>
+              <td class="govuk-table__cell">Uploaded file</td>
+              <td class="govuk-table__cell"><a href="#">Invoice_name.pdf</a></td>
             </tr>
           </tbody>
         </table>
     
       </div>
+      <!-- EDIT! -->
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="paid">
-        <h2 class="govuk-heading-l">Not yet paid</h2>
+        <h2 class="govuk-heading-l">Awaiting approval</h2>
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Date</th>
               <th scope="col" class="govuk-table__header">Data requested</th>
               <th scope="col" class="govuk-table__header">Data entered</th>
             </tr>
           </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">Payment due</td>
+              <td class="govuk-table__cell">08/09/2022</td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">Payment amount</td>
+              <td class="govuk-table__cell">£372</td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">Payment sent</td>
               <td class="govuk-table__cell"></td>
             </tr>
           </tbody>
