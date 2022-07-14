@@ -53,324 +53,212 @@ Annual Health and Welfare Back Office
 
 <!-- Filters -->
 
-<div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
-  <div class="govuk-accordion__section ">
-    <div class="govuk-accordion__section-header">
-      <h2 class="govuk-accordion__section-heading">
-        <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-          Filters
-        </span>
-      </h2>
-    </div>
-    <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-      
-      <div class="govuk-filter">
-      
-        <div class="govuk-filter__content">
-      
-          <div class="govuk-filter__selected">
-      
-            <div class="govuk-filter__selected-heading">
-              <div class="govuk-filter__heading-title">
-                <h2 class="govuk-heading-m">Selected filters</h2>
-              </div>
-              <div class="govuk-filter__heading-action">
-                <p class="govuk-body"><a class="govuk-link--no-visited-state" href="">Clear filters</a></p>
-              </div>
-            </div>
-      
-            <h3 class="govuk-heading-s govuk-!-margin-bottom-0">Status</h3>
-      
-            <ul class="govuk-filter-tags">
-              <li><a class="govuk-tag govuk-tag--grey" href="/path/to/remove/this"><span class="govuk-visually-hidden">Remove this filter</span> Claimed</a></li>
-              <li><a class="govuk-tag govuk-tag--grey" href="/path/to/remove/this"><span class="govuk-visually-hidden">Remove this filter</span> Fraud check</a></li>
-            </ul>
-      
-          </div>
-      
-          <div class="govuk-filter__options">
-      
-            <button class="govuk-button" data-module="govuk-button">
-              Apply filters
-            </button>
-      
-            <div class="govuk-form-group govuk-!-margin-bottom-0">
-              <fieldset class="govuk-fieldset">
-      
-                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                  Status
-                </legend>
-      
-                <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
-      
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="status" name="status" type="checkbox" value="complete">
-                    <label class="govuk-label govuk-checkboxes__label" for="status">
-                      Applied (2)
-                    </label>
-                  </div>
-      
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="status-2" name="status" type="checkbox" value="incomplete">
-                    <label class="govuk-label govuk-checkboxes__label" for="status-2">
-                      Data inputted (1)
-                    </label>
-                  </div>
-      
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="status-3" name="status" type="checkbox" value="inprogress" checked>
-                    <label class="govuk-label govuk-checkboxes__label" for="status-3">
-                      Claimed (2)
-                    </label>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-quarter govuk-!-margin-top-5">
+          
+          <div class="govuk-filter govuk-!-padding-3" style="background-color:#eeeeee;">
+          
+            <div class="govuk-filter__content">
+          
+              <div class="govuk-filter__selected govuk-!-margin-bottom-5">
+                <div class="govuk-filter__selected-heading">
+
+                  <div class="govuk-filter__heading-title">
+                    <h2 class="govuk-heading-s">Filters</h2>
                   </div>
 
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="status-4" name="status" type="checkbox" value="inprogress" checked>
-                    <label class="govuk-label govuk-checkboxes__label" for="status-3">
-                      Fraud check (1)
-                    </label>
+                  <h3 class="govuk-body">Selected</h3>
+                  
+                  <div class="govuk-filter__heading-action">
+                    <p class="govuk-body-s"><a class="govuk-link--no-visited-state" href="">Clear filters</a></p>
+                    <a class="govuk-tag govuk-tag--blue" href="/path/to/remove/this" style="color:#104189;">
+                      <span class="govuk-visually-hidden">Remove this filter</span>
+                      Claimed
+                    </a>
+                    <a class="govuk-tag govuk-tag--orange" href="/path/to/remove/this" style="color:#6f3814;">
+                      <span class="govuk-visually-hidden">Remove this filter</span> 
+                      Fraud check
+                    </a>
                   </div>
 
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="status-5" name="status" type="checkbox" value="inprogress">
-                    <label class="govuk-label govuk-checkboxes__label" for="status-3">
-                      Paid (1)
-                    </label>
-                  </div>
-      
                 </div>
-      
-              </fieldset>
+              </div>
+          
+              <div class="govuk-filter__options">
+          
+                <div class="govuk-form-group govuk-!-margin-bottom-0">
+                  <fieldset class="govuk-fieldset">
+          
+                    <legend class="govuk-fieldset__legend">
+                      Status
+                    </legend>
+          
+                    <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+          
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="status" name="status" type="checkbox" value="complete">
+                        <label class="govuk-label govuk-checkboxes__label" for="status">
+                          Applied (2)
+                        </label>
+                      </div>
+          
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="status-2" name="status" type="checkbox" value="incomplete">
+                        <label class="govuk-label govuk-checkboxes__label" for="status-2">
+                          Data inputted (1)
+                        </label>
+                      </div>
+          
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="status-3" name="status" type="checkbox" value="inprogress" checked>
+                        <label class="govuk-label govuk-checkboxes__label" for="status-3">
+                          Claimed (2)
+                        </label>
+                      </div>
+
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="status-4" name="status" type="checkbox" value="inprogress" checked>
+                        <label class="govuk-label govuk-checkboxes__label" for="status-3">
+                          Fraud check (1)
+                        </label>
+                      </div>
+
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="status-5" name="status" type="checkbox" value="inprogress">
+                        <label class="govuk-label govuk-checkboxes__label" for="status-3">
+                          Paid (1)
+                        </label>
+                      </div>
+          
+                      <button class="govuk-button govuk-!-margin-top-5" data-module="govuk-button">
+                        Apply filters
+                      </button>
+
+                    </div>
+          
+                  </fieldset>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-    </div>
+
   </div>
 
-</div>
 
 <!-- Table -->
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
+  <div class="govuk-grid-column-three-quarters">
 <!--
     <p class="govuk-body">
       Select an application to edit it. <br>
     </p>
 --> <br>      
-      {{ govukTable({
-        firstCellIsHeader: false,
-        head: [
-          {
-            text: "Reference"
-          },
-          {
-            text: "Organisation"
-          },
-          {
-            text: "SBI Number"
-          },
-          {
-            text: "Status"
-          },
-          {
-            text: "Details"
-          }
+
+    {{ govukTable({
+      firstCellIsHeader: false,
+      head: [
+        {text: "Reference"},
+        {text: "Organisation"},
+        {text: "SBI number"},
+        {text: "Apply date"},
+        {text: "Status"},
+        {text: "Action"}
+      ],
+
+      rows: [
+
+        [
+          {html: "VV-021-24S"},
+          {html: "Mill Farm"},
+          {text: "107264765"},
+          {text: "12/08/2022"},
+          {html: '<strong class="govuk-tag govuk-tag--green">Applied</strong>'},
+          {html: "<a href='applications/mill-farm'>View details</a>"}
         ],
 
-        rows: [
+        [
+          {html: "VV-021-23D"},  
+          {html: "Arthington Dairy Ltd"},
+          {text: "106599006"},
+          {text: "26/07/2022"},
+          {html: '<strong class="govuk-tag govuk-tag--yellow">Data inputted</strong>'},
+          {html: "<a href='applications/arthington-farm'>View details</a>"}
+        ],
 
-          [
-            {
-              html: "HDJ2124F"
-            },
-            {
-              html: "Mill Farm"
-            },
-            {
-              text: "107264765"
-            },
-            {
-              html: '<strong class="govuk-tag govuk-tag--green">Applied</strong>'
-            },
-            {
-              html: "<a href='applications/mill-farm'>View application</a>"
-            }
-          ],
+        [
+          {html: "VV-021-22B"},
+          {html: "D B Stockwell & Son"},
+          {text: "103489123"},
+          {text: "03/07/2022"},
+          {html: '<strong class="govuk-tag govuk-tag--blue">Claimed</strong>'},
+          {html: "<a href='applications/stockwell-farm'>View details</a>"}
+        ],
 
-          [
-            {
-              html: "HDJ2123F"
-            },  
-            {
-              html: "Arthington Dairy Ltd"
-            },
-            {
-              text: "106599006"
-            },
-            {
-              html: '<strong class="govuk-tag govuk-tag--yellow">Data inputted</strong>'
-            },
-            {
-              html: "<a href='applications/arthington-farm'>View application</a>"
-            }
-          ],
+        [
+          {html: "VV-021-21B"},
+          {html: "P & D Fearnley & Sons"},
+          {text: "103491987"},
+          {text: "11/08/2022"},
+          {html: '<strong class="govuk-tag govuk-tag--green">Applied</strong>'},
+          {html: "<a href='applications/fearnley-farm'>View details</a>"}
+        ],
 
+        [
+          {html: "VV-021-20D"},
+          {html: "Deer Park Farm"},
+          {text: "106712004"},
+          {text: "09/07/2022"},
+          {html: '<strong class="govuk-tag govuk-tag--orange">Fraud Check</strong>'},
+          {html: "<a href='applications/deer-park-farm'>View details</a>"}
+        ],
 
-          [
-            {
-              html: "HDJ2122F"
-            },
-            {
-              html: "D B Stockwell & Son"
-            },
-            {
-              text: "103489123"
-            },
-            {
-              html: '<strong class="govuk-tag govuk-tag--blue">Claimed</strong>'
-            },
-            {
-              html: "<a href='applications/stockwell-farm'>View application</a>"
-            }
-          ],
+        [
+          {html: "VV-021-19B"},
+          {html: "Bishopwoods Farm"},
+          {text: "108901125"},
+          {text: "22/06/2022"},
+          {html: '<strong class="govuk-tag govuk-tag--purple">Accepted</strong>'},
+          {html: "<a href='business'>View details</a>"}
+        ],
 
+        [
+          {html: "VV-021-18P"},
+          {html: "Holte Farm"},
+          {text: "108659387"},
+          {html: "14/06/2022"},
+          {html: '<strong class="govuk-tag govuk-tag">Paid</strong>'},
+          {html: "<a href='business'>View details</a>"}
+        ],
 
-          [
-            {
-              html: "HDJ2121F"
-            },
-            {
-              html: "P & D Fearnley & Sons"
-            },
-            {
-              text: "103491987"
-            },
-            {
-              html: '<strong class="govuk-tag govuk-tag--green">Applied</strong>'
-            },
-            {
-              html: "<a href='applications/fearnley-farm'>View application</a>"
-            }
-          ],
+        [
+          {html: "VV-021-17B"},
+          {html: "Stockeld Park Farm"},
+          {text: "108902387"},
+          {html: "29/06/2022"},
+          {html: '<strong class="govuk-tag govuk-tag--blue">Claimed</strong>'},
+          {html: "<a href='business'>View details</a>"}
+        ],
 
+        [
+          {html: "VV-021-16S"},
+          {html: "JP Metcalfe & Son"},
+          {text: "107458967"},
+          {html: "20/07/2022"},
+          {html: '<strong class="govuk-tag govuk-tag--grey">Withdrawn</strong>'},
+          {html: "<a href='business'>View details</a>"}
+        ],
 
-          [
-            {
-              html: "HDJ2120F"
-            },
-            {
-              html: "Deer Park Farm"
-            },
-            {
-              text: "106712004"
-            },
-            {
-              html: '<strong class="govuk-tag govuk-tag--orange">Fraud Check</strong>'
-            },
-            {
-              html: "<a href='applications/deer-park-farm'>View application</a>"
-            }
-          ],
-
-
-          [
-            {
-              html: "HDJ2119F"
-            },
-            {
-              html: "Bishopwoods Farm"
-            },
-            {
-              text: "108901125"
-            },
-            {
-              html: '<strong class="govuk-tag govuk-tag--purple">Accepted</strong>'
-            },
-            {
-              html: "<a href='business'>View application</a>"
-            }
-          ],
-
-
-          [
-            {
-              html: "HDJ2118F"
-            },
-            {
-              html: "Holte Farm"
-            },
-            {
-              text: "108659387"
-            },
-            {
-              html: '<strong class="govuk-tag govuk-tag">Paid</strong>'
-            },
-            {
-              html: "<a href='business'>View application</a>"
-            }
-          ],
-
-
-          [
-            {
-              html: "HDJ2117F"
-            },
-            {
-              html: "Stockeld Park Farm"
-            },
-            {
-              text: "108902387"
-            },
-            {
-              html: '<strong class="govuk-tag govuk-tag--blue">Claimed</strong>'
-            },
-            {
-              html: "<a href='business'>View application</a>"
-            }
-          ],
-
-
-          [
-            {
-              html: "HDJ2116F"
-            },
-            {
-              html: "JP Metcalfe & Son"
-            },
-            {
-              text: "107458967"
-            },
-            {
-              html: '<strong class="govuk-tag govuk-tag--grey">Withdrawn</strong>'
-            },
-            {
-              html: "<a href='business'>View application</a>"
-            }
-          ],
-
-
-          [
-            {
-              html: "HDJ2115F"
-            },
-            {
-              html: "Stubbings Mill Farm"
-            },
-            {
-              text: "108966003"
-            },
-            {
-              html: '<strong class="govuk-tag govuk-tag--pink">Rejected</strong>'
-            },
-            {
-              html: "<a href='user-application'>View application</a>"
-            }
-          ]
-
+        [
+          {html: "VV-021-15S"},
+          {html: "Stubbings Mill Farm"},
+          {text: "108966003"},
+          {html: "17/06/2022"},
+          {html: '<strong class="govuk-tag govuk-tag--pink">Rejected</strong>'},
+          {html: "<a href='user-application'>View details</a>"}
         ]
-      }) }}
+
+      ]
+    }) }}
 
 
       <nav role="navigation" aria-label="Pagination">
