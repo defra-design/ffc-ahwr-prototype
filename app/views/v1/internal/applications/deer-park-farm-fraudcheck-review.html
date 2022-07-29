@@ -1,0 +1,284 @@
+{% extends "layouts/layout-defra.html" %}
+
+{% block pageTitle %}
+Back office: User application
+{% endblock %}
+{% set serviceName %}
+Annual Health and Welfare Back Office
+{% endset%}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner govuk-!-padding-top-0">
+  <p class="govuk-phase-banner__content">
+    <strong style="background-color:#00a33b;" class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+<a class="govuk-back-link govuk-!-margin-bottom-0" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    
+    <h1 class="govuk-caption-l govuk-!-margin-bottom-3">
+      Reference: VV-021-20D
+    </h1>
+
+    <h2 class="govuk-heading-l">
+      Deer Park Farm
+      <strong class="govuk-tag govuk-tag--orange">
+        Fraud check
+      </strong>
+    </h2>
+
+    <!--User details-->
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Name of applicant:
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p>Sophie Lewis</p>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          SBI number:
+        </dt>
+        <dd class="govuk-summary-list__value">
+          106712004
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Address:
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Bucklebury, Reading RG7 6RR
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Email address:
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p>sophielewis123@gmail.com</p>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Uploaded file:
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <a href="#">Invoice_U388962.pdf</a>
+        </dd>
+      </div>
+
+    </dl>
+
+    <!-- Questions -->
+    <div class="govuk-width-container">
+<!--
+      <h2 class="govuk-heading-l">Check your answers</h2>
+-->
+      <dl class="govuk-summary-list">
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-width-two-thirds">
+            SBI matches farmer
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">Yes</p>
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="deer-park-farm-fraudcheck.html">
+              Edit
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Authorised to act for business
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">Yes</p>
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="deer-park-farm-fraudcheck.html">
+              Edit
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            CPH matches SBI
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">Yes</p>
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="deer-park-farm-fraudcheck.html">
+              Edit
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            BPS recipient with 5 entitlements
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">Yes</p>
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="deer-park-farm-fraudcheck.html">
+              Edit
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Keeper of correct species
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">Yes</p>
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="deer-park-farm-fraudcheck.html">
+              Edit
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Eligible number of animals
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">Yes</p>
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="deer-park-farm-fraudcheck.html">
+              Edit
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Vet has valid RCVS
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">Yes</p>
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="deer-park-farm-fraudcheck.html">
+              Edit
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Vet details match RCVS
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">Yes</p>
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="deer-park-farm-fraudcheck.html">
+              Edit
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Visit after agreement
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">Yes</p>
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="deer-park-farm-fraudcheck.html">
+              Edit
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Visit within 1 year of agreement
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">Yes</p>
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="deer-park-farm-fraudcheck.html">
+              Edit
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Claim within 15 months of agreement
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">Yes</p>
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="deer-park-farm-fraudcheck.html">
+              Edit
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Only application for species within 1 year
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <p class="govuk-body">Yes</p>
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="deer-park-farm-fraudcheck.html">
+              Edit
+            </a>
+          </dd>
+        </div>
+
+      </dl>
+
+      <p class="govuk-body govuk-!-margin-bottom-5">
+        Based on the answers you gave, the farmer is eligible to claim.
+      </p>
+
+      <a href="deer-park-farm-fraudcheck" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Return to questions
+      </a>
+      <a href="deer-park-farm-checked#claimed" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+        Accept claim
+      </a>
+
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
