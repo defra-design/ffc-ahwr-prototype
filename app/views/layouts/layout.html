@@ -28,6 +28,8 @@
 {% from "govuk/components/tag/macro.njk"              import govukTag %}
 {% from "govuk/components/textarea/macro.njk"         import govukTextarea %}
 {% from "govuk/components/warning-text/macro.njk"     import govukWarningText %}
+{%- from "moj/components/filter/macro.njk" import mojFilter -%}
+{%- from "moj/components/button-menu/macro.njk" import mojButtonMenu -%}
 
 {% block head %}
   {% include "includes/head.html" %}
@@ -74,4 +76,23 @@
     {% block pageScripts %}{% endblock %}
   {% endblock %}
   <!-- GOV.UK Prototype Kit {{releaseVersion}} -->
+  <script>
+      new MOJFrontend.FilterToggleButton({
+    bigModeMediaQuery: "(min-width: 48.063em)",
+    startHidden: true,
+    toggleButton: {
+      container: $(".moj-action-bar__filter"),
+      showText: "Show filter",
+      hideText: "Hide filter",
+      classes: "govuk-button--secondary",
+    },
+    closeButton: {
+      container: $(".moj-filter__header-action"),
+      text: "Close",
+    },
+    filter: {
+      container: $(".moj-filter"),
+    },
+  });
+    </script>
 {% endblock %}

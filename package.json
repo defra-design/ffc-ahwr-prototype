@@ -1,7 +1,7 @@
 {
   "name": "ffc-ahwr-prototype",
   "description": "Future Farming & Countryside - Annual Health and Welfare Review prototype",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "engines": {
     "node": ">=12.0.0 <17.0.0"
@@ -12,7 +12,12 @@
     "rapidtest": "jest --bail",
     "test": "gulp generate-assets && jest && npm run lint"
   },
+  "author": "Defra",
+  "contributors": [
+    "Satish Chatap github.com/govTechSatish"
+  ],
   "dependencies": {
+    "@ministryofjustice/frontend": "^1.4.2",
     "acorn": "^8.5.0",
     "ansi-colors": "^4.1.1",
     "body-parser": "^1.14.1",
@@ -34,6 +39,7 @@
     "gulp-nodemon": "^2.2.1",
     "gulp-sass": "^5.0.0",
     "inquirer": "^8.2.0",
+    "jquery": "^3.6.0",
     "lodash": "^4.17.21",
     "marked": "^4.0.10",
     "notifications-node-client": "^5.1.0",

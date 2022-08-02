@@ -150,15 +150,24 @@ app.use('/node_modules/govuk-frontend', express.static(path.join(__dirname, '/no
 
 // Set up documentation app
 if (useDocumentation) {
-  var documentationViews = [
+  let documentationViews = [
     path.join(__dirname, '/node_modules/govuk-frontend/'),
     path.join(__dirname, '/node_modules/govuk-frontend/components'),
     path.join(__dirname, '/docs/views/'),
-    path.join(__dirname, '/lib/')
+    path.join(__dirname, '/lib/'),
+    path.join(__dirname, 'node_modules/@ministryofjustice/frontend/')
   ]
+  
 
   nunjucksConfig.express = documentationApp
-  var nunjucksDocumentationEnv = nunjucks.configure(documentationViews, nunjucksConfig)
+  let nunjucksDocumentationEnv = nunjucks.configure(documentationViews, nunjucksConfig)
+
+  // Add filters from MOJ Frontend
+  let mojFilters = require('./node_modules/@ministryofjustice/frontend/moj/filters/all')()
+  mojFilters = Object.assign(mojFilters)
+  Object.keys(mojFilters).forEach(function (filterName) {
+    nunjucksDocumentationEnv.addFilter(filterName, mojFilters[filterName])
+  })
   // Nunjucks filters
   utils.addNunjucksFilters(nunjucksDocumentationEnv)
 
@@ -174,7 +183,7 @@ app.use(bodyParser.urlencoded({
 
 // Set up v6 app for backwards compatibility
 if (useV6) {
-  var v6Views = [
+  let v6Views = [
     path.join(__dirname, '/node_modules/govuk_template_jinja/views/layouts'),
     path.join(__dirname, '/app/v6/views/'),
     path.join(__dirname, '/lib/v6') // for old unbranded template
@@ -274,8 +283,8 @@ if (useV6) {
 
 // Strip .html and .htm if provided
 app.get(/\.html?$/i, function (req, res) {
-  var path = req.path
-  var parts = path.split('.')
+  let path = req.path
+  const parts = path.split('.')
   parts.pop()
   path = parts.join('.')
   res.redirect(path)

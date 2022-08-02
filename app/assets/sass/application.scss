@@ -4,6 +4,9 @@ $govuk-new-link-styles: true;
 
 // We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
 $govuk-assets-path: '/govuk/assets/';
+// Moj Path Start
+$moj-assets-path: "~@ministryofjustice/frontend/moj/assets/";
+// Moj Path End
 
 // Import GOV.UK Frontend and any extension styles if extensions have been configured
 @import "lib/extensions/extensions";

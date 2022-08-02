@@ -5,6 +5,9 @@ if (window.console && window.console.info) {
   window.console.info('GOV.UK Prototype Kit - do not use for production')
 }
 
+window.$ = $
+
 $(document).ready(function () {
   window.GOVUKFrontend.initAll()
+  window.MOJFrontend.initAll()
 })
