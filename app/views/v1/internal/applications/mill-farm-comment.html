@@ -19,13 +19,13 @@ Annual Health and Welfare Back Office
   </p>
 </div>
 
-<a class="govuk-back-link govuk-!-margin-bottom-0" href="../applications">Back</a>
+<a class="govuk-back-link govuk-!-margin-bottom-0" href="javascript:history.go(-1)">Back</a>
 {% endblock %}
 
 {% block content %}
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-three-quarters">
     
     <h1 class="govuk-caption-l govuk-!-margin-bottom-3">
       Reference: VV-021-24S
@@ -106,7 +106,7 @@ Annual Health and Welfare Back Office
       </ul>
 
       <div class="govuk-tabs__panel" id="applied">
-        <h2 class="govuk-heading-l govuk-!-display-inline">Applied</h2>
+        <h2 class="govuk-heading-l">Applied</h2>
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
@@ -138,9 +138,6 @@ Annual Health and Welfare Back Office
             </tr>
           </tbody>
         </table>
-        <a href="mill-farm#applied" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-          Add comment
-        </a>
         <div class="govuk-form-group">
           <label class="govuk-label" for="more-detail">
             Record details below
@@ -148,6 +145,12 @@ Annual Health and Welfare Back Office
           <textarea class="govuk-textarea govuk-!-margin-bottom-2" id="more-detail" name="more-detail" rows="5"></textarea>
           <p class="govuk-body-s" style="color:	#505a5f;">Comment by User X on 3 August 2022</p>
         </div>
+        <a href="mill-farm#applied" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+          Close
+        </a>
+        <a href="mill-farm-comment-log#applied" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+          Add comment
+        </a>
       </div>
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="reviewed">
@@ -168,12 +171,12 @@ Annual Health and Welfare Back Office
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell">11 or more cattle?</td>
+              <td class="govuk-table__cell">21 or more sheep?</td>
               <td class="govuk-table__cell"></td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell">BVD in herd?</td>
+              <td class="govuk-table__cell">Worming treatment effectiveness</td>
               <td class="govuk-table__cell"></td>
             </tr>
             <tr class="govuk-table__row">
