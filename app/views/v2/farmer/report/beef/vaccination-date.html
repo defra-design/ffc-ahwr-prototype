@@ -23,13 +23,14 @@ Record data from an Annual Health and Welfare Review
         <fieldset class="govuk-fieldset" role="group" aria-describedby="when-review-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h1 class="govuk-fieldset__heading">
-              When was the herd last vaccinated?
+              When was the herd last vaccinated for BVD?
             </h1>
           </legend>
           <div id="when-review-hint" class="govuk-hint">
-            For example, 27 3 2022
+            For example, 3 2022
           </div>
           <div class="govuk-date-input" id="when-review">
+            <!--
             <div class="govuk-date-input__item">
               <div class="govuk-form-group">
                 <label class="govuk-label govuk-date-input__label" for="when-review-day">
@@ -37,6 +38,7 @@ Record data from an Annual Health and Welfare Review
                 </label>
                 <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="when-review-day" name="when-review-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
             </div>
+            -->
             <div class="govuk-date-input__item">
               <div class="govuk-form-group">
                 <label class="govuk-label govuk-date-input__label" for="when-review-month">
@@ -55,12 +57,10 @@ Record data from an Annual Health and Welfare Review
 
         </fieldset>
       </div>
-    <!--
-      <input class="govuk-button" type="submit" name="saveAndContinue" value="Continue" id="Button-SaveAndContinue" data-qa-id="Button-SaveAndContinue">
-    -->
+
       {{ govukButton({
         text: "Continue",
-        href: "../check-answers"
+        href: "vaccination-breeding"
       }) }}
 
     </form>

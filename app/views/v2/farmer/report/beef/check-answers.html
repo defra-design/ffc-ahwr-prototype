@@ -4,7 +4,7 @@
 Index page
 {% endblock %}
 {% set serviceName %}
-Record data from an Annual Health and Welfare Review
+Claim funding for an annual health and welfare review
 {% endset%}
 
 {% block beforeContent %}
@@ -19,62 +19,88 @@ Record data from an Annual Health and Welfare Review
 
       <h1 class="govuk-heading-l">Check your answers</h1>
 
-      <!-- <h2 class="govuk-heading-m">Eligibility</h2> -->
-
       <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-
+        
         <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key govuk-!-width-one-third">
-            Farm visit date
+          <dt class="govuk-summary-list__key">
+            Date of visit
           </dt>
           <dd class="govuk-summary-list__value">
-            <p class="govuk-body">{{data.when-review or "1 May 2022"}}</p>
+            6 November 2022
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="visit-date">
-              Change<span class="govuk-visually-hidden">farm visit date</span>
+              Change<span class="govuk-visually-hidden"> visit date</span>
             </a>
           </dd>
         </div>
 
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Eligible number of animals
+            Vet practice
           </dt>
           <dd class="govuk-summary-list__value">
-            <p class="govuk-body">Yes</p>
+            Southside Vet Group
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="eligibility">
-              Change<span class="govuk-visually-hidden"> number of animals</span>
+            <a class="govuk-link" href="vet-practice">
+              Change<span class="govuk-visually-hidden"> vet practice</span>
             </a>
           </dd>
         </div>
 
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            BVD in herd
+            RCVS number
           </dt>
           <dd class="govuk-summary-list__value">
-            <p class="govuk-body">No</p>
+            7116359
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="vet-rcvs">
+              Change<span class="govuk-visually-hidden"> RCVS number</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            BVD vaccinated?
+          </dt>
+          <dd class="govuk-summary-list__value">
+            No
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="vaccination-status">
+              Change<span class="govuk-visually-hidden"> vaccination status</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            BVD present?
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="test-result">
-              Change<span class="govuk-visually-hidden"> bvd test result</span>
+              Change<span class="govuk-visually-hidden"> test result</span>
             </a>
           </dd>
         </div>
 
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Written report given to farmer
+            Evidence of BVD circulating
           </dt>
           <dd class="govuk-summary-list__value">
-            <p class="govuk-body">Yes</p>
+            No
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="report">
-              Change<span class="govuk-visually-hidden"> report status</span>
+            <a class="govuk-link" href="BVD-circulating">
+              Change<span class="govuk-visually-hidden"> BVD circulating</span>
             </a>
           </dd>
         </div>
@@ -83,32 +109,26 @@ Record data from an Annual Health and Welfare Review
 
     </div>
 
-<!--
-          <h2 class="govuk-heading-m">Now send your record</h2>
+    <form action="/form-handler" method="post" novalidate>
 
-          <p class="govuk-body">By submitting this record you're confirming that, to the best of your knowledge, the details you are providing are correct.</p>
--->
-      <form action="/form-handler" method="post" novalidate>
+      <input type="hidden" name="answers-checked" value="true">
 
-        <input type="hidden" name="answers-checked" value="true">
+      <!-- <button class="govuk-button" data-module="govuk-button">
+        Confirm and send
+      </button>
+      <a href="confirmation" role="button" draggable="false" class="govuk-button docs-creator" data-module="govuk-button">
+        Confirm and send
+      </a>
+ -->
+      {{ govukButton({
+      text: "Continue",
+      href: "../declaration"
+      }) }}
 
-        <!-- <button class="govuk-button" data-module="govuk-button">
-          Confirm and send
-        </button> -->
-        <a href="../declaration" role="button" draggable="false" class="govuk-button docs-creator" data-module="govuk-button">
-          Confirm
-        </a>
-
-      </form>
+    </form>
 
   </div>
+
+
 </div>
-
-
-    <!-- {{ govukButton({
-      text: "Continue",
-      href: "check-answers"
-    }) }} -->
-
-
 {% endblock %}

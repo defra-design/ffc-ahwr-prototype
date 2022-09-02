@@ -19,10 +19,11 @@ Record data from an Annual Health and Welfare Review
     <form class="form" method="post">
 
       <div class="govuk-form-group">
+
         <fieldset class="govuk-fieldset" aria-describedby="vaccinated-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h1 class="govuk-fieldset__heading">
-              Was the herd vaccinated for BVD?
+              Were all breeding cattle up to date with vaccination?
             </h1>
           </legend>
           <!-- <div id="vet-registered-hint" class="govuk-hint">
@@ -30,25 +31,19 @@ Record data from an Annual Health and Welfare Review
           </div> -->
           <br>
           <div class="govuk-radios">
-
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="vaccinated" name="vaccinated" type="radio" value="vaccination-date" onclick="setLocation(this);" {{ checked("eligibility-cattle", "vaccinated-yes") }}>
+              <input class="govuk-radios__input" id="vaccinated" name="vaccinated" type="radio" value="test-result" onclick="setLocation(this);" {{ checked("eligibility-cattle", "vaccinated-yes") }}>
               <label class="govuk-label govuk-radios__label" for="vaccinated">
-                Yes, fully vaccinated
+                Yes, only breeding cattle are vaccinated
             </div>
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="vaccinated" name="vaccinated" type="radio" value="vaccination-date" onclick="setLocation(this);" {{ checked("eligibility-cattle", "vaccinated-yes") }}>
-              <label class="govuk-label govuk-radios__label" for="vaccinated">
-                Yes, partly vaccinated
-            </div>
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="vaccinated-2" name="vaccinated" type="radio" value="../test-result" onclick="setLocation(this);" {{ checked("eligibility-cattle", "vaccinated-no") }}>
+              <input class="govuk-radios__input" id="vaccinated-2" name="vaccinated" type="radio" value="test-result" onclick="setLocation(this);" {{ checked("eligibility-cattle", "vaccinated-no") }}>
               <label class="govuk-label govuk-radios__label" for="vaccinated-2">
                 No
               </label>
             </div>
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="vaccinated-2" name="vaccinated" type="radio" value="../test-result" onclick="setLocation(this);" {{ checked("eligibility-cattle", "vaccinated-no") }}>
+              <input class="govuk-radios__input" id="vaccinated-2" name="vaccinated" type="radio" value="test-result" onclick="setLocation(this);" {{ checked("eligibility-cattle", "vaccinated-no") }}>
               <label class="govuk-label govuk-radios__label" for="vaccinated-2">
                 Not applicable
               </label>
@@ -58,9 +53,13 @@ Record data from an Annual Health and Welfare Review
 
         </fieldset>
       </div>
-
+      <!--
       <button class="govuk-button" data-module="govuk-button">Continue</button>
-
+      -->
+      {{ govukButton({
+        text: "Continue",
+        href: "test-result"
+      }) }}
     </form>
 
   </div>
