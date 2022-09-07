@@ -59,15 +59,15 @@ router.get('*/sbi-check-validate', function (req, res) {
   }
 })
 
-// SFI summary
+// Check details for claim
 
-router.get('*/sfi-summary-validation', function (req, res) {
-  const option = req.session.data['continue-application']
+router.get('*/review-details-correct-check', function (req, res) {
+  const option = req.session.data['details']
 
-  if (option === 'yes') {
-    res.redirect('task-list')
+  if (option === 'no') {
+    res.redirect('details-incorrect')
   } else {
-    res.redirect('select-standard')
+    res.redirect('visit-date')
   }
 })
 

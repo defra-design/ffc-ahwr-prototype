@@ -68,33 +68,36 @@ Claim funding for an annual health and welfare review
 
     </dl>
 
-    {{ govukRadios({
-      classes: "govuk-radios--inline",
-      idPrefix: "review-details-correct-check",
-      name: "review-details-correct-check",
-      fieldset: {
-        legend: {
-          text: "Are these details correct?",
-          classes: "govuk-fieldset__legend--m "
-        }
-      },
-      items: [
-        {
-          value: "yes",
-          text: "Yes"
-        },
-        {
-          value: "no",
-          text: "No"
-        }
-      ]
-    }) }}
-    <!-- We need to inform user what happens if 'No' -->
+    <form class="form" method="post">
 
-    {{ govukButton({
-      text: "Continue",
-      href: "visit-date"
-    }) }}
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Are these details correct?
+            </h2>
+          </legend>
+          <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="visit-date" onclick="setLocation(this);">
+              <label class="govuk-label govuk-radios__label" for="changed-name">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="details-incorrect" onclick="setLocation(this);">
+              <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                No
+              </label>
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+
+      <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+    </form>
 
   </div>
 </div>

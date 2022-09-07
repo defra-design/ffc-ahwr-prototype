@@ -19,8 +19,6 @@ Record data from an Annual Health and Welfare Review
 
       <h1 class="govuk-heading-l">Check your answers</h1>
 
-      <!-- <h2 class="govuk-heading-m">Eligibility</h2> -->
-
       <dl class="govuk-summary-list govuk-!-margin-bottom-8">
 
         <div class="govuk-summary-list__row">
@@ -67,41 +65,33 @@ Record data from an Annual Health and Welfare Review
 
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            PRRS in herd
+            Worms in first check
           </dt>
           <dd class="govuk-summary-list__value">
             <p class="govuk-body">No</p>
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="test-result">
-              Change<span class="govuk-visually-hidden"> prrs test result</span>
+            <a class="govuk-link" href="test">
+              Change<span class="govuk-visually-hidden"> worms present</span>
             </a>
           </dd>
         </div>
 
       </dl>
 
-      <form action="/form-handler" method="post" novalidate>
-        <input type="hidden" name="answers-checked" value="true">
+    </div>
 
-        <a href="../declaration" role="button" draggable="false" class="govuk-button docs-creator" data-module="govuk-button">
-          Confirm
-        </a>
+    <form action="/form-handler" method="post" novalidate>
+      <input type="hidden" name="answers-checked" value="true">
 
-      </form>
+      <a href="../declaration" role="button" draggable="false" class="govuk-button docs-creator" data-module="govuk-button">
+        Confirm
+      </a>
+
+    </form>
 
   </div>
 </div>
-
-
-
-
-
-
-    <!-- {{ govukButton({
-      text: "Continue",
-      href: "check-answers"
-    }) }} -->
 
 
 {% endblock %}

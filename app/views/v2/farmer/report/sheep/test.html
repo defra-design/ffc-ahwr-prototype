@@ -20,10 +20,10 @@ Record data from an Annual Health and Welfare Review
       <form class="form" method="post">
 
         <div class="govuk-form-group">
-          <fieldset class="govuk-fieldset" aria-describedby="bvd-hint">
+          <fieldset class="govuk-fieldset" aria-describedby="worms-hint">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
               <h1 class="govuk-fieldset__heading">
-                Did test results show that BVD is in the herd?
+                Were there worms in the first check?
               </h1>
             </legend>
             <!-- <div id="vet-registered-hint" class="govuk-hint">
@@ -32,13 +32,13 @@ Record data from an Annual Health and Welfare Review
             <br>
             <div class="govuk-radios govuk-radios--inline">
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="bvd" name="bvd" type="radio" value="BVD-circulating" onclick="setLocation(this);" {{ checked("bvd", "bvd-yes") }}>
-                <label class="govuk-label govuk-radios__label" for="bvd">
+                <input class="govuk-radios__input" id="worms" name="worms" type="radio" value="test-result" onclick="setLocation(this);" {{ checked("worms", "worms-yes") }}>
+                <label class="govuk-label govuk-radios__label" for="worms">
                   Yes
               </div>
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="bvd-2" name="bvd" type="radio" value="BVD-circulating" onclick="setLocation(this);" {{ checked("bvd", "bvd-no") }}>
-                <label class="govuk-label govuk-radios__label" for="bvd-2">
+                <input class="govuk-radios__input" id="worms-2" name="worms" type="radio" value="check-answers-no-worms" onclick="setLocation(this);" {{ checked("worms", "worms-no") }}>
+                <label class="govuk-label govuk-radios__label" for="worms-2">
                   No
                 </label>
               </div>
@@ -46,7 +46,7 @@ Record data from an Annual Health and Welfare Review
 
           </fieldset>
         </div>
-        
+
         <button class="govuk-button" data-module="govuk-button">Continue</button>
 
       </form>

@@ -23,7 +23,7 @@ Record data from an Annual Health and Welfare Review
           <fieldset class="govuk-fieldset" aria-describedby="bvd-hint">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
               <h1 class="govuk-fieldset__heading">
-                Did test results show that BVD is in the herd?
+                Was there evidence of circulating BVD virus within the herd?
               </h1>
             </legend>
             <!-- <div id="vet-registered-hint" class="govuk-hint">
@@ -32,12 +32,12 @@ Record data from an Annual Health and Welfare Review
             <br>
             <div class="govuk-radios govuk-radios--inline">
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="bvd" name="bvd" type="radio" value="BVD-circulating" onclick="setLocation(this);" {{ checked("bvd", "bvd-yes") }}>
+                <input class="govuk-radios__input" id="bvd" name="bvd" type="radio" value="check-answers" onclick="setLocation(this);" {{ checked("bvd", "bvd-yes") }}>
                 <label class="govuk-label govuk-radios__label" for="bvd">
                   Yes
               </div>
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="bvd-2" name="bvd" type="radio" value="BVD-circulating" onclick="setLocation(this);" {{ checked("bvd", "bvd-no") }}>
+                <input class="govuk-radios__input" id="bvd-2" name="bvd" type="radio" value="check-answers" onclick="setLocation(this);" {{ checked("bvd", "bvd-no") }}>
                 <label class="govuk-label govuk-radios__label" for="bvd-2">
                   No
                 </label>
@@ -46,8 +46,11 @@ Record data from an Annual Health and Welfare Review
 
           </fieldset>
         </div>
-        
-        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+        {{ govukButton({
+          text: "Continue",
+          href: "../check-answers"
+        }) }}
 
       </form>
 
