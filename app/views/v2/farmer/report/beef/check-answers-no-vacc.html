@@ -29,22 +29,8 @@ Claim funding for an annual health and welfare review
             6 November 2022
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="visit-date">
+            <a class="govuk-link" href="../visit-date">
               Change<span class="govuk-visually-hidden"> visit date</span>
-            </a>
-          </dd>
-        </div>
-
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Vet RCVS
-          </dt>
-          <dd class="govuk-summary-list__value">
-            7116359
-          </dd>
-          <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="vet-rcvs">
-              Change<span class="govuk-visually-hidden"> RCVS number</span>
             </a>
           </dd>
         </div>
@@ -57,8 +43,64 @@ Claim funding for an annual health and welfare review
             Southside Vet Group
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="vet-practice">
+            <a class="govuk-link" href="../vet-practice">
               Change<span class="govuk-visually-hidden"> vet practice</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Vet RCVS
+          </dt>
+          <dd class="govuk-summary-list__value">
+            7116359
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="../vet-rcvs">
+              Change<span class="govuk-visually-hidden"> RCVS number</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Herd vaccinated for BVD
+          </dt>
+          <dd class="govuk-summary-list__value">
+            No
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="vaccination-status">
+              Change<span class="govuk-visually-hidden"> vaccination status</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            BVD in herd
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="test-result">
+              Change<span class="govuk-visually-hidden"> test result</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            BVD virus circulating in herd
+          </dt>
+          <dd class="govuk-summary-list__value">
+            No
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="BVD-circulating">
+              Change<span class="govuk-visually-hidden"> BVD circulating</span>
             </a>
           </dd>
         </div>
@@ -71,22 +113,13 @@ Claim funding for an annual health and welfare review
 
       <input type="hidden" name="answers-checked" value="true">
 
-      <!-- <button class="govuk-button" data-module="govuk-button">
-        Confirm and send
-      </button>
-      <a href="confirmation" role="button" draggable="false" class="govuk-button docs-creator" data-module="govuk-button">
-        Confirm and send
-      </a>
- -->
       {{ govukButton({
       text: "Continue",
-      href: "declaration"
+      href: "../declaration"
       }) }}
 
     </form>
 
   </div>
-
-
 </div>
 {% endblock %}

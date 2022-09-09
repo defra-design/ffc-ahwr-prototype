@@ -4,7 +4,7 @@
 Index page
 {% endblock %}
 {% set serviceName %}
-Record data from an Annual Health and Welfare Review
+Claim funding for an annual health and welfare review
 {% endset%}
 
 {% block beforeContent %}
@@ -29,7 +29,7 @@ Record data from an Annual Health and Welfare Review
             6 November 2022
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="../visit-date">
+            <a class="govuk-link" href="visit-date">
               Change<span class="govuk-visually-hidden"> visit date</span>
             </a>
           </dd>
@@ -43,7 +43,7 @@ Record data from an Annual Health and Welfare Review
             Southside Vet Group
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="../vet-practice">
+            <a class="govuk-link" href="vet-practice">
               Change<span class="govuk-visually-hidden"> vet practice</span>
             </a>
           </dd>
@@ -57,7 +57,7 @@ Record data from an Annual Health and Welfare Review
             7116359
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="../vet-rcvs">
+            <a class="govuk-link" href="vet-rcvs">
               Change<span class="govuk-visually-hidden"> RCVS number</span>
             </a>
           </dd>
@@ -68,11 +68,39 @@ Record data from an Annual Health and Welfare Review
             Herd vaccinated for BVD
           </dt>
           <dd class="govuk-summary-list__value">
-            No
+            Yes
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="vaccination-status">
+            <a class="govuk-link" href="beef/vaccination-status">
               Change<span class="govuk-visually-hidden"> vaccination status</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Date herd last vaccinated for BVD
+          </dt>
+          <dd class="govuk-summary-list__value">
+            21 May 2022
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="beef/vaccination-date">
+              Change<span class="govuk-visually-hidden"> vaccination date</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Breeding cattle vaccination up to date
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="beef/vaccination-breeding">
+              Change<span class="govuk-visually-hidden"> breeding cattle vaccination</span>
             </a>
           </dd>
         </div>
@@ -82,15 +110,15 @@ Record data from an Annual Health and Welfare Review
             BVD in herd
           </dt>
           <dd class="govuk-summary-list__value">
-            Yes
+            No
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="test-result">
+            <a class="govuk-link" href="beef/test-result">
               Change<span class="govuk-visually-hidden"> test result</span>
             </a>
           </dd>
         </div>
-
+        
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             BVD virus circulating in herd
@@ -99,7 +127,7 @@ Record data from an Annual Health and Welfare Review
             No
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="BVD-circulating">
+            <a class="govuk-link" href="beef/BVD-circulating">
               Change<span class="govuk-visually-hidden"> BVD circulating</span>
             </a>
           </dd>
@@ -113,14 +141,22 @@ Record data from an Annual Health and Welfare Review
 
       <input type="hidden" name="answers-checked" value="true">
 
+      <!-- <button class="govuk-button" data-module="govuk-button">
+        Confirm and send
+      </button>
+      <a href="confirmation" role="button" draggable="false" class="govuk-button docs-creator" data-module="govuk-button">
+        Confirm and send
+      </a>
+ -->
       {{ govukButton({
       text: "Continue",
-      href: "../declaration"
+      href: "declaration"
       }) }}
 
     </form>
 
   </div>
-</div>
 
+
+</div>
 {% endblock %}
