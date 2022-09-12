@@ -16,20 +16,20 @@ Record data from an Annual Health and Welfare Review
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <div class="govuk-form-group">
-      <h1 class="govuk-label-wrapper">
-        <label class="govuk-label govuk-label--l" for="practice-name">
-          What is the vet practice name?
+      <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="urn">
+        Enter the Unique Reference Number (URN) of the test result
         </label>
       </h1>
-        <label class="govuk-label" for="practice-name">
-          Vet practice name
-        </label>
-        <div id="email-hint" class="govuk-hint govuk-!-width-three-quarters">
-          This has to be the practice the vet was working for at the time of the review
-        </div>
-        <input class="govuk-input govuk-!-width-three-quarters" id="practice-name" name="practice-name" type="text">
+      <label class="govuk-label" for="urn">
+        Unique reference number
+      </label>
+      <!--
+      <div id="email-hint" class="govuk-hint govuk-!-width-three-quarters">
+        This number can be found on the test result document or given to you by the vet.
+      </div>
+      -->
+      <input class="govuk-input govuk-!-width-three-quarters" id="urn">
     </div>
-
 
     {{ govukButton({
       text: "Continue",

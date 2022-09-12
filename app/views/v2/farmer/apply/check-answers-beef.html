@@ -22,8 +22,7 @@ Apply for an Annual Health and Welfare Review
         <input type="hidden" name="answers-checked" value="true">
 
 
-          <h1 class="govuk-heading-l">Check your answers</h1>
-          <!-- <h2 class="govuk-heading-m">Eligibility</h2> -->
+          <h1 class="govuk-heading-l">Check and complete your application</h1>
 
           <dl class="govuk-summary-list govuk-!-margin-bottom-9">
 
@@ -54,65 +53,18 @@ Apply for an Annual Health and Welfare Review
               </dd>
             </div>
 
-            <!-- <div class="govuk-summary-list__row">
-              <dt class="govuk-summary-list__key">
-                CPH number
-              </dt>
-              <dd class="govuk-summary-list__value">
-                12/345/6789
-              </dd>
-              <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
-                  Change<span class="govuk-visually-hidden"> licence type</span>
-                </a>
-              </dd>
-            </div>
-            <div class="govuk-summary-list__row">
-              <dt class="govuk-summary-list__key">
-                Your name
-              </dt>
-              <dd class="govuk-summary-list__value">
-                Helen Oswald
-              </dd>
-              <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
-                  Change<span class="govuk-visually-hidden"> previous application number</span>
-                </a>
-              </dd>
-            </div>
-
-          <h2 class="govuk-heading-m">Now send your application</h2>
-
-          <p class="govuk-body">By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
-          -->
-
-            <!-- <button class="govuk-button" data-module="govuk-button">
-              Confirm and send
-            </button>
-            <a href="vet-practise" role="button" draggable="false" class="govuk-button docs-creator" data-module="govuk-button">
-              Confirm
-            </a>  -->
-            <br></br>
+          </dl>
 
             {{ govukButton({
               text: "Confirm",
               href: "declaration"
             }) }}
 
-        </form>
+      </form>
 
     </div>
   </div>
 </div>
-
-
-
-
-
-    <!-- {{ govukButton({
-      text: "Continue",
-      href: "check-answers"
-    }) }} -->
 
 
 {% endblock %}
