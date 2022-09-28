@@ -28,7 +28,7 @@ Annual Health and Welfare Back Office
   <div class="govuk-grid-column-three-quarters">
   
     <h1 class="govuk-caption-l govuk-!-margin-top-0 govuk-!-margin-bottom-2">
-      Reference: VV-021-24S
+      Reference: AHWR-F021-724S
     </h1>
 
     <h2 class="govuk-heading-l">
@@ -89,11 +89,6 @@ Annual Health and Welfare Back Office
           </a>
         </li>
         <li class="govuk-tabs__list-item">
-          <a class="govuk-tabs__tab" href="#reviewed">
-            Vet Data
-          </a>
-        </li>
-        <li class="govuk-tabs__list-item">
           <a class="govuk-tabs__tab" href="#claimed">
             Claim
           </a>
@@ -103,6 +98,11 @@ Annual Health and Welfare Back Office
             Payment
           </a>
         </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#history">
+            History
+          </a>
+        </li>
       </ul>
 
       <div class="govuk-tabs__panel" id="applied">
@@ -110,29 +110,24 @@ Annual Health and Welfare Back Office
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Date</th>
               <th scope="col" class="govuk-table__header">Data requested</th>
               <th scope="col" class="govuk-table__header">Data entered</th>
             </tr>
           </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">12/08/2022</td>
               <td class="govuk-table__cell">Details correct?</td>
               <td class="govuk-table__cell">Yes</td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">12/08/2022</td>
               <td class="govuk-table__cell">Review type</td>
               <td class="govuk-table__cell">Sheep</td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">12/08/2022</td>
               <td class="govuk-table__cell">Lifestock number</td>
               <td class="govuk-table__cell">21 or more</td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">12/08/2022</td>
               <td class="govuk-table__cell">T&Cs agreed?</td>
               <td class="govuk-table__cell">Yes</td>
             </tr>
@@ -143,55 +138,34 @@ Annual Health and Welfare Back Office
         </a>
       </div>
 
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="reviewed">
-        <h2 class="govuk-heading-l">No data inputted yet</h2>
-        <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Date</th>
-              <th scope="col" class="govuk-table__header">Data requested</th>
-              <th scope="col" class="govuk-table__header">Data entered</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell">Review date</td>
-              <td class="govuk-table__cell"></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell">21 or more sheep?</td>
-              <td class="govuk-table__cell"></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell">Worming treatment effectiveness</td>
-              <td class="govuk-table__cell"></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell">Report given?</td>
-              <td class="govuk-table__cell"></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-        <h2 class="govuk-heading-l">Not yet able to claim</h2>
+        <h2 class="govuk-heading-l">Not yet claimed</h2>
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Date</th>
               <th scope="col" class="govuk-table__header">Data requested</th>
               <th scope="col" class="govuk-table__header">Data entered</th>
             </tr>
           </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell"></td>
               <td class="govuk-table__cell">Details correct?</td>
+              <td class="govuk-table__cell"></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Date of visit</td>
+              <td class="govuk-table__cell"></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Vet RCVS</td>
+              <td class="govuk-table__cell"></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Vet name</td>
+              <td class="govuk-table__cell"></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Test result URN</td>
               <td class="govuk-table__cell"></td>
             </tr>
           </tbody>
@@ -209,18 +183,38 @@ Annual Health and Welfare Back Office
           </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Payment due</td>
-              <td class="govuk-table__cell"></td>
-            </tr>
-            <tr class="govuk-table__row">
               <td class="govuk-table__cell">Payment amount</td>
               <td class="govuk-table__cell">£436</td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Payment sent</td>
+              <td class="govuk-table__cell">Payment due</td>
               <td class="govuk-table__cell"></td>
             </tr>
           </tbody>
+        </table>
+      </div>
+
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
+        <h2 class="govuk-heading-l">Activity Log</h2>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">03/09/2022 - Comment by User X</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Ramesh called, we discussed his farm. <br>
+                Certain actions will be taken on internal RPA systems.
+              </td>
+            </tr>
+          </tbody>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">12/08/2022 - Application created</th>
+            </tr>
+          </thead>
         </table>
       </div>
 
