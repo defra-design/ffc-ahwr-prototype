@@ -33,8 +33,8 @@ Annual Health and Welfare Back Office
 
     <h2 class="govuk-heading-l">
       D B Stockwell & Sons
-      <strong class="govuk-tag govuk-tag--blue">
-        Paying
+      <strong class="govuk-tag govuk-tag--yellow">
+        Not Agreed
       </strong>
     </h2>
 
@@ -84,18 +84,13 @@ Annual Health and Welfare Back Office
       </h2>
       <ul class="govuk-tabs__list">
         <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-          <a class="govuk-tabs__tab" href="#applied">
+          <a class="govuk-tabs__tab" href="#agreed">
             Application
           </a>
         </li>
         <li class="govuk-tabs__list-item">
-          <a class="govuk-tabs__tab" href="#claimed">
+          <a class="govuk-tabs__tab" href="#claimed" style="color: #b1b4b6;">
             Claim
-          </a>
-        </li>
-        <li class="govuk-tabs__list-item">
-          <a class="govuk-tabs__tab" href="#paid">
-            Payment
           </a>
         </li>
         <li class="govuk-tabs__list-item">
@@ -105,45 +100,39 @@ Annual Health and Welfare Back Office
         </li>
       </ul>
 
-      <div class="govuk-tabs__panel" id="applied">
-        <h2 class="govuk-heading-l">Applied</h2>
-        <table class="govuk-table">
+      <div class="govuk-tabs__panel" id="agreed">
+        <h2 class="govuk-heading-l">Not Agreed</h2>
+        <table class="govuk-table" style="color: #b1b4b6;">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Date</th>
               <th scope="col" class="govuk-table__header">Data requested</th>
               <th scope="col" class="govuk-table__header">Data entered</th>
             </tr>
           </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">03/07/2022</td>
               <td class="govuk-table__cell">Details correct?</td>
               <td class="govuk-table__cell">Yes</td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">03/07/2022</td>
               <td class="govuk-table__cell">Review type</td>
               <td class="govuk-table__cell">Dairy</td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">03/07/2022</td>
               <td class="govuk-table__cell">Lifestock number</td>
               <td class="govuk-table__cell">11 or more</td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">03/07/2022</td>
               <td class="govuk-table__cell">T&Cs agreed?</td>
               <td class="govuk-table__cell">Yes</td>
             </tr>
           </tbody>
         </table>
-    
       </div>
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-        <h2 class="govuk-heading-l">Claimed</h2>
-        <table class="govuk-table">
+        <h2 class="govuk-heading-l" style="color: #b1b4b6;">Cannot claim</h2>
+        <table class="govuk-table" style="color: #b1b4b6;">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
               <th scope="col" class="govuk-table__header">Data requested</th>
@@ -153,78 +142,43 @@ Annual Health and Welfare Back Office
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">Details correct?</td>
-              <td class="govuk-table__cell">Yes</td>
+              <td class="govuk-table__cell"></td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">Date of visit</td>
-              <td class="govuk-table__cell">08/08/2022</td>
+              <td class="govuk-table__cell"></td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">Vet RCVS</td>
-              <td class="govuk-table__cell">7385895</td>
+              <td class="govuk-table__cell"></td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">Vet name</td>
-              <td class="govuk-table__cell">Zhi Cheng</td>
+              <td class="govuk-table__cell"></td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">Test result URN</td>
-              <td class="govuk-table__cell">URN-4LAB-KZ18</td>
+              <td class="govuk-table__cell"></td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="paid">
-        <h2 class="govuk-heading-l">Claimed</h2>
-        <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Date</th>
-              <th scope="col" class="govuk-table__header">Data requested</th>
-              <th scope="col" class="govuk-table__header">Data entered</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">12/08/2022</td>
-              <td class="govuk-table__cell">Details correct?</td>
-              <td class="govuk-table__cell">Yes</td>
-            </tr>
-          </tbody>
-        </table>
-    
-      </div>
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
-        <h2 class="govuk-heading-l">To be paid</h2>
+        <h2 class="govuk-heading-l">Activity Log</h2>
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Data requested</th>
-              <th scope="col" class="govuk-table__header">Data entered</th>
+              <th scope="col" class="govuk-table__header">03/08/2022 - Applied but no agreement formed</th>
             </tr>
           </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Payment due</td>
-              <td class="govuk-table__cell">09/09/2022</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Payment amount</td>
-              <td class="govuk-table__cell">£372</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Payment sent</td>
-              <td class="govuk-table__cell">-</td>
-            </tr>
-          </tbody>
         </table>
-    
       </div>
+
     </div>
 
-
   </div>
+
 </div>
 
 {% endblock %}

@@ -38,47 +38,22 @@ Annual Health and Welfare Back Office
       </strong>
     </h2>
 
-    <!-- User details -->
-    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Name of applicant:
-        </dt>
-        <dd class="govuk-summary-list__value">
-          <p>Jane Doe</p>
-        </dd>
-      </div>
+    <!-- "Pop-up" box -->
+    <div class="govuk-panel govuk-panel--confirmation govuk-!-text-align-left" style="background-color:#fafafa; border-color:#e0e0df;">
+      <h1 class="govuk-panel__title-s govuk-!-font-size-36 govuk-!-margin-top-1" style="color:#000000;">
+        Are you sure you want to withdraw this claim?
+      </h1>
+      <a href="arthington-farm-claimwithdrawn" role="button" draggable="false" class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
+        Confirm
+      </a>
+      <a href="javascript:history.go(-1)" draggable="false" class="govuk-button govuk-button--secondary govuk-!-margin-bottom-3" data-module="govuk-button">
+        Back
+      </a>
 
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          SBI number:
-        </dt>
-        <dd class="govuk-summary-list__value">
-          106599006
-        </dd>
-      </div>
+    </div>
 
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Address:
-        </dt>
-        <dd class="govuk-summary-list__value">
-          Arthington Ln, Arthington, Otley LS21 1PH
-        </dd>
-      </div>
-
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Email address:
-        </dt>
-        <dd class="govuk-summary-list__value">
-          <p>janedoe@yahoo.com</p>
-        </dd>
-      </div>
-    </dl>
-
-    <!-- Application stages (in tabs) -->
-    <div class="govuk-tabs" data-module="govuk-tabs">
+    <!--Application stages (in tabs)-->
+    <div class="govuk-tabs govuk-!-margin-top-7" data-module="govuk-tabs">
       <h2 class="govuk-tabs__title">
         Contents
       </h2>
@@ -92,6 +67,7 @@ Annual Health and Welfare Back Office
           <a class="govuk-tabs__tab" href="#claimed">
             Claim
           </a>
+        </li>
         <li class="govuk-tabs__list-item">
           <a class="govuk-tabs__tab" href="#history">
             History
@@ -179,18 +155,18 @@ Annual Health and Welfare Back Office
       
     </div>
 
-    <a href="arthington-farm-commenting#claimed" role="button" draggable="false" class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
+    <a href="#" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
       Add comment
     </a>
 
   </div>
-
+   
   <div class="govuk-grid-column-one-third">
-    <a href="arthington-farm-withdrawing-1" role="button" draggable="false" class="govuk-link govuk-body" style="color:#d4351c; float:right;" data-module="govuk-button">
-      Withdraw
+    <a href="arthington-farm.html" role="button" draggable="false" class="govuk-link govuk-body" style="color:#d4351c; float:right;" data-module="govuk-button">
+      Cancel
     </a>
   </div>
-
+  
 </div>
 
 {% endblock %}

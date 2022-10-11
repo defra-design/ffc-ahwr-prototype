@@ -19,7 +19,7 @@ Annual Health and Welfare Back Office
   </p>
 </div>
 
-<a class="govuk-back-link govuk-!-margin-bottom-0" href="../applications/arthington-farm">Back</a>
+<a class="govuk-back-link govuk-!-margin-bottom-0" href="../applications">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -33,24 +33,23 @@ Annual Health and Welfare Back Office
 
     <h2 class="govuk-heading-l">
       Arthington Farm
-      <!--
-      <strong class="govuk-tag govuk-tag--yellow">
+      <strong class="govuk-tag govuk-tag--blue">
         Claimed
       </strong>
-      -->
     </h2>
 
-    <!--User details-->
-    <div class="govuk-panel govuk-panel--confirmation govuk-!-text-align-left" style="background-color:#d4351c;">
-      <h1 class="govuk-panel__title-m govuk-!-margin-top-1">
-        Are you sure you want to withdraw?
+    <!-- "Pop-up" box -->
+    <div class="govuk-panel govuk-panel--confirmation govuk-!-text-align-left" style="background-color:#fafafa; border-color:#e0e0df;">
+      <h1 class="govuk-panel__title-s govuk-!-font-size-36 govuk-!-margin-top-1" style="color:#000000;">
+        Are you sure you want to withdraw this agreement?
       </h1>
-      <a href="arthington-farm-withdrawn" role="button" draggable="false" class="govuk-button govuk-button--secondary govuk-!-margin-bottom-2" data-module="govuk-button">
+      <a href="arthington-farm-withdrawn" role="button" draggable="false" class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
         Confirm
       </a>
-      <a href="javascript:history.go(-1)" role="button" draggable="false" class="govuk-button govuk-button--warning govuk-!-margin-bottom-2" data-module="govuk-button">
-        Cancel
+      <a href="javascript:history.go(-1)" draggable="false" class="govuk-button govuk-button--secondary govuk-!-margin-bottom-3" data-module="govuk-button">
+        Back
       </a>
+
     </div>
 
     <!--Application stages (in tabs)-->
@@ -60,7 +59,7 @@ Annual Health and Welfare Back Office
       </h2>
       <ul class="govuk-tabs__list">
         <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-          <a class="govuk-tabs__tab" href="#applied">
+          <a class="govuk-tabs__tab" href="#agreed">
             Application
           </a>
         </li>
@@ -70,19 +69,14 @@ Annual Health and Welfare Back Office
           </a>
         </li>
         <li class="govuk-tabs__list-item">
-          <a class="govuk-tabs__tab" href="#paid">
-            Payment
-          </a>
-        </li>
-        <li class="govuk-tabs__list-item">
           <a class="govuk-tabs__tab" href="#history">
             History
           </a>
         </li>
       </ul>
 
-      <div class="govuk-tabs__panel" id="applied">
-        <h2 class="govuk-heading-l">Applied</h2>
+      <div class="govuk-tabs__panel" id="agreed">
+        <h2 class="govuk-heading-l">Agreed</h2>
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
@@ -109,9 +103,6 @@ Annual Health and Welfare Back Office
             </tr>
           </tbody>
         </table>
-        <a href="mill-farm-comment#applied" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-          Add comment
-        </a>
       </div>
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
@@ -148,28 +139,6 @@ Annual Health and Welfare Back Office
         </table>
       </div>
 
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="paid">
-        <h2 class="govuk-heading-l">To be paid</h2>
-        <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Data requested</th>
-              <th scope="col" class="govuk-table__header">Data entered</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Payment amount</td>
-              <td class="govuk-table__cell">£522</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Payment due</td>
-              <td class="govuk-table__cell">21/12/2022</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
         <h2 class="govuk-heading-l">Activity Log</h2>
         <table class="govuk-table">
@@ -185,8 +154,19 @@ Annual Health and Welfare Back Office
       </div>
       
     </div>
-  
+
+    <a href="#" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+      Add comment
+    </a>
+
   </div>
+   
+  <div class="govuk-grid-column-one-third">
+    <a href="arthington-farm.html" role="button" draggable="false" class="govuk-link govuk-body" style="color:#d4351c; float:right;" data-module="govuk-button">
+      Cancel
+    </a>
+  </div>
+  
 </div>
 
 {% endblock %}

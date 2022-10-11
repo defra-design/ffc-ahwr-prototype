@@ -11,7 +11,7 @@ Annual Health and Welfare Back Office
 <div class="govuk-phase-banner govuk-!-padding-top-0">
   <p class="govuk-phase-banner__content">
     <strong style="background-color:#00a33b;" class="govuk-tag govuk-phase-banner__content__tag">
-      Beta
+      beta
     </strong>
     <span class="govuk-phase-banner__text">
       This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
@@ -19,7 +19,7 @@ Annual Health and Welfare Back Office
   </p>
 </div>
 
-<a class="govuk-back-link govuk-!-margin-bottom-0" href="../applications">Back</a>
+<a class="govuk-back-link govuk-!-margin-bottom-0" href="../applications-futureversion">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -28,24 +28,24 @@ Annual Health and Welfare Back Office
   <div class="govuk-grid-column-two-thirds">
     
     <h1 class="govuk-caption-l govuk-!-margin-bottom-3">
-      Reference: AHWR-F021-723B
+      Reference: AHWR-F021-722D
     </h1>
 
     <h2 class="govuk-heading-l">
-      Arthington Farm
+      D B Stockwell & Sons
       <strong class="govuk-tag govuk-tag--blue">
-        Claimed
+        Paying
       </strong>
     </h2>
 
-    <!-- User details -->
+    <!--User details-->
     <dl class="govuk-summary-list govuk-!-margin-bottom-9">
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Name of applicant:
         </dt>
         <dd class="govuk-summary-list__value">
-          <p>Jane Doe</p>
+          <p>David Benjamin Stockwell</p>
         </dd>
       </div>
 
@@ -54,7 +54,7 @@ Annual Health and Welfare Back Office
           SBI number:
         </dt>
         <dd class="govuk-summary-list__value">
-          106599006
+          103489123
         </dd>
       </div>
 
@@ -63,7 +63,7 @@ Annual Health and Welfare Back Office
           Address:
         </dt>
         <dd class="govuk-summary-list__value">
-          Arthington Ln, Arthington, Otley LS21 1PH
+          Ashfield Lane, Leathley, Otley LS21 2JP
         </dd>
       </div>
 
@@ -72,19 +72,19 @@ Annual Health and Welfare Back Office
           Email address:
         </dt>
         <dd class="govuk-summary-list__value">
-          <p>janedoe@yahoo.com</p>
+          <p>d.b.stockwell@gmail.com</p>
         </dd>
       </div>
     </dl>
 
-    <!-- Application stages (in tabs) -->
+    <!--Application stages (in tabs)-->
     <div class="govuk-tabs" data-module="govuk-tabs">
       <h2 class="govuk-tabs__title">
         Contents
       </h2>
       <ul class="govuk-tabs__list">
         <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-          <a class="govuk-tabs__tab" href="#agreed">
+          <a class="govuk-tabs__tab" href="#applied">
             Application
           </a>
         </li>
@@ -92,6 +92,12 @@ Annual Health and Welfare Back Office
           <a class="govuk-tabs__tab" href="#claimed">
             Claim
           </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#paid">
+            Payment
+          </a>
+        </li>
         <li class="govuk-tabs__list-item">
           <a class="govuk-tabs__tab" href="#history">
             History
@@ -99,34 +105,40 @@ Annual Health and Welfare Back Office
         </li>
       </ul>
 
-      <div class="govuk-tabs__panel" id="agreed">
-        <h2 class="govuk-heading-l">Agreed</h2>
+      <div class="govuk-tabs__panel" id="applied">
+        <h2 class="govuk-heading-l">Applied</h2>
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Date</th>
               <th scope="col" class="govuk-table__header">Data requested</th>
               <th scope="col" class="govuk-table__header">Data entered</th>
             </tr>
           </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
+              <td class="govuk-table__cell">03/07/2022</td>
               <td class="govuk-table__cell">Details correct?</td>
               <td class="govuk-table__cell">Yes</td>
             </tr>
             <tr class="govuk-table__row">
+              <td class="govuk-table__cell">03/07/2022</td>
               <td class="govuk-table__cell">Review type</td>
-              <td class="govuk-table__cell">Beef</td>
+              <td class="govuk-table__cell">Dairy</td>
             </tr>
             <tr class="govuk-table__row">
+              <td class="govuk-table__cell">03/07/2022</td>
               <td class="govuk-table__cell">Lifestock number</td>
               <td class="govuk-table__cell">11 or more</td>
             </tr>
             <tr class="govuk-table__row">
+              <td class="govuk-table__cell">03/07/2022</td>
               <td class="govuk-table__cell">T&Cs agreed?</td>
               <td class="govuk-table__cell">Yes</td>
             </tr>
           </tbody>
         </table>
+    
       </div>
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
@@ -145,19 +157,45 @@ Annual Health and Welfare Back Office
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">Date of visit</td>
-              <td class="govuk-table__cell">06/11/2022</td>
+              <td class="govuk-table__cell">08/08/2022</td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">Vet RCVS</td>
-              <td class="govuk-table__cell">7116359</td>
+              <td class="govuk-table__cell">7385895</td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">Vet name</td>
-              <td class="govuk-table__cell">Nora Williams</td>
+              <td class="govuk-table__cell">Zhi Cheng</td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">Test result URN</td>
-              <td class="govuk-table__cell">URN-7374-48BC</td>
+              <td class="govuk-table__cell">URN-4LAB-KZ18</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="paid">
+        <h2 class="govuk-heading-l">To be paid</h2>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Data requested</th>
+              <th scope="col" class="govuk-table__header">Data entered</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Payment due</td>
+              <td class="govuk-table__cell">09/09/2022</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Payment amount</td>
+              <td class="govuk-table__cell">£372</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Payment sent</td>
+              <td class="govuk-table__cell">-</td>
             </tr>
           </tbody>
         </table>
@@ -168,29 +206,23 @@ Annual Health and Welfare Back Office
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">23/11/2022 - Claim submitted</th>
+              <th scope="col" class="govuk-table__header">12/08/2022 - Payment request forwarded to internal systems</th>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">12/08/2022 - Claim submitted</th>
             </tr>
             <tr>
-              <th scope="col" class="govuk-table__header">12/08/2022 - Application created</th>
+              <th scope="col" class="govuk-table__header">03/07/2022 - Application created</th>
             </tr>
           </thead>
         </table>
       </div>
-      
+    
+      </div>
     </div>
 
-    <a href="arthington-farm-commenting#claimed" role="button" draggable="false" class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
-      Add comment
-    </a>
 
   </div>
-
-  <div class="govuk-grid-column-one-third">
-    <a href="arthington-farm-withdrawing-1" role="button" draggable="false" class="govuk-link govuk-body" style="color:#d4351c; float:right;" data-module="govuk-button">
-      Withdraw
-    </a>
-  </div>
-
 </div>
 
 {% endblock %}

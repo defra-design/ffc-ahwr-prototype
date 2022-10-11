@@ -19,7 +19,7 @@ Annual Health and Welfare Back Office
   </p>
 </div>
 
-<a class="govuk-back-link govuk-!-margin-bottom-0" href="../applications">Back</a>
+<a class="govuk-back-link govuk-!-margin-bottom-0" href="../applications-futureversion">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -33,8 +33,8 @@ Annual Health and Welfare Back Office
 
     <h2 class="govuk-heading-l">
       Deer Park Farm
-      <strong class="govuk-tag govuk-tag--purple">
-        Recommended
+      <strong class="govuk-tag govuk-tag--orange">
+        Claim check
       </strong>
     </h2>
 
@@ -175,7 +175,7 @@ Annual Health and Welfare Back Office
       </div>
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-        <h2 class="govuk-heading-l">Claim checked</h2>
+        <h2 class="govuk-heading-l">Selected for claim check</h2>
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
@@ -197,13 +197,16 @@ Annual Health and Welfare Back Office
             </tr>
           </tbody>
         </table>
-        <button disabled="disabled" aria-disabled="true" class="govuk-button govuk-button--disabled" data-module="govuk-button">
-          Check completed
-        </button>
+        <a href="#" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+          Download file
+        </a>
+        <a href="deer-park-farm-fraudcheck" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+          Start check
+        </a>
       </div>
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="paid">
-        <h2 class="govuk-heading-l">To be paid</h2>
+        <h2 class="govuk-heading-l">Awaiting approval</h2>
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">

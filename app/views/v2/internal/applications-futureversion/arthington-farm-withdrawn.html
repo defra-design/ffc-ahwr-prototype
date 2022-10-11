@@ -19,7 +19,7 @@ Annual Health and Welfare Back Office
   </p>
 </div>
 
-<a class="govuk-back-link govuk-!-margin-bottom-0" href="../applications">Back</a>
+<a class="govuk-back-link govuk-!-margin-bottom-0" href="../applications-futureversion">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -33,12 +33,12 @@ Annual Health and Welfare Back Office
 
     <h2 class="govuk-heading-l">
       Arthington Farm
-      <strong class="govuk-tag govuk-tag--blue">
-        Claimed
+      <strong class="govuk-tag govuk-tag--grey">
+        Withdrawn
       </strong>
     </h2>
 
-    <!-- User details -->
+    <!--User details-->
     <dl class="govuk-summary-list govuk-!-margin-bottom-9">
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
@@ -77,14 +77,14 @@ Annual Health and Welfare Back Office
       </div>
     </dl>
 
-    <!-- Application stages (in tabs) -->
+    <!--Application stages (in tabs)-->
     <div class="govuk-tabs" data-module="govuk-tabs">
       <h2 class="govuk-tabs__title">
         Contents
       </h2>
       <ul class="govuk-tabs__list">
         <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-          <a class="govuk-tabs__tab" href="#agreed">
+          <a class="govuk-tabs__tab" href="#applied">
             Application
           </a>
         </li>
@@ -92,6 +92,7 @@ Annual Health and Welfare Back Office
           <a class="govuk-tabs__tab" href="#claimed">
             Claim
           </a>
+        </li>
         <li class="govuk-tabs__list-item">
           <a class="govuk-tabs__tab" href="#history">
             History
@@ -99,9 +100,9 @@ Annual Health and Welfare Back Office
         </li>
       </ul>
 
-      <div class="govuk-tabs__panel" id="agreed">
-        <h2 class="govuk-heading-l">Agreed</h2>
-        <table class="govuk-table">
+      <div class="govuk-tabs__panel" id="applied">
+        <h2 class="govuk-heading-l" style="color: #b1b4b6;">Applied</h2>
+        <table class="govuk-table" style="color: #b1b4b6;">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
               <th scope="col" class="govuk-table__header">Data requested</th>
@@ -130,8 +131,8 @@ Annual Health and Welfare Back Office
       </div>
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-        <h2 class="govuk-heading-l">Claimed</h2>
-        <table class="govuk-table">
+        <h2 class="govuk-heading-l" style="color: #b1b4b6;">Claimed</h2>
+        <table class="govuk-table" style="color: #b1b4b6;">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
               <th scope="col" class="govuk-table__header">Data requested</th>
@@ -164,9 +165,12 @@ Annual Health and Welfare Back Office
       </div>
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
-        <h2 class="govuk-heading-l">Activity Log</h2>
-        <table class="govuk-table">
+        <h2 class="govuk-heading-l" style="color: #b1b4b6;">Activity Log</h2>
+        <table class="govuk-table" style="color: #b1b4b6;">
           <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">25/11/2022 - Application withdrawn</th>
+            </tr>
             <tr class="govuk-table__row">
               <th scope="col" class="govuk-table__header">23/11/2022 - Claim submitted</th>
             </tr>
@@ -179,18 +183,7 @@ Annual Health and Welfare Back Office
       
     </div>
 
-    <a href="arthington-farm-commenting#claimed" role="button" draggable="false" class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
-      Add comment
-    </a>
-
   </div>
-
-  <div class="govuk-grid-column-one-third">
-    <a href="arthington-farm-withdrawing-1" role="button" draggable="false" class="govuk-link govuk-body" style="color:#d4351c; float:right;" data-module="govuk-button">
-      Withdraw
-    </a>
-  </div>
-
 </div>
 
 {% endblock %}

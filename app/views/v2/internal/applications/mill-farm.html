@@ -25,7 +25,7 @@ Annual Health and Welfare Back Office
 {% block content %}
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-three-quarters">
+  <div class="govuk-grid-column-two-thirds">
   
     <h1 class="govuk-caption-l govuk-!-margin-top-0 govuk-!-margin-bottom-2">
       Reference: AHWR-F021-724S
@@ -34,7 +34,7 @@ Annual Health and Welfare Back Office
     <h2 class="govuk-heading-l">
       Mill Farm
       <strong class="govuk-tag govuk-tag--green govuk-!-margin-left-2">
-        Applied
+        Agreed
       </strong>
     </h2>
 
@@ -84,18 +84,13 @@ Annual Health and Welfare Back Office
       </h2>
       <ul class="govuk-tabs__list">
         <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-          <a class="govuk-tabs__tab" href="#applied">
+          <a class="govuk-tabs__tab" href="#agreed">
             Application
           </a>
         </li>
         <li class="govuk-tabs__list-item">
-          <a class="govuk-tabs__tab" href="#claimed">
+          <a class="govuk-tabs__tab" href="#claimed" style="color: #b1b4b6;">
             Claim
-          </a>
-        </li>
-        <li class="govuk-tabs__list-item">
-          <a class="govuk-tabs__tab" href="#paid">
-            Payment
           </a>
         </li>
         <li class="govuk-tabs__list-item">
@@ -105,8 +100,8 @@ Annual Health and Welfare Back Office
         </li>
       </ul>
 
-      <div class="govuk-tabs__panel" id="applied">
-        <h2 class="govuk-heading-l">Applied</h2>
+      <div class="govuk-tabs__panel" id="agreed">
+        <h2 class="govuk-heading-l">Agreed</h2>
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
@@ -133,14 +128,11 @@ Annual Health and Welfare Back Office
             </tr>
           </tbody>
         </table>
-        <a href="mill-farm-comment#applied" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-          Add comment
-        </a>
       </div>
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-        <h2 class="govuk-heading-l">Not yet claimed</h2>
-        <table class="govuk-table">
+        <h2 class="govuk-heading-l" style="color: #b1b4b6;">Not yet claimed</h2>
+        <table class="govuk-table" style="color: #b1b4b6;">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
               <th scope="col" class="govuk-table__header">Data requested</th>
@@ -172,47 +164,12 @@ Annual Health and Welfare Back Office
         </table>
       </div>
 
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="paid">
-        <h2 class="govuk-heading-l">Cannot be paid yet</h2>
-        <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Data requested</th>
-              <th scope="col" class="govuk-table__header">Data entered</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Payment amount</td>
-              <td class="govuk-table__cell">£436</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Payment due</td>
-              <td class="govuk-table__cell"></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
         <h2 class="govuk-heading-l">Activity Log</h2>
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">03/09/2022 - Comment by User X</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                Ramesh called, we discussed his farm. <br>
-                Certain actions will be taken on internal RPA systems.
-              </td>
-            </tr>
-          </tbody>
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">12/08/2022 - Application created</th>
+              <th scope="col" class="govuk-table__header">27/08/2022 - Application created</th>
             </tr>
           </thead>
         </table>
@@ -220,18 +177,16 @@ Annual Health and Welfare Back Office
 
     </div>
 
-    <a href="#" class="govuk-link govuk-body" style="color:#d4351c">
-      Withdraw application
+    <a href="mill-farm-commenting#agreed" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+      Add comment
     </a>
-
+  
   </div>
 
-  <div class="govuk-grid-column-one-quarter">
-  <!--
-  <a href="#" role="button" draggable="false" class="govuk-button govuk-button--warning" data-module="govuk-button">
-    Withdraw
-  </a>
-  -->
+  <div class="govuk-grid-column-one-third">
+    <a href="#" class="govuk-link govuk-body" style="color:#d4351c; float:right;">
+      Withdraw
+    </a>
   </div>
 
 </div>
