@@ -50,7 +50,7 @@ Annual Health and Welfare Back Office
 
 <!-- Filters -->
 <br><br>
-<a href="applications" role="button" class="govuk-button govuk-button--secondary govuk-!-margin-bottom-5">
+<a href="applications-futureversion" role="button" class="govuk-button govuk-button--secondary govuk-!-margin-bottom-5">
   Hide filters
 </a>
 
@@ -91,17 +91,17 @@ Annual Health and Welfare Back Office
 
                 <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
 
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="status-2" name="status" type="checkbox" value="incomplete">
+                    <label class="govuk-label govuk-checkboxes__label" for="status-2">
+                      Started (1)
+                    </label>
+                  </div>
+      
                 <div class="govuk-checkboxes__item">
                   <input class="govuk-checkboxes__input" id="status-1" name="status" type="checkbox" value="complete">
                   <label class="govuk-label govuk-checkboxes__label" for="status-1">
-                    Applied (2)
-                  </label>
-                </div>
-    
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="status-2" name="status" type="checkbox" value="incomplete">
-                  <label class="govuk-label govuk-checkboxes__label" for="status-2">
-                    Data inputted (1)
+                    Applied (1)
                   </label>
                 </div>
     
@@ -113,16 +113,23 @@ Annual Health and Welfare Back Office
                 </div>
 
                 <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="status-2" name="status" type="checkbox" value="incomplete">
+                  <label class="govuk-label govuk-checkboxes__label" for="status-2">
+                    Recommended (1)
+                  </label>
+                </div>
+    
+                <div class="govuk-checkboxes__item">
                   <input class="govuk-checkboxes__input" id="status-4" name="status" type="checkbox" value="inprogress">
                   <label class="govuk-label govuk-checkboxes__label" for="status-4">
-                    Accepted (1)
+                    Authorised (1)
                   </label>
                 </div>
 
                 <div class="govuk-checkboxes__item">
                   <input class="govuk-checkboxes__input" id="status-5" name="status" type="checkbox" value="inprogress">
                   <label class="govuk-label govuk-checkboxes__label" for="status-5">
-                    Paying (2)
+                    Paying (1)
                   </label>
                 </div>
 
@@ -170,7 +177,7 @@ Annual Health and Welfare Back Office
       head: [
         {text: "Reference"},
         {text: "Organisation"},
-        {text: "SBI number"},
+        {text: "SBI Number"},
         {text: "Apply date"},
         {text: "Status"},
         {text: "Action"}
@@ -184,7 +191,7 @@ Annual Health and Welfare Back Office
           {text: "107264765"},
           {text: "12/08/2022"},
           {html: '<strong class="govuk-tag govuk-tag--green">Applied</strong>'},
-          {html: "<a href='applications/mill-farm'>View details</a>"}
+          {html: "<a href='applications-futureversion/mill-farm'>View details</a>"}
         ],
 
         [
@@ -192,8 +199,8 @@ Annual Health and Welfare Back Office
           {html: "Arthington Farm Ltd"},
           {text: "106599006"},
           {text: "26/07/2022"},
-          {html: '<strong class="govuk-tag govuk-tag--yellow">Claimed</strong>'},
-          {html: "<a href='applications/arthington-farm'>View details</a>"}
+          {html: '<strong class="govuk-tag govuk-tag--blue">Claimed</strong>'},
+          {html: "<a href='applications-futureversion/arthington-farm'>View details</a>"}
         ],
 
         [
@@ -202,7 +209,7 @@ Annual Health and Welfare Back Office
           {text: "103489123"},
           {text: "03/07/2022"},
           {html: '<strong class="govuk-tag govuk-tag--blue">Paying</strong>'},
-          {html: "<a href='applications/stockwell-farm'>View details</a>"}
+          {html: "<a href='applications-futureversion/stockwell-farm'>View details</a>"}
         ],
 
         [
@@ -210,8 +217,8 @@ Annual Health and Welfare Back Office
           {html: "P & D Fearnley & Sons"},
           {text: "103491987"},
           {text: "11/08/2022"},
-          {html: '<strong class="govuk-tag govuk-tag--green govuk-!-margin-right-1">Applied</strong><strong class="govuk-tag govuk-tag--red">Assisted</strong>'},
-          {html: "<a href='applications/fearnley-farm'>View details</a>"}
+          {html: '<strong class="govuk-tag govuk-tag--yellow">Started</strong>'},
+          {html: "<a href='applications-futureversion/fearnley-farm'>View details</a>"}
         ],
 
         [
@@ -219,8 +226,8 @@ Annual Health and Welfare Back Office
           {html: "Deer Park Farm"},
           {text: "106712004"},
           {text: "09/07/2022"},
-          {html: '<strong class="govuk-tag govuk-tag--orange">Claim Check</strong>'},
-          {html: "<a href='applications/deer-park-farm'>View details</a>"}
+          {html: '<strong class="govuk-tag govuk-tag--orange">Claim check</strong>'},
+          {html: "<a href='applications-futureversion/deer-park-farm'>View details</a>"}
         ],
 
         [
@@ -228,7 +235,7 @@ Annual Health and Welfare Back Office
           {html: "Bishopwoods Farm"},
           {text: "108901125"},
           {text: "22/06/2022"},
-          {html: '<strong class="govuk-tag govuk-tag--purple">Accepted</strong>'},
+          {html: '<strong class="govuk-tag govuk-tag--purple">Recommended</strong>'},
           {html: "<a href='business'>View details</a>"}
         ],
 
@@ -237,7 +244,7 @@ Annual Health and Welfare Back Office
           {html: "Holte Farm"},
           {text: "108659387"},
           {html: "14/06/2022"},
-          {html: '<strong class="govuk-tag govuk-tag">Paid</strong>'},
+          {html: '<strong class="govuk-tag govuk-tag govuk-!-margin-right-1">Paid</strong><strong class="govuk-tag govuk-tag--red">Assisted</strong>'},
           {html: "<a href='business'>View details</a>"}
         ],
 
@@ -246,7 +253,7 @@ Annual Health and Welfare Back Office
           {html: "Stockeld Park Farm"},
           {text: "108902387"},
           {html: "29/06/2022"},
-          {html: '<strong class="govuk-tag govuk-tag--blue">Paying</strong>'},
+          {html: '<strong class="govuk-tag govuk-tag--purple">Authorised</strong>'},
           {html: "<a href='business'>View details</a>"}
         ],
 

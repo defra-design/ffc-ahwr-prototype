@@ -22,51 +22,39 @@ Annual Health and Welfare Back Office
 
 {% block content %}
 
-<!-- Title + Search -->
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+<div class="govuk-grid-row govuk-!-margin-top-3">
+  <div class="govuk-grid-column-full">
     
-    <h1 class="govuk-heading-xl govuk-!-margin-bottom-7">
-      AHWR Applications
+    <!-- Title + Search -->
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-8">
+      Annual health and welfare review applications
     </h1>
 
-    <div class="user-search-box govuk-!-width-two-thirds">
+    <div class="user-search-box govuk-!-width-one-half">
       <label class="govuk-label govuk-label--s" for="user-search">
         Search
       </label>
       <div id="heading-hint" class="govuk-hint govuk-!-margin-bottom-3">
-        Reference number, organisation or SBI number
+        You can search by agreement number, organisation or single business identifier (SBI) number
       </div>
       <form action="/v7/l2/users/search/search-results-none" method="post" class="form">
         <input class="govuk-input" id="user-search" name="user-search" type="text" aria-describedby="user-search-hint" spellcheck="false">
         <button style="background-color:#008938;" class="search-button" data-module="govuk-button">
-            Search
+          Search
         </button>
       </form>
     </div>
 
-  </div>
-</div>
-
-<!-- Filters -->
-<br><br>
-<a href="applications-filters" role="button" class="govuk-button govuk-button--secondary">
-  Show filters
-</a>
-
-<!-- Table -->
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-
-    <div class="govuk-scrollable-pane">
+    <!-- Table -->
+    <div class="govuk-scrollable-pane govuk-!-margin-top-8">
       <div class="govuk-scrollable-pane__wrapper">
 
         {{ govukTable({
           firstCellIsHeader: false,
           head: [
-            {text: "Reference"},
+            {text: "Agreement number"},
             {text: "Organisation"},
-            {text: "SBI Number"},
+            {text: "SBI number"},
             {text: "Apply date"},
             {text: "Status"},
             {text: "Action"}
