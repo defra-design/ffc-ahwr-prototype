@@ -1,0 +1,108 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+SFI funding for this organisation 
+{% endblock %}
+{% set serviceName %}
+Apply for land funding
+{% endset%}
+{% block beforeContent %}
+{% endblock %}
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">
+      SFI funding for this organisation 
+    </h1>
+
+    <h2 class="govuk-heading-m">Arthington Farm Ltd</h2>
+    <ul class="govuk-list">
+      <li><strong>SBI number:</strong> 106599006</li>
+      <li><strong>Address:</strong> Primrose Ln, Arthington, Otley LS21 1PH</li>
+      <li><strong>Contact email address:</strong> d.smith@gmail.com</li>
+    </ul>
+    <p>If your email is not correct, update your email address at Rural Payments Agency.</p>
+
+      {{ govukButton({
+        text: "Start new application",
+        href: "task-list"
+      }) }}
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+      <h2 class="govuk-heading-m">Applications</h2>
+
+
+      {{ govukTable({
+        firstCellIsHeader: false,
+        head: [
+          {
+            text: "Application"
+          },
+          {
+            text: "Last updated"
+          },
+          {
+            text: "Status"
+          },
+          {
+            text: " "
+          }
+        ],
+
+        rows: [
+          [
+            {
+              html: "SFIAD002"
+            },
+            {
+              text: "10 September 2021"
+            },
+            {
+              html: '<strong class="govuk-tag govuk-tag--yellow">IN PROGRESS</strong>'
+            },
+            {
+              html: "<a href='job-detail'>Continue application</a>"
+            }
+          ],
+
+
+          [
+            {
+              html: "SFIAD001"
+            },
+            {
+              text: "2 October 2021"
+            },
+            {
+              html: '<strong class="govuk-tag govuk-tag--yellow">IN PROGRESS</strong>'
+            },
+            {
+              html: "<a href='job-detail'>Continue application</a>"
+            }
+          ]
+
+          
+
+
+
+
+
+
+
+        ]
+      }) }}
+
+
+   
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,157 @@
+{% extends "layouts/layout-defra.html" %}
+
+{% block pageTitle %}
+Back office: Applications
+{% endblock %}
+{% set serviceName %}
+Annual Health and Welfare Back Office
+{% endset%}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner govuk-!-padding-top-0">
+  <p class="govuk-phase-banner__content">
+    <strong style="background-color:#00a33b;" class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row govuk-!-margin-top-3">
+  <div class="govuk-grid-column-full">
+    
+    <!-- Title + Search -->
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-8">
+      Annual health and welfare review applications
+    </h1>
+
+    <div class="user-search-box govuk-!-width-one-half">
+      <label class="govuk-label govuk-label--s" for="user-search">
+        Search
+      </label>
+      <div id="heading-hint" class="govuk-hint govuk-!-margin-bottom-3">
+        You can search by agreement number, organisation or single business identifier (SBI) number
+      </div>
+      <form action="/v7/l2/users/search/search-results-none" method="post" class="form">
+        <input class="govuk-input" id="user-search" name="user-search" type="text" aria-describedby="user-search-hint" spellcheck="false">
+        <button style="background-color:#008938;" class="search-button" data-module="govuk-button">
+          Search
+        </button>
+      </form>
+    </div>
+
+    <!-- Table -->
+    <div class="govuk-scrollable-pane govuk-!-margin-top-8">
+      <div class="govuk-scrollable-pane__wrapper">
+
+        {{ govukTable({
+          firstCellIsHeader: false,
+          head: [
+            {text: "Agreement number"},
+            {text: "Organisation"},
+            {text: "SBI number"},
+            {text: "Apply date"},
+            {text: "Status"},
+            {text: "Action"}
+          ],
+
+          rows: [
+
+            [
+              {html: "AHWR-F021-724S"},
+              {html: "Mill Farm"},
+              {text: "107264765"},
+              {text: "27/08/2022"},
+              {html: '<strong class="govuk-tag govuk-tag--green">Agreed</strong>'},
+              {html: "<a href='applications/mill-farm'>View details</a>"}
+            ],
+
+            [
+              {html: "AHWR-F021-723B"},  
+              {html: "Arthington Farm Ltd"},
+              {text: "106599006"},
+              {text: "12/08/2022"},
+              {html: '<strong class="govuk-tag govuk-tag--blue">Claimed</strong>'},
+              {html: "<a href='applications/arthington-farm#claimed'>View details</a>"}
+            ],
+
+            [
+              {html: "AHWR-F021-722D"},
+              {html: "D B Stockwell & Son"},
+              {text: "103489123"},
+              {text: "03/08/2022"},
+              {html: '<strong class="govuk-tag govuk-tag--yellow">Not Agreed</strong>'},
+              {html: "<a href='applications/stockwell-farm'>View details</a>"}
+            ],
+
+            [
+              {html: "AHWR-F021-721B"},
+              {html: "P & D Fearnley & Sons"},
+              {text: "103491987"},
+              {text: "20/07/2022"},
+              {html: '<strong class="govuk-tag govuk-tag--turquoise">Claim Withdrawn</strong>'},
+              {html: "<a href='applications/fearnley-farm'>View details</a>"}
+            ],
+
+            [
+              {html: "AHWR-F021-716S"},
+              {html: "JP Metcalfe & Son"},
+              {text: "107458967"},
+              {html: "11/07/2022"},
+              {html: '<strong class="govuk-tag govuk-tag--grey">Withdrawn</strong>'},
+              {html: "<a href='applications/jp-metcalfe-farm'>View details</a>"}
+            ]
+
+          ]
+        }) }}
+
+        <nav role="navigation" aria-label="Pagination">
+          <div class="pagination__summary">
+              Showing 1 &ndash; 10 of 34 organisations
+          </div>
+
+          <ul class="pagination">
+            <li class="pagination__item">
+                <span class="pagination__link disabled" aria-label="Previous page">
+                    <span aria-hidden="true" role="presentation">&laquo;</span> Previous
+                </span>
+            </li>
+
+            <li class="pagination__item">
+                <span class="pagination__link current" aria-label="Page 1">1</span>
+            </li>
+
+            <li class="pagination__item">
+                <a style="color:#008938;" class="pagination__link" href="all-2" aria-label="Page 2">2</a>
+            </li>
+
+            <li class="pagination__item">
+                <a style="color:#008938;" class="pagination__link" href="all-3" aria-label="Page 3">3</a>
+            </li>
+
+            <li class="pagination__item">
+                <a style="color:#008938;" class="pagination__link" href="all-2" aria-label="Next page">
+                    Next <span aria-hidden="true" role="presentation">&raquo;</span>
+                </a>
+            </li>
+          </ul>
+        </nav>
+
+      <p class="govuk-body-s govuk-!-margin-top-7">
+        <a class="pagination__link" style="color:#505a5f;" href="applications-futureversion.html">
+          Show extended list with version 2 statuses <span aria-hidden="true" role="presentation">&raquo;</span>
+        </a>
+      </p>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+{% set serviceName %}
+Apply for the Annual Health and Welfare Review funding
+{% endset%}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">
+      Review details incorrect
+    </h1>
+    <p class="govuk-body">
+      If you need to correct any details about the review, contact the Rural Payments Agency:
+    </p>
+  <!--
+    <p class="govuk-body">
+      Read guidance to <a class="govuk-link" href="https://www.gov.uk/guidance/funding-for-farmers">find out if you could be eligible for other farming schemes</a>.
+    </p>
+  -->
+    <ul class="govuk-list">
+      <li>Rural Payments Agency</li>
+      <li>Telephone: 01900 508 622</li>
+      <li>Monday to Friday, 8:30am to 5pm (except public holidays)</li>
+      <li><a class="govuk-link" href="mailto:ruralpayments@defra.gov.uk">ruralpayments@defra.gov.uk</a></li>
+    </ul>
+    <p class="govuk-body">Find out about <a class="govuk-link" href="https://www.gov.uk/call-charges">call charges</a></p>
+    <br><br>
+
+  </div>
+</div>
+
+{% endblock %}

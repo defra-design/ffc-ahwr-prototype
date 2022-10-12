@@ -1,0 +1,265 @@
+{% extends "layouts/layout-defra.html" %}
+
+{% block pageTitle %}
+Back office: User application
+{% endblock %}
+{% set serviceName %}
+Annual Health and Welfare Back Office
+{% endset%}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner govuk-!-padding-top-0">
+  <p class="govuk-phase-banner__content">
+    <strong style="background-color:#00a33b;" class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+<a class="govuk-back-link govuk-!-margin-bottom-0" href="../applications-futureversion">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-three-quarters">
+    
+    <h1 class="govuk-caption-l govuk-!-margin-bottom-3">
+      Reference: AHWR-F021-724S
+    </h1>
+
+    <h2 class="govuk-heading-l">
+      Mill Farm
+      <strong class="govuk-tag govuk-tag--green">
+        Applied
+      </strong>
+    </h2>
+
+    <!--User details-->
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Name of applicant:
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p>Ramesh Patel</p>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          SBI number:
+        </dt>
+        <dd class="govuk-summary-list__value">
+          107264765
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Address:
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Cotton Drive, Mill Hill, Linford, Hitchin SG5 3DR
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Email address:
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p>r_patel@gmail.com</p>
+        </dd>
+      </div>
+    </dl>
+
+    <!--Application stages (in tabs)-->
+    <div class="govuk-tabs" data-module="govuk-tabs">
+      <h2 class="govuk-tabs__title">
+        Contents
+      </h2>
+      <ul class="govuk-tabs__list">
+        <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+          <a class="govuk-tabs__tab" href="#applied">
+            Application
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#reviewed">
+            Vet Data
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#claimed">
+            Claim
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#paid">
+            Payment
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#history">
+            History
+          </a>
+        </li>
+      </ul>
+
+      <div class="govuk-tabs__panel" id="applied">
+        <h2 class="govuk-heading-l">Applied</h2>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Date</th>
+              <th scope="col" class="govuk-table__header">Data requested</th>
+              <th scope="col" class="govuk-table__header">Data entered</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">12/08/2022</td>
+              <td class="govuk-table__cell">Details correct?</td>
+              <td class="govuk-table__cell">Yes</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">12/08/2022</td>
+              <td class="govuk-table__cell">Review type</td>
+              <td class="govuk-table__cell">Sheep</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">12/08/2022</td>
+              <td class="govuk-table__cell">Lifestock number</td>
+              <td class="govuk-table__cell">21 or more</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">12/08/2022</td>
+              <td class="govuk-table__cell">T&Cs agreed?</td>
+              <td class="govuk-table__cell">Yes</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="govuk-panel govuk-!-padding-left-4 govuk-!-padding-top-3 govuk-!-padding-bottom-0 govuk-!-margin-bottom-5" style="background-color:#f3f2f1;">
+          <div class="govuk-panel__body govuk-!-text-align-left">
+            <p class="govuk-body">Comment added to <a href="mill-farm-comment-log#history">history log</a></p>
+          </div>
+        </div>
+        <a href="mill-farm#applied" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+          Add comment
+        </a>
+      </div>
+
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="reviewed">
+        <h2 class="govuk-heading-l">No data inputted yet</h2>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Date</th>
+              <th scope="col" class="govuk-table__header">Data requested</th>
+              <th scope="col" class="govuk-table__header">Data entered</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">Review date</td>
+              <td class="govuk-table__cell"></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">21 or more sheep?</td>
+              <td class="govuk-table__cell"></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">Worming treatment effectiveness</td>
+              <td class="govuk-table__cell"></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">Report given?</td>
+              <td class="govuk-table__cell"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
+        <h2 class="govuk-heading-l">Not yet able to claim</h2>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Date</th>
+              <th scope="col" class="govuk-table__header">Data requested</th>
+              <th scope="col" class="govuk-table__header">Data entered</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">Details correct?</td>
+              <td class="govuk-table__cell"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="paid">
+        <h2 class="govuk-heading-l">Cannot be paid yet</h2>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Data requested</th>
+              <th scope="col" class="govuk-table__header">Data entered</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Payment due</td>
+              <td class="govuk-table__cell"></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Payment amount</td>
+              <td class="govuk-table__cell">£436</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Payment sent</td>
+              <td class="govuk-table__cell"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
+        <h2 class="govuk-heading-l">Comment logged</h2>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header govuk-body-s">User X on 03/09/2022</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Ramesh called, we discussed his farm. <br>
+                Certain actions will be taken on internal RPA systems.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <a href="#" class="govuk-link govuk-body" style="color:#d4351c">
+      Withdraw application
+    </a>
+
+  </div>
+</div>
+
+{% endblock %}
