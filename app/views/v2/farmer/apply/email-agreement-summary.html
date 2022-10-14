@@ -1,0 +1,41 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+{% set serviceName %}
+Annual Health and Welfare Review
+{% endset%}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-label-wrapper">
+      <label class="govuk-label govuk-label--l" for="event-name">
+        Annual health and welfare review of livestock agreement
+      </label>
+    </h1>
+    <br>
+    
+    <p class="govuk-body-l">You have applied for funding for a review.</p>
+       <p class="govuk-body-l">By applying for this funding you’ve entered into an agreement with the Rural Payments Agency (RPA).
+        The agreement will be governed by the agreed terms and conditions.</p>
+
+        <h1 class="govuk-heading-m">Agreement summary</h1>
+        <p class="govuk-body">Here are the following details:</p>
+        <ol> <ul class="govuk-list govuk-list--bullet">
+        <li>Agreement number: AHWR-5A92-94A2</li>
+        <li>Agreement holder: James Edward - 111111111</li>
+        <li>Agreement start date: 13/10/2022</li>
+        <li>Agreement end date: 13/04/2023</li>
+        <li>Type of livestock review: dairy</li></ul></ol>
+        <p class="govuk-body">You must have a minimum number of animals on the date the vet visits your farm to do the review. You must have 11 or more dairy cattle.</p>
+    
+        
+  </div>
+
+</div>
+
+{% endblock %}
