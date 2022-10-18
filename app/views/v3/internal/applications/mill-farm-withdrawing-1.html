@@ -11,7 +11,7 @@ Annual Health and Welfare Back Office
 <div class="govuk-phase-banner govuk-!-padding-top-0">
   <p class="govuk-phase-banner__content">
     <strong style="background-color:#00a33b;" class="govuk-tag govuk-phase-banner__content__tag">
-      beta
+      Beta
     </strong>
     <span class="govuk-phase-banner__text">
       This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
@@ -28,57 +28,50 @@ Annual Health and Welfare Back Office
   <div class="govuk-grid-column-two-thirds">
     
     <h1 class="govuk-caption-l govuk-!-margin-bottom-3">
-      Reference: AHWR-F021-722D
+      Reference: AHWR-F021-724S
     </h1>
 
     <h2 class="govuk-heading-l">
-      D B Stockwell & Sons
-      <strong class="govuk-tag govuk-tag--yellow">
-        Not Agreed
+      Mill Farm
+      <strong class="govuk-tag govuk-tag--green govuk-!-margin-left-2">
+        Agreed
       </strong>
     </h2>
 
-    <!--User details-->
-    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Name of applicant:
-        </dt>
-        <dd class="govuk-summary-list__value">
-          <p>David Benjamin Stockwell</p>
-        </dd>
-      </div>
+    <!-- "Pop-up" box -->
+    <div class="govuk-panel govuk-panel--confirmation govuk-!-text-align-left" style="background-color:#fafafa; border-color:#d4351c; border-width:medium;">
+      <h1 class="govuk-panel__title-s govuk-!-font-size-36 govuk-!-margin-top-1" style="color:#000000;">
+        What would you like to withdraw?
+      </h1>
 
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          SBI number:
-        </dt>
-        <dd class="govuk-summary-list__value">
-          103489123
-        </dd>
-      </div>
+      <form class="form" method="post">
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="withdrawal" name="withdrawal" type="radio" value="arthington-farm-withdrawing-3" onclick="setLocation(this);">
+                <label class="govuk-label govuk-radios__label" for="withdrawal">
+                  Claim only
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="withdrawal-2" name="withdrawal" type="radio" value="arthington-farm-withdrawing-2" onclick="setLocation(this);">
+                <label class="govuk-label govuk-radios__label" for="withdrawal-2">
+                  The entire agreement
+                </label>
+              </div>
+          </fieldset>
+        </div>
+        <button class="govuk-button govuk-button--warning govuk-!-margin-bottom-3" data-module="govuk-button">Continue</button>
+        <a href="javascript:history.go(-1)" draggable="false" class="govuk-button govuk-button--secondary govuk-!-margin-bottom-3" data-module="govuk-button">
+          Back
+        </a>
+      </form>
 
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Address:
-        </dt>
-        <dd class="govuk-summary-list__value">
-          Ashfield Lane, Leathley, Otley LS21 2JP
-        </dd>
-      </div>
+    </div>
 
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Email address:
-        </dt>
-        <dd class="govuk-summary-list__value">
-          <p>d.b.stockwell@gmail.com</p>
-        </dd>
-      </div>
-    </dl>
-
-    <!--Application stages (in tabs)-->
-    <div class="govuk-tabs" data-module="govuk-tabs">
+    <!-- Application stages (in tabs) -->
+    <div class="govuk-tabs govuk-!-margin-top-7" data-module="govuk-tabs">
       <h2 class="govuk-tabs__title">
         Contents
       </h2>
@@ -89,7 +82,7 @@ Annual Health and Welfare Back Office
           </a>
         </li>
         <li class="govuk-tabs__list-item">
-          <a class="govuk-tabs__tab" href="#claimed" style="color: #b1b4b6;">
+          <a class="govuk-tabs__tab" href="#claimed">
             Claim
           </a>
         </li>
@@ -101,8 +94,8 @@ Annual Health and Welfare Back Office
       </ul>
 
       <div class="govuk-tabs__panel" id="agreed">
-        <h2 class="govuk-heading-l">Not Agreed</h2>
-        <table class="govuk-table" style="color: #b1b4b6;">
+        <h2 class="govuk-heading-l">Agreed</h2>
+        <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
               <th scope="col" class="govuk-table__header">Data requested</th>
@@ -116,23 +109,23 @@ Annual Health and Welfare Back Office
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">Review type</td>
-              <td class="govuk-table__cell">Dairy</td>
+              <td class="govuk-table__cell">Sheep</td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">Lifestock number</td>
-              <td class="govuk-table__cell">11 or more</td>
+              <td class="govuk-table__cell">21 or more</td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">T&Cs and agreement offer accepted?</td>
-              <td class="govuk-table__cell">No</td>
+              <td class="govuk-table__cell">Yes</td>
             </tr>
           </tbody>
         </table>
       </div>
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-        <h2 class="govuk-heading-l" style="color: #b1b4b6;">Cannot claim</h2>
-        <table class="govuk-table" style="color: #b1b4b6;">
+        <h2 class="govuk-heading-l">Claimed</h2>
+        <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
               <th scope="col" class="govuk-table__header">Data requested</th>
@@ -142,23 +135,23 @@ Annual Health and Welfare Back Office
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">Details correct?</td>
-              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">Yes</td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">Date of visit</td>
-              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">06/11/2022</td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">Vet RCVS</td>
-              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">7116359</td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">Vet name</td>
-              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">Nora Williams</td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">Test result URN</td>
-              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">URN-7374-48BC</td>
             </tr>
           </tbody>
         </table>
@@ -169,16 +162,29 @@ Annual Health and Welfare Back Office
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">03/08/2022 - Applied but no agreement formed</th>
+              <th scope="col" class="govuk-table__header">23/11/2022 - Claim submitted</th>
+            </tr>
+            <tr>
+              <th scope="col" class="govuk-table__header">12/08/2022 - Agreement formed</th>
             </tr>
           </thead>
         </table>
       </div>
-
+      
     </div>
 
-  </div>
+    <a href="#" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+      Add comment
+    </a>
 
+  </div>
+   
+  <div class="govuk-grid-column-one-third">
+    <a href="arthington-farm.html" role="button" draggable="false" class="govuk-link govuk-body" style="color:#d4351c; float:right;" data-module="govuk-button">
+      Cancel
+    </a>
+  </div>
+  
 </div>
 
 {% endblock %}
