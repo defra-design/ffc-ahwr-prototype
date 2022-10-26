@@ -1,10 +1,10 @@
 {% extends "layouts/layout.html" %}
 
 {% block pageTitle %}
-Email page
+Register your interest for an Annual Health and Welfare Review
 {% endblock %}
 {% set serviceName %}
-Apply for an Annual Health and Welfare Review
+Register your interest for an Annual Health and Welfare Review
 {% endset%}
 
 {% block beforeContent %}
@@ -21,17 +21,17 @@ Apply for an Annual Health and Welfare Review
         Enter your email address</label>
       </h1>
       <label class="govuk-label" for="email">
-        Email address
+        Enter the email address linked to your Rural Payments account. 
       </label>
       <div id="email-hint" class="govuk-hint">
-        We’ll use this to send you a link to apply for a review.
+        We'll use this to send you confirmation you’ve successfully registered your interest. 
       </div>
       <input class="govuk-input govuk-!-width-three-quarters" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
     </div>
 
     {{ govukButton({
       text: "Continue",
-      href: "check-email"
+      href: "check-details"
     }) }}
 
   </div>
