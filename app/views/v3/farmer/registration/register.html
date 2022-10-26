@@ -1,0 +1,59 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Register your interest for an Annual Health and Welfare Review
+{% endblock %}
+{% set serviceName %}
+Register your interest for an Annual Health and Welfare Review
+{% endset%}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <span class="govuk-caption-l"></span>
+      <h1 class="govuk-heading-l">
+        Register your interest in a health and welfare review of your livestock 
+      </h1>
+
+      <p class="govuk-heading-body">We need some information to check you’re eligible to register. It is important the information you provide is accurate and up to date.</p>
+      <p class="govuk-heading-body">To register, you’ll need:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>your customer reference number (CRN)</li>
+        <li>the single business identifier (SBI) number of the business you want to apply for the review</li>
+        <li>the email associated to your Rural Payments account </li>
+      </ul>
+
+      <p>If you need to update your SBI or email address you’ll need to sign in to <a href="guidance-for-farmers">sign in to the 
+        Rural Payments service </a> before you use this service.</p>
+
+        <a href="crn.html" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8 govuk-button--start" data-module="govuk-button">
+          Register now
+          <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+          </svg>
+        </a>
+
+    <h2 class="govuk-heading-m">Problems with your CRN</h2>
+      <p>If you’ve lost or forgotten your CRN, contact the Rural Payments Agency.</p>
+      <ul class="govuk-list">
+        <li>Rurual Payments Agency</li>
+        <li>Telephone: 03000 200 301</li>
+        <li>Monday to Friday, 8:30am to 5pm (except public holidays)</li>
+        <li><a class="govuk-link" href="mailto:ruralpayments@defra.gov.uk">ruralpayments@defra.gov.uk</a></li>
+      </ul>
+      <p class="govuk-body">Find out about <a class="govuk-link" href="https://www.gov.uk/call-charges">call charges</a></p>
+
+      <h2 class="govuk-heading-m">Get help with registering</h2>
+      <p>If you’re unable to sign in to your Rural Payments account or have a question about your registration, contact the RPA.</p>
+      <ul class="govuk-list">
+        <li>Rurual Payments Agency</li>
+        <li>Telephone: 03000 200 301</li>
+        <li>Monday to Friday, 8:30am to 5pm (except public holidays)</li>
+        <li><a class="govuk-link" href="mailto:ruralpayments@defra.gov.uk">ruralpayments@defra.gov.uk</a></li>
+      </ul>
+      <p class="govuk-body">Find out about <a class="govuk-link" href="https://www.gov.uk/call-charges">call charges</a></p>
+  </div>
+</div>
+
+{% endblock %}

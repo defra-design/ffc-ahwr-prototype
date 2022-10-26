@@ -1,0 +1,49 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Register your interest for an Annual Health and Welfare Review
+{% endblock %}
+{% set serviceName %}
+Register your interest for an Annual Health and Welfare Review
+{% endset%}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-form-group">
+      <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="event-name">
+        Enter your customer reference number (CRN)</label>
+      </h1>
+      <label class="govuk-label" for="crn">
+        Enter your CRN number so we can identify you.
+      </label>
+      <div id="email-hint" class="govuk-hint">
+        This is the 10 digit number emailed to you when you created your Rural Payments account
+      </div>
+      <input class="govuk-input govuk-!-width-three-quarters" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+    </div>
+
+    {{ govukButton({
+      text: "Continue",
+      href: "sbi"
+    }) }}
+
+    <h2 class="govuk-heading-m">Problems with your CRN</h2>
+    <p>If you’ve lost or forgotten your CRN, contact the Rural Payments Agency.</p>
+    <ul class="govuk-list">
+      <li>Rurual Payments Agency</li>
+      <li>Telephone: 03000 200 301</li>
+      <li>Monday to Friday, 8:30am to 5pm (except public holidays)</li>
+      <li><a class="govuk-link" href="mailto:ruralpayments@defra.gov.uk">ruralpayments@defra.gov.uk</a></li>
+    </ul>
+    <p class="govuk-body">Find out about <a class="govuk-link" href="https://www.gov.uk/call-charges">call charges</a></p>
+  </div>
+</div>
+
+{% endblock %}

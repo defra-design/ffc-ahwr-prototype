@@ -1,0 +1,90 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Register your interest for an Annual Health and Welfare Review
+{% endblock %}
+{% set serviceName %}
+Register your interest for an Annual Health and Welfare Review
+{% endset%}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">
+      Check your answers before submitting your registration
+    </h1>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-8">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Customer reference number 
+        </dt>
+        <dd class="govuk-summary-list__value">
+          1234567890
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="crn">
+            Change<span class="govuk-visually-hidden"> name</span>
+          </a>
+        </dd>
+        </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Single business identifier number  
+        </dt>
+        <dd class="govuk-summary-list__value">
+          123456789
+        </dd>
+        <dd class="govuk-summary-list__actions"></dd>
+        <a class="govuk-link" href="sbi">
+          Change<span class="govuk-visually-hidden">  name</span>
+        </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Email address
+        </dt>
+        <dd class="govuk-summary-list__value">
+        joe.bloggs@email.com 
+        </dd>
+        <dd class="govuk-summary-list__actions"></dd>
+        <a class="govuk-link" href="email">
+          Change<span class="govuk-visually-hidden">  Email address</span>
+        </a>
+      </dd>
+      </div>
+    </dl>
+    
+    <h2 class="govuk-heading-m">Now submit your registration</h2>
+
+    <p class="govuk-body">By registering your interest, you are confirming that the details you are submitting are correct.</p>
+
+    <form action="confirmation" method="post" novalidate>
+
+      <input type="hidden" name="answers-checked" value="true">
+
+      <button class="govuk-button" data-module="govuk-button">
+        Submit
+      </button>
+
+    </form>
+
+  </div>
+</div>
+</main>
+</div>
+
+  </div>
+</div>
+
+
+{% endblock %}
