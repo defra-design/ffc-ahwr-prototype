@@ -1,25 +1,29 @@
 {% extends "layouts/layout.html" %}
 
 {% block pageTitle %}
-Register your interest for an Annual Health and Welfare Review
+Apply for an Annual Health and Welfare Review
 {% endblock %}
 {% set serviceName %}
-Register your interest for an Annual Health and Welfare Review
+Apply for an Annual Health and Welfare Review
 {% endset%}
 
 {% block beforeContent %}
   <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
-{% endblock %}
+  {% endblock %}
 
-{% block content %}
+  {% block content %}
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-
-    <div class="govuk-form-group">
-      <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="event-name">
-        Enter your email address</label>
-      </h1>
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="event-name">
+            Enter your email address</label>
+          </h1>
+      
+          <form action="/form-handler" method="post" novalidate>
+  
+            <div class="govuk-form-group">
+ 
       <label class="govuk-label" for="email">
         Enter the email address linked to your Rural Payments account. 
       </label>
@@ -28,11 +32,28 @@ Register your interest for an Annual Health and Welfare Review
       </div>
       <input class="govuk-input govuk-!-width-three-quarters" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
     </div>
+    <div class="govuk-form-group">
+      <label class="govuk-label govuk-label--m" for="passport-number">
+        Confirm your email address
+      </label>
+      <label class="govuk-label" for="email">
+        Confirm the email address linked to your Rural Payments account. 
+      </label>
+      <div id="email-hint" class="govuk-hint">
+        For example, sarah.phillips@example.com
+      </div>
+      <input class="govuk-input govuk-!-width-three-quarters" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+    </div>
+  
+      {{ govukButton({
+        text: "Continue",
+        href: "check-details"
+      }) }}
+      
+</fieldset>
+</div>
 
-    {{ govukButton({
-      text: "Continue",
-      href: "check-details"
-    }) }}
+
 
   </div>
 </div>
