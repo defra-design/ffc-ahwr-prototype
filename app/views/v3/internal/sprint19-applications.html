@@ -48,11 +48,19 @@ Annual Health and Welfare Back Office
   </div>
 </div>
 
-<!-- Filters -->
+
 <br><br>
-<a href="sprint19-applications-filters" role="button" class="govuk-button govuk-button--secondary">
-  Show filters
-</a>
+<div class="govuk-form-group">
+  <label class="govuk-label" for="sort">
+    Sort by
+  </label>
+  <select class="govuk-select" id="sort" name="sort">
+    <option value="published">Reference</option>
+    <option value="updated" selected>SBI number</option>
+    <option value="views">Status</option>
+    <option value="comments">Apply date</option>
+  </select>
+</div>
 
 <!-- Table -->
 <div class="govuk-grid-row">
