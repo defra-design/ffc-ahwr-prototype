@@ -23,27 +23,24 @@ Apply for an Annual Health and Welfare Review
       <form action="/form-handler" method="post" novalidate>
   
       <div class="govuk-form-group">
-  
-        <label class="govuk-label" for="sbi">
-          Enter the SBI number of the business registering an interest in a health and welfare review of livestock. 
+
+        <p class="govuk-body">Enter the SBI number of your business. This is the 9 digit number emailed to you in your Rural Payments account used to identify your business.</p>
+
+        <div class="govuk-form-group">
+        <label class="govuk-label" for="crn">
+          Enter your SBI number
         </label>
-        <div id="email-hint" class="govuk-hint">
-          This is the 9 digit number emailed to you when you registered the business in your Rural Payments account          <div class="govuk-form-group">
             <label class="govuk-label" for="width-10">
             </label>
-            <input class="govuk-input govuk-input--width-10" id="width-10" name="width-10" type="text">
+            <input class="govuk-input govuk-input govuk-input--width-10" id="width-10" name="width-10" type="text">
           </div>
   
       <div class="govuk-form-group">
-          <label class="govuk-label govuk-label--m" for="passport-number">
+          <label class="govuk-label" for="sort-code">
             Confirm your SBI number
           </label>
-          <div id="passport-number-hint" class="govuk-hint">
-            For example, 0123456789
-          </div>
         </div>
-        <input class="govuk-input govuk-input--width-10" id="passport-number" name="passport-number" type="text" aria-describedby="passport-number-hint">
-      </div>
+        <input class="govuk-input govuk-input govuk-input--width-10" id="passport-number" name="passport-number" type="text" aria-describedby="passport-number-hint">
           
     </fieldset>
   </div>
@@ -82,6 +79,13 @@ Apply for an Annual Health and Welfare Review
   </main>
   </div>
 
+</fieldset>
+</div>
+
+
+
+  </div>
+</div>
 
 
 {% endblock %}
