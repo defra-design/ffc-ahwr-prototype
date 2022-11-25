@@ -19,67 +19,56 @@ Annual Health and Welfare Back Office
   </p>
 </div>
 
-<a class="govuk-back-link govuk-!-margin-bottom-0" href="../march-applications.html">Back</a>
+<a class="govuk-back-link govuk-!-margin-bottom-0" href="../sprint1-applications.html">Back</a>
 {% endblock %}
 
 {% block content %}
 
-   <!--User details-->
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     
     <h1 class="govuk-caption-l govuk-!-margin-bottom-3">
-      Reference: AHWR-F021-723B
+      Reference: AHWR-F021-724S
     </h1>
 
     <h2 class="govuk-heading-l">
       Arthington Farm
-      <strong class="govuk-tag govuk-tag--grey">
-        Withdrawn
+      <strong class="govuk-tag govuk-tag--blue govuk-!-margin-left-2">
+        Claimed
       </strong>
     </h2>
 
- 
-   
-  
-      <!--User details-->
-      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Name:
-          </dt>
-          <dd class="govuk-summary-list__value">
-            <p>Jane Doe</p>
-          </dd>
+    <!-- "Pop-up" box -->
+    <div class="govuk-panel govuk-panel--confirmation govuk-!-text-align-left" style="background-color:#fafafa; border-color:#d4351c; border-width:medium;">
+      <h1 class="govuk-panel__title-s govuk-!-font-size-36 govuk-!-margin-top-1" style="color:#000000;">
+        What would you like to withdraw?
+      </h1>
+
+      <form class="form" method="post">
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="withdrawal" name="withdrawal" type="radio" value="x-arthington-farm-withdrawing2" onclick="setLocation(this);">
+                <label class="govuk-label govuk-radios__label" for="withdrawal">
+                  Claim only
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="withdrawal-2" name="withdrawal" type="radio" value="x-arthington-farm-withdrawing2" onclick="setLocation(this);">
+                <label class="govuk-label govuk-radios__label" for="withdrawal-2">
+                  The entire agreement
+                </label>
+              </div>
+          </fieldset>
         </div>
-  
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            SBI number:
-          </dt>
-          <dd class="govuk-summary-list__value">
-            106599006
-          </dd>
-        </div>
-  
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Address:
-          </dt>
-          <dd class="govuk-summary-list__value">
-            Primrose Ln, Arthington, Otley LS21 1PH
-          </dd>
-        </div>
-  
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Email address:
-          </dt>
-          <dd class="govuk-summary-list__value">
-            <p>janedoe@yahoo.com</p>
-          </dd>
-        </div>
-      </dl>
+        <button class="govuk-button govuk-button--warning govuk-!-margin-bottom-3" data-module="govuk-button">Continue</button>
+        <a href="javascript:history.go(-1)" draggable="false" class="govuk-button govuk-button--secondary govuk-!-margin-bottom-3" data-module="govuk-button">
+          Back
+        </a>
+      </form>
+
+    </div>
   
       <!--Application stages (in tabs)-->
       <div class="govuk-tabs" data-module="govuk-tabs">
@@ -127,7 +116,7 @@ Annual Health and Welfare Back Office
         </div>
   
         <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-          <h2 class="govuk-heading-l">Claim withdrawn</h2>
+          <h2 class="govuk-heading-l">Claimed</h2>
           <table class="govuk-table">
             <tbody class="govuk-table__body">
               <tr class="govuk-table__row">
@@ -162,8 +151,14 @@ Annual Health and Welfare Back Office
     </div>
 
 
-
   </div>
+   
+  <div class="govuk-grid-column-one-third">
+    <a href="x-arthington-farm.html" role="button" draggable="false" class="govuk-link govuk-body" style="color:#d4351c; float:right;" data-module="govuk-button">
+      Cancel
+    </a>
+  </div>
+  
 </div>
 
 {% endblock %}
