@@ -7,8 +7,6 @@ Back office: User application
 Annual Health and Welfare Back Office
 {% endset%}
 
-
-
 {% block beforeContent %}
 <div class="govuk-phase-banner govuk-!-padding-top-0">
   <p class="govuk-phase-banner__content">
@@ -24,10 +22,7 @@ Annual Health and Welfare Back Office
 <a class="govuk-back-link govuk-!-margin-bottom-0" href="../march-applications.html">Back</a>
 {% endblock %}
 
-
-
 {% block content %}
-
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
@@ -38,8 +33,8 @@ Annual Health and Welfare Back Office
 
     <h2 class="govuk-heading-l">
       Greenfield & Co
-      <strong class="govuk-tag govuk-tag--orange">
-        In check
+      <strong class="govuk-tag govuk-tag--red">
+        Rejected
       </strong>
     </h2>
 
@@ -100,7 +95,7 @@ Annual Health and Welfare Back Office
       </ul>
 
       <div class="govuk-tabs__panel" id="applied">
-        <h2 class="govuk-heading-l">In check</h2>
+        <h2 class="govuk-heading-l">Rejected</h2>
         <table class="govuk-table">
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
@@ -126,46 +121,24 @@ Annual Health and Welfare Back Office
           </tbody>
         </table>
       </div>
-      
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-        <h2 class="govuk-heading-l">Not claimed yet</h2>
+        <h2 class="govuk-heading-l">Not eligible to claim</h2>
         <table class="govuk-table">
           <tbody class="govuk-table__body">
-           
+            
+            </tr>
           </tbody>
         </table>
       </div>
       <br>
-
-      <div class="govuk-grid-row">
-      <div class="govuk-grid-column-one-half">
-        <div class="govuk-panel govuk-panel--confirmation govuk-!-margin-right-7" style="background-color:#fafafa; border-color:#000000; border-width:medium;">
-        <h3 class="govuk-panel__title-s govuk-!-font-size-18 govuk-!-margin-top-1" style="color:#000000;">
-          Authoriser only
-        </h1>
-
-        <a href="x-greenfield-&-co-approvingclaim.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-          Approve claim</a>
-        </button>
-        <a href="x-greenfield-&-co-rejectingclaim.html" role="button" draggable="false" class="govuk-button govuk-button--warning" data-module="govuk-button">
-          Reject claim</a>
-        </button>
-      </form>
-      </div>
-
       <a href="x-greenfield-withdrawing.html" class="govuk-link govuk-body" style="color:#d4351c">
         Withdraw
       </a>
       
       
     </div>
-
   </div>
 </div>
 
-
-
-
 {% endblock %}
-
