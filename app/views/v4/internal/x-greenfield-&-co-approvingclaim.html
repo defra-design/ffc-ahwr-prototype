@@ -40,9 +40,10 @@ Annual Health and Welfare Back Office
 
     <!-- "Pop-up" box -->
     <div class="govuk-panel govuk-panel--confirmation govuk-!-text-align-left" style="background-color:#fafafa; border-color:#000000; border-width:medium;">
-      <h1 class="govuk-panel__title-s govuk-!-font-size-36 govuk-!-margin-top-1" style="color:#000000;">
+      <h3 class="govuk-panel__title-s govuk-!-font-size-36 govuk-!-margin-top-1" style="color:#000000;">
         Are you sure you want to approve this claim?
-      </h1>
+      </h3>
+
       <a href="../internal/x-greenfield-approved.html" role="button" draggable="false" class="govuk-button govuk-button govuk-!-margin-bottom-2" data-module="govuk-button">
         Yes
       </a>
@@ -51,7 +52,13 @@ Annual Health and Welfare Back Office
       </a>
       <br>
       <br>
-      <p class="govuk-body-s">If the claim is approved it will be ready to pay.</p>
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-warning-text__assistive">Warning</span>
+          If the claim is approved it will be ready to pay.
+        </strong>
+      </div>
 
     </div>
   
