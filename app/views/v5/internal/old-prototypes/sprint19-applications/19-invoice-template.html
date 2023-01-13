@@ -1,0 +1,25 @@
+{% extends "layouts/layout-defra.html" %}
+
+{% block pageTitle %}
+Back office: User application
+{% endblock %}
+{% set serviceName %}
+Annual Health and Welfare Back Office
+{% endset%}
+
+{% block beforeContent %}
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-width-container">
+        <form action="/form-handler" method="post" novalidate="">
+            <img src="/public/images/Ede-Creighton-Invoice.png" width="100%" height="100%" alt="invoice for The Glenthorne Vet Centre, payment due 504 pounds">
+        </form>
+    </div>
+</div>
+
+{% endblock %}
