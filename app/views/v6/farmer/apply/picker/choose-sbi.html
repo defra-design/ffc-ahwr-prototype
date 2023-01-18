@@ -1,0 +1,104 @@
+{% extends "layouts/layout.html" %}
+
+{% set serviceName = "Apply for an Annual Health and Welfare review" %}
+
+{% set title = "Choose SBI for application" %}
+
+{% block pageTitle %}
+  {{title}} - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <h1 class="govuk-heading-xl">{{ title }}</h1>
+
+<form action="account-page">
+  <p class="govuk-body">SBI numbers registered to your Rural Payments Agency (RPA) account are included in the following list.</p>
+
+
+{% from "govuk/components/radios/macro.njk" import govukRadios %}
+
+      {{ govukRadios({
+        idPrefix: "which-org",
+        name: "which-org",
+        fieldset: {
+          legend: {
+            text: "",
+            isPageHeading: false,
+            classes: "govuk-fieldset__legend--l"
+          }
+      },
+      hint: {
+      text: "Select the business that’s applying for an annual health and welfare review of livestock. "
+      },
+
+
+        items: [
+          {
+            value: "108474838 - Dairy Limited",
+            text: "108474838 - Dairy Limited"
+          },
+          {
+            value: "174839474 - The Pigs Trust",
+            text: "174839474 - The Pigs Trust"
+          },
+          {
+            value: "857564831 - Ant Farm Co.",
+            text: "857564831 - Ant Farm Co."
+          },
+          {
+            value: "1846384038 - Drummonds",
+            text: "1846384038 - Drummonds"
+          },
+          {
+            value: "7463836484 - Echo Foods",
+            text: "7463836484 - Echo Foods"
+          }
+ 
+
+        ]
+      }) }}
+
+      {{ govukButton({
+        text: "Continue"
+
+      }) }}
+      </form>
+
+
+
+
+
+
+</div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+        Need to update the list?
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        Contact the Rural Payments Agency.<br><br>
+        Rural Payments Agency  <br>
+        Telephone: 03000 200 301 <br>
+        Monday to Friday, 8:30am to 5pm (except public holidays) <br>
+        <a href="mailto:ruralpayments@defra.gov.uk?subject=feedback">ruralpayments@defra.gov.uk</a>
+        <br><br>
+        <p class="govuk-body">Find out about <a href="https://www.gov.uk/call-charges" target=”_blank”>call charges</p>
+      </div>
+    </details>
+
+  </div>
+</div>
+
+{% endblock %}
