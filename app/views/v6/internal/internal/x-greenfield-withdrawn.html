@@ -7,8 +7,6 @@ Back office: User application
 Annual Health and Welfare Back Office
 {% endset%}
 
-
-
 {% block beforeContent %}
 <div class="govuk-phase-banner govuk-!-padding-top-0">
   <p class="govuk-phase-banner__content">
@@ -24,10 +22,7 @@ Annual Health and Welfare Back Office
 <a class="govuk-back-link govuk-!-margin-bottom-0" href="../march-applications.html">Back</a>
 {% endblock %}
 
-
-
 {% block content %}
-
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
@@ -38,8 +33,8 @@ Annual Health and Welfare Back Office
 
     <h2 class="govuk-heading-l">
       Greenfield & Co
-      <strong class="govuk-tag govuk-tag--orange">
-        In check
+      <strong class="govuk-tag govuk-tag--grey">
+        Withdrawn
       </strong>
     </h2>
 
@@ -97,14 +92,7 @@ Annual Health and Welfare Back Office
           <a class="govuk-tabs__tab" href="#claimed">
             Claim
           </a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#history">
-              History
-            </a>
-            </li>
       </ul>
-      
 
       <div class="govuk-tabs__panel" id="applied">
         <h2 class="govuk-heading-l">In check</h2>
@@ -133,7 +121,6 @@ Annual Health and Welfare Back Office
           </tbody>
         </table>
       </div>
-      
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
         <h2 class="govuk-heading-l">Claimed</h2>
@@ -167,111 +154,14 @@ Annual Health and Welfare Back Office
           </tbody>
         </table>
       </div>
-
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
-        <h2 class="govuk-heading-l">History</h2>
-        <table class="govuk-table">
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Date</th>
-              <th scope="col" class="govuk-table__header">Time</th>
-              <th scope="col" class="govuk-table__header">Action</th>
-              <th scope="col" class="govuk-table__header">User</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">11/03/2023</td>
-              <td class="govuk-table__cell">11:05:40</td>
-              <td class="govuk-table__cell">Agreement accepted</td>
-              <td class="govuk-table__cell">System</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">12/03/2023</td>
-              <td class="govuk-table__cell">11:05:40</td>
-              <td class="govuk-table__cell">Agreement rejected</td>
-              <td class="govuk-table__cell">System</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">20/03/2023</td>
-              <td class="govuk-table__cell">09:30:00</td>
-              <td class="govuk-table__cell">Withdraw completed</td>
-              <td class="govuk-table__cell">SSRPA</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">23/03/2023</td>
-              <td class="govuk-table__cell">10:00:12</td>
-              <td class="govuk-table__cell">Claimed</td>
-              <td class="govuk-table__cell">System</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">24/03/2023</td>
-              <td class="govuk-table__cell">09:30:00</td>
-              <td class="govuk-table__cell">Withdraw completed</td>
-              <td class="govuk-table__cell">SSRPA</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">25/03/2023</td>
-              <td class="govuk-table__cell">11:10:15</td>
-              <td class="govuk-table__cell">Selected for check</td>
-              <td class="govuk-table__cell">SSPRA</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">25/03/2023</td>
-              <td class="govuk-table__cell">12:00:00</td>
-              <td class="govuk-table__cell">Check authorised</td>
-              <td class="govuk-table__cell">SSPRA</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">25/03/2023</td>
-              <td class="govuk-table__cell">12:00:00</td>
-              <td class="govuk-table__cell">Check rejected</td>
-              <td class="govuk-table__cell">SSPRA</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">25/03/2023</td>
-              <td class="govuk-table__cell">12:00:01</td>
-              <td class="govuk-table__cell">Ready to pay</td>
-              <td class="govuk-table__cell">SSPRA</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">25/03/2023</td>
-              <td class="govuk-table__cell">11:00:00</td>
-              <td class="govuk-table__cell">Paid</td>
-              <td class="govuk-table__cell">SSPRA</td>
-            </tr>
-      </div>
-           
-          </tbody>
-        </table>
-      </div>
       <br>
-
-      <div class="govuk-grid-row">
-      <div class="govuk-grid-column-one-half">
-        <div class="govuk-panel govuk-panel--confirmation govuk-!-margin-right-7" style="background-color:#fafafa; border-color:#000000; border-width:medium;">
-        <h3 class="govuk-panel__title-s govuk-!-font-size-18 govuk-!-margin-top-1" style="color:#000000;">
-          Authoriser only
-        </h1>
-
-        <a href="x-greenfield-&-co-approvingclaim.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-          Approve claim</a>
-        </button>
-        <a href="x-greenfield-&-co-rejectingclaim.html" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
-          Reject claim</a>
-        </button>
-      </form>
-      </div>
-
+      <a href="x-greenfield-withdrawing.html" class="govuk-link govuk-body" style="color:#d4351c">
+        Withdraw
+      </a>
       
       
     </div>
-
   </div>
 </div>
 
-
-
-
 {% endblock %}
-
