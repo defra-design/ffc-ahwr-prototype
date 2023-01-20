@@ -1,0 +1,116 @@
+{% extends "layouts/layout.html" %}
+
+{% set serviceName = "Apply for an Annual Health and Welfare review" %}
+
+
+{% block pageTitle %}
+  {{title}} - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <form class="form" method="post">
+
+      <h1 class="govuk-heading-l">
+        Choose SBI for application
+      </h1>
+
+<form action="account-page">
+  <p class="govuk-body">SBI numbers registered to your Rural Payments Agency (RPA) account are included in the following list.</p>
+  <div id="changed-name-hint" class="govuk-hint">
+    Select the business that’s applying for an annual health and welfare review of livestock.
+  </div>
+
+  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+
+      </legend>
+      <div class="govuk-radios" data-module="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="business-1" name="business" type="radio" value="chickens">
+          <label class="govuk-label govuk-radios__label" for="business-1">
+            107684959 - Kent Signature Chickens
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="business-2" name="business" type="radio" value="vegan">
+          <label class="govuk-label govuk-radios__label" for="business-2">
+            106599006 - Vegan & Greens
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="business-3" name="business" type="radio" value="dairy">
+          <label class="govuk-label govuk-radios__label" for="business-3">
+            108474838 - Dairy Limited
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="business-4" name="business" type="radio" value="pigs">
+          <label class="govuk-label govuk-radios__label" for="business-4">
+            174839474 - The Pigs Trust
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="business-5" name="business" type="radio" value="ant">
+          <label class="govuk-label govuk-radios__label" for="business-5">
+            857564831 - Ant Farm Co.
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="business-6" name="business" type="radio" value="drummonds">
+          <label class="govuk-label govuk-radios__label" for="business-6">
+            184638403 - Drummonds
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="business-7" name="business" type="radio" value="echo">
+          <label class="govuk-label govuk-radios__label" for="business-7">
+            746383648 - Echo Foods
+          </label>
+        </div>
+
+    </fieldset>
+  </div>
+
+  <button class="govuk-button" data-module="govuk-button">Continue</button>
+         
+      </form>
+
+
+
+
+
+
+</div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+        Need to update the list?
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        Contact the Rural Payments Agency.<br><br>
+        Rural Payments Agency  <br>
+        Telephone: 03000 200 301 <br>
+        Monday to Friday, 8:30am to 5pm (except public holidays) <br>
+        <a href="mailto:ruralpayments@defra.gov.uk?subject=feedback">ruralpayments@defra.gov.uk</a>
+        <br><br>
+        <p class="govuk-body">Find out about <a href="https://www.gov.uk/call-charges" target=”_blank”>call charges</p>
+      </div>
+    </details>
+
+  </form>
+  </div>
+</div>
+
+{% endblock %}

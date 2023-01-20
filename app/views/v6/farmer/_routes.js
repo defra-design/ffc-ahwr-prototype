@@ -89,8 +89,8 @@ router.post('v6/farmer/picker/choose-sbi', function (req, res) {
       } if (size === "vegan") {
                 res.redirect('/v6/farmer/picker/sbi-access-6');
       } if (size === "chickens") {
-              res.redirect('/v6/farmer/picker/check-details');
+              res.redirect('/v6/farmer/picker/check-details-2');
       } else {
-              res.redirect('/v6/farmer/picker/check-details');
+              res.redirect('/v6/farmer/picker/check-details-2');
       };
   })
