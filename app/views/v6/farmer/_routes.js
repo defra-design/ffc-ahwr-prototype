@@ -71,26 +71,27 @@ router.get('*/review-details-correct-check', function (req, res) {
   }
 })
 
-module.exports = router
+// Auto eligiblility picker radio buttons redirection for apply journey
 
-// Auto eligiblility picker radio buttons redirection
-router.post('v6/farmer/picker/choose-sbi', function (req, res) {
-      const size = req.session.data['business'];
-       if (size === "echo") {
-              res.redirect('/v6/farmer/picker/sbi-access-1');
-      } if (size === "drummonds") {
-              res.redirect('/v6/farmer/picker/sbi-access-2');
-      } if (size === "ant") {
-              res.redirect('/v6/farmer/picker/sbi-access-3');
-      } if (size === "pigs") {
-              res.redirect('/v6/farmer/picker/sbi-access-4');
-      } if (size === "dairy") {
-                res.redirect('/v6/farmer/picker/sbi-access-5');
-      } if (size === "vegan") {
-                res.redirect('/v6/farmer/picker/sbi-access-6');
-      } if (size === "chickens") {
-              res.redirect('/v6/farmer/picker/check-details-2');
+router.post('/app/views/v6/farmer/picker-apply/choose-sbi', function (req, res) {
+      const business = req.session.data['business'];
+       if (business === "echo") {
+              res.redirect('/app/views/v6/farmer/picker-apply/sbi-access-1');
+      } if (business === "drummonds") {
+              res.redirect('/app/views/v6/farmer/picker-apply/sbi-access-2');
+      } if (business === "ant") {
+              res.redirect('/app/views/v6/farmer/picker-apply/sbi-access-3');
+      } if (business === "pigs") {
+              res.redirect('/app/views/v6/farmer/picker-apply/sbi-access-4');
+      } if (business === "dairy") {
+                res.redirect('/app/views/v6/farmer/picker-apply/sbi-access-5');
+      } if (business === "vegan") {
+                res.redirect('/app/views/v6/farmer/picker-apply/sbi-access-6');
+      } if (business === "chickens") {
+              res.redirect('/app/views/v6/farmer/picker-apply/check-details-2');
       } else {
-              res.redirect('/v6/farmer/picker/check-details-2');
+              res.redirect('/app/views/v6/farmer/picker-apply/check-details-2');
       };
   })
+
+  module.exports = router
