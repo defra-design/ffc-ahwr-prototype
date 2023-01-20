@@ -72,3 +72,25 @@ router.get('*/review-details-correct-check', function (req, res) {
 })
 
 module.exports = router
+
+// Auto eligiblility picker radio buttons redirection
+router.post('v6/farmer/picker/choose-sbi', function (req, res) {
+      const size = req.session.data['business'];
+       if (size === "echo") {
+              res.redirect('/v6/farmer/picker/sbi-access-1');
+      } if (size === "drummonds") {
+              res.redirect('/v6/farmer/picker/sbi-access-2');
+      } if (size === "ant") {
+              res.redirect('/v6/farmer/picker/sbi-access-3');
+      } if (size === "pigs") {
+              res.redirect('/v6/farmer/picker/sbi-access-4');
+      } if (size === "dairy") {
+                res.redirect('/v6/farmer/picker/sbi-access-5');
+      } if (size === "vegan") {
+                res.redirect('/v6/farmer/picker/sbi-access-6');
+      } if (size === "chickens") {
+              res.redirect('/v6/farmer/picker/check-details');
+      } else {
+              res.redirect('/v6/farmer/picker/check-details');
+      };
+  })

@@ -2,83 +2,84 @@
 
 {% set serviceName = "Apply for an Annual Health and Welfare review" %}
 
-{% set title = "Choose SBI for application" %}
 
 {% block pageTitle %}
   {{title}} - GOV.UK
 {% endblock %}
 
 {% block beforeContent %}
-
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
 {% endblock %}
 
 {% block content %}
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
+  <div class="govuk-grid-column-two-thirds">
+    <form class="form" method="post">
 
-    <h1 class="govuk-heading-xl">{{ title }}</h1>
+      <h1 class="govuk-heading-l">
+        Choose SBI for application
+      </h1>
 
 <form action="account-page">
   <p class="govuk-body">SBI numbers registered to your Rural Payments Agency (RPA) account are included in the following list.</p>
+  <div id="changed-name-hint" class="govuk-hint">
+    Select the business that’s applying for an annual health and welfare review of livestock.
+  </div>
 
+  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
 
-{% from "govuk/components/radios/macro.njk" import govukRadios %}
+      </legend>
+      <div class="govuk-radios" data-module="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="business-1" name="business" type="radio" value="chickens">
+          <label class="govuk-label govuk-radios__label" for="business-1">
+            107684959 - Kent Signature Chickens
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="business-2" name="business" type="radio" value="vegan">
+          <label class="govuk-label govuk-radios__label" for="business-2">
+            106599006 - Vegan & Greens
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="business-3" name="business" type="radio" value="dairy">
+          <label class="govuk-label govuk-radios__label" for="business-3">
+            108474838 - Dairy Limited
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="business-4" name="business" type="radio" value="pigs">
+          <label class="govuk-label govuk-radios__label" for="business-4">
+            174839474 - The Pigs Trust
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="business-5" name="business" type="radio" value="ant">
+          <label class="govuk-label govuk-radios__label" for="business-5">
+            857564831 - Ant Farm Co.
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="business-6" name="business" type="radio" value="drummonds">
+          <label class="govuk-label govuk-radios__label" for="business-6">
+            184638403 - Drummonds
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="business-7" name="business" type="radio" value="echo">
+          <label class="govuk-label govuk-radios__label" for="business-7">
+            746383648 - Echo Foods
+          </label>
+        </div>
 
-      {{ govukRadios({
-        idPrefix: "which-org",
-        name: "which-org",
-        fieldset: {
-          legend: {
-            text: "",
-            isPageHeading: false,
-            classes: "govuk-fieldset__legend--l"
-          }
-      },
-      hint: {
-      text: "Select the business that’s applying for an annual health and welfare review of livestock. "
-      },
+    </fieldset>
+  </div>
 
-
-        items: [
-        {
-          value: "107684959 - Kent Signature Chickens",
-          text: "107684959 - Kent Signature Chickens"
-        },
-
-        {
-          value: "106599006 - Vegan & Greens",
-          text: "106599006 - Vegan & Greens"
-        },
-        
-          {
-            value: "108474838 - Dairy Limited",
-            text: "108474838 - Dairy Limited"
-          },
-          {
-            value: "174839474 - The Pigs Trust",
-            text: "174839474 - The Pigs Trust"
-          },
-          {
-            value: "857564831 - Ant Farm Co.",
-            text: "857564831 - Ant Farm Co."
-          },
-          {
-            value: "184638403 - Drummonds",
-            text: "184638403 - Drummonds"
-          },
-          {
-            value: "746383648 - Echo Foods",
-            text: "746383648 - Echo Foods"
-          }
- 
-
-        ]
-      }) }}
-
-      {{ govukButton({
-        text: "Continue"
-
-      }) }}
+  <button class="govuk-button" data-module="govuk-button">Continue</button>
+         
       </form>
 
 
@@ -108,6 +109,7 @@
       </div>
     </details>
 
+  </form>
   </div>
 </div>
 
