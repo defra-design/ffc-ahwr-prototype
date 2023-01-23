@@ -1,0 +1,125 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Health and welfare review funding for this organisation
+{% endblock %}
+{% set serviceName %}
+Apply for an Annual Health and Welfare Review
+{% endset%}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="/v6/farmer/picker-apply/choose-sbi">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">
+      Check your details
+    </h1>
+<!--
+    <h2 class="govuk-heading-m">Arthington Farm Ltd</h2>
+-->
+    <dl class="govuk-summary-list govuk-!-margin-bottom-8">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Farmer name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          David Mitchell
+        </dd>
+        <dd class="govuk-summary-list__actions">
+
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Business name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Kent Signature Chickens
+        </dd>
+        <dd class="govuk-summary-list__actions">
+
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          SBI number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          107684959
+        </dd>
+        <dd class="govuk-summary-list__actions">
+
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Muckleberry Lane<br>Wye<br>Ashford<br>TN25 4ES
+        </dd>
+        <dd class="govuk-summary-list__actions">
+
+        </dd>
+      </div>
+<!--
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Contact email address:
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p>janedoe@yahoo.com</p>
+
+        </dd>
+        <dd class="govuk-summary-list__actions">
+
+        </dd>
+      </div>
+-->
+    </dl>
+    
+    <form class="form" method="post">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+           
+            <h2 class="govuk-fieldset__heading">
+              Are these details correct?
+            </h2>
+          </legend>
+          <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="which-review" onclick="setLocation(this);">
+              <label class="govuk-label govuk-radios__label" for="changed-name">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="details-incorrect" onclick="setLocation(this);">
+              <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                No
+              </label>
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+
+      <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+    </form>
+
+  </div>
+</div>
+
+
+{% endblock %}
