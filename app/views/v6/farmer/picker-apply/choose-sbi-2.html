@@ -1,0 +1,78 @@
+{% extends "layouts/layout.html" %}
+
+{% set serviceName = "Apply for an Annual Health and Welfare review" %}
+
+
+{% block pageTitle %}
+  {{title}} - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <form class="form" method="post">
+
+
+      <h1 class="govuk-heading-l">
+        Choose SBI for application
+      </h1>
+
+<form action="account-page">
+  <p class="govuk-body">SBI numbers registered to your Rural Payments Agency (RPA) account are included in the following list.</p>
+  <div id="changed-name-hint" class="govuk-hint">
+    Select the business that’s applying for an annual health and welfare review of livestock.
+  </div>
+  <br>
+
+  {% from "govuk/components/radios/macro.njk" import govukRadios %}
+  {{ govukRadios({
+    name: "business",
+    fieldset: {
+      legend: {
+        
+     
+      }
+    },
+    items: [
+      {
+        value: "chickens",
+        text: "107684959 - Kent Signature Chickens"
+      },
+      {
+        value: "vegan",
+        text: "106599006 - Vegan & Greens"
+      },
+      {
+        value: "dairy",
+        text: "108474838 - Dairy Limited"
+      },
+      {
+        value: "pigs",
+        text: "174839474 - The Pigs Trust"
+      },
+      {
+        value: "ant",
+        text: "857564831 - Ant Farm Co."
+      },
+      {
+        value: "drummonds",
+        text: "184638403 - Drummonds"
+      },
+      {
+        value: "echo",
+        text: "746383648 - Echo Foods"
+      }
+    ]
+  }) }}
+
+
+<br>
+<button class="govuk-button" data-module="govuk-button">Continue</button>
+
+</form>
+
+{% endblock %}
