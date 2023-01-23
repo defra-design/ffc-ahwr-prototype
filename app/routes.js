@@ -27,3 +27,32 @@ router.post('app/views/v6/farmer/picker-apply/choose-sbi', function (req, res) {
                 res.redirect('/app/views/v6/farmer/picker-apply/check-details-2');
         };
     })
+
+
+    // Example from prototype kit
+
+    router.post('/where-do-you-live', function (req, res) {
+
+      // Make a variable and give it the value from 'how-many-balls'
+      var whereyoulive = req.session.data['where-do-you-live']
+    
+      // Check whether the variable matches a condition
+      if (whereyoulive== "England"){
+        // Send user to next page
+        res.redirect('/sbi-access-1')
+      } else {
+        // Send user to ineligible page
+        res.redirect('/sbi-access-2')
+      }
+    
+    })
+    module.exports = router
+
+
+
+
+
+
+
+    module.exports = router
+
