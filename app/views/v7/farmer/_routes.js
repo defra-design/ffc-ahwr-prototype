@@ -71,6 +71,21 @@ router.get('*/review-details-correct-check', function (req, res) {
   }
 })
 
+// Check details dynamic for picker
+
+router.post('#', function (req, res) {
+      const size = req.session.data['size'];
+       if (size === "small") {
+              res.redirect('/phoenix/employer/v7/turnover');
+      } if (size === "micro") {
+              res.redirect('/phoenix/employer/v7/turnover');
+      } if (size === "medium") {
+              res.redirect('/phoenix/employer/v7/turnover');
+      } else {
+              res.redirect('/phoenix/employer/v7/not-eligible-size');
+      };
+  })
+
 
 
 
