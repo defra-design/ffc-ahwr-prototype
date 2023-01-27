@@ -1,0 +1,75 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Apply for an Annual Health and Welfare Review
+{% endblock %}
+{% set serviceName %}
+Apply for an Annual Health and Welfare Review
+{% endset%}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+  
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+  
+          <h1 class="govuk-heading-l">Picker Exceptions</h1>
+  
+          <dl class="govuk-summary-list govuk-!-margin-bottom-8">
+           
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Exception 1
+              </dt>
+              <dd class="govuk-summary-list__value">
+               You do not have required access permissions
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="no-access.html">
+                  Link here<span class="govuk-visually-hidden"> email address</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Exception 2
+              </dt>
+              <dd class="govuk-summary-list__value">
+                The business has already applied
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="no-business.html">
+                  Link here<span class="govuk-visually-hidden"> sbi</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Exception 3
+              </dt>
+              <dd class="govuk-summary-list__value">
+                You do not have valid SBI
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="no-sbi.html">
+                  Link here<span class="govuk-visually-hidden"> email address</span>
+                </a>
+              </dd>
+            </div>
+            
+          </dl>
+  
+     
+  
+          </form>
+  
+        </div>
+      </div>
+    </main>
+  </div>
+
+
+{% endblock %}

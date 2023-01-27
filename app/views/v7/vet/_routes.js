@@ -59,20 +59,28 @@ router.get('*/sbi-check-validate', function (req, res) {
   }
 })
 
-// Check details for claim
+// SFI summary
 
-router.get('*/review-details-correct-check', function (req, res) {
-  const option = req.session.data['details']
+router.get('*/sfi-summary-validation', function (req, res) {
+  const option = req.session.data['continue-application']
 
-  if (option === 'no') {
-    res.redirect('details-incorrect')
+  if (option === 'yes') {
+    res.redirect('task-list')
   } else {
-    res.redirect('visit-date')
+    res.redirect('select-standard')
   }
 })
 
+// Vet - reference number details
 
+router.post('*/check-details', function (req, res) {
+  const option = req.session.data['review-details-correct-check']
 
+  if (option === 'no') {
+    res.redirect('review/reference')
+  } else {
+    res.redirect('review/beef/visit-date')
+  }
+})
 
-
-  module.exports = router
+module.exports = router
