@@ -1,6 +1,6 @@
 {% extends "layouts/layout.html" %}
 
-{% set serviceName = "Vets visits" %}
+{% set serviceName = "Apply for an Annual Health and Welfare review" %}
 
 {% set title = "Your password has been reset" %}
 
@@ -19,16 +19,11 @@
   <div class="govuk-grid-column-two-thirds">
 
       <div class="govuk-panel govuk-panel--confirmation">
-				<h1 class="govuk-panel__title">We've updated your password.</h1>
+				<h1 class="govuk-panel__title">Your password has been reset.</h1>
 			</div>
-        <p>You can now use this password to access the service in future.</p>
+        <p class="govuk-body">Your password has been reset.</p>
 
-        <form method="post" action="../mfa/account-page">
-            <button class="govuk-button">Continue</button>
-
-
-
-        </form>
+        <p class="govuk-body">You can now use it to <a href = "defra-id.html" >sign in.</a></p>
 
 
 </div>
