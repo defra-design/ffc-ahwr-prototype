@@ -21,6 +21,20 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
+    <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+      <div class="govuk-notification-banner__header">
+        <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+          Important
+        </h2>
+      </div>
+      <div class="govuk-notification-banner__content">
+        <p class="govuk-notification-banner__heading">
+          We've sent an email with a verification code. It may take a few minutes to arrive.</p>
+        <p class="govuk-notification-banner__heading">It will expire in 12 hours.
+        </p>
+      </div>
+    </div>
+
     <h1 class="govuk-heading-xl">{{ title }}</h1>
 
     <p class="govuk-body">We've sent an email with a 6 digit verification code to ted.barns@cattlemoovement.org </p>
@@ -33,7 +47,7 @@
 
 
 
-    <form action="enter-code-notification" method="post">
+    <form action="new-password" method="post">
 
 
       {% from "govuk/components/input/macro.njk" import govukInput %}
@@ -51,6 +65,12 @@
         id: "verify",
         name: "verify-code"
 
+      }) }}
+
+      {{ govukDetails({
+        summaryText: "I have not received the email",
+        html: '<p>The email may take a few minutes to arrive. Its subject line is: ‘Confirm your email address - Defra’.</p>
+        <p>Check your spam or junk folder.</p>'
       }) }}
 
 
