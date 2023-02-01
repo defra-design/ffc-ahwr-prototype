@@ -83,4 +83,36 @@ router.post('*/check-details', function (req, res) {
   }
 })
 
+router.post('app/views/v6/farmer/apply/find-sbi', function (req, res) {
+  const business = req.session.data['business'];
+   if (business === "Ant Farm Co. - SBI 857564831") {
+          res.redirect('app/views/v6/farmer/apply/check-details-3');
+
+  } if (business === "Arthington Farm Ltd - SBI 234567890") {
+          res.redirect('app/views/v6/farmer/apply/check-details');
+
+  } if (business === "Dairy Limited - SBI 108474838") {
+          res.redirect('app/views/v6/farmer/apply/check-details-4');
+
+  } if (business === "Drummonds - SBI 184638403") {
+          res.redirect('#');
+
+  } if (business === "Echo Foods - SBI 746383648") {
+          res.redirect('#');
+
+  } if (business === "Kent Signature Chickens - SBI 107684959") {
+          res.redirect('app/views/v6/farmer/apply/check-details-2');
+
+  } if (business === "The Pigs Trust - SBI 174839474") {
+          res.redirect('#');
+
+  } if (business === "Vegan & Greens - SBI 106599006") {
+          res.redirect('#');
+
+  } else {
+          res.redirect('app/views/v6/farmer/apply/find-sbi');
+  };
+
+})
+
 module.exports = router
