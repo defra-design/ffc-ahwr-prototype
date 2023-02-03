@@ -5,20 +5,4 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
 
 {% extends "govuk-prototype-kit/layouts/govuk-branded.html" %}
 
-{% block stylesheets %}
-  {{ super() }}
-  <link href="/public/css/styles.css" rel="stylesheet" type="text/css" />
-  <link href="/public/css/assessible-autocomplete.min.css" rel="stylesheet" type="text/css">
-{% endblock %}
 
-{% block scripts %}
-  {{ super() }}
-  <script src="/public/javascripts/accessible-autocomplete.min.js"></script>
-  <script type="text/javascript">
-    accessibleAutocomplete.enhanceSelectElement({
-      defaultValue: '',
-      selectElement: document.querySelector('#org-picker'),
-      placeholder: 'Search for a business'
-    })
-  </script>
-{% endblock %}
