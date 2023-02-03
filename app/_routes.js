@@ -83,7 +83,7 @@ router.post('*/check-details', function (req, res) {
   }
 })
 
-router.post('app/views/v6/farmer/apply/find-sbi', function (req, res) {
+router.post('/sbi-answer', function (req, res) {
   const business = req.session.data['business'];
    if (business === "Ant Farm Co. - SBI 857564831") {
           res.redirect('app/views/v6/farmer/apply/check-details-3');

@@ -74,9 +74,9 @@ router.get('*/review-details-correct-check', function (req, res) {
 
 // Check details dynamic for picker
 
-router.post('app/views/v6/farmer/apply/choose-sbi', function (req, res) {
-      const business = req.session.data['business'];
-       if (business === "Ant Farm Co. - SBI 857564831") {
+router.post('/select-business', function (req, res) {
+      var business = req.session.data['business']
+       if (business == "ant-farm-co") {
               res.redirect('check-details-3');
       } if (business === "Arthington Farm Ltd - SBI 234567890") {
               res.redirect('check-details');
@@ -96,7 +96,5 @@ router.post('app/views/v6/farmer/apply/choose-sbi', function (req, res) {
               res.redirect('choose-sbi');
       };
   })
-
-
 
   module.exports = router
