@@ -18,8 +18,18 @@
 
   <div class="govuk-grid-column-two-thirds">
 
-      <!-- Begin form autocomplete -->
-      <form action="form-single.html" method="get">
+    <script type="text/javascript" src="/public/javascripts/accessible-autocomplete.min.js"></script>
+    <script type="text/javascript">
+      accessibleAutocomplete.enhanceSelectElement({
+        defaultValue: '',
+        selectElement: document.querySelector('#org-picker'),
+        placeholder: 'Search for a business'
+      })
+    
+    </script>  
+    
+    <!-- Begin form autocomplete -->
+      <form action="../apply/check-details.html" method="get">
         <div class="govuk-form-group">
           <p class="govuk-body">Businesses registered to your Rural Payments Agency (RPA) account are included in the following list.</p>
               <div id="waste-hint" class="govuk-hint">
