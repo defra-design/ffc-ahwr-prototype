@@ -7,23 +7,25 @@
 
 {% block content %}
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
 
-    <h1 class="govuk-heading-xl">Select your business</h1>
-  </div>
-</div>
 
 <div class="govuk-grid-row">
 
   <div class="govuk-grid-column-two-thirds">
 
-    <form class="form" action="../apply/check-details.html" method="_blank">
-   
-      <div class="govuk-inset-text">
+    <h1 class="govuk-heading-xl">Select your business</h1>
+  </div>
+</div>
+
+
+  <div class="govuk-form-group">
+    <p class="govuk-body">Businesses registered to your Rural Payments Agency (RPA) account are included in the following list.</p>
+        <div id="waste-hint" class="govuk-hint">
         Select the business that’s applying for an annual health and welfare review of livestock.
-      </div>
-    
+        </div>
+
+    <form action="../apply/check-details-james.html" method="get">
+   
     <div class="govuk-form-group">
     <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
@@ -31,7 +33,7 @@
     <div class="govuk-radios" data-module="govuk-radios">
     <div class="govuk-radios__item">
     <input class="govuk-radios__input" id="business" name="business" type="radio" value="Ant Farm Co. - SBI 857564831">
-    <label class="govuk-label govuk-radios__label" for="business-1">Ant Farm Co. - SBI 857564831
+    <label class="govuk-label govuk-radios__label" for="business-1">James Company - SBI 857564831
     </label>
     </div>
     <div class="govuk-radios__item">
@@ -49,31 +51,16 @@
     <label class="govuk-label govuk-radios__label" for="business-3">Drummonds - SBI 184638403
     </label>
     </div>
-    <div class="govuk-radios__item">
-    <input class="govuk-radios__input" id="business" name="business" type="radio" value="Echo Foods - SBI 746383648">
-    <label class="govuk-label govuk-radios__label" for="business-4">Echo Foods - SBI 746383648
-    </label>
-    </div>
-    <div class="govuk-radios__item"><input class="govuk-radios__input" id="business" name="business" type="radio" value="Kent Signature Chickens - SBI 107684959 ">
-    <label class="govuk-label govuk-radios__label" for="business-5">Kent Signature Chickens - SBI 107684959 
-    </label>
-    </div>
-    <div class="govuk-radios__item"><input class="govuk-radios__input" id="business" name="business" type="radio" value="The Pigs Trust - SBI 174839474">
-    <label class="govuk-label govuk-radios__label" for="business-6">The Pigs Trust - SBI 174839474
-    </label>
-    </div>
-    <div class="govuk-radios__item"><input class="govuk-radios__input" id="business" name="business" type="radio" value="Vegan & Greens - SBI 106599006">
-    <label class="govuk-label govuk-radios__label" for="business-7">Vegan & Greens - SBI 106599006
-    </label>
-    </div>
     </fieldset>
     </div>
+
+  </div>
     <button class="govuk-button" data-module="govuk-button">Continue</button>
     </form>
      
       <!-- autocomplete form end -->
 
-    </div>
+
 
 </div>
 
