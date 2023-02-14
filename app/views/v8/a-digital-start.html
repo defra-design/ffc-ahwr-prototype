@@ -1,0 +1,62 @@
+{% extends "layouts/layout-defra.html" %}
+
+{% block pageTitle %}
+Back office: Applications
+{% endblock %}
+{% set serviceName %}
+Annual Health and Welfare Back Office
+{% endset%}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner govuk-!-padding-top-0">
+  <p class="govuk-phase-banner__content">
+    <strong style="background-color:#00a33b;" class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    
+<span class="govuk-caption-l"></span>
+
+
+<span class="govuk-caption-xl">Welcome to the Back Office</span>
+<h1 class="govuk-heading-xl">Log in</h1>
+
+
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="email">
+        Full name
+      </label>
+      <div id="event-name-hint" class="govuk-hint">
+        e.g. John Smith
+      </div>
+      <input class="govuk-input govuk-!-width-three-quarters" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+      <div class="govuk-!-padding-bottom-3"></div>
+
+      <label class="govuk-label" for="email">
+        Email address
+      </label>
+      <div id="event-name-hint" class="govuk-hint">
+       e.g. johnsmith@rpa.gov.uk
+      </div>
+      <input class="govuk-input govuk-!-width-three-quarters" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+    </div>
+    <a></a>
+    <a class="govuk-button" href="../v8/a-digital.html" role="button" >Sign in</a>
+  </div>
+
+
+
+{% endblock %}
+
+
