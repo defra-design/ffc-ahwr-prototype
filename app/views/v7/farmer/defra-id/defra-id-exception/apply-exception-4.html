@@ -1,0 +1,43 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+{% set serviceName %}
+Apply for an Annual Health and Welfare Review
+{% endset%}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-l">You cannot apply for a review</h1>
+
+      <p class="govuk-body">The business you're applying for has no eligible county parish holding (CPH) registered to it.</p>
+      <p class="govuk-body">To be eligible a CPH must be registered in England. </p>
+      <p class="govuk-body">The CPH number cannot be:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>an 8000 number used for abattoirs, pet food manufacturers, racing pigeon establishments and showgrounds</li>
+        <li>a 9000 number used for poultry keepers</li>
+    </ul>
+
+      <p class="govuk-body">You can apply for <a href="../business.html" >another business</a>that has an eligible CPH.</p>
+      <p class="govuk-body">If you think you have an eligible CPH, contact the Rural Payments Agency by email or phone.</p>
+
+      <p class="govuk-body">Email: <a class="govuk-link" href="mailto:ruralpayments@defra.gov.uk">ruralpayments@defra.gov.uk</a></p>
+        
+      <ul class="govuk-list">
+        <li>Telephone: 03000 200 301</li>
+        <li>Monday to Friday, 8:30am to 5pm (except public holidays)</li>
+        <li>Find out about <a href="https://www.gov.uk/call-charges" target="”_blank”">call charges</a></li>
+      </ul>
+
+    </div>
+  </div>
+
+
+
+
+
+{% endblock %}
