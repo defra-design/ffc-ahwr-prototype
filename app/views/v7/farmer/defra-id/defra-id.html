@@ -1,7 +1,7 @@
 {% extends "layouts/layout.html" %}
 {% set serviceName = "Apply for an Annual Health and Welfare review" %}
 
-{% set title = "Sign in to apply for an annual health and welfare review of your livestock" %}
+{% set title = "Sign in for an annual health and welfare review of your livestock" %}
 
 {% block pageTitle %}
   {{title}} - GOV.UK
@@ -26,7 +26,7 @@
   
   <div class="govuk-form-group">
     <label class="govuk-label" for="crn">
-      Enter your customer reference number (CRN)
+      Customer reference number (CRN)
     </label>
   
     
@@ -43,7 +43,7 @@
   
   <div class="govuk-form-group">
     <label class="govuk-label" for="password--">
-      Enter your password
+      Password
     </label>
   
   <input class="govuk-input govuk-!-width-full-width" id="password--" name="password--" type="password" autocomplete="false">
@@ -69,17 +69,24 @@
       <details class="govuk-details" data-module="govuk-details">
     <summary class="govuk-details__summary">
       <span class="govuk-details__summary-text">
-        Problems with your CRN?
+        Help with sigining in
       </span>
     </summary>
     <div class="govuk-details__text">
-      If you’ve lost or forgotten your CRN, contact the Rural Payments Agency.<br><br> 
-      Rural Payments Agency <br>
+      Contact the Rural Payments Agency by email or phone if:<br><br>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>you have forgotten your CRN</li>
+        <li>you have lost your CRN</li>
+        <li>your CRN is not recognised</li>
+      </ul>
+Email: <a href=mailto:ruralpayments@defra.gov.uk?subject=feedback>ruralpayments@defra.gov.uk</a><br><br>
+      
       Telephone: 03000 200 301 <br>
       Monday to Friday, 8:30am to 5pm (except public holidays) <br>
-      <a href=mailto:ruralpayments@defra.gov.uk?subject=feedback>ruralpayments@defra.gov.uk</a>
-      <br><br>
+      <br>
       <p class="govuk-body">Find out about <a href=https://www.gov.uk/call-charges target=”_blank”>call charges</p>
+      <p class="govuk-body"><a href=https://www.ruralpayments.service.gov.uk >Register with the Rural Payments service</a> if you do not have an account.</p> 
       </div>
   </details>
   
