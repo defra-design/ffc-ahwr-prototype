@@ -45,7 +45,7 @@ router.post('/select-business', function (req, res) {
 
   // Route for defra id picker journey
 
-  router.post('/select-business', function (req, res) {
+  router.post('/select-business-2', function (req, res) {
 
     var businessChoice = req.session.data['business']
 
@@ -66,6 +66,30 @@ router.post('/select-business', function (req, res) {
       }
 
   })
+
+    // Route for claim defra-id journey
+
+    router.post('/select-business-2', function (req, res) {
+
+      var businessChoice = req.session.data['business']
+  
+      if (businessChoice == "business1"){
+        res.redirect('/v7/farmer/claim/check-details-1')
+      }
+  
+      if (businessChoice == "business2"){
+        res.redirect('/v7/farmer/claim/check-details-2')
+      }
+  
+      if (businessChoice == "business3"){
+        res.redirect('/v7/farmer/claim/check-details-3')
+      }
+  
+      if (businessChoice == "business4"){
+          res.redirect('/v7/farmer/claim/check-details-4')
+        }
+  
+    })
 
 module.exports = router
 
