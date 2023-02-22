@@ -1,0 +1,83 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Apply for an Annual Health and Welfare Review
+{% endblock %}
+{% set serviceName %}
+Apply for an Annual Health and Welfare Review
+{% endset%}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+  
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+  
+          <h1 class="govuk-heading-l">Check your answers and register your interest</h1>
+  
+          <dl class="govuk-summary-list govuk-!-margin-bottom-8">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Customer reference number 
+              </dt>
+              <dd class="govuk-summary-list__value">
+                1234567890
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="crn-enter">
+                  Change<span class="govuk-visually-hidden"> crn</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Single business identifier number
+              </dt>
+              <dd class="govuk-summary-list__value">
+                123456789
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="sbi-enter">
+                  Change<span class="govuk-visually-hidden"> sbi</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Main Rural Payments business email address
+              </dt>
+              <dd class="govuk-summary-list__value">
+                joe.bloggs@email.com 
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="email-enter">
+                  Change<span class="govuk-visually-hidden"> email address</span>
+                </a>
+              </dd>
+            </div>
+          </dl>
+  
+          <h2 class="govuk-heading-m">Now register your interest</h2>
+  
+          <p class="govuk-body">By registering your interest you’re confirming the information you’ve provided is correct.</p>
+  
+          <form action="confirmation" method="post" novalidate>
+  
+            <input type="hidden" name="answers-checked" value="true">
+  
+            <button class="govuk-button" data-module="govuk-button">
+            Register
+            </button>
+  
+          </form>
+  
+        </div>
+      </div>
+    </main>
+  </div>
+
+
+{% endblock %}
