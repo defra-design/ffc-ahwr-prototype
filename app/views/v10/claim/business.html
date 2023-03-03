@@ -8,9 +8,9 @@
 {% block content %}
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-full">
 
-    <h1 class="govuk-heading-xl">Who are you applying for?</h1>
+    <h1 class="govuk-heading-xl">Which business are you claiming for?</h1>
   </div>
 </div>
 
@@ -29,7 +29,7 @@
     </script>  
     
     <!-- Begin form autocomplete -->
-      <form action="../defraid-20-plus/check-details.html" method="get">
+      <form action="../claim/check-details-2.html" method="get">
         <div class="govuk-form-group">
           <p class="govuk-body">These are the businesses registered to your rural payments account.</p>
               <div id="waste-hint" class="govuk-hint">
@@ -106,9 +106,16 @@
 
 </div>
 
-<h2 class="govuk-heading-m">I can't find the business I'm looking for</h2>
-
-        <p class="govuk-body">Sign in to the <a href=https://www.ruralpayments.service.gov.uk >Rural Payments service </a> to add or update the businesses registered to your account.</p>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          Update the list
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <p class="govuk-body">If you need to amend the list of businesses registered to your account, update your account in the <a href=https://www.ruralpayments.service.gov.uk >Rural Payments service</a>.</p>
         <p class="govuk-body">If you’re unable to update your account or need help, contact the Rural Payments Agency by email or phone.</p>
         <p class="govuk-body">Email:  <a href="mailto:ruralpayments@defra.gov.uk?subject=feedback">ruralpayments@defra.gov.uk</a><br><br>
      
@@ -122,9 +129,6 @@
 
   </a></div><a href="https://www.gov.uk/call-charges" target="”_blank”">
 </a></div>
-       
-      
-
   
 <script src="/public/javascripts/accessible-autocomplete.min.js"></script>
 <script type="text/javascript">
