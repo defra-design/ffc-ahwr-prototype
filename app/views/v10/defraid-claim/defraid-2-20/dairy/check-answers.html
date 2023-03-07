@@ -1,0 +1,162 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+{% set serviceName %}
+Claim funding for an annual health and welfare review
+{% endset%}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-width-container">
+
+      <h1 class="govuk-heading-l">Check your answers</h1>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-width-one-third">
+            Date of visit
+          </dt>
+          <dd class="govuk-summary-list__value">
+            6 November 2022
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="visit-date">
+              Change<span class="govuk-visually-hidden"> visit date</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Vet practice
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Southside Vet Group
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="vet-practice">
+              Change<span class="govuk-visually-hidden"> vet practice</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Vet RCVS
+          </dt>
+          <dd class="govuk-summary-list__value">
+            7116359
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="vet-rcvs">
+              Change<span class="govuk-visually-hidden"> RCVS number</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Herd vaccinated for BVD
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="beef/vaccination-status">
+              Change<span class="govuk-visually-hidden"> vaccination status</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Date herd last vaccinated for BVD
+          </dt>
+          <dd class="govuk-summary-list__value">
+            21 May 2022
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="beef/vaccination-date">
+              Change<span class="govuk-visually-hidden"> vaccination date</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Breeding cattle vaccination up to date
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="beef/vaccination-breeding">
+              Change<span class="govuk-visually-hidden"> breeding cattle vaccination</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            BVD in herd
+          </dt>
+          <dd class="govuk-summary-list__value">
+            No
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="beef/test-result">
+              Change<span class="govuk-visually-hidden"> test result</span>
+            </a>
+          </dd>
+        </div>
+        
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            BVD virus circulating in herd
+          </dt>
+          <dd class="govuk-summary-list__value">
+            No
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="beef/BVD-circulating">
+              Change<span class="govuk-visually-hidden"> BVD circulating</span>
+            </a>
+          </dd>
+        </div>
+
+      </dl>
+
+    </div>
+
+    <form action="/form-handler" method="post" novalidate>
+
+      <input type="hidden" name="answers-checked" value="true">
+
+      <!-- <button class="govuk-button" data-module="govuk-button">
+        Confirm and send
+      </button>
+      <a href="confirmation" role="button" draggable="false" class="govuk-button docs-creator" data-module="govuk-button">
+        Confirm and send
+      </a>
+ -->
+      {{ govukButton({
+      text: "Continue",
+      href: "declaration"
+      }) }}
+
+    </form>
+
+  </div>
+
+
+</div>
+{% endblock %}
