@@ -88,14 +88,37 @@ Apply for an Annual Health and Welfare Review
     
   </dl>
     
-  <form action="../apply/which-review.html" method="get">
+  <form class="form" method="post">
 
-    <button class="govuk-button" data-module="govuk-button">Confirm and continue</button>
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+         
+          <h2 class="govuk-fieldset__heading">
+            Are these details correct?
+          </h2>
+        </legend>
+        <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="which-review" onclick="setLocation(this);">
+            <label class="govuk-label govuk-radios__label" for="changed-name">
+              Yes
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="details-incorrect" onclick="setLocation(this);">
+            <label class="govuk-label govuk-radios__label" for="changed-name-2">
+              No
+            </label>
+          </div>
+        </div>
 
-    <p><a href= "https://www.gov.uk/claim-rural-payments">Update your details on the Rural Payments service</a>, if they’re not correct.</p>
+      </fieldset>
+    </div>
+
+    <button class="govuk-button" data-module="govuk-button">Continue</button>
 
   </form>
-
 
 
   </div>
