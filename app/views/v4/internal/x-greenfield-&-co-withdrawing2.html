@@ -43,7 +43,7 @@ Annual Health and Welfare Back Office
       <h1 class="govuk-panel__title-s govuk-!-font-size-36 govuk-!-margin-top-1" style="color:#000000;">
         Are you sure you want to withdraw?
       </h1>
-      <a href="x-greenfield-withdrawn" role="button" draggable="false" class="govuk-button govuk-button--warning govuk-!-margin-bottom-2" data-module="govuk-button">
+      <a href="x-greenfield-withdrawn" role="button" draggable="false" class="govuk-button govuk-button-- govuk-!-margin-bottom-2" data-module="govuk-button">
         Yes
       </a>
       <a href="javascript:history.go(-1)" role="button" draggable="false" class="govuk-button govuk-button--secondary govuk-!-margin-bottom-2" data-module="govuk-button">
@@ -66,6 +66,12 @@ Annual Health and Welfare Back Office
             <a class="govuk-tabs__tab" href="#claimed">
               Claim
             </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#history">
+                History
+              </a>
+              </li>
         </ul>
   
         <div class="govuk-tabs__panel" id="applied">
@@ -125,6 +131,42 @@ Annual Health and Welfare Back Office
                   reference number (URN)</th>
                 <td class="govuk-table__cell">URN-7366-28DE</td>
               </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
+          <h2 class="govuk-heading-l">History</h2>
+          <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Date</th>
+                <th scope="col" class="govuk-table__header">Time</th>
+                <th scope="col" class="govuk-table__header">Action</th>
+                <th scope="col" class="govuk-table__header">User</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">23/03/2023</td>
+                <td class="govuk-table__cell">10:00:12</td>
+                <td class="govuk-table__cell">Claim approved</td>
+                <td class="govuk-table__cell">Daniel Jones</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">24/03/2023</td>
+                <td class="govuk-table__cell">09:30:00</td>
+                <td class="govuk-table__cell">Withdraw completed</td>
+                <td class="govuk-table__cell">Daniel Jones</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">25/03/2023</td>
+                <td class="govuk-table__cell">11:10:15</td>
+                <td class="govuk-table__cell">Claim rejected</td>
+                <td class="govuk-table__cell">Amanda Hassan</td>
+              </tr>
+        </div>
+             
             </tbody>
           </table>
         </div>
