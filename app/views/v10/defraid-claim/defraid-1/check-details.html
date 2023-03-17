@@ -14,60 +14,92 @@ Health and welfare review funding for this organisation
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
+
     <h1 class="govuk-heading-l">
-      Check your details
+      Check the details of the review
     </h1>
-<!--
-    <h2 class="govuk-heading-m">Arthington Farm Ltd</h2>
--->
-    <dl class="govuk-summary-list govuk-!-margin-bottom-8">
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+    
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-          Farmer name
+          Agreement number
         </dt>
         <dd class="govuk-summary-list__value">
-          Jane Doe
+          AHWR-F021-723B
         </dd>
         <dd class="govuk-summary-list__actions">
-
         </dd>
       </div>
-
+  
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Business name
         </dt>
         <dd class="govuk-summary-list__value">
-          Arthington Farm Ltd 
+          Arthington Farm Ltd
         </dd>
         <dd class="govuk-summary-list__actions">
-
         </dd>
       </div>
 
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-          SBI number
+          Type of review
         </dt>
         <dd class="govuk-summary-list__value">
-          234567890
+          Beef cattle
         </dd>
         <dd class="govuk-summary-list__actions">
-
         </dd>
       </div>
 
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-          Address
+          More than 11 cattle
         </dt>
         <dd class="govuk-summary-list__value">
-          Primrose Farm<br>Arthington<br>Otley<br>LS21 1PH
+          Yes
         </dd>
         <dd class="govuk-summary-list__actions">
-
         </dd>
       </div>
+
+    </dl>
+
+    <form class="form" method="post">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Are these details correct?
+            </h2>
+          </legend>
+          <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="visit-date" onclick="setLocation(this);">
+              <label class="govuk-label govuk-radios__label" for="changed-name">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="details-incorrect" onclick="setLocation(this);">
+              <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                No
+              </label>
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+
+      <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+    </form>
+
+  </div>
+</div>
 <!--
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
