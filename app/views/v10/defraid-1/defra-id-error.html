@@ -22,14 +22,42 @@
  
 <form class="form" action="choose-sbi.html" method="_blank">
 
+  <div class="govuk-error-summary" data-module="govuk-error-summary">
+    <div role="alert">
+      <h2 class="govuk-error-summary__title">
+        There is a problem
+      </h2>
+      <div class="govuk-error-summary__body">
+        <ul class="govuk-list govuk-error-summary__list">
+          <li>
+            <a href="#">You must enter a CRN</a>
+          </li>
+          <li>
+            <a href="#">Enter your password</a>
+          </li>
+          <li>
+            <a href="#">Password entered is incorrect</a>
+          </li>
+          <li>
+            <a href="#">The CRN and password are not recognised. Your account will be locked if entered incorrect details multiple times</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
   
   
   <div class="govuk-form-group">
     <label class="govuk-label" for="crn">
       Customer reference number (CRN)
     </label>
-  
-    
+      <p id="crn-error" class="govuk-error-message">
+        <span class="govuk-visually-hidden">Error:</span> Enter your CRN
+      </p>
+      <p id="crn-error" class="govuk-error-message">
+        <span class="govuk-visually-hidden">Error:</span> You must enter 10 digits
+      </p>
+   
     
     <div id="crn-hint" class="govuk-hint">
       This is the 10 digit number emailed to you when you created your annual health and welfare review account
@@ -45,6 +73,13 @@
     <label class="govuk-label" for="password--">
       Password
     </label>
+
+    <p id="crn-error" class="govuk-error-message">
+      <span class="govuk-visually-hidden">Error:</span> Enter your password
+    </p>
+    <p id="crn-error" class="govuk-error-message">
+      <span class="govuk-visually-hidden">Error:</span> Password entered is incorrect
+    </p>
   
   <input class="govuk-input govuk-!-width-full-width" id="password--" name="password--" type="password" autocomplete="false">
 
