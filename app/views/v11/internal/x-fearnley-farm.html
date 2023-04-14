@@ -1,4 +1,4 @@
-{% extends "layouts/layout-defra-authoriser.html" %}
+{% extends "layouts/layout-defra.html" %}
 
 {% block pageTitle %}
 Back office: User application
@@ -11,7 +11,7 @@ Annual Health and Welfare Back Office
 <div class="govuk-phase-banner govuk-!-padding-top-0">
   <p class="govuk-phase-banner__content">
     <strong style="background-color:#00a33b;" class="govuk-tag govuk-phase-banner__content__tag">
-      beta
+      Beta
     </strong>
     <span class="govuk-phase-banner__text">
       This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
@@ -19,7 +19,7 @@ Annual Health and Welfare Back Office
   </p>
 </div>
 
-<a class="govuk-back-link govuk-!-margin-bottom-0" href="../march-applications">Back</a>
+<a class="govuk-back-link govuk-!-margin-bottom-0" href="../a-digital.html">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -100,20 +100,15 @@ Annual Health and Welfare Back Office
             </li>
       </ul>
 
-
       <div class="govuk-tabs__panel" id="applied">
-        <h2 class="govuk-heading-l">Agreed</h2>
+        <h2 class="govuk-heading-l">Agreement</h2>
         <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-            </tr>
-          </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Date of agreement</th>
-              <td class="govuk-table__cell">1/11/2022</td>
-            </tr>
-            <tr class="govuk-table__row">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Date of agreement</th>
+                <td class="govuk-table__cell">1/11/2022</td>
+              </tr>
               <th scope="row" class="govuk-table__header">Business details correct</th>
               <td class="govuk-table__cell">Yes</td>
             </tr>
@@ -133,122 +128,88 @@ Annual Health and Welfare Back Office
         </table>
       </div>
 
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="reviewed">
-        <h2 class="govuk-heading-l">No data inputted yet</h2>
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
+        <h2 class="govuk-heading-l">Claimed</h2>
         <table class="govuk-table">
-          <thead class="govuk-table__head">
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Date of review</th>
+              <td class="govuk-table__cell">10/10/2022</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Date of claim	</th>
+              <td class="govuk-table__cell">16/10/2022</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Review details confirmed</th>
+              <td class="govuk-table__cell">Yes</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Vet’s name</th>
+              <td class="govuk-table__cell">Joe Bloggs</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Vet’s RCVS number</th>
+              <td class="govuk-table__cell">1234567</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Test results unique 
+                reference number (URN)</th>
+              <td class="govuk-table__cell">URN-7374-48BC</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
+        <h2 class="govuk-heading-l">History</h2>
+        <table class="govuk-table">
+          <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
               <th scope="col" class="govuk-table__header">Date</th>
-              <th scope="col" class="govuk-table__header">Data requested</th>
-              <th scope="col" class="govuk-table__header">Data entered</th>
+              <th scope="col" class="govuk-table__header">Time</th>
+              <th scope="col" class="govuk-table__header">Action</th>
+              <th scope="col" class="govuk-table__header">User</th>
             </tr>
           </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell">Review date</td>
-              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">23/03/2023</td>
+              <td class="govuk-table__cell">10:00:12</td>
+              <td class="govuk-table__cell">Recommend to reject</td>
+              <td class="govuk-table__cell">Daniel Jones</td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell">11 or more cattle?</td>
-              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">24/03/2023</td>
+              <td class="govuk-table__cell">09:30:00</td>
+              <td class="govuk-table__cell">Recommend to pay</td>
+              <td class="govuk-table__cell">Daniel Jones</td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell">BVD in herd?</td>
-              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">25/03/2023</td>
+              <td class="govuk-table__cell">11:10:15</td>
+              <td class="govuk-table__cell">Authorise to reject</td>
+              <td class="govuk-table__cell">Amanda Hassan</td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell">Report given?</td>
-              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">25/03/2023</td>
+              <td class="govuk-table__cell">11:10:15</td>
+              <td class="govuk-table__cell">Authorise to pay</td>
+              <td class="govuk-table__cell">Amanda Hassan</td>
             </tr>
-          </tbody>
-        </table>
-    
       </div>
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-        <h2 class="govuk-heading-l">Not claimed yet</h2>
-        <table class="govuk-table">
-            </tr>
-          </tbody>
-        </table>
-    
-      </div>
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="paid">
-        <h2 class="govuk-heading-l">Cannot be paid yet</h2>
-        <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Data requested</th>
-              <th scope="col" class="govuk-table__header">Data entered</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Payment due</td>
-              <td class="govuk-table__cell"></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Payment amount</td>
-              <td class="govuk-table__cell">£522</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Payment sent</td>
-              <td class="govuk-table__cell"></td>
-            </tr>
-          </tbody>
-        </table>
-    
-      </div>
-    </div>
 
-    <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
-      <h2 class="govuk-heading-l">History</h2>
-      <table class="govuk-table">
-        <tbody class="govuk-table__body">
-          <tr class="govuk-table__row">
-            <th scope="col" class="govuk-table__header">Date</th>
-            <th scope="col" class="govuk-table__header">Time</th>
-            <th scope="col" class="govuk-table__header">Action</th>
-            <th scope="col" class="govuk-table__header">User</th>
-          </tr>
-        </thead>
-        <tbody class="govuk-table__body">
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell">23/03/2023</td>
-            <td class="govuk-table__cell">10:00:12</td>
-            <td class="govuk-table__cell">Recommend to reject</td>
-            <td class="govuk-table__cell">Daniel Jones</td>
-          </tr>
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell">24/03/2023</td>
-            <td class="govuk-table__cell">09:30:00</td>
-            <td class="govuk-table__cell">Recommend to pay</td>
-            <td class="govuk-table__cell">Daniel Jones</td>
-          </tr>
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell">25/03/2023</td>
-            <td class="govuk-table__cell">11:10:15</td>
-            <td class="govuk-table__cell">Authorise to reject</td>
-            <td class="govuk-table__cell">Amanda Hassan</td>
-          </tr>
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell">25/03/2023</td>
-            <td class="govuk-table__cell">11:10:15</td>
-            <td class="govuk-table__cell">Authorise to pay</td>
-            <td class="govuk-table__cell">Amanda Hassan</td>
-          </tr>
-  </tbody>
-</table>
+    </tbody>
+  </table>
 </div>
-
-
-    <a href="x-fearnley-farm-withdrawing.html" class="govuk-link govuk-body" style="color:#d4351c">
-      Withdraw
-    </a>
-
+      
+      
+      <br>
+      <a href="x-fearnley-farm-withdrawing.html" class="govuk-link govuk-body" style="color:#d4351c">
+        Withdraw
+      </a>
+      
+      
+    </div>
   </div>
 </div>
 
