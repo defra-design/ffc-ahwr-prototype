@@ -44,18 +44,35 @@ Annual Health and Welfare Back Office
         Cancel
       </a>
       <br>
-      <h3 class="govuk-panel__title-s govuk-!-font-size-36 govuk-!-margin-top-1" style="color:#000000;">
-        Recommend to pay
-      </h3>
 
-      <div class="govuk-warning-text">
-        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-        <strong class="govuk-warning-text__text">
-          <span class="govuk-warning-text__assistive">Warning</span>
-          An authoriser will check this claim and contact you if they want to discuss it.
-        </strong>
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Recommend to pay
+            </h1>
+            <div class="govuk-!-padding-bottom-1"></div>
+
+          </legend>
+          <div id="waste-hint" class="govuk-hint">
+            Select all that apply.
+          </div>
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+              <label class="govuk-label govuk-checkboxes__label" for="waste">
+                I have checked the claim against the verification checklist and it has passed. I recommend the payment is authorised.
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                I have sent the verification checklist to the authoriser explaining why it's passed.
+              </label>
+            </div>
+          </div>
+        </fieldset>
       </div>
-
 
       <a href="../internal/x-greenfield-approved#claimed" role="button" draggable="false" class="govuk-button govuk-button govuk-!-margin-bottom-2" data-module="govuk-button">
         Confirm and continue
