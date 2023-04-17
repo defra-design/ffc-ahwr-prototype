@@ -40,20 +40,33 @@ Annual Health and Welfare Back Office
 
     <!-- "Pop-up" box -->
     <div class="govuk-panel govuk-panel--confirmation govuk-!-text-align-left" style="background-color:#fafafa; border-color:#000000; border-width:medium;">
-      <a href="x-greenfield.html" role="button" draggable="false" class="govuk-link govuk-body" style="color:#505a5f; float:right;" data-module="govuk-button">
-        Cancel
-      </a>
-      <br>
-      <h3 class="govuk-panel__title-s govuk-!-font-size-36 govuk-!-margin-top-1" style="color:#000000;">
-        Authorise payment
-      </h3>
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Authorise payment
+            </h1>
+            <div class="govuk-!-padding-bottom-3"></div>
 
-      <div class="govuk-warning-text">
-        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-        <strong class="govuk-warning-text__text">
-          <span class="govuk-warning-text__assistive">Warning</span>
-          If you authorise this, the customer will receive payment.
-        </strong>
+          </legend>
+          <div id="waste-hint" class="govuk-hint">
+            Select all that apply.
+          </div>
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+              <label class="govuk-label govuk-checkboxes__label" for="waste">
+               I have reviewed the completed verfication check and agree the claim has passed. I authorise the claim for payment.
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                I have updated the verfication checklist and sent it back to the recommender to attach to the customer's record in the Customer Relationship Management system.
+              </label>
+            </div>
+          </div>
+        </fieldset>
       </div>
 
 
@@ -90,7 +103,7 @@ Annual Health and Welfare Back Office
 
   
         <div class="govuk-tabs__panel" id="applied">
-          <h2 class="govuk-heading-l">In check</h2>
+          <h2 class="govuk-heading-l">Recommend to pay</h2>
           <table class="govuk-table">
             <tbody class="govuk-table__body">
               <tr class="govuk-table__row">
