@@ -1,0 +1,114 @@
+{% extends "layouts/layout-defra-authoriser.html" %}
+
+{% block pageTitle %}
+Back office: Applications
+{% endblock %}
+{% set serviceName %}
+Annual Health and Welfare Back Office
+{% endset%}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner govuk-!-padding-top-0">
+  <p class="govuk-phase-banner__content">
+    <strong style="background-color:#00a33b;" class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it. New application
+    </span>
+  </p>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<form class="form" action="#" method="_blank">
+
+
+<!-- Title + Search -->
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">
+          Eligibility check passed
+        </h1>
+    <!--
+        <h2 class="govuk-heading-m">Arthington Farm Ltd</h2>
+    -->
+        <dl class="govuk-summary-list govuk-!-margin-bottom-8">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              CRN
+            </dt>
+            <dd class="govuk-summary-list__value">
+              2122000018
+            </dd>
+            <dd class="govuk-summary-list__actions">
+    
+            </dd>
+          </div>
+    
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              SBI
+            </dt>
+            <dd class="govuk-summary-list__value">
+              106777899
+            </dd>
+            <dd class="govuk-summary-list__actions">
+    
+            </dd>
+          </div>
+    
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Organisation name
+            </dt>
+            <dd class="govuk-summary-list__value">
+              The Dairy Limited
+            </dd>
+            <dd class="govuk-summary-list__actions">
+    
+            </dd>
+          </div>
+    
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              CPH
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Yes
+            </dd>
+            <dd class="govuk-summary-list__actions">
+    
+            </dd>
+          </div>
+
+          <div class="govuk-!-padding-bottom-4"></div>
+
+          <div id="contact-hint" class="govuk-hint">
+            Large font required
+          </div>
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email" data-aria-controls="conditional-contact">
+              <label class="govuk-label govuk-checkboxes__label" for="contact">
+               Yes
+              </label>
+            </div>
+  
+          <div class="govuk-!-padding-bottom-7"></div>
+
+
+
+          <button class="govuk-button">Print pack</button>
+
+
+
+        </form>
+  
+     
+    </div>
+  </div>
+
+{% endblock %}

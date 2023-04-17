@@ -1,4 +1,4 @@
-{% extends "layouts/layout-defra.html" %}
+{% extends "layouts/layout-defra-authoriser.html" %}
 
 {% block pageTitle %}
 Back office: User application
@@ -19,7 +19,7 @@ Annual Health and Welfare Back Office
   </p>
 </div>
 
-<a class="govuk-back-link govuk-!-margin-bottom-0" href="../a-digital.html">Back</a>
+<a class="govuk-back-link govuk-!-margin-bottom-0" href="../march-applications">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -134,7 +134,7 @@ Annual Health and Welfare Back Office
         </div>
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-        <h2 class="govuk-heading-l">Not agreed</h2>
+        <h2 class="govuk-heading-l">Not eligible to claim</h2>
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
@@ -143,40 +143,14 @@ Annual Health and Welfare Back Office
       </div>
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
-        <h2 class="govuk-heading-l">History</h2>
+        <h2 class="govuk-heading-l">Activity Log</h2>
         <table class="govuk-table">
-          <tbody class="govuk-table__body">
+          <thead class="govuk-table__head">
             <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Date</th>
-              <th scope="col" class="govuk-table__header">Time</th>
-              <th scope="col" class="govuk-table__header">Action</th>
-              <th scope="col" class="govuk-table__header">User</th>
+              <th scope="col" class="govuk-table__header">25/07/2022 - Application disagreed</th>
             </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">23/03/2023</td>
-              <td class="govuk-table__cell">10:00:12</td>
-              <td class="govuk-table__cell">Recommend to reject</td>
-              <td class="govuk-table__cell">Daniel Jones</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">24/03/2023</td>
-              <td class="govuk-table__cell">09:30:00</td>
-              <td class="govuk-table__cell">Recommend to pay</td>
-              <td class="govuk-table__cell">Daniel Jones</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">25/03/2023</td>
-              <td class="govuk-table__cell">11:10:15</td>
-              <td class="govuk-table__cell">Authorise to reject</td>
-              <td class="govuk-table__cell">Amanda Hassan</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">25/03/2023</td>
-              <td class="govuk-table__cell">11:10:15</td>
-              <td class="govuk-table__cell">Authorise to pay</td>
-              <td class="govuk-table__cell">Amanda Hassan</td>
+            <tr>
+              <th scope="col" class="govuk-table__header">11/07/2022 - Agreement formed</th>
             </tr>
           </thead>
         </table>

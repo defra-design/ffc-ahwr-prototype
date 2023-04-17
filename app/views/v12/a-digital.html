@@ -1,4 +1,4 @@
-{% extends "layouts/layout-defra.html" %}
+{% extends "layouts/layout-defra-authoriser.html" %}
 
 {% block pageTitle %}
 Back office: Applications
@@ -55,6 +55,19 @@ Annual Health and Welfare Back Office
 <br>
 <br>
 
+<form action="../v8/a-digital-picker.html" method="get">
+<button class="govuk-button moj-button-menu__item govuk-button--secondary moj-page-header-actions__action" style = float:right; data-module="govuk-button">
+  New application
+</button>
+</form>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 
 <table class="govuk-table" data-module="moj-sortable-table">
 
@@ -91,7 +104,7 @@ Annual Health and Welfare Back Office
 
       <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="Claimed"><strong class="govuk-tag govuk-tag--blue">Claimed</strong></td>
 
-      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='../v9/internal/x-arthington-farm.html'>View details</a></td>
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='../v11/internal/x-arthington-farm.html'>View details</a></td>
 
     </tr>
 
@@ -107,7 +120,7 @@ Annual Health and Welfare Back Office
 
       <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="Agreed"><strong class="govuk-tag govuk-tag--green">Agreed</strong></td>
 
-      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='../v9/internal/x-fearnley-farm.html'>View details</a></td>
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='../v11/internal/x-fearnley-farm.html'>View details</a></td>
 
     </tr>
 
@@ -123,7 +136,7 @@ Annual Health and Welfare Back Office
 
       <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="Not agreed"><strong class="govuk-tag govuk-tag--pink">Not agreed</strong></td>
 
-      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='../v9/internal/x-stubbing-mills-farm-disagreed.html'>View details</a></td>
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='../v11/internal/x-stubbing-mills-farm-disagreed.html'>View details</a></td>
 
     </tr>
 
@@ -139,11 +152,23 @@ Annual Health and Welfare Back Office
 
       <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="In check"><strong class="govuk-tag govuk-tag--orange">In check</strong></td>
 
-      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="In check"><a href='../v9/internal/x-greenfield#claimed'>View details</a></td>
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="In check"><a href='../v11/internal/x-greenfield-approving#claimed'>View details</a></td>
 
     </tr>
-    <tr class="govuk-table__row">
 
+      <td class="govuk-table__cell">AHWR-F045-697K</td>
+
+      <td class="govuk-table__cell" data-sort-value="Greenfield & Co">Organic Bean Industries</td>
+
+      <td class="govuk-table__cell">109578695</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="01/11/2022">14/03/2023</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="In check"><strong class="govuk-tag govuk-tag--orange">In check</strong></td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="In check"><a href='../v11/internal/organicbeanincheck#claimed'>View details</a></td>
+
+    </tr>
     <tr class="govuk-table__row">
 
       <td class="govuk-table__cell">AHWR-F001-789H</td>
@@ -156,7 +181,7 @@ Annual Health and Welfare Back Office
 
       <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="Ready to pay"><strong class="govuk-tag govuk-tag--">Ready to pay</strong></td>
 
-      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='../v9/internal/x-sunnyhills.html'>View details</a></td>
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='../v11/internal/x-sunnyhills.html'>View details</a></td>
 
     </tr>
 
@@ -172,7 +197,7 @@ Annual Health and Welfare Back Office
 
       <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="Withdrawn"><strong class="govuk-tag govuk-tag--grey">Withdrawn</strong></td>
 
-      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='../v9/internal/x-mcgregor.html'>View details</a></td>
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='../v11/internal/x-mcgregor.html'>View details</a></td>
 
     </tr>
 
@@ -188,7 +213,23 @@ Annual Health and Welfare Back Office
 
       <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="Rejected"><strong class="govuk-tag govuk-tag--red">Rejected</strong></td>
 
-      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='../v9/internal/x-tulips-roses.html'>View details</a></td>
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='../v11/internal/x-tulips-roses.html'>View details</a></td>
+
+    </tr>
+
+    <tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">AHWR-G2453-128K</td>
+
+      <td class="govuk-table__cell" data-sort-value="Tulips & Rose Gardens">The Dairy Limited</td>
+
+      <td class="govuk-table__cell">1067778992</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="02/01/2023">02/04/2023</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="Rejected"><strong class="govuk-tag govuk-tag--yellow">Assisted Digital</strong></td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='../v11/internal/x-dairylimited'>View details</a></td>
 
     </tr>
 
