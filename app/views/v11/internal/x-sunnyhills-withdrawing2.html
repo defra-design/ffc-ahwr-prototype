@@ -90,8 +90,8 @@ Annual Health and Welfare Back Office
       </div>
     </dl>
 
-    <!--Application stages (in tabs)-->
-    <div class="govuk-tabs" data-module="govuk-tabs">
+     <!--Application stages (in tabs)-->
+     <div class="govuk-tabs" data-module="govuk-tabs">
       <h2 class="govuk-tabs__title">
         Contents
       </h2>
@@ -111,6 +111,8 @@ Annual Health and Welfare Back Office
               History
             </a>
             </li>
+      </ul>
+          </a>
       </ul>
 
       <div class="govuk-tabs__panel" id="applied">
@@ -142,7 +144,7 @@ Annual Health and Welfare Back Office
       </div>
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-        <h2 class="govuk-heading-l">Claimed</h2>
+        <h2 class="govuk-heading-l">Ready to pay</h2>
         <table class="govuk-table">
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
@@ -173,6 +175,38 @@ Annual Health and Welfare Back Office
           </tbody>
         </table>
       </div>
+
+<div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
+<h2 class="govuk-heading-l">History</h2>
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Date</th>
+      <th scope="col" class="govuk-table__header">Time</th>
+      <th scope="col" class="govuk-table__header">Action</th>
+      <th scope="col" class="govuk-table__header">User</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">23/03/2023</td>
+      <td class="govuk-table__cell">10:00:12</td>
+      <td class="govuk-table__cell">Recommend to reject</td>
+      <td class="govuk-table__cell">Daniel Jones</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">24/03/2023</td>
+      <td class="govuk-table__cell">09:30:00</td>
+      <td class="govuk-table__cell">Authorise to reject</td>
+      <td class="govuk-table__cell">Daniel Jones</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">25/03/2023</td>
+      <td class="govuk-table__cell">11:10:15</td>
+      <td class="govuk-table__cell">Recommend to pay</td>
+      <td class="govuk-table__cell">Mark Jones</td>
+    </tr>
+</div>
 
       <br>
       <a href="x-sunnyhills-withdrawing" class="govuk-link govuk-body" style="color:#d4351c">
