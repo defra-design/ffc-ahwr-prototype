@@ -1,4 +1,4 @@
-{% extends "layouts/layout-defra-authoriser.html" %}
+{% extends "layouts/layout-defra.html" %}
 
 {% block pageTitle %}
 Back office: User application
@@ -26,27 +26,52 @@ Annual Health and Welfare Back Office
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-error-summary" data-module="govuk-error-summary">
+      <div role="alert">
+        <h2 class="govuk-error-summary__title">
+          There is a problem
+        </h2>
+        <div class="govuk-error-summary__body">
+          <ul class="govuk-list govuk-error-summary__list">
+            <li>
+              <a href="#">You must select both checkboxes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     
     <h1 class="govuk-caption-l govuk-!-margin-bottom-3">
-      Reference: AHWR-F045-697K
+      Reference: AHWR-F021-724S
     </h1>
 
     <h2 class="govuk-heading-l">
-      Organic Bean Industries
-      <strong class="govuk-tag govuk-tag--orange govuk-!-margin-left-2">
+      Greenfield & Co
+      <strong class="govuk-tag govuk-tag--orange">
         In check
       </strong>
     </h2>
 
     <!-- "Pop-up" box -->
     <div class="govuk-panel govuk-panel--confirmation govuk-!-text-align-left" style="background-color:#fafafa; border-color:#000000; border-width:medium;">
+      <a href="x-greenfield.html" role="button" draggable="false" class="govuk-link govuk-body" style="color:#505a5f; float:right;" data-module="govuk-button">
+        Cancel
+      </a>
+      <br>
       <div class="govuk-form-group">
         <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h1 class="govuk-fieldset__heading">
-              Reject claim
+              Recommend to reject
             </h1>
-            <div class="govuk-!-padding-bottom-7"></div>
+            <div class="govuk-!-padding-bottom-4"></div>
+
+
+
+            <p id="nationality-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span> Select both checkboxes
+            </p>
 
 
 
@@ -55,46 +80,46 @@ Annual Health and Welfare Back Office
             <div class="govuk-checkboxes__item">
               <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
               <label class="govuk-label govuk-checkboxes__label" for="waste">
-               I have reviewed the completed verfication check and agree the claim has not passed. I reject the claim for payment.
+                I have checked the claim against the verification checklist and it has not passed. I recommend the claim is rejected.
               </label>
             </div>
             <div class="govuk-checkboxes__item">
               <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
               <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-                I have updated the verfication checklist and sent it back to the recommender to attach to the customer's record in the Customer Relationship Management system.
+                I have sent the verification checklist to the authoriser explaining why it's failed.
               </label>
             </div>
           </div>
         </fieldset>
       </div>
 
-      <a href="../internal/organicbeanauthorise#claimed" role="button" draggable="false" class="govuk-button govuk-button govuk-!-margin-bottom-2" data-module="govuk-button">
+      <a href="../internal/x-greenfield-rejected#claimed" role="button" draggable="false" class="govuk-button govuk-button govuk-!-margin-bottom-2" data-module="govuk-button">
         Confirm and continue
       </a>
       <br>
       <br>
+ 
 
 
     </div>
   
-  
       <!--Application stages (in tabs)-->
-      <div class="govuk-tabs govuk-!-margin-top-7" data-module="govuk-tabs">
-        <h2 class="govuk-tabs__title">
-          Contents
-        </h2>
-        <ul class="govuk-tabs__list">
-          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-            <a class="govuk-tabs__tab" href="#applied">
-              Agreement
-            </a>
+          <div class="govuk-tabs govuk-!-margin-top-7" data-module="govuk-tabs">
+ <h2 class="govuk-tabs__title">
+        Contents
+      </h2>
+      <ul class="govuk-tabs__list">
+        <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+          <a class="govuk-tabs__tab" href="#applied">
+            Agreement
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#claimed">
+            Claim
+          </a>
           </li>
           <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#claimed">
-              Claim
-            </a>
-            </li>
-        <li class="govuk-tabs__list-item">
             <a class="govuk-tabs__tab" href="#history">
               History
             </a>
@@ -103,13 +128,13 @@ Annual Health and Welfare Back Office
 
   
         <div class="govuk-tabs__panel" id="applied">
-          <h2 class="govuk-heading-l">Recommend to reject</h2>
+          <h2 class="govuk-heading-l">In check</h2>
           <table class="govuk-table">
             <tbody class="govuk-table__body">
               <tr class="govuk-table__row">
                 <tr class="govuk-table__row">
                   <th scope="row" class="govuk-table__header">Date of agreement</th>
-                  <td class="govuk-table__cell">14/03/2023</td>
+                  <td class="govuk-table__cell">13/02/2023</td>
                 </tr>
                 <th scope="row" class="govuk-table__header">Business details correct</th>
                 <td class="govuk-table__cell">Yes</td>
@@ -131,12 +156,12 @@ Annual Health and Welfare Back Office
         </div>
   
         <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-          <h2 class="govuk-heading-l">Recommend to reject</h2>
+          <h2 class="govuk-heading-l">In check</h2>
           <table class="govuk-table">
             <tbody class="govuk-table__body">
               <tr class="govuk-table__row">
                 <th scope="row" class="govuk-table__header">Date of claim	</th>
-                <td class="govuk-table__cell">03/04/2023</td>
+                <td class="govuk-table__cell">03/03/2023</td>
               </tr>
               <tr class="govuk-table__row">
                 <th scope="row" class="govuk-table__header">Review details confirmed</th>
@@ -144,11 +169,11 @@ Annual Health and Welfare Back Office
               </tr>
               <tr class="govuk-table__row">
                 <th scope="row" class="govuk-table__header">Date of review</th>
-                <td class="govuk-table__cell">18/04/2023</td>
+                <td class="govuk-table__cell">18/02/2023</td>
               </tr>
               <tr class="govuk-table__row">
                 <th scope="row" class="govuk-table__header">Vet’s name</th>
-                <td class="govuk-table__cell">Michael Johnson</td>
+                <td class="govuk-table__cell">Corrine Bailey</td>
               </tr>
               <tr class="govuk-table__row">
                 <th scope="row" class="govuk-table__header">Vet’s RCVS number</th>
@@ -212,7 +237,6 @@ Annual Health and Welfare Back Office
 
   </div>
    
-
   
 </div>
       
