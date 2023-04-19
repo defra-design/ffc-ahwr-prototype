@@ -1,0 +1,68 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+{% set serviceName %}Annual health and welfare review of livestock{% endset%}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-width-container">
+
+      <form action="/form-handler" method="post" novalidate>
+
+        <input type="hidden" name="answers-checked" value="true">
+
+
+          <h1 class="govuk-heading-l">Check your answers</h1>
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Type of review
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">Dairy cattle</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="which-review">
+                  Change<span class="govuk-visually-hidden">animal type</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Number of livestock
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">11 or more dairy cattle</p>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="dairy-eligibility">
+                  Change<span class="govuk-visually-hidden">livestock number</span>
+                </a>
+              </dd>
+            </div>
+
+          </dl>
+
+            {{ govukButton({
+              text: "Confirm",
+              href: "declaration"
+            }) }}
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
