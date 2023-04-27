@@ -28,57 +28,31 @@ Annual Health and Welfare Back Office
   <div class="govuk-grid-column-two-thirds">
     
     <h1 class="govuk-caption-l govuk-!-margin-bottom-3">
-      Agreement number: AHWR-F021-721B
+      Reference: AHWR-F021-724S
     </h1>
 
     <h2 class="govuk-heading-l">
-      P & D Fearnley & Sons
-      <strong class="govuk-tag govuk-tag--green">
-        Agreed
+      Arthington Farm
+      <strong class="govuk-tag govuk-tag--blue govuk-!-margin-left-2">
+        Claimed
       </strong>
     </h2>
 
-    <!--User details-->
-    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Name:
-        </dt>
-        <dd class="govuk-summary-list__value">
-          <p>Phil Fearnley</p>
-        </dd>
-      </div>
-
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          SBI number:
-        </dt>
-        <dd class="govuk-summary-list__value">
-          103491987
-        </dd>
-      </div>
-
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Address:
-        </dt>
-        <dd class="govuk-summary-list__value">
-          Manor Farm Rd, Harleston IP20 0AX
-        </dd>
-      </div>
-
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Email address:
-        </dt>
-        <dd class="govuk-summary-list__value">
-          <p>fearnley-sons@hotmail.com</p>
-        </dd>
-      </div>
-    </dl>
-
+    <!-- "Pop-up" box -->
+    <div class="govuk-panel govuk-panel--confirmation govuk-!-text-align-left" style="background-color:#fafafa; border-color:#000000; border-width:medium;">
+      <h1 class="govuk-panel__title-s govuk-!-font-size-36 govuk-!-margin-top-1" style="color:#000000;">
+        Are you sure you want to withdraw the claim?
+      </h1>
+      <a href="x-arthington-farm-withdrawn" role="button" draggable="false" class="govuk-button govuk-button govuk-!-margin-bottom-2" data-module="govuk-button">
+        Yes
+      </a>
+      <a href="javascript:history.go(-1)" role="button" draggable="false" class="govuk-button govuk-button--secondary govuk-!-margin-bottom-2" data-module="govuk-button">
+        No
+      </a>
+    </div>
+  
       <!--Application stages (in tabs)-->
-      <div class="govuk-tabs" data-module="govuk-tabs">
+      <div class="govuk-tabs govuk-!-margin-top-7" data-module="govuk-tabs">
         <h2 class="govuk-tabs__title">
           Contents
         </h2>
@@ -99,10 +73,9 @@ Annual Health and Welfare Back Office
               </a>
               </li>
         </ul>
-
   
         <div class="govuk-tabs__panel" id="applied">
-          <h2 class="govuk-heading-l">Agreed</h2>
+          <h2 class="govuk-heading-l">Claimed</h2>
           <table class="govuk-table">
             <tbody class="govuk-table__body">
               <tr class="govuk-table__row">
@@ -130,7 +103,33 @@ Annual Health and Welfare Back Office
         </div>
   
         <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-          <h2 class="govuk-heading-l">Agreed</h2>
+          <h2 class="govuk-heading-l">Claimed</h2>
+          <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Date of review</th>
+                <td class="govuk-table__cell">10/10/2022</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Date of claim	</th>
+                <td class="govuk-table__cell">16/10/2022</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Review details confirmed</th>
+                <td class="govuk-table__cell">Yes</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Vet’s name</th>
+                <td class="govuk-table__cell">Joe Bloggs</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Vet’s RCVS number</th>
+                <td class="govuk-table__cell">1234567</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Test results unique 
+                  reference number (URN)</th>
+                <td class="govuk-table__cell">URN-7374-48BC</td>
               </tr>
             </tbody>
           </table>
@@ -167,23 +166,17 @@ Annual Health and Welfare Back Office
                 <td class="govuk-table__cell">Amanda Hassan</td>
               </tr>
         </div>
-      </tbody>
-    </table>
-  </div>
-              
-      <br>
-      <a href="x-fearnley-farm-withdrawing.html" class="govuk-link govuk-body" style="color:#d4351c">
-        Withdraw
-      </a>
-      
              
-     
-   
-      
+            </tbody>
+          </table>
+        </div>
+    </div>
 
-      
-    
+
   </div>
+   
+
+  
 </div>
 
 {% endblock %}

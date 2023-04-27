@@ -28,57 +28,54 @@ Annual Health and Welfare Back Office
   <div class="govuk-grid-column-two-thirds">
     
     <h1 class="govuk-caption-l govuk-!-margin-bottom-3">
-      Agreement number: AHWR-F021-721B
+      Reference: AHWR-F021-724S
     </h1>
 
     <h2 class="govuk-heading-l">
-      P & D Fearnley & Sons
-      <strong class="govuk-tag govuk-tag--green">
-        Agreed
+      Greenfield & Co
+      <strong class="govuk-tag govuk-tag--orange govuk-!-margin-left-2">
+        In check
       </strong>
     </h2>
 
-    <!--User details-->
-    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Name:
-        </dt>
-        <dd class="govuk-summary-list__value">
-          <p>Phil Fearnley</p>
-        </dd>
-      </div>
+    <!-- "Pop-up" box -->
+    <!-- "Pop-up" box -->
+    <div class="govuk-panel govuk-panel--confirmation govuk-!-text-align-left" style="background-color:#fafafa; border-color:#000000; border-width:medium;">
+      <a href="x-greenfield3.html" role="button" draggable="false" class="govuk-link govuk-body" style="color:#505a5f; float:right;" data-module="govuk-button">
+        Back
+      </a>
+      <br>
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Reject claim
+            </h1>
+            <div class="govuk-!-padding-bottom-7"></div>
 
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          SBI number:
-        </dt>
-        <dd class="govuk-summary-list__value">
-          103491987
-        </dd>
-      </div>
+      <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+          <label class="govuk-label govuk-checkboxes__label" for="waste">
+            I have reviewed the completed verification check and agree the claim has not passed. I reject this claim for payment.          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+          <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+            I have told my team leader to move this claim to the rejection process.</label>
+    </div>
+  </div>
+</fieldset>
+</div>
 
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Address:
-        </dt>
-        <dd class="govuk-summary-list__value">
-          Manor Farm Rd, Harleston IP20 0AX
-        </dd>
-      </div>
+      <a href="../internal/x-greenfield-rejected.html" role="button" draggable="false" class="govuk-button govuk-button govuk-!-margin-bottom-2" data-module="govuk-button">
+        Confirm and continue
+      </a>
 
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Email address:
-        </dt>
-        <dd class="govuk-summary-list__value">
-          <p>fearnley-sons@hotmail.com</p>
-        </dd>
-      </div>
-    </dl>
-
+    </div>
+  
       <!--Application stages (in tabs)-->
-      <div class="govuk-tabs" data-module="govuk-tabs">
+      <div class="govuk-tabs govuk-!-margin-top-7" data-module="govuk-tabs">
         <h2 class="govuk-tabs__title">
           Contents
         </h2>
@@ -99,16 +96,15 @@ Annual Health and Welfare Back Office
               </a>
               </li>
         </ul>
-
   
         <div class="govuk-tabs__panel" id="applied">
-          <h2 class="govuk-heading-l">Agreed</h2>
+          <h2 class="govuk-heading-l">In check</h2>
           <table class="govuk-table">
             <tbody class="govuk-table__body">
               <tr class="govuk-table__row">
                 <tr class="govuk-table__row">
                   <th scope="row" class="govuk-table__header">Date of agreement</th>
-                  <td class="govuk-table__cell">1/11/2022</td>
+                  <td class="govuk-table__cell">13/02/2023</td>
                 </tr>
                 <th scope="row" class="govuk-table__header">Business details correct</th>
                 <td class="govuk-table__cell">Yes</td>
@@ -130,12 +126,38 @@ Annual Health and Welfare Back Office
         </div>
   
         <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-          <h2 class="govuk-heading-l">Agreed</h2>
+          <h2 class="govuk-heading-l">In check</h2>
+          <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Date of claim	</th>
+                <td class="govuk-table__cell">Yes</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Review details confirmed</th>
+                <td class="govuk-table__cell">03/03/2023</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Date of review</th>
+                <td class="govuk-table__cell">18/02/2023</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Vet’s name</th>
+                <td class="govuk-table__cell">Corrine Bailey</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Vet’s RCVS number</th>
+                <td class="govuk-table__cell">10938475</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Test results unique 
+                  reference number (URN)</th>
+                <td class="govuk-table__cell">URN-7366-28DE</td>
               </tr>
             </tbody>
           </table>
         </div>
-      
+
         <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
           <h2 class="govuk-heading-l">History</h2>
           <table class="govuk-table">
@@ -167,23 +189,25 @@ Annual Health and Welfare Back Office
                 <td class="govuk-table__cell">Amanda Hassan</td>
               </tr>
         </div>
-      </tbody>
-    </table>
-  </div>
-              
-      <br>
-      <a href="x-fearnley-farm-withdrawing.html" class="govuk-link govuk-body" style="color:#d4351c">
-        Withdraw
-      </a>
-      
              
-     
-   
+            </tbody>
+          </table>
+        </div>
       
+    </div>
 
-      
-    
+
   </div>
+   
+  
+</div>
+      
+    </div>
+
+
+  </div>
+   
+  
 </div>
 
 {% endblock %}

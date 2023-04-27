@@ -19,7 +19,7 @@ Annual Health and Welfare Back Office
   </p>
 </div>
 
-<a class="govuk-back-link govuk-!-margin-bottom-0" href="../march-applications.html">Back</a>
+<a class="govuk-back-link govuk-!-margin-bottom-0" href="../dec-applications">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -28,15 +28,28 @@ Annual Health and Welfare Back Office
   <div class="govuk-grid-column-two-thirds">
     
     <h1 class="govuk-caption-l govuk-!-margin-bottom-3">
-      Agreement number: AHWR-F021-721B
+      Agreement number: AHWR-F021-715S
     </h1>
 
     <h2 class="govuk-heading-l">
-      P & D Fearnley & Sons
-      <strong class="govuk-tag govuk-tag--green">
-        Agreed
+      Stubbings Mill Farm
+      <strong class="govuk-tag govuk-tag--red">
+        Not agreed
       </strong>
     </h2>
+
+     <!-- "Pop-up" box -->
+     <div class="govuk-panel govuk-panel--confirmation govuk-!-text-align-left" style="background-color:#fafafa; border-color:#000000; border-width:medium;">
+      <h1 class="govuk-panel__title-s govuk-!-font-size-36 govuk-!-margin-top-1" style="color:#000000;">
+        Are you sure you want to withdraw?
+      </h1>
+      <a href="x-stubbing-mills-farm-withdrawn" role="button" draggable="false" class="govuk-button govuk-button--warning govuk-!-margin-bottom-2" data-module="govuk-button">
+        Confirm
+      </a>
+      <a href="javascript:history.go(-1)" role="button" draggable="false" class="govuk-button govuk-button--secondary govuk-!-margin-bottom-2" data-module="govuk-button">
+        Cancel
+      </a>
+    </div>
 
     <!--User details-->
     <dl class="govuk-summary-list govuk-!-margin-bottom-9">
@@ -45,7 +58,7 @@ Annual Health and Welfare Back Office
           Name:
         </dt>
         <dd class="govuk-summary-list__value">
-          <p>Phil Fearnley</p>
+          <p>Jordan Philip Metcalfe</p>
         </dd>
       </div>
 
@@ -54,7 +67,7 @@ Annual Health and Welfare Back Office
           SBI number:
         </dt>
         <dd class="govuk-summary-list__value">
-          103491987
+          108966003
         </dd>
       </div>
 
@@ -63,7 +76,7 @@ Annual Health and Welfare Back Office
           Address:
         </dt>
         <dd class="govuk-summary-list__value">
-          Manor Farm Rd, Harleston IP20 0AX
+          Moor Rd, Leyburn DL8 5JZ
         </dd>
       </div>
 
@@ -72,13 +85,13 @@ Annual Health and Welfare Back Office
           Email address:
         </dt>
         <dd class="govuk-summary-list__value">
-          <p>fearnley-sons@hotmail.com</p>
+          <p>jp-metcalfe@farm.co.uk</p>
         </dd>
       </div>
     </dl>
 
       <!--Application stages (in tabs)-->
-      <div class="govuk-tabs" data-module="govuk-tabs">
+      <div class="govuk-tabs govuk-!-margin-top-7" data-module="govuk-tabs">
         <h2 class="govuk-tabs__title">
           Contents
         </h2>
@@ -92,24 +105,21 @@ Annual Health and Welfare Back Office
             <a class="govuk-tabs__tab" href="#claimed">
               Claim
             </a>
-            </li>
-            <li class="govuk-tabs__list-item">
-              <a class="govuk-tabs__tab" href="#history">
-                History
-              </a>
-              </li>
+          </li>
         </ul>
-
-  
         <div class="govuk-tabs__panel" id="applied">
-          <h2 class="govuk-heading-l">Agreed</h2>
+          <h2 class="govuk-heading-l">Not agreed</h2>
           <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+              </tr>
+            </thead>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Date agreement rejected</th>
+              <td class="govuk-table__cell">01/11/2022</td>
+            </tr>
             <tbody class="govuk-table__body">
               <tr class="govuk-table__row">
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Date of agreement</th>
-                  <td class="govuk-table__cell">1/11/2022</td>
-                </tr>
                 <th scope="row" class="govuk-table__header">Business details correct</th>
                 <td class="govuk-table__cell">Yes</td>
               </tr>
@@ -123,66 +133,37 @@ Annual Health and Welfare Back Office
               </tr>
               <tr class="govuk-table__row">
                 <th scope="row" class="govuk-table__header">Agreement accepted</th>
-                <td class="govuk-table__cell">Yes</td>
+                <td class="govuk-table__cell">No</td>
               </tr>
             </tbody>
           </table>
         </div>
-  
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-          <h2 class="govuk-heading-l">Agreed</h2>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
-          <h2 class="govuk-heading-l">History</h2>
-          <table class="govuk-table">
-            <tbody class="govuk-table__body">
-              <tr class="govuk-table__row">
-                <th scope="col" class="govuk-table__header">Date</th>
-                <th scope="col" class="govuk-table__header">Time</th>
-                <th scope="col" class="govuk-table__header">Action</th>
-                <th scope="col" class="govuk-table__header">User</th>
-              </tr>
-            </thead>
-            <tbody class="govuk-table__body">
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">23/03/2023</td>
-                <td class="govuk-table__cell">10:00:12</td>
-                <td class="govuk-table__cell">Claim approved</td>
-                <td class="govuk-table__cell">Daniel Jones</td>
-              </tr>
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">24/03/2023</td>
-                <td class="govuk-table__cell">09:30:00</td>
-                <td class="govuk-table__cell">Withdraw completed</td>
-                <td class="govuk-table__cell">Daniel Jones</td>
-              </tr>
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">25/03/2023</td>
-                <td class="govuk-table__cell">11:10:15</td>
-                <td class="govuk-table__cell">Claim rejected</td>
-                <td class="govuk-table__cell">Amanda Hassan</td>
-              </tr>
-        </div>
-      </tbody>
-    </table>
-  </div>
-              
-      <br>
-      <a href="x-fearnley-farm-withdrawing.html" class="govuk-link govuk-body" style="color:#d4351c">
-        Withdraw
-      </a>
-      
-             
-     
-   
-      
 
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
+        <h2 class="govuk-heading-l">Not eligible to claim</h2>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+          </tbody>
+        </table>
+      </div>
+
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
+        <h2 class="govuk-heading-l">Activity Log</h2>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">25/07/2022 - Application disagreed</th>
+            </tr>
+            <tr>
+              <th scope="col" class="govuk-table__header">11/07/2022 - Agreement formed</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
       
-    
+    </div>
+
   </div>
 </div>
 
