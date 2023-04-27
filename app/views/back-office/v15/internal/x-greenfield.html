@@ -1,4 +1,4 @@
-{% extends "layouts/layout-defra-authoriser.html" %}
+{% extends "layouts/layout-defra.html" %}
 
 {% block pageTitle %}
 Back office: User application
@@ -106,7 +106,7 @@ Annual Health and Welfare Back Office
       </ul>
 
       <div class="govuk-tabs__panel" id="applied">
-        <h2 class="govuk-heading-l">Recommend to pay</h2>
+        <h2 class="govuk-heading-l">In check</h2>
         <table class="govuk-table">
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
@@ -135,7 +135,7 @@ Annual Health and Welfare Back Office
       
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-        <h2 class="govuk-heading-l">Recommend to pay</h2>
+        <h2 class="govuk-heading-l">In check</h2>
         <table class="govuk-table">
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
@@ -203,25 +203,39 @@ Annual Health and Welfare Back Office
               <td class="govuk-table__cell">Authorise to pay</td>
               <td class="govuk-table__cell">Amanda Hassan</td>
             </tr>
-    </tbody>
-  </table>
+      </div>    
           </tbody>
         </table>
       </div>
-      <br>
-
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-          <div class="govuk-panel govuk-panel--confirmation govuk-!-margin-right-7" style="background-color:#fafafa; border-color:#000000; border-width:medium;">
-          <h3 class="govuk-panel__title-s govuk-!-font-size-18 govuk-!-margin-top-1" style="color:#000000;">
-          </h1>
+    </div>
   
-          <a href="x-greenfield-&-co-readytopay#claimed" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-            Authorise payment</a>
-          </button>
-        </form>
-        <p class="govuk-body">If you do not agree with this action, contact the person who recommended it and discuss it with them.</p>
+              <h2 class="govuk-cookie-banner__heading govuk-heading-m">Recommender action required</h2>
+
+              <div class="govuk-cookie-banner__content">
+                <p class="govuk-body">This customer has successfully submitted an annual health and welfare application for livestock.</p>
+                <p class="govuk-body">Use the case information to decide whether to recommend or reject this applicant for payment. Record your decision and discuss this with an authoriser</p>
+              </div>
+            </div>
+          </div>
+          <div class="govuk-button-group">
+            <a href="x-greenfield-&-co-approvingclaim#claimed" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+              Pay</a>
+            </button>
+            <a href="x-greenfield-&-co-rejectingclaim#claimed" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+              Reject</a>
+            </button>
+
+          </div>
+          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
         </div>
+
+      </div>
+
+
+      </form>
+
+      </div>
 
       
       

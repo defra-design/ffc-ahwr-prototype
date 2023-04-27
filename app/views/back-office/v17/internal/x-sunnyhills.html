@@ -1,4 +1,4 @@
-{% extends "layouts/layout-defra-authoriser.html" %}
+{% extends "layouts/layout-defra.html" %}
 
 {% block pageTitle %}
 Back office: User application
@@ -6,8 +6,6 @@ Back office: User application
 {% set serviceName %}
 Annual Health and Welfare Back Office
 {% endset%}
-
-
 
 {% block beforeContent %}
 <div class="govuk-phase-banner govuk-!-padding-top-0">
@@ -21,25 +19,22 @@ Annual Health and Welfare Back Office
   </p>
 </div>
 
-<a class="govuk-back-link govuk-!-margin-bottom-0" href="../a-digital.html">Back</a>
+<a class="govuk-back-link govuk-!-margin-bottom-0" href="../march-applications.html">Back</a>
 {% endblock %}
 
-
-
 {% block content %}
-
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     
     <h1 class="govuk-caption-l govuk-!-margin-bottom-3">
-      Agreement number: AHWR-F045-697K
+      Agreement number: AHWR-F001-789H
     </h1>
 
     <h2 class="govuk-heading-l">
-      Organic Bean Industries
-      <strong class="govuk-tag govuk-tag--orange">
-        In check
+      Sunnyhill & Daughters
+      <strong class="govuk-tag govuk-tag--">
+        Ready to pay
       </strong>
     </h2>
 
@@ -50,7 +45,7 @@ Annual Health and Welfare Back Office
           Name:
         </dt>
         <dd class="govuk-summary-list__value">
-          <p>Henry Smith</p>
+          <p>Ameila Summers</p>
         </dd>
       </div>
 
@@ -59,7 +54,7 @@ Annual Health and Welfare Back Office
           SBI number:
         </dt>
         <dd class="govuk-summary-list__value">
-          109578695
+          102749506
         </dd>
       </div>
 
@@ -68,7 +63,7 @@ Annual Health and Welfare Back Office
           Address:
         </dt>
         <dd class="govuk-summary-list__value">
-          Milk Farm House, Soya Avenue, Hertfordshire SG12 4FA
+          19 Summers Drive, Halesworth IP19 0EY
         </dd>
       </div>
 
@@ -77,7 +72,7 @@ Annual Health and Welfare Back Office
           Email address:
         </dt>
         <dd class="govuk-summary-list__value">
-          <p>organicbeans@soyamilk.co</p>
+          <p>ameila@sunnyhills.com</p>
         </dd>
       </div>
     </dl>
@@ -104,15 +99,17 @@ Annual Health and Welfare Back Office
             </a>
             </li>
       </ul>
+          </a>
+      </ul>
 
       <div class="govuk-tabs__panel" id="applied">
-        <h2 class="govuk-heading-l">Recommend to reject</h2>
+        <h2 class="govuk-heading-l">Ready to pay</h2>
         <table class="govuk-table">
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
               <tr class="govuk-table__row">
                 <th scope="row" class="govuk-table__header">Date of agreement</th>
-                <td class="govuk-table__cell">13/02/2023</td>
+                <td class="govuk-table__cell">09/02/2023</td>
               </tr>
               <th scope="row" class="govuk-table__header">Business details correct</th>
               <td class="govuk-table__cell">Yes</td>
@@ -132,10 +129,9 @@ Annual Health and Welfare Back Office
           </tbody>
         </table>
       </div>
-      
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-        <h2 class="govuk-heading-l">Recommend to reject</h2>
+        <h2 class="govuk-heading-l">Ready to pay</h2>
         <table class="govuk-table">
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
@@ -148,94 +144,66 @@ Annual Health and Welfare Back Office
             </tr>
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Date of review</th>
-              <td class="govuk-table__cell">18/04/2023</td>
+              <td class="govuk-table__cell">17/04/2023</td>
             </tr>
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Vet’s name</th>
-              <td class="govuk-table__cell">Michael Johnson</td>
+              <td class="govuk-table__cell">Amanda Hiut</td>
             </tr>
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Vet’s RCVS number</th>
-              <td class="govuk-table__cell">10938475</td>
+              <td class="govuk-table__cell">4986045</td>
             </tr>
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Test results unique 
                 reference number (URN)</th>
-              <td class="govuk-table__cell">URN-7366-28DE</td>
+              <td class="govuk-table__cell">URN-4850-53EG</td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
-        <h2 class="govuk-heading-l">History</h2>
-        <table class="govuk-table">
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Date</th>
-              <th scope="col" class="govuk-table__header">Time</th>
-              <th scope="col" class="govuk-table__header">Action</th>
-              <th scope="col" class="govuk-table__header">User</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">23/03/2023</td>
-              <td class="govuk-table__cell">10:00:12</td>
-              <td class="govuk-table__cell">Recommend to reject</td>
-              <td class="govuk-table__cell">Daniel Jones</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">24/03/2023</td>
-              <td class="govuk-table__cell">09:30:00</td>
-              <td class="govuk-table__cell">Recommend to pay</td>
-              <td class="govuk-table__cell">Daniel Jones</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">25/03/2023</td>
-              <td class="govuk-table__cell">11:10:15</td>
-              <td class="govuk-table__cell">Authorise to reject</td>
-              <td class="govuk-table__cell">Amanda Hassan</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">25/03/2023</td>
-              <td class="govuk-table__cell">11:10:15</td>
-              <td class="govuk-table__cell">Authorise to pay</td>
-              <td class="govuk-table__cell">Amanda Hassan</td>
-            </tr>
-      </div>
-
-    </tbody>
-  </table>
+<div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
+<h2 class="govuk-heading-l">History</h2>
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Date</th>
+      <th scope="col" class="govuk-table__header">Time</th>
+      <th scope="col" class="govuk-table__header">Action</th>
+      <th scope="col" class="govuk-table__header">User</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">23/03/2023</td>
+      <td class="govuk-table__cell">10:00:12</td>
+      <td class="govuk-table__cell">Claim approved</td>
+      <td class="govuk-table__cell">Daniel Jones</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">24/03/2023</td>
+      <td class="govuk-table__cell">09:30:00</td>
+      <td class="govuk-table__cell">Withdraw completed</td>
+      <td class="govuk-table__cell">Daniel Jones</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">25/03/2023</td>
+      <td class="govuk-table__cell">11:10:15</td>
+      <td class="govuk-table__cell">Claim rejected</td>
+      <td class="govuk-table__cell">Amanda Hassan</td>
+    </tr>
 </div>
-           
-          </tbody>
-        </table>
-      </div>
-      <br>
+   
+  </tbody>
+</table>
+</div>
 
-      <div class="govuk-grid-row">
-      <div class="govuk-grid-column-one-half">
-        <div class="govuk-panel govuk-panel--confirmation govuk-!-margin-right-7" style="background-color:#fafafa; border-color:#000000; border-width:medium;">
-        <h3 class="govuk-panel__title-s govuk-!-font-size-18 govuk-!-margin-top-1" style="color:#000000;">
-        </h1>
-
-        <a href="organicbean-recommending#claimed" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-          Reject claim</a>
-        </button>
-      </form>
-      <p class="govuk-body">If you do not agree with this action, contact the person who recommended it and discuss it with them.</p>
-      </div>
 
       
       
     </div>
-
   </div>
 </div>
 
-
-
-
 {% endblock %}
-

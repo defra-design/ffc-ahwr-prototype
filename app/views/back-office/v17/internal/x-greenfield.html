@@ -21,7 +21,7 @@ Annual Health and Welfare Back Office
   </p>
 </div>
 
-<a class="govuk-back-link govuk-!-margin-bottom-0" href="../a-digital.html">Back</a>
+<a class="govuk-back-link govuk-!-margin-bottom-0" href="../march-applications.html">Back</a>
 {% endblock %}
 
 
@@ -104,6 +104,15 @@ Annual Health and Welfare Back Office
             </a>
             </li>
       </ul>
+          </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#history">
+              History
+            </a>
+            </li>
+      </ul>
+      
 
       <div class="govuk-tabs__panel" id="applied">
         <h2 class="govuk-heading-l">In check</h2>
@@ -180,30 +189,67 @@ Annual Health and Welfare Back Office
           </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
+              <td class="govuk-table__cell">11/03/2023</td>
+              <td class="govuk-table__cell">11:05:40</td>
+              <td class="govuk-table__cell">Agreement accepted</td>
+              <td class="govuk-table__cell">System</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">12/03/2023</td>
+              <td class="govuk-table__cell">11:05:40</td>
+              <td class="govuk-table__cell">Agreement rejected</td>
+              <td class="govuk-table__cell">System</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">20/03/2023</td>
+              <td class="govuk-table__cell">09:30:00</td>
+              <td class="govuk-table__cell">Withdraw completed</td>
+              <td class="govuk-table__cell">SSRPA</td>
+            </tr>
+            <tr class="govuk-table__row">
               <td class="govuk-table__cell">23/03/2023</td>
               <td class="govuk-table__cell">10:00:12</td>
-              <td class="govuk-table__cell">Recommend to reject</td>
-              <td class="govuk-table__cell">Daniel Jones</td>
+              <td class="govuk-table__cell">Claimed</td>
+              <td class="govuk-table__cell">System</td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">24/03/2023</td>
               <td class="govuk-table__cell">09:30:00</td>
-              <td class="govuk-table__cell">Recommend to pay</td>
-              <td class="govuk-table__cell">Daniel Jones</td>
+              <td class="govuk-table__cell">Withdraw completed</td>
+              <td class="govuk-table__cell">SSRPA</td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">25/03/2023</td>
               <td class="govuk-table__cell">11:10:15</td>
-              <td class="govuk-table__cell">Authorise to reject</td>
-              <td class="govuk-table__cell">Amanda Hassan</td>
+              <td class="govuk-table__cell">Selected for check</td>
+              <td class="govuk-table__cell">SSPRA</td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">25/03/2023</td>
-              <td class="govuk-table__cell">11:10:15</td>
-              <td class="govuk-table__cell">Authorise to pay</td>
-              <td class="govuk-table__cell">Amanda Hassan</td>
+              <td class="govuk-table__cell">12:00:00</td>
+              <td class="govuk-table__cell">Check authorised</td>
+              <td class="govuk-table__cell">SSPRA</td>
             </tr>
-      </div>    
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">25/03/2023</td>
+              <td class="govuk-table__cell">12:00:00</td>
+              <td class="govuk-table__cell">Check rejected</td>
+              <td class="govuk-table__cell">SSPRA</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">25/03/2023</td>
+              <td class="govuk-table__cell">12:00:01</td>
+              <td class="govuk-table__cell">Ready to pay</td>
+              <td class="govuk-table__cell">SSPRA</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">25/03/2023</td>
+              <td class="govuk-table__cell">11:00:00</td>
+              <td class="govuk-table__cell">Paid</td>
+              <td class="govuk-table__cell">SSPRA</td>
+            </tr>
+      </div>
+           
           </tbody>
         </table>
       </div>
@@ -213,14 +259,14 @@ Annual Health and Welfare Back Office
       <div class="govuk-grid-column-one-half">
         <div class="govuk-panel govuk-panel--confirmation govuk-!-margin-right-7" style="background-color:#fafafa; border-color:#000000; border-width:medium;">
         <h3 class="govuk-panel__title-s govuk-!-font-size-18 govuk-!-margin-top-1" style="color:#000000;">
-          
+          Authoriser only
         </h1>
 
-        <a href="x-greenfield-&-co-approvingclaim#claimed" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-          Recommend to pay</a>
+        <a href="x-greenfield-&-co-approvingclaim.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+          Approve claim</a>
         </button>
-        <a href="x-greenfield-&-co-rejectingclaim#claimed" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-          Recommend to reject</a>
+        <a href="x-greenfield-&-co-rejectingclaim.html" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+          Reject claim</a>
         </button>
       </form>
       </div>
