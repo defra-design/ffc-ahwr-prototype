@@ -1,7 +1,7 @@
 {% extends "layouts/layout.html" %}
 {% set serviceName = "Annual health and welfare review of livestock" %}
 
-{% set title = "Sign in to apply for an annual health and welfare review of your livestock" %}
+{% set title = "Sign in to apply for an animal health and welfare review of your livestock" %}
 
 {% block pageTitle %}
   {{title}} - GOV.UK
@@ -30,7 +30,13 @@
       <div class="govuk-error-summary__body">
         <ul class="govuk-list govuk-error-summary__list">
           <li>
-            <a href="#">The combination of customer reference number (CRN) and password is not recognised</a>
+            <a href="#">You must enter a customer reference number (CRN)</a>
+          </li>
+          <li>
+            <a href="#">You must enter 10 digits</a>
+          </li>
+          <li>
+            <a href="#">The CRN and password are not recognised. Your account will be locked if entered incorrect details multiple times</a>
           </li>
         </ul>
       </div>
@@ -43,9 +49,11 @@
       Customer reference number (CRN)
     </label>
       <p id="crn-error" class="govuk-error-message">
-        <span class="govuk-visually-hidden">Error:</span> The combination of customer reference number (CRN) and password is not recognised
+        <span class="govuk-visually-hidden">Error:</span> You must enter your customer reference number (CRN)
       </p>
-
+      <p id="crn-error" class="govuk-error-message">
+        <span class="govuk-visually-hidden">Error:</span> You must enter 10 digits
+      </p>
    
     
     <div id="crn-hint" class="govuk-hint">
@@ -64,9 +72,9 @@
     </label>
 
     <p id="crn-error" class="govuk-error-message">
-      <span class="govuk-visually-hidden">Error:</span> The combination of customer reference number (CRN) and password is not recognisedd
+      <span class="govuk-visually-hidden">Error:</span> You must enter your password
     </p>
-
+  
   <input class="govuk-input govuk-!-width-full-width" id="password--" name="password--" type="password" autocomplete="false">
 
   
@@ -90,7 +98,7 @@
       <details class="govuk-details" data-module="govuk-details">
     <summary class="govuk-details__summary">
       <span class="govuk-details__summary-text">
-        Help signing in
+        Other problems signing in
       </span>
     </summary>
     <div class="govuk-details__text">
