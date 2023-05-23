@@ -2,7 +2,7 @@
 
 {% set mainClasses = "guide govuk-!-padding-top-0 govuk-!-padding-bottom-0" %}
 
-{% extends "layouts/layout.html" %}
+{% extends "layouts/layout-document-collection.html" %}
 
 {% block head %}
 {% include "includes/publisher/head.html" %}
@@ -17,7 +17,7 @@ Annual livestock health and welfare review
 
 {% block header %}
 {% include "includes/publisher/header.html" %}
-{% include "includes/publisher/global-bar.html" %}
+
 {% endblock %}
 
 
@@ -61,7 +61,7 @@ Annual livestock health and welfare review
 </style>
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-full">
     <div>
     <span class="govuk-caption-xl gem-c-title__context govuk-!-margin-top-9">Collection</span>
     <h1 class="govuk-heading-xl">
@@ -69,18 +69,17 @@ Annual livestock health and welfare review
     </h1>
     </div>
 
-  </div>
-</div>
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-
     <p class="govuk-body govuk-!-font-size-24">
       Farmers who keep cattle, sheep and pigs can get funding to pay for a vet to visit their farm and carry out an annual health and welfare review.
     </p>
 
     <aside class="navigation-container">
-    <p class="govuk-body-s">From: <a class="govuk-link" href="/government/organisations/department-for-environment-food-rural-affairs">Department for Environment, Food & Rural Affairs</b></a> and </b><a class="govuk-link" href="/government/organisations/rural-payments-agency">Rural Payments Agency</a></p>
+    <p class="govuk-body-s">From: <a class="govuk-link govuk-!-font-weight-bold" href="/government/organisations/department-for-environment-food-rural-affairs">Department for Environment, Food & Rural Affairs</b></a> and </b><a class="govuk-link govuk-!-font-weight-bold" href="/government/organisations/rural-payments-agency">Rural Payments Agency</a></p>
+
+  </div>
+</div>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
 
     <p class="govuk-body">A health and welfare review of livestock provides funding for a vet, or team chosen by a vet, to visit a farm and carry out a health and welfare review of beef or dairy cattle, sheep or pigs.</p>
 
@@ -105,12 +104,16 @@ Annual livestock health and welfare review
     </ul>
 
     <p class="govuk-body">Read the claim guidance to find out:</p>
+    
     <ul class="govuk-list govuk-list--bullet">
     <li>what information you’ll need to share when you claim</li>
     <li>what evidence you’ll need to keep</li>
     </ul>
+    <hr class="govuk-section-break govuk-section-break--s">
 
+<div class="govuk-!-margin-bottom-6">
     {% include "includes/publisher/farmer-document-list.html" %}
+  </div>
 
     <h2 class="govuk-heading-m govuk-!-font-size-27" id="vets">Vets</h2>
 
