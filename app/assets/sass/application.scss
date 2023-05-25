@@ -307,3 +307,15 @@ background: #f3f2f1;
 margin-bottom: 15px;
 padding: 15px;
 }
+
+.gem-c-organisation-logo__crest--eo, .gem-c-organisation-logo__crest--org, .gem-c-organisation-logo__crest--single-identity {
+  background-image: url("https://draft-origin.publishing.service.gov.uk/assets/government-frontend/govuk_publishing_components/crests/org_crest_13px_x2-f412306c518f95598c202e3383932301f187c7e966d56e2e3f5112a4ecfcbde5.png")!important;
+}
+
+.govspeak .attachment .attachment-thumb, .gem-c-govspeak .attachment .attachment-thumb{
+position: relative;
+float: left;
+margin-top: 5px;
+margin-left: -124px;
+padding-bottom: 15px;
+}
