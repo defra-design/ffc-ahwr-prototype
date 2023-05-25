@@ -319,3 +319,22 @@ margin-top: 5px;
 margin-left: -124px;
 padding-bottom: 15px;
 }
+
+.gem-c-govspeak{
+color: #0b0c0c;
+font-family: "nta", arial, sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.1428571429;
+}
+
+.govspeak a,.gem-c-govspeak a {
+  font-family: "GDS Transport",arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: underline;
+  text-decoration-thickness: max(1px, .0625rem);
+  text-underline-offset: .1578em
+}
