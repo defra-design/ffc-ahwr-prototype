@@ -312,6 +312,9 @@ padding: 15px;
   background-image: url("https://draft-origin.publishing.service.gov.uk/assets/government-frontend/govuk_publishing_components/crests/org_crest_13px_x2-f412306c518f95598c202e3383932301f187c7e966d56e2e3f5112a4ecfcbde5.png")!important;
 }
 
+
+// Random styles (looking for HTML icons
+
 .govspeak .attachment .attachment-thumb, .gem-c-govspeak .attachment .attachment-thumb{
 position: relative;
 float: left;
@@ -337,4 +340,21 @@ line-height: 1.1428571429;
   text-decoration: underline;
   text-decoration-thickness: max(1px, .0625rem);
   text-underline-offset: .1578em
+}
+
+// HTML the real icons
+
+.govspeak .attachment .attachment-thumb svg, .gem-c-govspeak .attachment .attachment-thumb svg {
+fill: #b1b4b6;
+stroke: #b1b4b6;
+}
+
+
+.govspeak .attachment .attachment-thumb img, .govspeak .attachment .attachment-thumb svg, .gem-c-govspeak .attachment .attachment-thumb img, .gem-c-govspeak .attachment .attachment-thumb svg {
+display: block;
+width: 99px;
+height: 140px;
+background: #fff;
+outline: 5px solid rgba(11,12,12,0.1);
+box-shadow: 0 2px 2px rgba(11,12,12,0.4);
 }
