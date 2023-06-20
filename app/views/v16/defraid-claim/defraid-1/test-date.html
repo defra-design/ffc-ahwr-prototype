@@ -21,15 +21,14 @@ Index page
         <fieldset class="govuk-fieldset" role="group" aria-describedby="when-review-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h1 class="govuk-fieldset__heading">
-              When was the review completed?
+              When did disease and condition testing take place?
             </h1>
           </legend>
           <div id="when-review-hint" class="govuk-hint">
-            This is the date of the last visit to the farm for the review
-            <br><br>
             For example, 27 3 2022
           </div>
-          <div class="govuk-date-input" id="when-review">
+          
+          <div class="govuk-date-input govuk-hint govuk-!-margin-bottom-0" id="when-review">
             <div class="govuk-date-input__item">
               <div class="govuk-form-group">
                 <label class="govuk-label govuk-date-input__label" for="when-review-day">
@@ -50,17 +49,33 @@ Index page
                   Year
                 </label>
                 <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="when-review-year" name="when-review-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+
+                
             </div>
           </div>
 
+          
+
         </fieldset>
       </div>
+
+      <div id="countries-hint" class="govuk-hint govuk-!-margin-top-0">
+        Select if the vet completed testing on the same day as the review
+      </div>
+      <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="countries" name="countries" type="checkbox" value="france">
+          <label class="govuk-label govuk-checkboxes__label" for="countries">
+            Yes
+          </label>
+        </div>
+        <p class="govuk-body govuk-!-margin-top-4">
     <!--
       <input class="govuk-button" type="submit" name="saveAndContinue" value="Continue" id="Button-SaveAndContinue" data-qa-id="Button-SaveAndContinue">
     -->
       {{ govukButton({
         text: "Continue",
-        href: "test-date"
+        href: "vet-name"
       }) }}
 
     </form>
