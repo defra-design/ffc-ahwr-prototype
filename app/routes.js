@@ -91,6 +91,18 @@ router.post('/select-business', function (req, res) {
   
     })
 
+    // Vet - testing date
+
+router.post('*/visit-date', function (req, res) {
+  const option = req.session.data['testing']
+
+  if (option === 'Yes') {
+    res.redirect('test-date')
+  } else {
+    res.redirect('vet-name')
+  }
+})
+
 module.exports = router
 
 
