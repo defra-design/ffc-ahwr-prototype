@@ -58,24 +58,12 @@ Index page
       </fieldset>
     </div>
 
-
-      <div id="countries-hint" class="govuk-hint govuk-!-margin-top-0">
-        Select if the vet completed testing on the same day as the review
-      </div>
-      <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-        <div class="govuk-checkboxes__item">
-          <input class="govuk-checkboxes__input" id="countries" name="countries" type="checkbox" value="france">
-          <label class="govuk-label govuk-checkboxes__label" for="countries">
-            Yes
-          </label>
-        </div>
-        <p class="govuk-body govuk-!-margin-top-4">
     <!--
       <input class="govuk-button" type="submit" name="saveAndContinue" value="Continue" id="Button-SaveAndContinue" data-qa-id="Button-SaveAndContinue">
     -->
       {{ govukButton({
         text: "Continue",
-        href: "vet-name"
+        href: "check-answers"
       }) }}
 
     </form>
