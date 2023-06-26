@@ -96,7 +96,7 @@ router.post('/select-business', function (req, res) {
       if (option == "Yes"){
         res.redirect('/v16/defraid-claim/defraid-1/test-date')
       } else  {
-        res.redirect('/v16/defraid-claim/defraid-1/vet-name')
+        res.redirect('/v16/defraid-claim/defraid-1/visit-date')
       }
     })
 
