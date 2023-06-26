@@ -86,11 +86,12 @@ router.post('*/check-details', function (req, res) {
 router.post('/visit-date', function (req, res) {
 
   const option = req.session.data['testing']
-
+  console.log(`Option is ${option}`)
   if (option == "Yes"){
+    
     res.redirect('/v16/defraid-claim/defraid-1/test-date')
   } else  {
-    res.redirect('v16/defraid-claim/defraid-1/vet-name')
+    res.redirect('/v16/defraid-claim/defraid-1/vet-name')
   }
 })
 
