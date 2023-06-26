@@ -56,17 +56,20 @@ Index page
         </fieldset>
       </div>
 
+      <form class="form" method="post">
+
       <div id="countries-hint" class="govuk-hint govuk-!-margin-top-0">
         Select if the vet completed testing on the same day as the review
       </div>
       <div class="govuk-checkboxes" data-module="govuk-checkboxes">
         <div class="govuk-checkboxes__item">
-          <input class="govuk-checkboxes__input" id="testing" name="testing" type="checkbox" value="Yes">
+          <input class="govuk-checkboxes__input" id="testing" name="testing" type="checkbox" value="Yes" onclick="setLocation(this);">
           <label class="govuk-label govuk-checkboxes__label" for="testing">
             Yes
           </label>
         </div>
         <p class="govuk-body govuk-!-margin-top-4">
+        
         
 
 
