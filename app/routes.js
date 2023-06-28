@@ -93,7 +93,16 @@ router.post('/select-business', function (req, res) {
 
     router.post('*/visit-date', function (req, res) {
       const option = req.session.data['testing']
-      if (option == "Yes"){
+      if (option == "visit-date"){
+        res.redirect('/v16/defraid-claim/defraid-1/vet-name')
+      } else  {
+        res.redirect('/v16/defraid-claim/defraid-1/test-date')
+      }
+    })
+
+    router.post('*/visit-date', function (req, res) {
+      const option = req.session.data['testing-2']
+      if (option == "test-date"){
         res.redirect('/v16/defraid-claim/defraid-1/vet-name')
       } else  {
         res.redirect('/v16/defraid-claim/defraid-1/test-date')
