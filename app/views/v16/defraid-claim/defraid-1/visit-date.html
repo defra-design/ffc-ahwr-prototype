@@ -56,28 +56,63 @@ Index page
       </div>
 
       <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset">
-          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h1 class="govuk-fieldset__heading">
               When was endemic disease or condition testing carried out?
             </h1>
           </legend>
-          <div class="govuk-radios govuk-radios--small" data-module="govuk-radios">
+          <div id="contact-hint" class="govuk-hint">
+            This is the date the vet completed endemic disease or condition testing for the review.
+          </div>
+          <div class="govuk-radios" data-module="govuk-radios">
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="testing" name="testing" type="radio" value="visit-date">
-              <label class="govuk-label govuk-radios__label" for="testing">
+              <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+              <label class="govuk-label govuk-radios__label" for="contact">
                 When the vet visited the farm to carry out the review
               </label>
             </div>
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="testing-2" name="testing" type="radio" value="test-date">
-              <label class="govuk-label govuk-radios__label" for="testing-2">
+              <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+              <label class="govuk-label govuk-radios__label" for="contact-2">
                 On another date
               </label>
             </div>
+            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+              <div class="govuk-date-input" id="when-review">
+              <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="when-review-day">
+                Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="when-review-day" name="when-review-day" type="text" pattern="[0-9]*" inputmode="numeric">
+            </div>
+          </div>
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="when-review-month">
+                Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="when-review-month" name="when-review-month" type="text" pattern="[0-9]*" inputmode="numeric">
+            </div>
+          </div>
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="when-review-year">
+                Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="when-review-year" name="when-review-year" type="text" pattern="[0-9]*" inputmode="numeric">
+            </div>
+          </div>
+      </div>
+    </fieldset>
+</div>
+         
+          
           </div>
         </fieldset>
       </div>
+
 
           <p class="govuk-body govuk-!-margin-top-4">
             <!--
