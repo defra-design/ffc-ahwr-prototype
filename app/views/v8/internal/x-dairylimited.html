@@ -26,6 +26,10 @@ Annual Health and Welfare Back Office
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
+
+    <strong class="govuk-tag govuk-tag--yellow">
+      Pre application
+    </strong>
     
     <h1 class="govuk-caption-l govuk-!-margin-bottom-3">
       Agreement number: AHWR-G2453-128K
@@ -34,7 +38,7 @@ Annual Health and Welfare Back Office
     <h2 class="govuk-heading-l">
       The Dairy Limited
       <strong class="govuk-tag govuk-tag--yellow">
-        Assisted Digital
+        Agreement sent
       </strong>
     </h2>
 
@@ -69,10 +73,10 @@ Annual Health and Welfare Back Office
 
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-          Email address:
+          Phone number:
         </dt>
         <dd class="govuk-summary-list__value">
-          <p>sandra-smith@dairylimited.com</p>
+          <p>+44 7987 77741</p>
         </dd>
       </div>
     </dl>
@@ -85,17 +89,24 @@ Annual Health and Welfare Back Office
       <ul class="govuk-tabs__list">
         <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
           <a class="govuk-tabs__tab" href="#applied">
-            Agreement
+            Application
           </a>
         </li>
         <li class="govuk-tabs__list-item">
           <a class="govuk-tabs__tab" href="#claimed">
             Claim
           </a>
-        </li>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#history">
+              History
+            </a>
+            </li>
       </ul>
+
+
       <div class="govuk-tabs__panel" id="applied">
-        <h2 class="govuk-heading-l">Agreed</h2>
+        <h2 class="govuk-heading-l">Application</h2>
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
@@ -107,24 +118,87 @@ Annual Health and Welfare Back Office
               <td class="govuk-table__cell">02/04/2023</td>
             </tr>
             <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Business details correct</th>
-              <td class="govuk-table__cell">Yes</td>
+              <th scope="row" class="govuk-table__header">Data recorded via Assisted Digital call</th>
+              <td class="govuk-table__cell">
+                <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="phone" name="phone" type="checkbox" value="phone">
+                    <label class="govuk-label govuk-checkboxes__label" for="phone">
+                    
+                    </label>
+                  </div>
+              </td>
             </tr>
             <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Type of review</th>
-              <td class="govuk-table__cell">Beef</td>
+              <th scope="row" class="govuk-table__header">Terms and conditions received from customer</th>
+              <td class="govuk-table__cell">
+                <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="terms" name="terms" type="checkbox" value="terms">
+                    <label class="govuk-label govuk-checkboxes__label" for="terms">
+                      
+                    </label>
+                  </div>
+              </td>
             </tr>
             <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Number of livestock</th>
-              <td class="govuk-table__cell">Minimum 11</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Agreement accepted</th>
-              <td class="govuk-table__cell">Yes</td>
-            </tr>
+              <th scope="row" class="govuk-table__header">Beef cattle</th>
+              <td class="govuk-table__cell">
+                <div class="govuk-form-group">
+                    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="contact" name="contact-1" type="checkbox" value="beef" data-aria-controls="conditional-contact">
+                        <label class="govuk-label govuk-checkboxes__label" for="contact-1">
+                
+                        </label>
+                      </div>
+                      <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-contact">
+                        <div class="govuk-form-group">
+                          <label class="govuk-label" for="contact-by-email">
+                            Will the applicant have 11 or more beef cattle on the date of the review?
+                          </label>
+                          <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="beef" spellcheck="false" autocomplete="email">
+                              <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                            </div>
+                        </div>
+                      </div>
+                  </td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Dairy cattle</th>
+                  <td class="govuk-table__cell">
+                    <div class="govuk-form-group">
+                        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone" data-aria-controls="conditional-contact-2">
+                            <label class="govuk-label govuk-checkboxes__label" for="contact-2">
+                              
+                            </label>
+                          </div>
+                          <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-contact-2">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label" for="contact-by-phone">
+                                Will the applicant have 11 or more dairy cattle on the date of the review?
+                              </label>
+                              <input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel" autocomplete="tel">
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+  
+        
+               
+
+
+
           </tbody>
         </table>
       </div>
+    
+
+            
+
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="reviewed">
         <h2 class="govuk-heading-l">No data inputted yet</h2>
@@ -193,15 +267,76 @@ Annual Health and Welfare Back Office
             </tr>
           </tbody>
         </table>
-    
-      </div>
-    </div>
 
-    <a href="x-fearnley-farm-withdrawing.html" class="govuk-link govuk-body" style="color:#d4351c">
-      Withdraw
-    </a>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
+          <h2 class="govuk-heading-l">History</h2>
+          <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Date</th>
+                <th scope="col" class="govuk-table__header">Time</th>
+                <th scope="col" class="govuk-table__header">Action</th>
+                <th scope="col" class="govuk-table__header">User</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">23/03/2023</td>
+                <td class="govuk-table__cell">10:00:12</td>
+                <td class="govuk-table__cell">Recommend to reject</td>
+                <td class="govuk-table__cell">Daniel Jones</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">24/03/2023</td>
+                <td class="govuk-table__cell">09:30:00</td>
+                <td class="govuk-table__cell">Recommend to pay</td>
+                <td class="govuk-table__cell">Daniel Jones</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">25/03/2023</td>
+                <td class="govuk-table__cell">11:10:15</td>
+                <td class="govuk-table__cell">Authorise to reject</td>
+                <td class="govuk-table__cell">Amanda Hassan</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">25/03/2023</td>
+                <td class="govuk-table__cell">11:10:15</td>
+                <td class="govuk-table__cell">Authorise to pay</td>
+                <td class="govuk-table__cell">Amanda Hassan</td>
+              </tr>
+      </tbody>
+    </table>
+  </div>
+    
+    
+  
+
 
   </div>
 </div>
+
+                   <!--Digital Assistance-->
+
+                   <h2 class="govuk-cookie-banner__heading govuk-heading-m">Digital Assistance</h2>
+
+                   <div class="govuk-cookie-banner__content">
+                                 <p class="govuk-body">This customer has successfully applied for an AHWR review</p>
+                             <p class="govuk-body">To progress to next step of the application process, confirm the applicant meets the eligibility criteria above or contact the security and compliance team.</p>
+                 
+                   
+                   <div class="govuk-button-group">
+                    <a href="../a-digital-2.html" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
+                      Confirm and continue</a>
+                     <a class="govuk-link" href="#">name@rpa.gov.uk</a>
+                     
+                     </button>
+                     </div>
+                     
+                   <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+                   
+                   </div>
+                   
+                   </div>
+                   
 
 {% endblock %}
