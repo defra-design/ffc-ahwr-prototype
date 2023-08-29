@@ -29,10 +29,10 @@ Annual Health and Welfare Back Office
 
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form class="form" method="get">
         <h1 class="govuk-heading-l">
-          Eligibility check passed
+          Eligibility check failed
         </h1>
+        <p class="govuk-body">This customer does not have required permission to act for The Dairy Farm - SBI 106777899.</p>
     <!--
         <h2 class="govuk-heading-m">Arthington Farm Ltd</h2>
     -->
@@ -53,7 +53,7 @@ Annual Health and Welfare Back Office
             <dt class="govuk-summary-list__key">
               SBI
             </dt>
-            <dd class="govuk-summary-list__value">
+            <dd class="govuk-summary-list__value" style="color:#d4351c">
               106777899
             </dd>
             <dd class="govuk-summary-list__actions">
@@ -87,14 +87,12 @@ Annual Health and Welfare Back Office
 
           <div class="govuk-!-padding-bottom-4"></div>
 
-      
-
           <div id="contact-hint" class="govuk-hint">
             Large font required
           </div>
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="font" name="contact" type="checkbox" value="Yes" data-aria-controls="conditional-contact">
+              <input class="govuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email" data-aria-controls="conditional-contact">
               <label class="govuk-label govuk-checkboxes__label" for="contact">
                Yes
               </label>

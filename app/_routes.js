@@ -85,7 +85,7 @@ router.post('*/check-details', function (req, res) {
 
 router.post('/visit-date', function (req, res) {
 
-  const option = req.session.data['testing']
+  const option = req.session.data['font']
   console.log(`Option is ${option}`)
   if (option == "Yes"){
     
@@ -95,5 +95,16 @@ router.post('/visit-date', function (req, res) {
   }
 })
 
+router.post('/a-digital-check-answers', function (req, res) {
+
+  const option = req.session.data['testing']
+  console.log(`Option is ${option}`)
+  if (option == "Yes"){
+    
+    res.redirect('/v8/a-digital')
+  } else  {
+    res.redirect('/v8/internal/x-dairylimited')
+  }
+})
 
 module.exports = router
