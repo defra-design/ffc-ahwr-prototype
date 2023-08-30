@@ -91,44 +91,139 @@ Annual Health and Welfare Back Office
 
        <!-- Questions -->
        <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset">
-          <!--
-          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-            <h1 class="govuk-fieldset__heading">
-              Questions
-            </h1>
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+          <legend class="govuk-fieldset__legend">
+            When was the review completed?
           </legend>
+          <div id="passport-issued-hint" class="govuk-hint">
+            For example, 27 3 2022
+          </div>
+          <div class="govuk-date-input" id="passport-issued">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                  Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
 
-
-          
-          --></fieldset>
-       </div>
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+          <legend class="govuk-fieldset__legend">
+            When was endemic disease or condition testing carried out?
+          </legend>
+          <div id="passport-issued-hint" class="govuk-hint">
+            For example, 27 3 2022
+          </div>
+          <div class="govuk-date-input" id="passport-issued">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                  Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      
      
 
-
+    
       
-      
-      <br>
-
-  <!--Authoriser action)-->
 
 
-  <h2 class="govuk-cookie-banner__heading govuk-heading-m">Recommender action required</h2>
+
+ 
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="width-10">
+    What is the vet's name?
+  </label>
+  <div id="passport-issued-hint" class="govuk-hint">
+    Vet's full name
+  </div>
+  <input class="govuk-input govuk-input--width-10" id="width-10" name="width-10" type="text">
+</div>
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="width-10">
+    What is the vet's Royal College of Veterinary Surgeons (RCVS) number?
+  </label>
+  <div id="passport-issued-hint" class="govuk-hint">
+    It’s a 7-digit number. You can find it on the review summary the vet has given you.
+  </div>
+  <input class="govuk-input govuk-input--width-10" id="width-10" name="width-10" type="text">
+</div>
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="width-10">
+    What is the laboratory unique reference number for the test results?
+  </label>
+  <div id="passport-issued-hint" class="govuk-hint">
+    Enter the unique reference number (URN) for the laboratory test results. You can find it on the review summary.
+  </div>
+  <input class="govuk-input govuk-input--width-10" id="width-10" name="width-10" type="text">
+</div>
+  <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+  <h2 class="govuk-cookie-banner__heading govuk-heading-m">Submit application</h2>
 
   <div class="govuk-cookie-banner__content">
-    <p class="govuk-body">This customer will need digital assistance to complete an annual health and welfare review.</p>
-    <p class="govuk-body">Confirm that the customer is able to complete an application by uploading a review summary and claim form.</p>
+    <p class="govuk-body">Ensure the information is accurately recored before proceeding to the next step.</p>
+    <p class="govuk-body">Double check the customer documentation which has been uploaded into the CRM</p>
 
-    <div class="govuk-button-group">
-      <a href="*" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
-        Save and continue</a>
-      
-      <a href="*" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
-        Withdraw</a>
-     
-    </div>
-<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+  <a href="x-dairylimited-4.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+    Save and continue
+  </a>
+
+
+
 
 </div>
 </div>
