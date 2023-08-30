@@ -42,6 +42,50 @@ Annual Health and Welfare Back Office
       </strong>
     </h2>
 
+    <!-- "Pop-up" box -->
+    <div class="govuk-panel govuk-panel--confirmation govuk-!-text-align-left" style="background-color:#fafafa; border-color:#000000; border-width:medium;">
+      <a href="x-dairylimited.html" role="button" draggable="false" class="govuk-link govuk-body" style="color:#505a5f; float:right;" data-module="govuk-button">
+        Back
+      </a>
+      <br>
+      <div class="govuk-form-group">
+        
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Assisted Digital
+            </h1>
+            <div class="govuk-!-padding-bottom-7"></div>
+
+      <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+          <label class="govuk-label govuk-checkboxes__label" for="waste">
+            I confirm I have uploaded the Agreement into Customer Relationship Management (CRM)</div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+          <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+            I confirm I have called the customer to inform them the agreement has been received
+          </div>
+  </div>
+</fieldset>
+</div>
+
+      <form class="form" method="post">
+        <div class="govuk-form-group">
+
+          </fieldset>
+        </div>
+        <a href="x-dairylimited-1.html" role="button" draggable="false" class="govuk-button govuk-button govuk-!-margin-bottom-2" data-module="govuk-button">
+          Confirm and continue
+        </a>
+      </form>
+    </div>
+  </br>
+
+
+
+
     <!--User details-->
     <dl class="govuk-summary-list govuk-!-margin-bottom-9">
       <div class="govuk-summary-list__row">
@@ -106,7 +150,7 @@ Annual Health and Welfare Back Office
 
 
       <div class="govuk-tabs__panel" id="applied">
-        <h2 class="govuk-heading-l">Assisted Digital</h2>
+        <h2 class="govuk-heading-l">Application</h2>
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
@@ -236,7 +280,7 @@ Annual Health and Welfare Back Office
     
       </div>
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-        <h2 class="govuk-heading-l">Assisted Digital</h2>
+        <h2 class="govuk-heading-l">Not claimed yet</h2>
         <table class="govuk-table">
             </tr>
           </tbody>
@@ -291,28 +335,7 @@ Annual Health and Welfare Back Office
 
 </div>
 
-                   <!--Digital Assistance-->
 
-                   <h2 class="govuk-cookie-banner__heading govuk-heading-m">Digital Assistance</h2>
-
-                   <div class="govuk-cookie-banner__content">
-                                 <p class="govuk-body">This customer has successfully applied for an AHWR review</p>
-                             <p class="govuk-body">To progress to next step of the application process, confirm the applicant meets the eligibility criteria above or contact the security and compliance team.</p>
-                 
-                   
-                   <div class="govuk-button-group">
-                    <a href="../internal/x-dairylimited-confirm.html" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
-                      Confirm and continue</a>
-                     <a class="govuk-link" href="#">name@rpa.gov.uk</a>
-                     
-                     </button>
-                     </div>
-                     
-                   <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-                   
-                   </div>
-                   
-                   </div>
                    
 
 {% endblock %}

@@ -75,9 +75,50 @@ Annual Health and Welfare Back Office
           <p>+44 7987 77741</p>
         </dd>
       </div>
-     
-
     </dl>
+ 
+
+    <!-- "Pop-up" box -->
+    <div class="govuk-panel govuk-panel--confirmation govuk-!-text-align-left" style="background-color:#fafafa; border-color:#000000; border-width:medium;">
+      <div class="govuk-form-group">
+        <a href="x-dairylimited-1.html" role="button" draggable="false" class="govuk-link govuk-body" style="color:#505a5f; float:right;" data-module="govuk-button">
+          Back
+        </a>
+        <br>
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Progress application
+            </h1>
+            <div class="govuk-!-padding-bottom-7"></div>
+
+
+
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+              <label class="govuk-label govuk-checkboxes__label" for="waste">
+               I have received the claim form from the customer. I have uploaded the agreement into the CRM.
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                I am uploading the review summary and claim form into the CRM.
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+
+      <a href="x-dairylimited-3.html" role="button" draggable="false" class="govuk-button govuk-button govuk-!-margin-bottom-2" data-module="govuk-button">
+        Confirm and continue
+      </a>
+
+   
+
+    </div>
 
     <!--Application stages (in tabs)-->
     <div class="govuk-tabs" data-module="govuk-tabs">
@@ -102,7 +143,7 @@ Annual Health and Welfare Back Office
             </li>
       </ul>
 
-
+    
       <div class="govuk-tabs__panel" id="applied">
         <h2 class="govuk-heading-l">Agreed</h2>
         <table class="govuk-table">
@@ -145,12 +186,9 @@ Annual Health and Welfare Back Office
               <div class="govuk-summary-list__row">
                 <tr class="govuk-table__row">
                   <th scope="row" class="govuk-table__header">Upload files</th>
-                  <td class="govuk-table__cell"><div class="govuk-form-group">
-                    <label class="govuk-label" for="file-upload-1">
-                      Upload a file
-                    </label>
-                    <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
-                  </div></td>
+                  <td class="govuk-table__cell"><p><a href="#">Review summary.pdf</a></p>
+                    <p><a href="#">Claim form.pdf</a></p></td>
+                  </div>
                 </tr>
 
 
@@ -207,28 +245,6 @@ Annual Health and Welfare Back Office
       
       
       <br>
-
-  <!--Authoriser action)-->
-
-
-  <h2 class="govuk-cookie-banner__heading govuk-heading-m">Recommender action required</h2>
-
-  <div class="govuk-cookie-banner__content">
-    <p class="govuk-body">This customer will need digital assistance to complete an annual health and welfare review.</p>
-    <p class="govuk-body">Confirm that the customer is able to complete an application by uploading a review summary and claim form into the Customer Relationship Management system (CRM).</p>
-
-    <div class="govuk-button-group">
-      <a href="../internal/x-dairylimited-2.html" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
-        Save and continue</a>
-      
-      <a href="*" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
-        Withdraw</a>
-     
-    </div>
-<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-
-</div>
-</div>
 
 
       
