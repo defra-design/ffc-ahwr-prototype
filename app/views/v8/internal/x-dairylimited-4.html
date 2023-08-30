@@ -1,0 +1,203 @@
+{% extends "layouts/layout-defra.html" %}
+
+{% block pageTitle %}
+Back office: User application
+{% endblock %}
+{% set serviceName %}
+Annual Health and Welfare Back Office
+{% endset%}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner govuk-!-padding-top-0">
+  <p class="govuk-phase-banner__content">
+    <strong style="background-color:#00a33b;" class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+<a class="govuk-back-link govuk-!-margin-bottom-0" href="../a-digital-3.html">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    
+    <h1 class="govuk-caption-l govuk-!-margin-bottom-3">
+      Agreement number: AHWR-G2453-128K
+    </h1>
+
+    <h2 class="govuk-heading-l">
+      The Dairy Limited
+      <strong class="govuk-tag govuk-tag--green">
+        Agreed
+      </strong>
+    </h2>
+
+    <!--User details-->
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Name:
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p>Sandra Smith</p>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          SBI number:
+        </dt>
+        <dd class="govuk-summary-list__value">
+          1067778992
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Address:
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Earls Court Rd, Crawley C215 9EL
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Phone number:
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p>+44 7987 77741</p>
+        </dd>
+      </div>
+     
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Uploaded files:
+        </dt>
+        <dd class="govuk-summary-list__value">
+         <p><a href="#">Review summary.pdf</a></p>
+        <p><a href="#">Claim form.pdf</a></p>
+        </dd>
+      </div>
+
+
+    </dl>
+
+
+
+<dl class="govuk-summary-list govuk-!-margin-bottom-9">
+<div class="govuk-summary-list__row">
+  <dt class="govuk-summary-list__key govuk-!-width-one-third">
+    Type of review
+  </dt>
+  <dd class="govuk-summary-list__value">
+    Beef cattle
+  </dd>
+  <dd class="govuk-summary-list__actions">
+    <a class="govuk-link" href="x-dairylimited-3.html">
+      <span class="govuk-visually-hidden"> check-details</span>
+    </a>
+  </dd>
+</div>
+<div class="govuk-summary-list__row">
+  <dt class="govuk-summary-list__key govuk-!-width-one-third">
+    Date of visit
+  </dt>
+  <dd class="govuk-summary-list__value">
+    2 March 2023
+  </dd>
+  <dd class="govuk-summary-list__actions">
+    <a class="govuk-link" href="x-dairylimited-3.html">
+      Change<span class="govuk-visually-hidden"> visit date</span>
+    </a>
+  </dd>
+</div>
+<div class="govuk-summary-list__row">
+  <dt class="govuk-summary-list__key">
+   Date of testing
+  </dt>
+  <dd class="govuk-summary-list__value">
+    2 March 2023
+  </dd>
+  <dd class="govuk-summary-list__actions">
+    <a class="govuk-link" href="x-dairylimited-3.html">
+      Change<span class="govuk-visually-hidden"> test reference</span>
+    </a>
+  </dd>
+</div>
+
+
+<div class="govuk-summary-list__row">
+         <dt class="govuk-summary-list__key">
+    Vet's name
+  </dt>    <dd class="govuk-summary-list__value">
+    Nora Williams 
+  </dd>
+  <dd class="govuk-summary-list__actions">
+    <a class="govuk-link" href="x-dairylimited-3.html">
+      Change<span class="govuk-visually-hidden"> vet name</span>
+    </a>
+  </dd>
+</div>
+ <div class="govuk-summary-list__row">
+  <dt class="govuk-summary-list__key">
+    Vet's RCVS number
+  </dt>
+  <dd class="govuk-summary-list__value">
+    7116359
+  </dd>
+  <dd class="govuk-summary-list__actions">
+    <a class="govuk-link" href="x-dairylimited-3.html">
+      Change<span class="govuk-visually-hidden"> RCVS number</span>
+    </a>
+  </dd>
+</div>
+
+<div class="govuk-summary-list__row">
+  <dt class="govuk-summary-list__key">
+    Test result reference number
+  </dt>
+  <dd class="govuk-summary-list__value">
+    URN-7374-48BC 
+  </dd>
+  <dd class="govuk-summary-list__actions">
+    <a class="govuk-link" href="x-dairylimited-3.html">
+      Change<span class="govuk-visually-hidden"> test reference</span>
+    </a>
+  </dd>
+</div>
+
+</dl>
+
+<a href="x-dairylimited-5.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+  Save and continue
+</a>
+
+
+</div>
+
+<form action="/form-handler" method="post" novalidate>
+
+<input type="hidden" name="answers-checked" value="true">
+
+
+
+
+
+</div>
+</div>
+
+
+      
+    </div>
+  </div>
+</div>
+                   
+
+{% endblock %}
