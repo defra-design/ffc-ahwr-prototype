@@ -1,4 +1,4 @@
-{% extends "layouts/layout-defra-authoriser.html" %}
+{% extends "layouts/layout-defra.html" %}
 
 {% block pageTitle %}
 Back office: User application
@@ -31,15 +31,16 @@ Annual Health and Welfare Back Office
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    
+
+    <!--User details-->
     <h1 class="govuk-caption-l govuk-!-margin-bottom-3">
-      Agreement number: AHWR-F022-321G
+      Agreement number: AHWR-G2453-128K
     </h1>
 
     <h2 class="govuk-heading-l">
-      Greenfield & Co
+      The Dairy Limited
       <strong class="govuk-tag govuk-tag--orange">
-        In claim
+        In check
       </strong>
     </h2>
 
@@ -50,7 +51,7 @@ Annual Health and Welfare Back Office
           Name:
         </dt>
         <dd class="govuk-summary-list__value">
-          <p>Mary Greenfield</p>
+          <p>Sandra Smith</p>
         </dd>
       </div>
 
@@ -59,7 +60,7 @@ Annual Health and Welfare Back Office
           SBI number:
         </dt>
         <dd class="govuk-summary-list__value">
-          108977341
+          1067778992
         </dd>
       </div>
 
@@ -68,16 +69,16 @@ Annual Health and Welfare Back Office
           Address:
         </dt>
         <dd class="govuk-summary-list__value">
-          Greenfield Avenue, Arthington, Romford IG1 2KL
+          Earls Court Rd, Crawley C215 9EL
         </dd>
       </div>
 
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-          Email address:
+          Phone number:
         </dt>
         <dd class="govuk-summary-list__value">
-          <p>greenfield&co@accounts.com</p>
+          <p>+44 7987 77741</p>
         </dd>
       </div>
     </dl>
@@ -112,7 +113,7 @@ Annual Health and Welfare Back Office
             <tr class="govuk-table__row">
               <tr class="govuk-table__row">
                 <th scope="row" class="govuk-table__header">Date of agreement</th>
-                <td class="govuk-table__cell">13/02/2023</td>
+                <td class="govuk-table__cell">02/04/2023</td>
               </tr>
               <th scope="row" class="govuk-table__header">Business details correct</th>
               <td class="govuk-table__cell">Yes</td>
@@ -154,7 +155,7 @@ Annual Health and Welfare Back Office
             </tr>   
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Vet’s name</th>
-              <td class="govuk-table__cell">Corrine Bailey</td>
+              <td class="govuk-table__cell">Luke James</td>
             </tr>
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Vet’s RCVS number</th>
@@ -209,22 +210,32 @@ Annual Health and Welfare Back Office
           </tbody>
         </table>
       </div>
-      <br>
+    </div>
+  
+              <h2 class="govuk-cookie-banner__heading govuk-heading-m">Recommender action required</h2>
 
-      <div class="govuk-grid-row">
-      <div class="govuk-grid-column-one-half">
-        <div class="govuk-panel govuk-panel--confirmation govuk-!-margin-right-7" style="background-color:#fafafa; border-color:#000000; border-width:medium;">
-        <h3 class="govuk-panel__title-s govuk-!-font-size-18 govuk-!-margin-top-1" style="color:#000000;">
+              <div class="govuk-cookie-banner__content">
+              <p class="govuk-body">This customer has successfully submitted an application.</p>
+              <p class="govuk-body">Use the case information to decide whether to recommend or reject this applicant for payment.</p>
           
-        </h1>
+          <div class="govuk-button-group">
+            <a href="x-greenfield-&-co-approvingclaim#claimed" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+              Pay</a>
+            </button>
+            <a href="x-greenfield-&-co-rejectingclaim#claimed" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+              Reject</a>
+            </button>
 
-        <a href="x-greenfield-&-co-approvingclaim#claimed" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-          Recommend to pay</a>
-        </button>
-        <a href="x-greenfield-&-co-rejectingclaim#claimed" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-          Recommend to reject</a>
-        </button>
+          </div>
+          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+        </div>
+
+      </div>
+
+
       </form>
+
       </div>
 
       

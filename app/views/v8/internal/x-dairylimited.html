@@ -81,219 +81,162 @@ Annual Health and Welfare Back Office
       </div>
     </dl>
 
-    <!--Application stages (in tabs)-->
-    <div class="govuk-tabs" data-module="govuk-tabs">
-      <h2 class="govuk-tabs__title">
-        Contents
-      </h2>
-      <ul class="govuk-tabs__list">
-        <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-          <a class="govuk-tabs__tab" href="#applied">
-            Application
-          </a>
-        </li>
-        <li class="govuk-tabs__list-item">
-          <a class="govuk-tabs__tab" href="#claimed">
-            Claim
-          </a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#history">
-              History
-            </a>
-            </li>
-      </ul>
+    <h2 class="govuk-heading-l">
+      Digital Assistance
+    </h2>
 
+    <h3 class="govuk-heading-s"> Fill in apply form on behalf of customer</h3>
 
-      <div class="govuk-tabs__panel" id="applied">
-        <h2 class="govuk-heading-l">Assisted Digital</h2>
-        <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Date of agreement</th>
-              <td class="govuk-table__cell">02/04/2023</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Data recorded via Assisted Digital call</th>
-              <td class="govuk-table__cell">
-                <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="phone" name="phone" type="checkbox" value="phone">
-                    <label class="govuk-label govuk-checkboxes__label" for="phone">
-                    
-                    </label>
-                  </div>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Terms and conditions received from customer</th>
-              <td class="govuk-table__cell">
-                <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="terms" name="terms" type="checkbox" value="terms">
-                    <label class="govuk-label govuk-checkboxes__label" for="terms">
-                      
-                    </label>
-                  </div>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Beef cattle</th>
-              <td class="govuk-table__cell">
-                <div class="govuk-form-group">
-                    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-                      <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="contact" name="contact-1" type="checkbox" value="beef" data-aria-controls="conditional-contact">
-                        <label class="govuk-label govuk-checkboxes__label" for="contact-1">
-                
-                        </label>
-                      </div>
-                      <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-contact">
-                        <div class="govuk-form-group">
-                          <label class="govuk-label" for="contact-by-email">
-                            Will the applicant have 11 or more beef cattle on the date of the review?
-                          </label>
-                          <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="beef" spellcheck="false" autocomplete="email">
-                              <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                            </div>
-                        </div>
-                      </div>
-                  </td>
-                </tr>
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Dairy cattle</th>
-                  <td class="govuk-table__cell">
-                    <div class="govuk-form-group">
-                        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-                          <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone" data-aria-controls="conditional-contact-2">
-                            <label class="govuk-label govuk-checkboxes__label" for="contact-2">
-                              
-                            </label>
-                          </div>
-                          <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-contact-2">
-                            <div class="govuk-form-group">
-                              <label class="govuk-label" for="contact-by-phone">
-                                Will the applicant have 11 or more dairy cattle on the date of the review?
-                              </label>
-                              <input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel" autocomplete="tel">
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-  
-        
-               
-
-
-
-          </tbody>
-        </table>
+  <!-- Questions -->
+  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+      <legend class="govuk-fieldset__legend">
+        When was the agreement accepted?
+      </legend>
+      <div id="passport-issued-hint" class="govuk-hint">
+        For example, 27 3 2022
       </div>
-    
-
-            
-
-
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="reviewed">
-        <h2 class="govuk-heading-l">No data inputted yet</h2>
-        <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Date</th>
-              <th scope="col" class="govuk-table__header">Data requested</th>
-              <th scope="col" class="govuk-table__header">Data entered</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell">Review date</td>
-              <td class="govuk-table__cell"></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell">11 or more cattle?</td>
-              <td class="govuk-table__cell"></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell">BVD in herd?</td>
-              <td class="govuk-table__cell"></td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell">Report given?</td>
-              <td class="govuk-table__cell"></td>
-            </tr>
-          </tbody>
-        </table>
-    
+      <div class="govuk-date-input" id="passport-issued">
+        <div class="govuk-date-input__item">
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+              Day
+            </label>
+            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+          </div>
+        </div>
+        <div class="govuk-date-input__item">
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+              Month
+            </label>
+            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+          </div>
+        </div>
+        <div class="govuk-date-input__item">
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+              Year
+            </label>
+            <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
+          </div>
+        </div>
       </div>
-      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-        <h2 class="govuk-heading-l">Assisted Digital</h2>
-        <table class="govuk-table">
-            </tr>
-          </tbody>
-        </table>
-      </div>
-   
-
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
-          <h2 class="govuk-heading-l">History</h2>
-          <table class="govuk-table">
-            <tbody class="govuk-table__body">
-              <tr class="govuk-table__row">
-                <th scope="col" class="govuk-table__header">Date</th>
-                <th scope="col" class="govuk-table__header">Time</th>
-                <th scope="col" class="govuk-table__header">Action</th>
-                <th scope="col" class="govuk-table__header">User</th>
-              </tr>
-            </thead>
-            <tbody class="govuk-table__body">
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">23/03/2023</td>
-                <td class="govuk-table__cell">10:00:12</td>
-                <td class="govuk-table__cell">Recommend to reject</td>
-                <td class="govuk-table__cell">Daniel Jones</td>
-              </tr>
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">24/03/2023</td>
-                <td class="govuk-table__cell">09:30:00</td>
-                <td class="govuk-table__cell">Recommend to pay</td>
-                <td class="govuk-table__cell">Daniel Jones</td>
-              </tr>
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">25/03/2023</td>
-                <td class="govuk-table__cell">11:10:15</td>
-                <td class="govuk-table__cell">Authorise to reject</td>
-                <td class="govuk-table__cell">Amanda Hassan</td>
-              </tr>
-              <tr class="govuk-table__row">
-                <td class="govuk-table__cell">25/03/2023</td>
-                <td class="govuk-table__cell">11:10:15</td>
-                <td class="govuk-table__cell">Authorise to pay</td>
-                <td class="govuk-table__cell">Amanda Hassan</td>
-              </tr>
-      </tbody>
-    </table>
+    </fieldset>
   </div>
+
+    
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+          <legend class="govuk-fieldset__legend">
+            Has the customer phone call been recorded?
+          </legend>
+        </legend>
+        <div class="govuk-radios govuk-radios--small" data-module="govuk-radios">
+        <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+            <label class="govuk-label govuk-radios__label" for="changed-name">
+              Yes
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+            <label class="govuk-label govuk-radios__label" for="changed-name-2">
+              No
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+          <legend class="govuk-fieldset__legend">
+            Has the customer understood and signed the terms and conditions?
+          </legend>
+        </legend>
+        <div class="govuk-radios govuk-radios--small" data-module="govuk-radios">
+        <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+            <label class="govuk-label govuk-radios__label" for="changed-name">
+              Yes
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+            <label class="govuk-label govuk-radios__label" for="changed-name-2">
+              No
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+          <legend class="govuk-fieldset__legend">
+            Which livestock do you want a review for?
+        </legend>
+        <div id="contact-hint" class="govuk-hint">
+          Select one option.
+        </div>
+        <div class="govuk-radios govuk-radios--small" data-module="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+            <label class="govuk-label govuk-radios__label" for="contact-2">
+              Beef cattle
+            </label>
+          </div>
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="contact-by-phone">
+                Will there be 11 or more beef cattle on the date of the review?
+              </label>
+              <input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel" autocomplete="tel">
+            </div>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="contact-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
+            <label class="govuk-label govuk-radios__label" for="contact-3">
+              Dairy cattle
+            </label>
+          </div>
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-3">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="contact-by-text">
+                Will there be 11 or more dairy cattle on the date of the review?
+              </label>
+              <input class="govuk-input govuk-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel" autocomplete="tel">
+            </div>
+            
+            
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    
+   
     
     
-  
 
-
-
-</div>
 
                    <!--Digital Assistance-->
 
-                   <h2 class="govuk-cookie-banner__heading govuk-heading-m">Digital Assistance</h2>
+                   <h2 class="govuk-cookie-banner__heading govuk-heading-m">Submit application</h2>
 
                    <div class="govuk-cookie-banner__content">
                                  <p class="govuk-body">This customer has successfully applied for an AHWR review</p>
