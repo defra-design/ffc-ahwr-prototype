@@ -1,0 +1,152 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+{% set serviceName %}
+Annual health and welfare review of livestock
+{% endset%}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-width-container">
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+        <span class="govuk-caption-xl">Arthington Farm Ltd - SBI 234567890</span>
+          <h1 class="govuk-heading-xl">
+            Jane's Dashboard
+          </h1>
+
+
+    
+          <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Your applications</h2>
+          <p class="govuk-body govuk-!-margin-bottom-7">You have completed 0 of 3 applications.</p>
+    
+          <ol class="app-task-list">
+            <li>
+              <h2 class="app-task-list__section">
+                <span class="app-task-list__section-number">1. </span> Before you apply
+              </h2>
+              <ul class="app-task-list__items">
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    <a href="check-details.html" aria-describedby="eligibility-status">
+                      Check your business and personal details
+                    </a>
+                  </span>
+                  <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+                </li>
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    <a href="../farmer/guidance-apply.html" aria-describedby="read-declaration-status">
+                      Read the guidance on how to apply for a review
+                    </a>
+                  </span>
+                  <strong class="govuk-tag app-task-list__tag" id="read-declaration-status">Completed</strong>
+                </li>
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    <a href="../farmer/guidance-claim.html" aria-describedby="read-declaration-status">
+                      Read the guidance on how to claim funding after reviews
+                    </a>
+                  </span>
+                  <strong class="govuk-tag app-task-list__tag" id="read-declaration-status">Completed</strong>
+                </li>
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    <a href="#" aria-describedby="read-declaration-status">
+                      Read the guidance on how to test for endemics disease
+                    </a>
+                  </span>
+                  <strong class="govuk-tag app-task-list__tag" id="read-declaration-status">Completed</strong>
+                </li>
+              </ul>
+            </li>
+    
+            <li>
+              <h2 class="app-task-list__section">
+                <span class="app-task-list__section-number">2. </span> Ongoing applications
+              </h2>
+              <ul class="app-task-list__items">
+
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    VV-5053-A696  – Beef Cattle G AHWR -  Review
+                  </span>
+                  <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>                </li>
+
+              </ul>
+            </li>
+    
+            <li>
+              <h2 class="app-task-list__section">
+                <span class="app-task-list__section-number">3. </span> Claimed applications
+              </h2>
+              <ul class="app-task-list__items">
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    Submit application
+                  </span>
+                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="submit-pay-status">Cannot start yet</strong>
+                </li>
+              </ul>
+            </li>
+
+        
+      
+
+            <h2 class="govuk-heading-m">Help and guidance</h2>
+            <p class="govuk-body">
+              Read the following guidance to find out what you and your vet need to do.
+            </p>
+            <p><a href="../farmer/guidance-apply.html">What happens at a livestock health and welfare farm visit</a></p>
+            <p><a href="../vet/guidance.html">Vets: How to carry out an annual health and welfare review of livestock</a</p>
+
+           
+          </div>
+
+        {{ govukButton({
+          text: "Start a new application",
+          href: "which-review"
+        }) }}
+
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Need more help?
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+      
+      
+              <p class="govuk-body">Contact the Rural Payments Agency by email or phone.</p>
+              <p class="govuk-body">Email:  <a href="mailto:ruralpayments@defra.gov.uk?subject=feedback">ruralpayments@defra.gov.uk</a><br><br>
+           
+              Telephone: 03000 200 301 <br>
+              Monday to Friday, 8:30am to 5pm, except bank holidays <br>
+             
+            
+              <p class="govuk-body"><a href="https://www.gov.uk/call-charges" target="”_blank”">Find out about call charges</a></p>
+            </a></div><a href="https://www.gov.uk/call-charges" target="”_blank”">
+          </a></details><a href="https://www.gov.uk/call-charges" target="”_blank”">
+      
+        </a></div><a href="https://www.gov.uk/call-charges" target="”_blank”">
+      </a></div>
+      </div>
+      </details>
+    </ol>
+    </div>
+    
+
+
+      
+   
+    
+
+{% endblock %}
