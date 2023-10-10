@@ -18,11 +18,11 @@ Annual health and welfare review of livestock
     <div class="govuk-width-container">
       <dl class="govuk-summary-list govuk-!-margin-bottom-9">
 
+
         <span class="govuk-caption-xl">Arthington Farm Ltd - SBI 234567890</span>
           <h1 class="govuk-heading-xl">
             Jane's Dashboard
           </h1>
-
 
     
           <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Your applications</h2>
@@ -71,36 +71,64 @@ Annual health and welfare review of livestock
     
             <li>
               <h2 class="app-task-list__section">
-                <span class="app-task-list__section-number">2. </span> Ongoing applications
+                <span class="app-task-list__section-number">2. </span> Your agreements
               </h2>
               <ul class="app-task-list__items">
 
                 <li class="app-task-list__item">
                   <span class="app-task-list__task-name">
-                    Submit application
+                    Annual Health and Welfare Review for Sheep
                   </span>
-                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="submit-pay-status">Cannot start yet</strong>
+                  <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="submit-pay-status">In progress</strong>
                 </li>
-
-              </ul>
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    Annual Health and Welfare Review for Diary Cattle
+                  </span>
+                  <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="submit-pay-status">In progress</strong>
+                </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                Endemics Review for Sheep
+              </span>
+              <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="submit-pay-status">In progress</strong>
             </li>
+          </ul>
+        </li>
+
+            {{ govukButton({
+              text: "Start a new application",
+              href: "which-review"
+            }) }}
     
             <li>
               <h2 class="app-task-list__section">
-                <span class="app-task-list__section-number">3. </span> Claimed applications
+                <span class="app-task-list__section-number">3. </span> Your claims
               </h2>
               <ul class="app-task-list__items">
                 <li class="app-task-list__item">
                   <span class="app-task-list__task-name">
-                    Submit application
+                    Dairy Cattle G – Endemics Review
                   </span>
-                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="submit-pay-status">Cannot start yet</strong>
+                  <strong class="govuk-tag govuk-tag-- app-task-list__tag" id="submit-pay-status">Completed</strong>
+                </li>
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    Pig Flock F – Endemics Review
+                  </span>
+                  <strong class="govuk-tag govuk-tag-- app-task-list__tag" id="submit-pay-status">Completed</strong>
+                </li>
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    Sheep A – Endemics Review
+                  </span>
+                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="submit-pay-status">Missing info</strong>
                 </li>
               </ul>
             </li>
 
         
-      
+      <div>
 
             <h2 class="govuk-heading-m">Help and guidance</h2>
             <p class="govuk-body">
@@ -112,10 +140,15 @@ Annual health and welfare review of livestock
            
           </div>
 
+          <br>
+          
+
         {{ govukButton({
-          text: "Start a new application",
-          href: "which-review"
+          text: "Start a new claim",
+          href: "claim/start"
         }) }}
+
+   
 
         <details class="govuk-details" data-module="govuk-details">
           <summary class="govuk-details__summary">
@@ -144,10 +177,6 @@ Annual health and welfare review of livestock
     </ol>
     </div>
     
-
-
-      
-   
     
 
 {% endblock %}
