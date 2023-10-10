@@ -7,26 +7,38 @@ Index page
 Annual health and welfare review of livestock
 {% endset%}
 
-{% block beforeContent %}
-  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
-{% endblock %}
 
 {% block content %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+
+<main class="govuk-main-wrapper" style="padding-top: 0px; padding-bottom: 0px;">
+  <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+  <div class="govuk-grid-row" style="padding-top:0px;">
+    <div class="govuk-grid-column-two-thirds">
+        <h3 class="govuk-heading-m" style="margin-bottom: 8px;">Arthington Farm Ltd</h3>
+
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Address: 	Primrose Farm, Arthington</h2>
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Email address: jane@arthington.com</h2>
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+        <p class="govuk-body sbi-number" style="float:right; margin-bottom: 8px;">SBI: 234567890</h3>
+    </div>
+
+
+    </div>
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+</main>
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <div class="govuk-width-container">
       <dl class="govuk-summary-list govuk-!-margin-bottom-9">
 
-
-        <span class="govuk-caption-xl">Arthington Farm Ltd - SBI 234567890</span>
-          <h1 class="govuk-heading-xl">
-            Jane's Dashboard
-          </h1>
-
-    
-          <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Your applications</h2>
-          <p class="govuk-body govuk-!-margin-bottom-7">You have completed 0 of 3 applications.</p>
+        <span class="govuk-caption-xl">AHWR and Endemic Disease management</span>
+        <h1 class="govuk-heading-xl">Jane Doe's dashboard</h1>
+        <h3 class="govuk-heading-m">Apply and claim for funding applications</h3>
     
           <ol class="app-task-list">
             <li>
@@ -84,6 +96,12 @@ Annual health and welfare review of livestock
                 <li class="app-task-list__item">
                   <span class="app-task-list__task-name">
                     Annual Health and Welfare Review for Diary Cattle
+                  </span>
+                  <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="submit-pay-status">In progress</strong>
+                </li>
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    <a href="../defraid-2-20/beef-cattle-application">Annual Health and Welfare Review for Beef Cattle</a>
                   </span>
                   <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="submit-pay-status">In progress</strong>
                 </li>
