@@ -1,0 +1,53 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+{% set serviceName %}Annual health and welfare review of livestock{% endset%}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">
+          Claim complete
+        </h1>
+        <div class="govuk-panel__body">
+          Your agreement number<br><strong>AHWR-F021-723B</strong>
+        </div>
+      </div>
+      <br>
+
+        <p class="govuk-body">Your claim has been successfully submitted.</p>
+        <p class="govuk-body">We’ve sent you a <a href="email-confirmation">confirmation email</a>.</p>
+        <p class="govuk-body">Check your progress in your <a href="../multiple-visits-2.html">dashboard</a>.</p>
+
+
+      <h2 class="govuk-heading-m">What happens next</h2>
+      <p class="govuk-body">The Rural Payments Agency may contact you to request the review summary the vet has given you.</p>
+
+
+      <h2 class="govuk-heading-m">Get help with your claim</h2>
+        <p>Contact the Rural Payments Agency if you need to change the details of your claim - for example if you've entered the vet’s Royal College of Veterinary Surgeons number incorrectly.</p>
+        <p>Have your agreement number with you when you call or include it in your email.</p>
+        <ul class="govuk-list">
+          <li>Rural Payments Agency</li>
+          <li>Telephone: 03000 200 301</li>
+              <li>Monday to Friday, 8:30am to 5pm, except bank holidays</li>
+
+          <li><a class="govuk-link" href="mailto:ruralpayments@defra.gov.uk">ruralpayments@defra.gov.uk</a></li>
+        </ul>
+        <p class="govuk-body">Find out about <a class="govuk-link" href="https://www.gov.uk/call-charges">call charges</a></p>
+
+        <p class="govuk-body govuk-!-margin-top-9">
+          <a href="#" class="govuk-link">What did you think of this service?</a> (takes 30 seconds)
+        </p>
+
+    </div>
+  </div>
+
+
+
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+{% set serviceName %}Annual health and welfare review of livestock{% endset%}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="eligibility-bps-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading">
+        What are your endemic disease test results?
+      </h1>
+    </legend>
+
+    <div id="vet-registered-hint" class="govuk-hint govuk-!-margin-bottom-5">
+      Select the outcome of your endemic disease test 
+     
+    </div>
+  <!--
+    <p>You can have one review each year for one type of livestock.</p>
+    <p>If you’re eligible for more than one type of livestock, you must choose which one you want reviewed.</p>
+  -->
+
+    <div class="govuk-radios govuk-radios--inline">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="eligibility-bps" name="eligibility-bps" type="radio" value="beef-eligibility" onclick="setLocation(this);" {{ checked("eligibility-cattle", "eligibility-bps-yes") }}>
+        <label class="govuk-label govuk-radios__label" for="eligibility-bps">
+          Positive
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="eligibility-bps-2" name="eligibility-bps" type="radio" value="dairy-eligibility" onclick="setLocation(this);" {{ checked("eligibility-cattle", "ineligible") }}>
+        <label class="govuk-label govuk-radios__label" for="eligibility-bps-2">
+          Negative
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+    {{ govukButton({
+      text: "Continue",
+      href: "check-answers"
+    }) }}
+
+  </div>
+</div>
+
+{% endblock %}
