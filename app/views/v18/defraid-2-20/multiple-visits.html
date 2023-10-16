@@ -8,8 +8,10 @@ Annual health and welfare review of livestock
 {% endset%}
 
 
+
 {% block content %}
-  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
 
 <main class="govuk-main-wrapper" style="padding-top: 0px; padding-bottom: 0px;">
   <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
@@ -26,19 +28,18 @@ Annual health and welfare review of livestock
         <p class="govuk-body sbi-number" style="float:right; margin-bottom: 8px;">SBI: 234567890</h3>
     </div>
 
-
-    </div>
-    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+  </div>
+  <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 </main>
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-    <div class="govuk-width-container">
-      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+<div class="govuk-grid-column-two-thirds">
+  <div class="govuk-width-container">
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
 
-        <span class="govuk-caption-xl">AHWR and Endemic Disease management</span>
-        <h1 class="govuk-heading-xl">Jane Doe's dashboard</h1>
-        <h3 class="govuk-heading-m">Apply and claim for funding applications</h3>
+      <span class="govuk-caption-xl">AHWR and Endemic Disease management</span>
+      <h1 class="govuk-heading-xl">Jane Doe's dashboard</h1>
+      <h3 class="govuk-heading-m">Apply and claim for funding applications</h3>
     
           <ol class="app-task-list">
             <li>
@@ -79,75 +80,60 @@ Annual health and welfare review of livestock
                   <strong class="govuk-tag app-task-list__tag" id="read-declaration-status">Completed</strong>
                 </li>
               </ul>
-            </li>
+            
+          
+       
     
             <li>
               <h2 class="app-task-list__section">
-                <span class="app-task-list__section-number">2. </span> Your agreements
+                <span class="app-task-list__section-number">2. </span> Ongoing applications
               </h2>
               <ul class="app-task-list__items">
 
                 <li class="app-task-list__item">
                   <span class="app-task-list__task-name">
-                    Annual Health and Welfare Review for Sheep
+                    <a href="../defraid-2-20/beef-cattle-application"> VV-5053-A696  – Beef Cattle G AHWR -  Review</a>
+                    <p class="govuk-body-s">
+                      You have <strong>14 days left</strong> to make a claim for your livestock
+                    </p>
+                  </span>
+                  <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
+                </li>
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    <a href="../defraid-2-20/beef-cattle-application-endemics"> Beef Cattle G – Endemics Review</a>
+                    <p class="govuk-body-s">
+                      Your agreement offer will expire at 11:59pm on <strong>27 Oct 2023</strong>
+                    </p>
                   </span>
                   <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="submit-pay-status">In progress</strong>
                 </li>
                 <li class="app-task-list__item">
                   <span class="app-task-list__task-name">
-                    Annual Health and Welfare Review for Diary Cattle
+                    <a href="../defraid-2-20/beef-cattle-application-endemics-2"> Beef Cattle Test – Endemics Review</a>
+                    <p class="govuk-body-s">
+                      Your agreement offer will expire at 11:59pm on <strong>02 Apr 2024</strong>
+                    </p>
                   </span>
                   <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="submit-pay-status">In progress</strong>
                 </li>
                 <li class="app-task-list__item">
                   <span class="app-task-list__task-name">
-                    <a href="../defraid-2-20/beef-cattle-application">Annual Health and Welfare Review for Beef Cattle</a>
+                    <a href=""> Diary Cattle Test – Endemics Review</a>
+                    <p class="govuk-body-s">
+                      You have been paid <strong>£294</strong> for completing testing on your livestock
+                    </p>
                   </span>
-                  <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="submit-pay-status">In progress</strong>
+                  <strong class="govuk-tag govuk-tag-- app-task-list__tag" id="submit-pay-status">Paid</strong>
                 </li>
-            <li class="app-task-list__item">
-              <span class="app-task-list__task-name">
-                Endemics Review for Sheep
-              </span>
-              <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="submit-pay-status">In progress</strong>
-            </li>
-          </ul>
-        </li>
-
+              </ul>
+            </ol>
+            
             {{ govukButton({
               text: "Start a new application",
               href: "which-review"
             }) }}
-    
-            <li>
-              <h2 class="app-task-list__section">
-                <span class="app-task-list__section-number">3. </span> Your claims
-              </h2>
-              <ul class="app-task-list__items">
-                <li class="app-task-list__item">
-                  <span class="app-task-list__task-name">
-                    Dairy Cattle G – Endemics Review
-                  </span>
-                  <strong class="govuk-tag govuk-tag-- app-task-list__tag" id="submit-pay-status">Completed</strong>
-                </li>
-                <li class="app-task-list__item">
-                  <span class="app-task-list__task-name">
-                    Pig Flock F – Endemics Review
-                  </span>
-                  <strong class="govuk-tag govuk-tag-- app-task-list__tag" id="submit-pay-status">Completed</strong>
-                </li>
-                <li class="app-task-list__item">
-                  <span class="app-task-list__task-name">
-                    Sheep A – Endemics Review
-                  </span>
-                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="submit-pay-status">Missing info</strong>
-                </li>
-              </ul>
-            </li>
-
-        
-      <div>
-
+            
             <h2 class="govuk-heading-m">Help and guidance</h2>
             <p class="govuk-body">
               Read the following guidance to find out what you and your vet need to do.
@@ -155,46 +141,14 @@ Annual health and welfare review of livestock
             <p><a href="../farmer/guidance-apply.html">What happens at a livestock health and welfare farm visit</a></p>
             <p><a href="../vet/guidance.html">Vets: How to carry out an annual health and welfare review of livestock</a</p>
 
-           
-          </div>
-
-          <br>
-          
-
-        {{ govukButton({
-          text: "Start a new claim",
-          href: "claim/start"
-        }) }}
-
    
 
-        <details class="govuk-details" data-module="govuk-details">
-          <summary class="govuk-details__summary">
-            <span class="govuk-details__summary-text">
-              Need more help?
-            </span>
-          </summary>
-          <div class="govuk-details__text">
+
+
+  
+
       
-      
-              <p class="govuk-body">Contact the Rural Payments Agency by email or phone.</p>
-              <p class="govuk-body">Email:  <a href="mailto:ruralpayments@defra.gov.uk?subject=feedback">ruralpayments@defra.gov.uk</a><br><br>
-           
-              Telephone: 03000 200 301 <br>
-              Monday to Friday, 8:30am to 5pm, except bank holidays <br>
-             
-            
-              <p class="govuk-body"><a href="https://www.gov.uk/call-charges" target="”_blank”">Find out about call charges</a></p>
-            </a></div><a href="https://www.gov.uk/call-charges" target="”_blank”">
-          </a></details><a href="https://www.gov.uk/call-charges" target="”_blank”">
-      
-        </a></div><a href="https://www.gov.uk/call-charges" target="”_blank”">
-      </a></div>
-      </div>
-      </details>
-    </ol>
-    </div>
-    
+   
     
 
 {% endblock %}
