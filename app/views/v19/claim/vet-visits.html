@@ -63,7 +63,6 @@ Annual health and welfare review of livestock
                       Check your business and personal details
                     </a>
                   </span>
-                  <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
                 </li>
                 <li class="app-task-list__item">
                   <span class="app-task-list__task-name">
@@ -71,7 +70,6 @@ Annual health and welfare review of livestock
                       Read the guidance on how to apply for a review
                     </a>
                   </span>
-                  <strong class="govuk-tag app-task-list__tag" id="read-declaration-status">Completed</strong>
                 </li>
                 <li class="app-task-list__item">
                   <span class="app-task-list__task-name">
@@ -79,7 +77,6 @@ Annual health and welfare review of livestock
                       Read the guidance on how to claim funding after reviews
                     </a>
                   </span>
-                  <strong class="govuk-tag app-task-list__tag" id="read-declaration-status">Completed</strong>
                 </li>
                 <li class="app-task-list__item">
                   <span class="app-task-list__task-name">
@@ -87,26 +84,38 @@ Annual health and welfare review of livestock
                       Read the guidance on how to test for endemics disease
                     </a>
                   </span>
-                  <strong class="govuk-tag app-task-list__tag" id="read-declaration-status">Completed</strong>
+                </li>
+              </ul>
+
+              <li>
+                <h2 class="app-task-list__section">
+                  <span class="app-task-list__section-number">2. </span> Terms and conditions
+                </h2>
+                <ul class="app-task-list__items">
+                  <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    <a href="#" aria-describedby="read-declaration-status">
+                      Read the terms and conditions for funding
+                    </a>
+                  </span>
+                  <strong class="govuk-tag govuk-tag--turquoise app-task-list__tag" id="read-declaration-status">Active</strong>
                 </li>
               </ul>
             
-          
-       
+                     
     
             <li>
               <h2 class="app-task-list__section">
-                <span class="app-task-list__section-number">2. </span> Your applications
+                <span class="app-task-list__section-number">3. </span> Your applications
               </h2>
               <ul class="app-task-list__items">
 
                 <li class="app-task-list__item">
                   <span class="app-task-list__task-name">
                     <a href="../beef-cattle-application"> VV-5053-A696  – Beef Cattle G AHWR -  Review</a>
-                    <p class="govuk-body-s">
-You must arrange this review and claim funding  by <strong>11 April 2024</strong>                    </p>
+                    <p class="govuk-body-s">You must arrange this review and claim funding by <strong>11 April 2024</strong></p>
                   </span>
-                  <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
+                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="contact-details-status">Missing info</strong>
                 </li>
                 <li class="app-task-list__item">
                   <span class="app-task-list__task-name">
@@ -115,16 +124,16 @@ You must arrange this review and claim funding  by <strong>11 April 2024</strong
                       Your agreement offer will expire at 11:59pm on <strong>27 Oct 2023</strong>
                     </p>
                   </span>
-                  <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="submit-pay-status">In progress</strong>
+                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="submit-pay-status">Missing info</strong>
                 </li>
                 <li class="app-task-list__item">
                   <span class="app-task-list__task-name">
                     <a href="../beef-cattle-application-endemics-2"> Beef Cattle Test – Endemics Review</a>
                     <p class="govuk-body-s">
-                      Your agreement offer will expire at 11:59pm on <strong>02 Apr 2024</strong>
+                      You will receiving funding for your claim on <strong>02 Apr 2024</strong>
                     </p>
                   </span>
-                  <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="submit-pay-status">In progress</strong>
+                  <strong class="govuk-tag govuk-tag--green app-task-list__tag" id="submit-pay-status">Claiming</strong>
                 </li>
                 <li class="app-task-list__item">
                   <span class="app-task-list__task-name">
@@ -133,22 +142,21 @@ You must arrange this review and claim funding  by <strong>11 April 2024</strong
                       You have been paid <strong>£294</strong> for completing testing on your livestock
                     </p>
                   </span>
-                  <strong class="govuk-tag govuk-tag-- app-task-list__tag" id="submit-pay-status">Paid</strong>
+                  <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="submit-pay-status">Paid</strong>
                 </li>
               </ul>
             </ol>
             
-            {{ govukButton({
-              text: "Start a new application",
-              href: "which-review"
-            }) }}
+            <div class="govuk-button-group">
+              <button class="govuk-button" data-module="govuk-button">
+                Claim for livestock welfare review
+              </button>
+              <button class="govuk-button govuk-button" data-module="govuk-button">
+                Claim for disease-focused visit
+              </button>
+            </div>
             
-            <h2 class="govuk-heading-m">Help and guidance</h2>
-            <p class="govuk-body">
-              Read the following guidance to find out what you and your vet need to do.
-            </p>
-            <p><a href="../farmer/guidance-apply.html">What happens at a livestock health and welfare farm visit</a></p>
-            <p><a href="../vet/guidance.html">Vets: How to carry out an annual health and welfare review of livestock</a</p>
+
             </main>
 
    
