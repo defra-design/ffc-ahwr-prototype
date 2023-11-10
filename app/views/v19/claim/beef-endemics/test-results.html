@@ -24,10 +24,10 @@ Index page
         
           <div class="govuk-form-group">
             <label class="govuk-label govuk-label--m" for="passport-number">
-              What is the vet's name?
+              What is the laboratory unique reference number for the test results?
             </label>
             <div id="passport-number-hint" class="govuk-hint">
-              RCVS number
+              Enter the unique reference number (URN) for the laboratory test results. You can find it on the review summary the vet has given you.
             </div>
             <input class="govuk-input govuk-!-width-three-quarters" id="rcvs-number" name="rcvs-number" type="text">
           </div>
@@ -53,9 +53,9 @@ Index page
             <div class="govuk-radios__item">
               <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email"
                 data-aria-controls="conditional-contact">
-              <label class="govuk-label govuk-radios__label" for="contact">
-                Negative
-              </label>
+                <label class="govuk-label govuk-radios__label" for="contact-2">
+                  Negative
+                </label>
             </div>
             <div class="govuk-radios__item">
               <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone"
@@ -64,6 +64,8 @@ Index page
                 Non negative
               </label>
             </div>
+
+            
             <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
               <div class="govuk-date-input" id="when-review">
                 <div class="govuk-date-input__item">
