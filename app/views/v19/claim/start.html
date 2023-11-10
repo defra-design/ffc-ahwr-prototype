@@ -3,8 +3,8 @@
 {% block pageTitle %}
 Index page
 {% endblock %}
-      {% set serviceName %}
-Annual health and welfare review of livestock
+            {% set serviceName %}
+Livestock health and welfare
 {% endset%}
 
 {% block content %}
@@ -13,28 +13,27 @@ Annual health and welfare review of livestock
   <div class="govuk-grid-column-two-thirds">
     <span class="govuk-caption-l"></span>
     <h1 class="govuk-heading-xl">
-      Claim funding for an annual health and welfare review
+      Claim funding to improve the health and welfare of your livestock
     </h1>
 
-    <p>Use this service to claim funding for an annual health and welfare review.</p>
+    <p>Use this service to claim funding for a vet to visit your farm to improve the health and welfare of your livestock and help reduce diseases.</p>
+
+    <p>If you’re eligible, you can claim for:</p>
+    <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-12">
+      <li>a livestock health and welfare review</li>
+      <li>a livestock disease-focused visit</li>
 
     <p>Claiming takes about 5 minutes.</p>
 
     {{ govukButton({
       text: "Start now",
-      href: "email",
+      href: "defra-id",
       isStartButton: true
     }) }}
 
     <h2 class="govuk-heading-m">Before you start</h2>
-    <p>You’ll need:</p>
-    <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-12">
-      <li>the email address you applied with</li>
-      <li>the date of the visit to the farm for the review</li>
-      <li>the name of the vet</li>
-      <li>the vet's Royal College of Veterinary Surgeons (RCVS) number</li>
-      <li>the laboratory unique reference number (URN) for the test results</li>
-    </ul>
+    <p>You’ll need your Rural Payments service customer reference number (CRN) and password to sign in.</p>
+    <p>You must be eligible to claim. Read the guidance on <a href= "../farmer/guidance-claim.html">how to claim funding</a> before you use this service.</p>
 
     <h2 class="govuk-heading-m">Get help with your claim</h2>
       <p>If you cannot claim online or have a question about your claim, contact the Rural Payments Agency by email or phone.</p>

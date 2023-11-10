@@ -59,6 +59,18 @@ Health and welfare review funding for this organisation
 
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
+          Email address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          jane.doe@arthington.com
+        </dd>
+        <dd class="govuk-summary-list__actions">
+
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
           Address
         </dt>
         <dd class="govuk-summary-list__value">
@@ -84,7 +96,7 @@ Health and welfare review funding for this organisation
 -->
     </dl>
     
-    <form class="form" method="post">
+    <form class="form" action="../claim/vet-visits.html" method="post">
 
       <div class="govuk-form-group">
         <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
@@ -96,7 +108,7 @@ Health and welfare review funding for this organisation
           </legend>
           <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="declaration" onclick="setLocation(this);">
+              <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="which-review" onclick="setLocation(this);">
               <label class="govuk-label govuk-radios__label" for="changed-name">
                 Yes
               </label>
@@ -112,12 +124,18 @@ Health and welfare review funding for this organisation
         </fieldset>
       </div>
 
-      <button class="govuk-button" data-module="govuk-button">Continue</button>
+      <a href="../apply/declaration.html" class="govuk-button" data-module="govuk-button">Continue</a>
 
     </form>
 
   </div>
 </div>
+
+    </dl>
+    
+    <form class="form" method="post">
+
+     
 
 
 {% endblock %}
