@@ -109,7 +109,29 @@ router.post('/select-business', function (req, res) {
       }
     })
 
-
+    router.post('v19/claim/which-annual-review', function (req, res) {
+      var livestockChoice = req.session.data['livestock-type']
+    
+      // Add your logic to handle different livestock types
+      if (livestockChoice == "livestock-1"){
+        res.redirect('/v19/claim/beef-which-herd')
+      }
+  
+      if (livestockChoice == "livestock-2"){
+        res.redirect('/v19/claim/dairy-which-herd')
+      }
+  
+      if (livestockChoice == "livestock-3"){
+        res.redirect('/v19/claim/pig-which-herd')
+      }
+  
+      if (livestockChoice == "livestock-4"){
+        res.redirect('/v19/claim/sheep-which-herd')
+      }
+  
+    })
+    
+    
 module.exports = router
 
 
