@@ -17,7 +17,7 @@ Index page
     <form class="form" method="post">
 
       <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset" aria-describedby="eligibility-bps-hint">
+        <fieldset class="govuk-fieldset" aria-describedby="eligibility-bps--pigs-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h1 class="govuk-fieldset__heading">
               Which herd are you claiming for?
@@ -36,26 +36,26 @@ Index page
 
           <div class="govuk-radios govuk-radios">
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="eligibility-bps" name="eligibility-bps" type="radio" value="beef-eligibility" onclick="setLocation(this);" {{ checked("eligibility-cattle", "eligibility-bps-yes") }}>
+              <input class="govuk-radios__input" id="eligibility-bps" name="eligibility-bps" type="radio" value="pigs-numbers" onclick="setLocation(this);" {{ checked("eligibility-cattle", "eligibility-bps-yes") }}>
               <label class="govuk-label govuk-radios__label" for="eligibility-bps">
-                Beef cattle A
+                Pigs A
             </div>
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="eligibility-bps-2" name="eligibility-bps" type="radio" value="dairy-eligibility" onclick="setLocation(this);" {{ checked("eligibility-cattle", "ineligible") }}>
+              <input class="govuk-radios__input" id="eligibility-bps-2" name="eligibility-bps" type="radio" value="pigs-numbers" onclick="setLocation(this);" {{ checked("eligibility-cattle", "ineligible") }}>
               <label class="govuk-label govuk-radios__label" for="eligibility-bps-2">
-                Beef cattle B
+                Pigs B
               </label>
             </div>
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="eligibility-bps-2" name="eligibility-bps" type="radio" value="sheep-eligibility" onclick="setLocation(this);" {{ checked("eligibility-cattle", "eligibility-bps-maybe") }}>
+              <input class="govuk-radios__input" id="eligibility-bps-2" name="eligibility-bps" type="radio" value="pigs-numbers" onclick="setLocation(this);" {{ checked("eligibility-cattle", "eligibility-bps-maybe") }}>
               <label class="govuk-label govuk-radios__label" for="eligibility-bps-2">
-                Beef cattle C
+                Pigs C
               </label>
             </div>
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="eligibility-bps-2" name="eligibility-bps" type="radio" value="pigs-eligibility" onclick="setLocation(this);" {{ checked("eligibility-cattle", "eligibility-bps-maybe") }}>
+              <input class="govuk-radios__input" id="eligibility-bps-2" name="eligibility-bps" type="radio" value="pigs-numbers" onclick="setLocation(this);" {{ checked("eligibility-cattle", "eligibility-bps-maybe") }}>
               <label class="govuk-label govuk-radios__label" for="eligibility-bps-2">
-                Beef cattle D
+                Pigs D
               </label>
             </div>
           </div>
@@ -70,3 +70,10 @@ Index page
   </div>
 
 {% endblock %}
+
+
+
+
+
+
+
