@@ -1,0 +1,70 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+{% set serviceName %}Livestock health and welfare{% endset%}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <form class="form" method="POST">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="when-review-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Your assessment results
+            </h1>
+          </legend>
+        
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--m" for="passport-number">
+              What is your biosecurity assessment result?
+            </label>
+            <div id="passport-number-hint" class="govuk-hint">
+              Enter the percentage number %
+            </div>
+            <input class="govuk-input govuk-input--width-4" id="width-4" name="width4" type="text">
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              What is your disease status category?
+            </h2>
+          </legend>
+          <div id="contact-hint" class="govuk-hint">
+            Enter a number between 1 - 5
+          </div>
+          <input class="govuk-input govuk-input--width-4" id="width-4" name="width4" type="text">
+            </div>
+
+     
+
+  </div>
+  </fieldset>
+</div>
+
+
+<p class="govuk-body govuk-!-margin-top-4">
+  <!--
+                <input class="govuk-button" type="submit" name="saveAndContinue" value="Continue" id="Button-SaveAndContinue" data-qa-id="Button-SaveAndContinue">
+                -->
+  {{ govukButton({
+  text: "Continue",
+  href: "check-answers"
+
+  }) }}
+  </form>
+  </div>
+  </div>
+
+  {% endblock %}
