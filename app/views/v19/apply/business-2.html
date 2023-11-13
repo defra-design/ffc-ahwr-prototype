@@ -5,22 +5,28 @@
   GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
-{% block content %}
+{% block beforeContent %}
 
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
 
 
 <div class="govuk-grid-row">
 
   <div class="govuk-grid-column-two-thirds">
 
-         <h1 class="govuk-heading-xl">Choose a business</h1>
+         <h1 class="govuk-heading-l">Choose a business</h1>
   </div>
 </div>
 
-<form class="form" action="../defraid-2-20/check-details.html" method="get">
+<form class="form" action="check-details.html" method="get">
 
   <div class="govuk-form-group">
-    <p class="govuk-body">These are the businesses registered to your rural payments account including their single business identifier (SBI).</a></p>
+    <p class="govuk-body">These are the businesses registered to your rural payments. The number shown is the single business identifier (SBI).</a></p>
         <div id="waste-hint" class="govuk-hint">
       
         </div>
