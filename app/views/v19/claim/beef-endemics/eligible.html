@@ -3,9 +3,7 @@
 {% block pageTitle %}
 Index page
 {% endblock %}
-      {% set serviceName %}
-Livestock health and welfare
-{% endset%}
+{% set serviceName %}Livestock health and welfare{% endset%}   
 
 {% block beforeContent %}
   <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
@@ -15,27 +13,132 @@ Livestock health and welfare
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <!-- <div id="changed-name-hint" class="govuk-hint">
-      This includes changing your last name or spelling your name differently.
-    </div> -->
-    <div class="govuk-form-group">
-      <h1 class="govuk-label-wrapper">
-        <label class="govuk-label govuk-label--l" for="rcvs-number">
-          How many animals did you test?
-        </label>
-      </h1>
-        <div id="email-hint" class="govuk-hint">
-         You can find this on the summary the vet gave you.
-        </div>
+    <form class="form" method="POST">
+      <div class="govuk-form-group">
 
-        <input class="govuk-input govuk-input--width-4" id="width-4" name="width4" type="text">
-    </div>
+        <h1 class="govuk-heading-l">Your review date</h1>
 
-    {{ govukButton({
-      text: "Continue",
-      href: "visit-date"
-    }) }}
 
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="when-review-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              When was the review completed?
+            </h2>
+          </legend>
+          <div id="when-review-hint" class="govuk-hint">
+            When the vet last visited the farm for the review or disease-focused visit.
+            <br><br>
+            For example, 27 3 2022
+          </div>
+          <div class="govuk-date-input" id="when-review">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="when-review-day">
+                  Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="when-review-day"
+                  name="when-review-day" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="when-review-month">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="when-review-month"
+                  name="when-review-month" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="when-review-year">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="when-review-year"
+                  name="when-review-year" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              When was endemic disease or condition testing carried out?
+            </h2>
+          </legend>
+          <div id="changed-name-hint" class="govuk-hint">
+            When the vet last visited the farm for the review or disease-focused visit.
+          </div>
+
+
+
+
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email"
+                data-aria-controls="conditional-contact">
+              <label class="govuk-label govuk-radios__label" for="contact">
+                When the vet visited the farm to carry out the review
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone"
+                data-aria-controls="conditional-contact-2">
+              <label class="govuk-label govuk-radios__label" for="contact-2">
+                On another date
+              </label>
+            </div>
+            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+              <div class="govuk-date-input" id="when-review">
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="when-review-day">
+                      Day
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="when-review-day"
+                      name="when-review-day" type="text" pattern="[0-9]*" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="when-review-month">
+                      Month
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="when-review-month"
+                      name="when-review-month" type="text" pattern="[0-9]*" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="when-review-year">
+                      Year
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="when-review-year"
+                      name="when-review-year" type="text" pattern="[0-9]*" inputmode="numeric">
+                  </div>
+                </div>
+              </div>
+        </fieldset>
+      </div>
+
+
+
+
+
+          <p class="govuk-body govuk-!-margin-top-4">
+            <!--
+                <input class="govuk-button" type="submit" name="saveAndContinue" value="Continue" id="Button-SaveAndContinue" data-qa-id="Button-SaveAndContinue">
+                -->
+            {{ govukButton({
+            text: "Continue",
+            href: "vet-name"
+            
+            }) }}
+    </form>
   </div>
 </div>
 
