@@ -13,25 +13,22 @@ Index page
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">How many animals did the vet test?</h1>
+    <p class="govuk-body">Enter the number of animals the vet tested. You can find it on the review summary the vet has given you.</p>
+    <p class="govuk-body">You cannot use test results from tests carried out before your agreement start date or after you claim. If you do, your claim will be rejected.</p>
     <form class="form" action="/number-of-animals-answer" method="post">
     {% from "govuk/components/input/macro.njk" import govukInput %}
 
     {{ govukInput({
-      label: {
-        text: "How many animals were tested?",
-        classes: "govuk-label--l",
-        isPageHeading: true
-      },
       classes: "govuk-input--width-4",
-      hint: {
-        text: "Check the test summary provided by your vet"
-      },
       id: "animals",
       name: "animals",
-      value: data['age'],
+      value: data['animals'],
       inputmode: "numeric",
       spellcheck: false
     }) }}
+
+
 
     {{ govukButton({
       text: "Continue"
