@@ -20,6 +20,9 @@ Index page
     {% from "govuk/components/input/macro.njk" import govukInput %}
 
     {{ govukInput({
+      label: {
+        text: "Enter a number"
+      },
       classes: "govuk-input--width-4",
       id: "animals",
       name: "animals",
