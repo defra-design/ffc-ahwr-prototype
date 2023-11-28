@@ -109,6 +109,31 @@ router.post('/select-business', function (req, res) {
       }
     })
 
+    // Run this code when a form is submitted to 'number-of-animals-answer'
+router.post('/number-of-animals-answer', function (req, res) {
+  // Make a variable
+  var AnimalNumber = req.session.data['animals'];
+
+  // Check if AnimalNumber has no data entered
+  if (!AnimalNumber) {
+    // Send user to blank validation page
+    res.redirect('/v20/defraid-claim/defraid-1/number-of-animals-validation-blank');
+  } else if (isNaN(AnimalNumber)) {
+    // Check if AnimalNumber is not a valid number
+    // Send user to number validation page
+    res.redirect('/v20/defraid-claim/defraid-1/number-of-animals-validation');
+  } else {
+    // Check if AnimalNumber is greater than 4
+    if (AnimalNumber > 4) { 
+      // Send user to next page
+      res.redirect('/v20/defraid-claim/defraid-1/vet-name');
+    } else {
+      // Send user to ineligible page
+      res.redirect('/v20/defraid-claim/defraid-1/number-of-animals-ineligible');
+    }
+  }
+});
+
 
 // Run this code when a form is submitted to 'number-of-animals-answer'
 router.post('/number-of-animals-answer', function (req, res) {
