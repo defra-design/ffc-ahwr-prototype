@@ -1,4 +1,4 @@
-{% extends "layouts/layout-defra.html" %}
+{% extends "layouts/layout-defra-authoriser.html" %}
 
 {% block pageTitle %}
 Back office: User application
@@ -32,50 +32,51 @@ Annual Health and Welfare Back Office
     </h1>
 
     <h2 class="govuk-heading-l">
-      Beef Cattle A
-      <strong class="govuk-tag govuk-tag--orange">
-        In check
+      P & D Fearnley & Sons
+      <strong class="govuk-tag govuk-tag--blue">
+        Ready to pay
       </strong>
     </h2>
 
-    <!--User details-->
-    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Name:
-        </dt>
-        <dd class="govuk-summary-list__value">
-          <p>Mary Greenfield</p>
-        </dd>
-      </div>
+ <!--User details-->
+ <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Name:
+    </dt>
+    <dd class="govuk-summary-list__value">
+      <p>Phil Fearnley</p>
+    </dd>
+  </div>
 
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          SBI number:
-        </dt>
-        <dd class="govuk-summary-list__value">
-          108977341
-        </dd>
-      </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      SBI number:
+    </dt>
+    <dd class="govuk-summary-list__value">
+      103491987
+    </dd>
+  </div>
 
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Address:
-        </dt>
-        <dd class="govuk-summary-list__value">
-          Greenfield Avenue, Arthington, Romford IG1 2KL
-        </dd>
-      </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Address:
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Manor Farm Rd, Harleston IP20 0AX
+    </dd>
+  </div>
 
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Email address:
-        </dt>
-        <dd class="govuk-summary-list__value">
-          <p>greenfield&co@accounts.com</p>
-        </dd>
-      </div>
-    </dl>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Email address:
+    </dt>
+    <dd class="govuk-summary-list__value">
+      <p>fearnley-sons@hotmail.com</p>
+    </dd>
+  </div>
+</dl>
+
 
     <!--Application stages (in tabs)-->
     <div class="govuk-tabs" data-module="govuk-tabs">
@@ -101,7 +102,7 @@ Annual Health and Welfare Back Office
       </ul>
 
       <div class="govuk-tabs__panel" id="applied">
-        <h2 class="govuk-heading-l">Recommend to reject</h2>
+        <h2 class="govuk-heading-l">Ready to pay</h2>
         <table class="govuk-table">
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
@@ -129,37 +130,53 @@ Annual Health and Welfare Back Office
       </div>
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-        <h2 class="govuk-heading-l">Recommend to reject</h2>
-        <table class="govuk-table">
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Date of claim	</th>
-              <td class="govuk-table__cell">19/04/2023</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Review details confirmed</th>
-              <td class="govuk-table__cell">Yes</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Date of review</th>
-              <td class="govuk-table__cell">17/04/2023</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Vet’s name</th>
-              <td class="govuk-table__cell">Amanda Hiut</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Vet’s RCVS number</th>
-              <td class="govuk-table__cell">4986045</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Test results unique 
-                reference number (URN)</th>
-              <td class="govuk-table__cell">URN-4850-53EG</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+        <h2 class="govuk-heading-l">Ready to pay</h2>
+          <table class="govuk-table">
+            <tbody class="govuk-table__body">
+   <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Date of review	</th>
+                <td class="govuk-table__cell">19/04/2023</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Date of claim</th>
+                <td class="govuk-table__cell">18/02/2023</td>
+              </tr> 
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Type of review</th>
+                <td class="govuk-table__cell">Beef</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Number of livestock</th>
+                <td class="govuk-table__cell">Minimum 11</td>
+              </tr>
+    <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Review details confirmed</th>
+                <td class="govuk-table__cell">Yes</td>
+              </tr>   
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Vet’s name</th>
+                <td class="govuk-table__cell">Corrine Bailey</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Vet’s RCVS number</th>
+                <td class="govuk-table__cell">10938475</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Test results unique 
+                  reference number (URN)</th>
+                <td class="govuk-table__cell">URN-7366-28DE</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">BVD test result </th>
+                <td class="govuk-table__cell">Negative</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Biosecurity assessment result </th>
+                <td class="govuk-table__cell">67%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
         <h2 class="govuk-heading-l">History</h2>
@@ -204,13 +221,11 @@ Annual Health and Welfare Back Office
 </div>
 </div>
 </div>
-            
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <br>
 
+
+
+      <br>
+    
       
       
     </div>

@@ -1,4 +1,4 @@
-{% extends "layouts/layout-defra.html" %}
+{% extends "layouts/layout-defra-authoriser.html" %}
 
 {% block pageTitle %}
 Back office: User application
@@ -32,9 +32,9 @@ Annual Health and Welfare Back Office
     </h1>
 
     <h2 class="govuk-heading-l">
-      Beef Cattle A
-      <strong class="govuk-tag govuk-tag--orange">
-        In check
+      Greenfield & Co
+      <strong class="govuk-tag govuk-tag--grey">
+        Withdrawn
       </strong>
     </h2>
 
@@ -101,7 +101,7 @@ Annual Health and Welfare Back Office
       </ul>
 
       <div class="govuk-tabs__panel" id="applied">
-        <h2 class="govuk-heading-l">Recommend to reject</h2>
+        <h2 class="govuk-heading-l">In check</h2>
         <table class="govuk-table">
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
@@ -129,38 +129,39 @@ Annual Health and Welfare Back Office
       </div>
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-        <h2 class="govuk-heading-l">Recommend to reject</h2>
+        <h2 class="govuk-heading-l">Claimed</h2>
         <table class="govuk-table">
           <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Date of claim	</th>
+ <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Date of review	</th>
               <td class="govuk-table__cell">19/04/2023</td>
             </tr>
             <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Date of claim</th>
+              <td class="govuk-table__cell">18/02/2023</td>
+            </tr> 
+              
+              
+  <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Review details confirmed</th>
               <td class="govuk-table__cell">Yes</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Date of review</th>
-              <td class="govuk-table__cell">17/04/2023</td>
-            </tr>
+            </tr>   
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Vet’s name</th>
-              <td class="govuk-table__cell">Amanda Hiut</td>
+              <td class="govuk-table__cell">Corrine Bailey</td>
             </tr>
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Vet’s RCVS number</th>
-              <td class="govuk-table__cell">4986045</td>
+              <td class="govuk-table__cell">10938475</td>
             </tr>
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Test results unique 
                 reference number (URN)</th>
-              <td class="govuk-table__cell">URN-4850-53EG</td>
+              <td class="govuk-table__cell">URN-7366-28DE</td>
             </tr>
           </tbody>
         </table>
       </div>
-
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
         <h2 class="govuk-heading-l">History</h2>
         <table class="govuk-table">
@@ -204,13 +205,13 @@ Annual Health and Welfare Back Office
 </div>
 </div>
 </div>
-            
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <br>
 
+
+
+      <br>
+      <a href="x-greenfield-withdrawing.html" class="govuk-link govuk-body" style="color:#d4351c">
+        Withdraw
+      </a>
       
       
     </div>

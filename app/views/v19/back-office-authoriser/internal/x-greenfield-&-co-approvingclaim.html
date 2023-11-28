@@ -1,4 +1,4 @@
-{% extends "layouts/layout-defra.html" %}
+{% extends "layouts/layout-defra-authoriser.html" %}
 
 {% block pageTitle %}
 Back office: User application
@@ -32,7 +32,7 @@ Annual Health and Welfare Back Office
     </h1>
 
     <h2 class="govuk-heading-l">
-      Beef Cattle A
+      Greenfield & Co
       <strong class="govuk-tag govuk-tag--orange">
         In check
       </strong>
@@ -44,34 +44,18 @@ Annual Health and Welfare Back Office
         Back
       </a>
       <br>
+      <h3 class="govuk-panel__title-s govuk-!-font-size-36 govuk-!-margin-top-1" style="color:#000000;">
+        Recommend to pay
+      </h3>
 
-      <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-            <h1 class="govuk-fieldset__heading">
-              Recommend to pay
-            </h1>
-            <div class="govuk-!-padding-bottom-7"></div>
-
-
-
-
-          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-              <label class="govuk-label govuk-checkboxes__label" for="waste">
-                I have checked the claim against the verification checklist and it has passed. I recommend the payment is authorised.
-              </label>
-            </div>
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-              <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-                I have sent the verification checklist to the authoriser explaining why it's passed.
-              </label>
-            </div>
-          </div>
-        </fieldset>
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-warning-text__assistive">Warning</span>
+          An authoriser will check this claim and contact you if they want to discuss it.
+        </strong>
       </div>
+
 
       <a href="../internal/x-greenfield-approved#claimed" role="button" draggable="false" class="govuk-button govuk-button govuk-!-margin-bottom-2" data-module="govuk-button">
         Confirm and continue
@@ -106,7 +90,7 @@ Annual Health and Welfare Back Office
 
   
         <div class="govuk-tabs__panel" id="applied">
-          <h2 class="govuk-heading-l">In check</h2>
+          <h2 class="govuk-heading-l">Recommend to pay</h2>
           <table class="govuk-table">
             <tbody class="govuk-table__body">
               <tr class="govuk-table__row">
@@ -134,29 +118,21 @@ Annual Health and Welfare Back Office
         </div>
   
         <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-          <h2 class="govuk-heading-l">In check</h2>
+          <h2 class="govuk-heading-l">Recommend to pay</h2>
           <table class="govuk-table">
             <tbody class="govuk-table__body">
-   <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">Date of review	</th>
-                <td class="govuk-table__cell">19/04/2023</td>
-              </tr>
               <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">Date of claim</th>
-                <td class="govuk-table__cell">18/02/2023</td>
-              </tr> 
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">Type of review</th>
-                <td class="govuk-table__cell">Beef</td>
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">Number of livestock</th>
-                <td class="govuk-table__cell">Minimum 11</td>
-              </tr>
-    <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">Review details confirmed</th>
+                <th scope="row" class="govuk-table__header">Date of claim	</th>
                 <td class="govuk-table__cell">Yes</td>
-              </tr>   
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Review details confirmed</th>
+                <td class="govuk-table__cell">18/02/2023</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Date of review</th>
+                <td class="govuk-table__cell">03/03/2023</td>
+              </tr>
               <tr class="govuk-table__row">
                 <th scope="row" class="govuk-table__header">Vet’s name</th>
                 <td class="govuk-table__cell">Corrine Bailey</td>
@@ -169,14 +145,6 @@ Annual Health and Welfare Back Office
                 <th scope="row" class="govuk-table__header">Test results unique 
                   reference number (URN)</th>
                 <td class="govuk-table__cell">URN-7366-28DE</td>
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">BVD test result </th>
-                <td class="govuk-table__cell">Negative</td>
-              </tr>
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">Biosecurity assessment result </th>
-                <td class="govuk-table__cell">67%</td>
               </tr>
             </tbody>
           </table>

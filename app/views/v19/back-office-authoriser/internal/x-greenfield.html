@@ -1,4 +1,4 @@
-{% extends "layouts/layout-defra.html" %}
+{% extends "layouts/layout-defra-authoriser.html" %}
 
 {% block pageTitle %}
 Back office: User application
@@ -6,6 +6,8 @@ Back office: User application
 {% set serviceName %}
 Annual Health and Welfare Back Office
 {% endset%}
+
+
 
 {% block beforeContent %}
 <div class="govuk-phase-banner govuk-!-padding-top-0">
@@ -22,7 +24,10 @@ Annual Health and Welfare Back Office
 <a class="govuk-back-link govuk-!-margin-bottom-0" href="../a-digital.html">Back</a>
 {% endblock %}
 
+
+
 {% block content %}
+
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
@@ -32,9 +37,9 @@ Annual Health and Welfare Back Office
     </h1>
 
     <h2 class="govuk-heading-l">
-      Beef Cattle A
+      Greenfield & Co
       <strong class="govuk-tag govuk-tag--orange">
-        In check
+        In claim
       </strong>
     </h2>
 
@@ -101,7 +106,7 @@ Annual Health and Welfare Back Office
       </ul>
 
       <div class="govuk-tabs__panel" id="applied">
-        <h2 class="govuk-heading-l">Recommend to reject</h2>
+        <h2 class="govuk-heading-l">In check</h2>
         <table class="govuk-table">
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
@@ -127,35 +132,38 @@ Annual Health and Welfare Back Office
           </tbody>
         </table>
       </div>
+      
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-        <h2 class="govuk-heading-l">Recommend to reject</h2>
+        <h2 class="govuk-heading-l">In check</h2>
         <table class="govuk-table">
           <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Date of claim	</th>
+ <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Date of review	</th>
               <td class="govuk-table__cell">19/04/2023</td>
             </tr>
             <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Date of claim</th>
+              <td class="govuk-table__cell">18/02/2023</td>
+            </tr> 
+              
+              
+  <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Review details confirmed</th>
               <td class="govuk-table__cell">Yes</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Date of review</th>
-              <td class="govuk-table__cell">17/04/2023</td>
-            </tr>
+            </tr>   
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Vet’s name</th>
-              <td class="govuk-table__cell">Amanda Hiut</td>
+              <td class="govuk-table__cell">Corrine Bailey</td>
             </tr>
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Vet’s RCVS number</th>
-              <td class="govuk-table__cell">4986045</td>
+              <td class="govuk-table__cell">10938475</td>
             </tr>
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Test results unique 
                 reference number (URN)</th>
-              <td class="govuk-table__cell">URN-4850-53EG</td>
+              <td class="govuk-table__cell">URN-7366-28DE</td>
             </tr>
           </tbody>
         </table>
@@ -197,24 +205,37 @@ Annual Health and Welfare Back Office
               <td class="govuk-table__cell">Authorise to pay</td>
               <td class="govuk-table__cell">Amanda Hassan</td>
             </tr>
-      </div>
-
-    </tbody>
-  </table>
-</div>
-</div>
-</div>
-            
-            </tr>
+      </div>    
           </tbody>
         </table>
       </div>
       <br>
 
+      <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-panel govuk-panel--confirmation govuk-!-margin-right-7" style="background-color:#fafafa; border-color:#000000; border-width:medium;">
+        <h3 class="govuk-panel__title-s govuk-!-font-size-18 govuk-!-margin-top-1" style="color:#000000;">
+          
+        </h1>
+
+        <a href="x-greenfield-&-co-approvingclaim#claimed" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+          Recommend to pay</a>
+        </button>
+        <a href="x-greenfield-&-co-rejectingclaim#claimed" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+          Recommend to reject</a>
+        </button>
+      </form>
+      </div>
+
       
       
     </div>
+
   </div>
 </div>
 
+
+
+
 {% endblock %}
+
