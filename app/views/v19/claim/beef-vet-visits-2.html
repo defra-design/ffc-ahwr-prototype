@@ -4,7 +4,7 @@
 Index page
 {% endblock %}
 {% set serviceName %}
-Review the health and welfare of your livestock
+Livestock health and welfare
 {% endset%}
 
 
@@ -27,7 +27,7 @@ Review the health and welfare of your livestock
       <div class="govuk-grid-row" style="padding-top:16px;">
         <div class="govuk-grid-column-two-thirds">
           <h3 class="govuk-heading-m" style="margin-bottom: 8px;">Arthington Farm Ltd</h3>
-          <p class="govuk-body sbi-number" style="margin-bottom: 8px;">Single Business Identifier (SBI): 234567890</p>
+          <p class="govuk-body sbi-number" style="margin-bottom: 8px;">SBI: 234567890</p>
         </div>
 
         <div class="govuk-grid-column-one-third">
@@ -52,7 +52,7 @@ Review the health and welfare of your livestock
                 <li>
                   <span h1 class="app-task-list__section class=govuk-heading-xl">
                     <span class="app-task-list__section-number"> </span>
-                        <span class="govuk-caption-xl">Review the health and welfare of your livestock</span>
+                        <span class="govuk-caption-xl">Livestock health and welfare</span>
                       </span>
                 </li>
 
@@ -79,44 +79,48 @@ Review the health and welfare of your livestock
 
 
                 <li>
-
-                  <li>
-                    <h2 class="app-task-list__section">
-                      <span class="app-task-list__section-number"> </span>Start a new claim 
-                    </h2>
-                  </li>
-                 
-                  <li>
-                    <h2 class="app-task-list__section">
-                      <span class="app-task-list__section-number"> </span>
-                  <div class="govuk-button-group">
-                    <a href="../claim/which-review-annual.html" class="govuk-button" data-module="govuk-button">
-                      Claim for health and welfare review
-                    </a>
-
-                  </div>
-                </li>
-
-
                   <h2 class="app-task-list__section">
-                    <span class="app-task-list__section-number"> </span> Your previous claims
+                    <span class="app-task-list__section-number"> </span> Your claims
                   </h2>
                 </li>
                 <ul class="app-task-list__items">
                   <li class="app-task-list__item">
                     <span class="app-task-list__task-name">
-                   
-                      <p class="govuk-body-m">
-                        Your claims will appear here when you have made them
+                      <a href="#"> VV-5053-A696 – Beef Cattle Annual Health and Welfare
+                        Review</a>
+                      <p class="govuk-body-s">
 
                       </p>
+                      <p class="govuk-body-s">
+                        You have been paid <strong>£294</strong> for completing testing on your livestock
+                      </p>
                     </span>
+                    <strong class="govuk-tag govuk-tag-- app-task-list__tag" id="contact-details-status">Paid</strong>
                   </li>
-               
+                  <li class="app-task-list__item">
+                    <span class="app-task-list__task-name">
+                      <a href="../beef-cattle-application">  AHWR-F021-723B  – Beef Cattle G -  Review</a>
+                      <p class="govuk-body-s">You will receiving funding for your claim on <strong>02 Apr 2024</strong></p>
+                    </span>
+                    <strong class="govuk-tag govuk-tag--green app-task-list__tag" id="contact-details-status">Claimed</strong>
+                  </li>
+                  <li class="app-task-list__item">
+                    <span class="app-task-list__task-name">
+                      <a href="../beef-cattle-application"> VV-5053-A696  – Beef Cattle G AHWR -  Review</a>
+                      <p class="govuk-body-s">You must arrange this review and claim funding by <strong>11 April 2024</strong></p>
+                    </span>
+                    <strong class="govuk-tag govuk-tag--green app-task-list__tag" id="contact-details-status">Claimed</strong>
+                  </li>
                   <br>
-                  <br>
-                  
-  
+                  <div class="govuk-button-group">
+                    <a href="../claim/which-review-annual.html" class="govuk-button" data-module="govuk-button">
+                      Claim for livestock health and welfare review
+                    </a>
+                    <a href="../claim/which-review-endemics.html" class="govuk-button" data-module="govuk-button"
+                      target="_blank">
+                      Claim for follow-up
+                    </a>
+                  </div>
                   <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
                     <div class="govuk-accordion__section">
                       <div class="govuk-accordion__section-header">
@@ -128,9 +132,9 @@ Review the health and welfare of your livestock
                       </div>
                       <div id="accordion-default-content-1" class="govuk-accordion__section-content"
                         aria-labelledby="accordion-default-heading-1">
-                        <p class="govuk-body"> <a
-                            href="../apply/terms-conditions.html">Terms and conditions for reviewing the health and welfare of your livestock</a>
-                          </p>
+                        <p class="govuk-body">The agreement will be governed by the agreed <a
+                            href="../apply/terms-conditions.html">terms and conditions</a>.
+                          .</p>
                       </div>
                     </div>
                     <div class="govuk-accordion__section">
@@ -143,11 +147,23 @@ Review the health and welfare of your livestock
                       </div>
                       <div id="accordion-default-content-2" class="govuk-accordion__section-content"
                         aria-labelledby="accordion-default-heading-2">
-                        <p class="govuk-body"> <a href="../landing-page.html">
-                          Guidance for reviewing the health and welfare of your livestock</a></p>
+                        <p class="govuk-body">Read the <a href="../landing-page.html">guidance on livestock
+                            health and welfare review and follow-up .</a></p>
                       </div>
                     </div>
-                 
+                    <div class="govuk-accordion__section">
+                      <div class="govuk-accordion__section-header">
+                        <h2 class="govuk-accordion__section-heading">
+                          <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                            Future farming front door
+                          </span>
+                        </h2>
+                      </div>
+                      <div id="accordion-default-content-2" class="govuk-accordion__section-content"
+                        aria-labelledby="accordion-default-heading-2">
+                        <p class="govuk-body">Take a look at another <a href="../farmer/guidance-claim.html">funding
+                            scheme.</a></p>
+                      </div>
                     </div>
 
 
