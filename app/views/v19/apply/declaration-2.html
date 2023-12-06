@@ -3,7 +3,7 @@
 {% block pageTitle %}
 Index page
 {% endblock %}
-{% set serviceName %}Review the health and welfare of your livestock{% endset%}   
+{% set serviceName %}Livestock and welfare{% endset%}   
 
 {% block beforeContent %}
   <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
@@ -14,32 +14,59 @@ Index page
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <div class="govuk-width-container">
-    
-              <h1 class="govuk-heading-l">Will you have the minimum number of livestock needed on the date of the vet visits?
+
+
+              <h1 class="govuk-heading-l">
+                Minimum requirements
               </h1>
+              <p class="govuk-body">
+                You can find the number of species you need to have on the farm in the <a href="#" class="govuk-link">terms and conditions</a>.
+              </p>
+
+           
               <form action="/form-handler" method="post" novalidate>
                 <div class="govuk-form-group">
-                  <div id="passport-number-hint" class="govuk-hint">
-                    You can find this in the terms and conditions.
-                  </div>
-                  <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="changedName" name="changedName" type="radio" value="yes">
-                      <label class="govuk-label govuk-radios__label" for="changedName">
-                        Yes
-                      </label>
+                  <fieldset class="govuk-fieldset">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                      Will you have the minimum number of livestock needed on the date of the vet visits?
+                    </legend>
+                    <div class="govuk-radios" data-module="govuk-radios">
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="interviewNeeds" name="interviewNeeds" type="radio" value="yes">
+                        <label class="govuk-label govuk-radios__label" for="interviewNeeds">
+                          Yes
+                        </label>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="interviewNeeds-2" name="interviewNeeds" type="radio" value="no">
+                        <label class="govuk-label govuk-radios__label" for="interviewNeeds-2">
+                          No
+                        </label>
+                      </div>
                     </div>
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="changedName-2" name="changedName" type="radio" value="no">
-                      <label class="govuk-label govuk-radios__label" for="changedName-2">
-                        No
-                      </label>
-                    </div>
-                  </div>
-                </fieldset>
-              </div>
-                    
-              <a href="../apply/declaration-3.html" class="govuk-button" data-module="govuk-button">Continue</a>
+                  </fieldset>
+                </div>
+                <a href="../apply/declaration-3.html" class="govuk-button" data-module="govuk-button">
+                  Continue
+                </a>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
               </form>
