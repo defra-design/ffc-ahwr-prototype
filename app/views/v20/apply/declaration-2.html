@@ -1,0 +1,72 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+{% set serviceName %}Livestock and welfare{% endset%}   
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-width-container">
+
+
+              <h1 class="govuk-heading-l">
+                Check your eligible
+              </h1>
+  
+              <p class="govuk-body">You must have a minimum number of animals when the vet visits your farm to do the review.</p>
+              
+              <p class="govuk-body">You must have one of the following:</p>
+              
+              <ul class="govuk-list govuk-list--bullet">
+                <li>11 or more beef cattle</li>
+                <li>11 or more dairy cattle</li>
+                <li>21 or more sheep</li>
+                <li>51 or more pigs</li>
+              </ul>
+           
+              <div class="govuk-form-group">
+                <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                  <div class="govuk-checkboxes__item  govuk-!-margin-top-6">
+                    <input class="govuk-checkboxes__input" type="checkbox" name="confirm" id="confirm" value="Declaration Accepted">
+                    <label class="govuk-label govuk-checkboxes__label govuk-!-padding-top-0" for="confirm">
+                      I have read, understood how many animals are required to have a review and follow-up visit
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+                <a href="../apply/declaration.html" class="govuk-button" data-module="govuk-button">Continue</a>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+
+{% endblock %}
