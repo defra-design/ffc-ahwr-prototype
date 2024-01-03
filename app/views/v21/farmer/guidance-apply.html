@@ -282,63 +282,78 @@ Annual livestock health and welfare review
   {% from "govuk/components/table/macro.njk" import govukTable %}
 
   {{ govukTable({
-    caption: "Months and rates",
     captionClasses: "govuk-table__caption--m",
-    firstCellIsHeader: true,
-    head: [
-      {
-        text: "Species"
-      },
-      {
-        text: "Test type"
-      },
-      {
-        text: "Minimum number of animals to test"
-      }
-    ],
+    classes: "govuk-body !important",
+    firstCellIsHeader: false,
     rows: [
       [
-        {
-          text: "Beef cattle"
-        },
-        {
-          text: "Bovine viral diarrhoea (BVD) blood (serum antibody test)"
-        },
-        {
-          text: "5 per epidemiological group in up to 2 groups"
-        }
-      ],
-      [
-        {
-          text: "Dairy cattle"
-        },
-        {
-          text: "Bovine viral diarrhoea (BVD) bulk milk test. The farmer can take the bulk milk sample without the vet, if confident in doing so."
-        },
-        {
-          text: "A representative milk sample from the bulk tank "
-        }
-      ],
-      [
       {
-        text: "Sheep"
+        text: "Species",
+        classes: "govuk-body govuk-!-font-weight-bold"
       },
       {
-        text: "Worming treatment check"
+        text: "Test type",
+        classes: "govuk-body govuk-!-font-weight-bold"
       },
       {
-        text: "Minimum of 10 lambs less than 12 months old"
+        text: "Minimum number of animals to test",
+        classes: "govuk-body govuk-!-font-weight-bold"
       }
     ],
       [
         {
-          text: "Pigs"
+          text: "Beef cattle",
+          classes: "govuk-body"
         },
         {
-          text: "Enzyme-linked immunosorbent assay (ELISA) or porcine reproductive and respiratory syndrome (PRRS) polymerase chain reaction (PCR) test "
+          text: "Bovine viral diarrhoea (BVD) blood (serum antibody test)",
+          classes: "govuk-body"
         },
         {
-          text: "Minimum of 30 pigs"
+          text: "5 per epidemiological group in up to 2 groups",
+          classes: "govuk-body"
+        }
+      ],
+      [
+        {
+          text: "Dairy cattle",
+          classes: "govuk-body"
+        },
+        {
+          text: "Bovine viral diarrhoea (BVD) bulk milk test. The farmer can take the bulk milk sample without the vet, if confident in doing so.",
+          classes: "govuk-body"
+        },
+        {
+          text: "A representative milk sample from the bulk tank ",
+          classes: "govuk-body"
+        }
+      ],
+      [
+      {
+        text: "Sheep",
+        classes: "govuk-body"
+      },
+      {
+        text: "Worming treatment check",
+        classes: "govuk-body"
+      },
+      {
+        text: "Minimum of 10 lambs less than 12 months old",
+        classes: "govuk-body"
+      }
+    ],
+      [
+        {
+          text: "Pigs",
+          classes: "govuk-body"
+        },
+        {
+          text: "Enzyme-linked immunosorbent assay (ELISA) or porcine reproductive and respiratory syndrome (PRRS) polymerase chain reaction (PCR) test",
+          classes: "govuk-body"
+        },
+        {
+          text: "Minimum of 30 pigs",
+          classes: "govuk-body"
         }
       ]
     ]
