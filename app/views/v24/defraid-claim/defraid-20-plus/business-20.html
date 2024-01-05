@@ -1,0 +1,158 @@
+{% extends "layouts/layout.html" %}
+{% set serviceName = "Annual health and welfare review of livestock" %}
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Enter a business or its single business identifier (SBI)</h1>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <script type="text/javascript" src="/public/javascripts/accessible-autocomplete.min.js"></script>
+    <script type="text/javascript">
+      accessibleAutocomplete.enhanceSelectElement({
+        defaultValue: '',
+        selectElement: document.querySelector('#org-picker'),
+        placeholder: 'Search for a business'
+      })
+    
+    </script>  
+    
+    <!-- Begin form autocomplete -->
+      <form action="../defraid-20-plus/check-details.html" method="get">
+        <div class="govuk-form-group">
+          <p class="govuk-body">Enter a business registered to your rural payments account or its single business identifier (SBI) number. </p>
+              <div id="waste-hint" class="govuk-hint">
+                For example, The Dairy Farm or 123456789.
+              </div>
+          <div class="autocomplete-wrapper">
+            <select name="last-location" class="govuk-select" id="last-location" placeholder="Search for a business" style="font-family: inherit;">
+              <!--<select id="org-picker-select" style="display: none;">-->
+                <option value="" disabled selected>Select your option</option>
+                <option value="0"></option>
+                <option value="1">A James LLC</option>
+                <option value="2">Antillo Fujam Gardens</option>
+                <option value="3">Crest Jamet Homes Limited</option>
+                <option value="4">Dursley Jams Co.</option>
+                <option value="5">James Company</option>
+                <option value="6">Eddard Benjamin</option>
+                <option value="7">Fruit Jams Co</option>
+                <option value="8">Terry PLC</option>
+                <option value="9">McClure-Mowen</option>
+                <option value="10">Feeney Group</option>
+                <option value="11">Medhurst-Jackson</option>
+                <option value="12">Schroeder-Corkery</option>
+                <option value="13">Jaskolski-Mertzen
+                </option>
+                <option value="14">Daugherty-Jacobson</option>
+                <option value="15">Becker and Sons</option>
+                <option value="16">Emmerich-Turcotte</option>
+                <option value="17">O'Reilly and Son</option>
+                <option value="18">Becker-Kevins</option>
+                <option value="19">Lang, Daniel and Schmeler</option>
+                <option value="20">Dunster</option>
+                <option value="21">Turcotte and Homes</option>
+                <option value="22">Bartell LLC, Heidenreich-Gower</option>
+                <option value="23">Pollack Inc</option>
+                <option value="24">Schroeder Ltd</option>
+                <option value="25">Bo Inc.</option>
+                <option value="26">Mosciski</option>
+                <option value="27">Langworth and Medhurst</option>
+                <option value="28">Diverse Holdings</option>
+                <option value="29">Rippin-Lindgren</option>
+                <option value="30">Champlin Ltd</option>
+                <option value="31">Raker Group</option>
+                <option value="32">Raker Group</option>
+                <option value="33">Goyette LLC"
+                </option><option value="34">Wilderman</option>
+                <option value="35">Oberbrunner and Hammes
+                </option>
+                <option value="36">Hertzer W Group</option>
+                <option value="37">Luke Swimmer LLC</option>
+                <option value="38">Watsica PLC</option>
+                <option value="39">Richmann LLC</option>
+                <option value="40">Gislason-Klocko</option>
+                <option value="41">Skiles and Sons</option>
+                <option value="42">Orn Ltd</option>
+                <option value="43">Rutherford Inc</option>
+                <option value="44">Waelchi and Sons</option>
+                <option value="45">Moen PLC</option>
+                <option value="46">QQC Plc</option>
+                <option value="47">Hoppe, Boyer and Ortiz</option>
+                <option value="48">Heathcote-Bradtke</option>
+                <option value="49">Rempel-Reynolds</option>
+            </select>
+          </div>
+
+
+      </div>
+      <button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+      </form>
+      <!-- autocomplete form end -->
+
+    </div>
+
+</div>
+
+          <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Need more help?
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+
+      <p class="govuk-body">Contact the Rural Payments Agency by email or phone.</p>
+
+      <p class="govuk-body">Email: <a class="govuk-link" href="mailto:ruralpayments@defra.gov.uk">ruralpayments@defra.gov.uk</a></p>
+        
+      <ul class="govuk-list">
+        <li>Telephone: 03000 200 301</li>
+        <li>Monday to Friday, 8:30am to 5pm, except bank holidays</li><br>
+
+        <li><a href="https://www.gov.uk/call-charges" target="”_blank”">Find out about call charges</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+</details>
+       
+      
+
+  
+<script src="/public/javascripts/accessible-autocomplete.min.js"></script>
+<script type="text/javascript">
+var selectEl = document.querySelector('#last-location')
+accessibleAutocomplete.enhanceSelectElement({
+  autoselect: true,
+  confirmOnBlur: true,
+  defaultValue: "",
+  minLength: 0,
+  selectElement: selectEl
+})
+
+var queryStringParameters = window.location.search
+var previouslySubmitted = queryStringParameters.length > 0
+if (previouslySubmitted) {
+  var submittedEl = document.querySelector('.submitted')
+  submittedEl.classList.remove('submitted--hidden')
+  var params = new URLSearchParams(document.location.search.split('?')[1])
+  document.querySelector('.submitted__last-location').innerHTML = params.get('last-location')
+}
+</script>
+
+
+{% endblock %}
