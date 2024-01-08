@@ -118,7 +118,7 @@ router.post('/number-of-animals-answer', function (req, res) {
   // Check if AnimalNumber has no data entered
   if (!AnimalNumber) {
     // Send user to blank validation page
-    res.redirect('/v20/defraid-claim/defraid-1/number-of-animals-validation-blank');
+    res.redirect('/v24/defraid-claim/defraid-1/number-of-animals-validation-blank');
   } else if (isNaN(AnimalNumber)) {
     // Check if AnimalNumber is not a valid number
     // Send user to number validation page
@@ -135,6 +135,25 @@ router.post('/number-of-animals-answer', function (req, res) {
   }
 });
 
+// Run this code when a form is submitted to 'on-hold-check-answer'
+router.post('/on-hold-check-answer', function (req, res) {
+  // Retrieve checkbox values from the form
+  var onHoldValidation = req.body['on-hold-validation'];
+  var issuesLog = req.body['issues-log'];
+
+  // Check if neither checkbox is checked or only one checkbox is checked
+  if (!onHoldValidation || !issuesLog) {
+    // Send the user to 'x-greenfield-on-hold-check-error'
+    res.redirect('/x-greenfield-on-hold-check-error');
+  } else if (onHoldValidation && issuesLog) {
+    // If both checkboxes are checked, take the user to '../internal/x-greenfield-in-check.html'
+    res.redirect('../internal/x-greenfield-in-check.html');
+  } else {
+    // Handle other cases if needed
+    // For now, let's redirect to a default page
+    res.redirect('/default-page');
+  }
+});
 
 
 
