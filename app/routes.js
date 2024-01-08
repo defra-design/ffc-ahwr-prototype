@@ -134,6 +134,4 @@ router.post('/number-of-animals-answer', function (req, res) {
   }
 });
 
-
 module.exports = router
-
