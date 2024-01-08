@@ -51,16 +51,68 @@ Annual Health and Welfare Back Office
               Move claim to 'in check'
             </h1>
             <div class="govuk-!-padding-bottom-7"></div>
+    
+            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="on-hold-validation" name="on-hold-validation" type="checkbox" value="on-hold-validation">
+                <label class="govuk-label govuk-checkboxes__label" for="on-hold-validation">
+                  I have reviewed this claim and recommend it is moved to ‘in check‘
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="issues-log" name="issues-log" type="checkbox" value="issues-log">
+                <label class="govuk-label govuk-checkboxes__label" for="issues-log">
+                  I have updated the issues log to show this claim is now ‘in check’
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+    
+        <button class="govuk-button govuk-button govuk-!-margin-bottom-2" data-module="govuk-button" onclick="handleConfirmation()">
+          Confirm and continue
+        </button>
+      </div>
+    
+      <script>
+        function handleConfirmation() {
+          var onHoldValidationCheckbox = document.getElementById('on-hold-validation');
+          var issuesLogCheckbox = document.getElementById('issues-log');
+    
+          if (!onHoldValidationCheckbox.checked || !issuesLogCheckbox.checked) {
+            window.location.href = '../internal/x-greenfield-on-hold-check-error.html';
+          } else {
+            window.location.href = '../internal/x-greenfield-in-check.html';
+          }
+        }
+      </script>
+    </div>
+    </div>
+    
+    
+    <!--
+    <div class="govuk-panel govuk-panel--confirmation govuk-!-text-align-left" style="background-color:#fafafa; border-color:#000000; border-width:medium;">
+      <a href="x-greenfield-on-hold.html" role="button" draggable="false" class="govuk-link govuk-body" style="color:#505a5f; float:right;" data-module="govuk-button">
+        Back
+      </a>
+      <br>
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Move claim to 'in check'
+            </h1>
+            <div class="govuk-!-padding-bottom-7"></div>
 
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-              <label class="govuk-label govuk-checkboxes__label" for="waste">
+              <input class="govuk-checkboxes__input" id="on-hold-validation" name="on-hold-validation" type="checkbox" value="on-hold-validation">
+              <label class="govuk-label govuk-checkboxes__label" for="on-hold-validation">
                 I have reviewed this claim and recommend it is moved to ‘in check‘
             </div>
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="issues-log" name="issues-log" type="checkbox" value="carcasses">
-              <label class="govuk-label govuk-checkboxes__label" for="waste">
+              <input class="govuk-checkboxes__input" id="issues-log" name="issues-log" type="checkbox" value="issues-log">
+              <label class="govuk-label govuk-checkboxes__label" for="issues-log">
                 I have updated the issues log to show this claim is now ‘in check’
             </div>
           </div>
@@ -68,13 +120,21 @@ Annual Health and Welfare Back Office
         </fieldset>
       </div>
 
-      <a href="../internal/x-greenfield-in-check.html" role="button" draggable="false" class="govuk-button govuk-button govuk-!-margin-bottom-2" data-module="govuk-button">
+            <a href="/on-hold-check-answer" role="button" draggable="false" class="govuk-button govuk-button govuk-!-margin-bottom-2" data-module="govuk-button">
         Confirm and continue
       </a>
 
     </div>
+    -->
+
+    
+
+
   
       <!--Application stages (in tabs)-->
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
       <div class="govuk-tabs govuk-!-margin-top-7" data-module="govuk-tabs">
         <h2 class="govuk-tabs__title">
           Contents
@@ -193,7 +253,8 @@ Annual Health and Welfare Back Office
             </tbody>
           </table>
         </div>
-      
+      </div>
+    </div>
     </div>
 
 
@@ -208,7 +269,6 @@ Annual Health and Welfare Back Office
 
   </div>
    
-  
-</div>
 
+</div>
 {% endblock %}

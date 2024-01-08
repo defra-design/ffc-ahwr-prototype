@@ -38,69 +38,40 @@ Annual Health and Welfare Back Office
       </strong>
     </h2>
     
+    {% from "govuk/components/error-summary/macro.njk" import govukErrorSummary %}
+
+    {{ govukErrorSummary({
+      titleText: "There is a problem",
+      errorList: [
+        {
+          text: "Select both checkboxes",
+          href: "/back-office/v18/internal/x-greenfield-recommend-to-pay-check-error#checkbox-error"
+        }
+      ]
+    }) }}
+
+
     <!-- "Pop-up" box -->
     <div class="govuk-panel govuk-panel--confirmation govuk-!-text-align-left" style="background-color:#fafafa; border-color:#000000; border-width:medium;">
-      <a href="../internal/x-greenfield-in-check#claimed.html" role="button" draggable="false" class="govuk-link govuk-body" style="color:#505a5f; float:right;" data-module="govuk-button">
+      <a href="x-greenfield-on-hold.html" role="button" draggable="false" class="govuk-link govuk-body" style="color:#505a5f; float:right;" data-module="govuk-button">
         Back
       </a>
       <br>
-
-        <!-- New code -->
-        <div class="govuk-form-group">
-          <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-              <h1 class="govuk-fieldset__heading">
-                Recommend to reject
-              </h1>
-              <div class="govuk-!-padding-bottom-7"></div>
-      
-              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="on-hold-validation" name="on-hold-validation" type="checkbox" value="carcasses">
-                  <label class="govuk-label govuk-checkboxes__label" for="on-hold-validation">
-                    I have checked the claim against the verification checklist and it has not passed. I recommend the claim is rejected.
-                  </label>
-                </div>
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="issues-log" name="issues-log" type="checkbox" value="carcasses">
-                  <label class="govuk-label govuk-checkboxes__label" for="issues-log">
-                    I have sent the verification checklist to the authoriser explaining why it's failed.
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-          </div>
-      
-          <button class="govuk-button govuk-button govuk-!-margin-bottom-2" data-module="govuk-button" onclick="handleConfirmation()">Confirm and continue</button>
-      
-          <script>
-            function handleConfirmation() {
-              var onHoldValidationCheckbox = document.getElementById('on-hold-validation');
-              var issuesLogCheckbox = document.getElementById('issues-log');
-      
-              if (!onHoldValidationCheckbox.checked || !issuesLogCheckbox.checked) {
-                window.location.href = '../internal/x-greenfield-recommend-to-reject-check-error.html';
-              } else {
-                window.location.href = '../internal/x-greenfield-2-recommend-to-reject';
-              }
-            }
-          </script>
-        </div>
-  <!-- End new code -->
-<!--
-      <div class="govuk-form-group">
+      <div class="govuk-form-group govuk-form-group--error">
         <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h1 class="govuk-fieldset__heading">
               Recommend to reject
             </h1>
             <div class="govuk-!-padding-bottom-7"></div>
-
+            <p id="checkbox-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span> Select both checkboxes
+            </p>
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
             <div class="govuk-checkboxes__item">
               <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
               <label class="govuk-label govuk-checkboxes__label" for="waste">
-                I have checked the claim against the verification checklist and it has not passed. I recommend the claim is rejected.
+                I have checked the claim against the the verification checklist and it has not passed. I recommend the claim is rejected.
             </div>
             <div class="govuk-checkboxes__item">
               <input class="govuk-checkboxes__input" id="issues-log" name="issues-log" type="checkbox" value="carcasses">
@@ -117,7 +88,6 @@ Annual Health and Welfare Back Office
       </a>
 
     </div>
-  -->
   
       <!--Application stages (in tabs)-->
       <div class="govuk-tabs govuk-!-margin-top-7" data-module="govuk-tabs">
