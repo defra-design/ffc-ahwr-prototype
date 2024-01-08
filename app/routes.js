@@ -109,8 +109,7 @@ router.post('/select-business', function (req, res) {
       }
     })
 
-
-// Run this code when a form is submitted to 'number-of-animals-answer'
+    // Run this code when a form is submitted to 'number-of-animals-answer'
 router.post('/number-of-animals-answer', function (req, res) {
   // Make a variable
   var AnimalNumber = req.session.data['animals'];
