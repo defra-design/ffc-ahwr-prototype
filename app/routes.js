@@ -109,8 +109,7 @@ router.post('/select-business', function (req, res) {
       }
     })
 
-
-// Run this code when a form is submitted to 'number-of-animals-answer'
+    // Run this code when a form is submitted to 'number-of-animals-answer'
 router.post('/number-of-animals-answer', function (req, res) {
   // Make a variable
   var AnimalNumber = req.session.data['animals'];
@@ -135,30 +134,6 @@ router.post('/number-of-animals-answer', function (req, res) {
   }
 });
 
-// Run this code when a form is submitted to 'on-hold-check-answer'
-router.post('/on-hold-check-answer', function (req, res) {
-  // Retrieve checkbox values from the form
-  var onHoldValidation = req.body['on-hold-validation'];
-  var issuesLog = req.body['issues-log'];
-
-  // Check if neither checkbox is checked or only one checkbox is checked
-  if (!onHoldValidation || !issuesLog) {
-    // Send the user to 'x-greenfield-on-hold-check-error'
-    res.redirect('/x-greenfield-on-hold-check-error');
-  } else if (onHoldValidation && issuesLog) {
-    // If both checkboxes are checked, take the user to '../internal/x-greenfield-in-check.html'
-    res.redirect('../internal/x-greenfield-in-check.html');
-  } else {
-    // Handle other cases if needed
-    // For now, let's redirect to a default page
-    res.redirect('/default-page');
-  }
-});
-
-
-
 
 module.exports = router
-
-
 

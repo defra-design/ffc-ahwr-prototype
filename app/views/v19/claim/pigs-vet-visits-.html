@@ -1,0 +1,205 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+      {% set serviceName %}
+Livestock health and welfare
+{% endset%}
+
+
+
+{% block content %}
+
+<main class="govuk-main-wrapper" style="padding-top: 0px; padding-bottom: 0px;">
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        Beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper" style="padding-top: 0px; padding-bottom: 0px;">
+      <div class="govuk-grid-row" style="padding-top:16px;">
+        <div class="govuk-grid-column-two-thirds">
+            <h3 class="govuk-heading-m" style="margin-bottom: 8px;">Arthington Farm Ltd</h3>
+            <p class="govuk-body sbi-number" style="margin-bottom: 8px;">SBI: 234567890</p>
+        </div>
+
+        <div class="govuk-grid-column-one-third">
+            <h3 class="govuk-heading-m" style="float:right; margin-bottom: 8px;">Jane Doe</h3>
+            <p class="govuk-body sbi-number" style="float:right; margin-bottom: 8px;"><a href="../apply/business-2.html">Apply for a different business</a></p>
+        </div>
+    </main>
+    <hr>
+
+
+
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+      <span class="govuk-caption-xl">Livestock health and welfare</span>
+      <h1 class="govuk-heading-xl">Manage your vet visits</h1>
+      <h3 class="govuk-heading-m">Apply and claim for funding applications</h3>
+      <div class="govuk-inset-text">
+        You can make multiple agreements until <strong>31 May 2024</strong>
+      </div>
+    
+          <ol class="app-task-list">
+            <li>
+              <h2 class="app-task-list__section">
+                <span class="app-task-list__section-number">1. </span> Useful information
+              </h2>
+              <ul class="app-task-list__items">
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    <a href="personal-details.html" aria-describedby="eligibility-status">
+                      Check your business and personal details
+                    </a>
+                  </span>
+                </li>
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    <a href="../farmer/guidance-apply.html" aria-describedby="read-declaration-status">
+                      Read the guidance on how to apply
+                    </a>
+                  </span>
+                </li>
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    <a href="../farmer/guidance-claim.html" aria-describedby="read-declaration-status">
+                      Read the guidance on how to claim funding
+                    </a>
+                  </span>
+                </li>
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    <a href="#" aria-describedby="read-declaration-status">
+                      Read the guidance on how to test
+                    </a>
+                  </span>
+                </li>
+              </ul>
+
+              <li>
+                <h2 class="app-task-list__section">
+                  <span class="app-task-list__section-number">2. </span> Terms and conditions
+                </h2>
+                <ul class="app-task-list__items">
+                  <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    <a href="#" aria-describedby="read-declaration-status">
+                      Read the terms and conditions for funding
+                    </a>
+                  </span>
+                  <strong class="govuk-tag govuk-tag--turquoise app-task-list__tag" id="read-declaration-status">Accepted</strong>
+                </li>
+              </ul>
+            
+             
+    
+            <li>
+              <h2 class="app-task-list__section">
+                <span class="app-task-list__section-number">3. </span> Your claims
+
+              </h2>
+              <ul class="app-task-list__items">
+
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    <a href="../beef-cattle-application">  AHWR-F021-723B  – Beef Cattle G -  Review</a>
+                    <p class="govuk-body-s">You will receiving funding for your claim on <strong>02 Apr 2024</strong></p>
+                  </span>
+                  <strong class="govuk-tag govuk-tag--green app-task-list__tag" id="contact-details-status">Claiming</strong>
+                </li>
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    <a href="../beef-cattle-application"> VV-5053-A696  – Beef Cattle G AHWR -  Review</a>
+                    <p class="govuk-body-s">You must arrange this review and claim funding by <strong>11 April 2024</strong></p>
+                  </span>
+                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="contact-details-status">Missing info</strong>
+                </li>
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    <a href="../beef-cattle-application-endemics"> Beef Cattle G – Endemics Review</a>
+                    <p class="govuk-body-s">
+                      Your agreement offer will expire at 11:59pm on <strong>27 Oct 2023</strong>
+                    </p>
+                  </span>
+                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="submit-pay-status">Missing info</strong>
+                </li>
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    <a href="../beef-cattle-application-endemics-2"> Beef Cattle A – Endemics Review</a>
+                    <p class="govuk-body-s">
+                      You will receiving funding for your claim on <strong>02 Apr 2024</strong>
+                    </p>
+                  </span>
+                  <strong class="govuk-tag govuk-tag--green app-task-list__tag" id="submit-pay-status">Claiming</strong>
+                </li>
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    <a href="../beef-cattle-application-endemics-2"> Sheep A – Endemics Review</a>
+                    <p class="govuk-body-s">
+                      You will receiving funding for your claim on <strong>02 Apr 2024</strong>
+                    </p>
+                  </span>
+                  <strong class="govuk-tag govuk-tag--green app-task-list__tag" id="submit-pay-status">Claiming</strong>
+                </li>
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                    <a href=""> Dairy Cattle Test – Endemics Review</a>
+                    <p class="govuk-body-s">
+                      You have been paid <strong>£294</strong> for completing testing on your livestock
+                    </p>
+                  </span>
+                  <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="submit-pay-status">Paid</strong>
+                </li>
+              </ul>
+            </ol>
+
+              <h2 class="app-task-list__section">                <span class="app-task-list__section-number"></span> After your review
+              </h2>
+              <ul class="app-task-list__items">
+                <p class="govuk-body-m">Before you can claim your funding, you must ask the vet to give you a written report and a document you can use as evidence the review has taken place.</p>
+
+                <div class="govuk-warning-text">
+                  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                  <strong class="govuk-warning-text__text">
+                    <span class="govuk-warning-text__assistive">Warning</span>
+                    You can only claim for a disease focused visit after a livestock and welfare review is completed.
+                  </strong>
+                </div>
+
+
+          <div class="govuk-button-group">
+            <a href="../claim/which-review-annual.html" class="govuk-button" data-module="govuk-button">
+              Claim for livestock welfare review
+            </a>
+            <a href="../claim/which-review-endemics.html" class="govuk-button" data-module="govuk-button" target="_blank">
+              Claim for disease-focused visit
+            </a>
+          </div>
+          
+            
+            
+
+            </main>
+
+   
+
+
+
+  
+
+      
+   
+    
+
+{% endblock %}
