@@ -16,6 +16,22 @@ Index page
     <div class="govuk-width-container">
 
       <div class="govuk-width-container">
+
+        <div class="govuk-error-summary" data-module="govuk-error-summary">
+          <div role="alert">
+            <h2 class="govuk-error-summary__title">
+              There is a problem
+            </h2>
+            <div class="govuk-error-summary__body">
+              <ul class="govuk-list govuk-error-summary__list">
+                <li>
+                  <a href="#">Select you have read, understood and agree to the terms and conditions </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <h1 class="govuk-heading-l">Review your agreement offer</h1>
 
         <p class="govuk-body">
@@ -45,16 +61,25 @@ Index page
           <li>you will follow the rules for timing of vet visits and claims</li>
           <li>you have read and accept <a href="terms-conditions.html">the full terms and conditions</a></li>
         </ul>
+<br>
 
-        <div class="govuk-form-group">
-          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-            <div class="govuk-checkboxes__item  govuk-!-margin-top-6">
-              <input class="govuk-checkboxes__input" type="checkbox" name="confirm" id="confirm" value="Declaration Accepted">
-              <label class="govuk-label govuk-checkboxes__label govuk-!-padding-top-0" for="confirm">
-                I have read, understood and agree to the terms and conditions.
-              </label>
+
+
+        <div class="govuk-form-group govuk-form-group--error">
+          <fieldset class="govuk-fieldset" aria-describedby="nationality-hint nationality-error">
+          
+            <p id="nationality-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span> Select you have read, understood and agree to the terms and conditions 
+            </p>
+            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="british">
+                <label class="govuk-label govuk-checkboxes__label" for="nationality">
+                  I have read, understood and agree to the terms and conditions.
+                </label>
+              </div>
             </div>
-          </div>
+          </fieldset>
         </div>
 
         
@@ -63,7 +88,7 @@ Index page
           <a href="confirmation" role="button" draggable="false" class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
             Accept
           </a>
-          <a href="offer-rejected-2" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+          <a href="offer-rejected" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
             Reject
           </a>
         </div>
