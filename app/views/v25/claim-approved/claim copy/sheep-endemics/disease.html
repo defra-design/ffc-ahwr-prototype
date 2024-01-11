@@ -1,0 +1,111 @@
+{% extends "layouts/layout.html" %}
+{% set serviceName = "Review the health and welfare of your livestock" %}
+
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-form-group">
+      <form class="form" action="../sheep-endemics/test-results.html" method="get">
+
+      <h1 class="govuk-label-wrapper">
+        <label class="govuk-label govuk-label--l" for="rcvs-number">
+          Which diseases did the vet test for?
+        </label>
+      </h1>
+      <div id="dob-hint" class="govuk-hint">
+      You can find this on the summary the vet gave you.</div>
+       
+    <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+    </legend>
+    <div class="govuk-radios" data-module="govuk-radios">
+    <div class="govuk-radios__item">
+    <input class="govuk-radios__input" id="business" name="business" type="radio" value="business1">
+    <label class="govuk-label govuk-radios__label" for="business-1">Johne’s, MV, toxoplasmosis, trace elements, liver fluke, CLA, OPA
+    </label>
+    </div>
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="business" name="business" type="radio" value="business2">
+      <label class="govuk-label govuk-radios__label" for="business-2">Abortion, EAE, Borders, Johne’s, toxoplasmosis, ewe nutrition status, trace elements 
+      </label>
+      </div>
+    <div class="govuk-radios__item">
+    <input class="govuk-radios__input" id="business" name="business" type="radio" value="business3">
+    <label class="govuk-label govuk-radios__label" for="business-3">Lameness, PGE, Borders, MV, trace elements, liver fluke 
+    </label>
+    </div>
+    <div class="govuk-radios__item">
+    <input class="govuk-radios__input" id="business" name="business" type="radio" value="business4">
+    <label class="govuk-label govuk-radios__label" for="business-4">Borders, MV, toxoplasmosis, joint ill, ewe nutrition status, trace elements
+    </label>
+    </div>
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="business" name="business" type="radio" value="business4">
+      <label class="govuk-label govuk-radios__label" for="business-4">Flystrike, PGE, sheep scab 
+      </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="business" name="business" type="radio" value="business2">
+        <label class="govuk-label govuk-radios__label" for="business-2">Joint ill, lameness
+        </label>
+        </div>
+      <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="business" name="business" type="radio" value="business3">
+      <label class="govuk-label govuk-radios__label" for="business-3">MV, mastitis
+      </label>
+      </div>
+      </fieldset>
+      </div>
+    
+
+
+  </div>
+    <button class="govuk-button" data-module="govuk-button">Continue</button>
+    </form>
+     
+      <!-- autocomplete form end -->
+
+
+      <details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        Need more help?
+      </span>
+    </summary>
+    <div class="govuk-details__text">
+
+
+        <p class="govuk-body">Contact the Rural Payments Agency by email or phone.</p>
+        <p class="govuk-body">Email:  <a href="mailto:ruralpayments@defra.gov.uk?subject=feedback">ruralpayments@defra.gov.uk</a><br><br>
+     
+        Telephone: 03000 200 301 <br>
+        Monday to Friday, 8:30am to 5pm, except bank holidays <br>
+       
+      
+        <p class="govuk-body"><a href="https://www.gov.uk/call-charges" target="”_blank”">Find out about call charges</a></p>
+      </a></div><a href="https://www.gov.uk/call-charges" target="”_blank”">
+    </a></details><a href="https://www.gov.uk/call-charges" target="”_blank”">
+
+  </a></div><a href="https://www.gov.uk/call-charges" target="”_blank”">
+</a></div>
+</div>
+</details>
+
+
+{% endblock %}
