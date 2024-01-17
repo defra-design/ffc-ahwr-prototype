@@ -1,0 +1,104 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+{% set serviceName %}Annual health and welfare review of livestock{% endset%}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    
+<div class="govuk-error-summary" data-module="govuk-error-summary" style="display: none;">
+    <div role="alert">
+        <h2 class="govuk-error-summary__title">
+            There is a problem
+        </h2>
+        <div class="govuk-error-summary__body">
+            <ul class="govuk-list govuk-error-summary__list">
+                <li>
+                    <a href="#" id="error-summary-link">Please select a review type</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<form class="form" method="post" onsubmit="return validateForm(event);">
+
+    <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="eligibility-bps-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                    Which type of review are you claiming for?
+                </h1>
+            </legend>
+
+            <div id="vet-registered-hint" class="govuk-hint govuk-!-margin-bottom-5">
+                You can have one review every 10 months for one type of livestock.
+            </div>
+
+            <p id="validation-error" class="govuk-error-message" style="display: none;">
+                <span class="govuk-visually-hidden">Error:</span>You must select a review.
+            </p>
+
+            <div class="govuk-radios govuk-radios">
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="review-annual" name="review-type" type="radio" value="annual-health">
+                    <label class="govuk-label govuk-radios__label" for="review-annual">
+                        Annual health and welfare review
+                    </label>
+                </div>
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="review-endemics" name="review-type" type="radio" value="endemics-follow-up">
+                    <label class="govuk-label govuk-radios__label" for="review-endemics">
+                        Endemics follow-up
+                    </label>
+                </div>
+            </div>
+
+        </fieldset>
+    </div>
+
+    <button class="govuk-button" data-module="govuk-button" type="submit">Continue</button>
+
+</form>
+
+<script>
+    function validateForm(event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+
+        var reviewRadios = document.getElementsByName('review-type');
+        var errorElement = document.getElementById('validation-error');
+        var errorSummary = document.querySelector('.govuk-error-summary');
+        var errorSummaryLink = document.getElementById('error-summary-link');
+
+        for (var i = 0; i < reviewRadios.length; i++) {
+            if (reviewRadios[i].checked) {
+                errorElement.style.display = 'none';
+                errorSummary.style.display = 'none'; // Hide error summary
+
+                // Redirect to the desired URL when a review type is selected
+                window.location.href = 'next-page.html'; // Replace with the actual URL
+                return true; // Form submission allowed
+            }
+        }
+
+        // No review type selected, display error message and add error styling
+        errorElement.style.display = 'block';
+        errorSummary.style.display = 'block'; // Show error summary
+        errorSummaryLink.innerText = 'Please select a review type'; // Update link text
+        return false; // Form submission blocked
+    }
+</script>
+  
+  </div>
+</div>
+
+{% endblock %}
