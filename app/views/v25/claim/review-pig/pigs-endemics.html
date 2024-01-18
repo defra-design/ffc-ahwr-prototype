@@ -1,3 +1,6 @@
+Certainly! I've modified the JavaScript code to redirect the user based on the specified conditions. Please find the updated code below:
+
+```html
 {% extends "layouts/layout.html" %}
 
 {% block pageTitle %}
@@ -37,7 +40,7 @@
         <fieldset class="govuk-fieldset" aria-describedby="eligibility-bps-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h1 class="govuk-fieldset__heading">
-              How many animals did the vet test?
+              How many oral fluid samples did the vet do?
             </h1>
           </legend>
 
@@ -82,9 +85,9 @@
             // Redirect to the desired URL based on the input value
             var numberOfAnimals = parseInt(input.value.trim());
             if (numberOfAnimals >= 5) {
-              window.location.href = 'vet-name.html';
+              window.location.href = 'test-results.html';
             } else {
-              window.location.href = 'number-of-animals-ineligible.html';
+              window.location.href = 'test-numbers-error.html';
             }
             return true; // Form submission allowed
           } else {
