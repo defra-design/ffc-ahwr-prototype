@@ -24,7 +24,7 @@
         <div class="govuk-error-summary__body">
           <ul class="govuk-list govuk-error-summary__list">
             <li>
-              <a href="#eligibility-bps">You must enter the vet's name</a>
+              <a href="#eligibility-bps">You must enter the URN number</a>
             </li>
           </ul>
         </div>
@@ -37,16 +37,16 @@
         <fieldset class="govuk-fieldset" aria-describedby="eligibility-bps-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h1 class="govuk-fieldset__heading">
-              What is the vet’s name?
+              What’s the laboratory unique reference number (URN) for the test results?
             </h1>
           </legend>
 
           <div id="vet-registered-hint" class="govuk-hint govuk-!-margin-bottom-5">
-            You can find this on the summary the vet gave you.
+           You can find this on the summary the vet gave you.
           </div>
 
           <p id="validation-error" class="govuk-error-message" style="display: none;">
-            <span class="govuk-visually-hidden">Error:</span>Enter the vet's name
+            <span class="govuk-visually-hidden">Error:</span>Enter the URN number
           </p>
 
           <input type="text" id="eligibility-bps" name="eligibility-bps" class="govuk-input govuk-input--width-20" id="vet-name">
@@ -76,7 +76,7 @@
           if (input.value.trim().toLowerCase() === 'yes') {
             window.location.href = 'eligible.html'; // Redirect to eligible.html for 'Yes'
           } else {
-            window.location.href = 'vet-rcvs.html'; // Redirect to numbers-ineligible.html for 'No'
+            window.location.href = 'test-results.html'; // Redirect to numbers-ineligible.html for 'No'
           }
           return true; // Form submission allowed
         }
