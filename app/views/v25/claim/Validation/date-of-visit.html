@@ -1,0 +1,129 @@
+I apologize for the oversight. Let's adjust the code to make sure the error messages appear when there are validation issues. Please find the updated code below:
+
+```html
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+  Index page
+{% endblock %}
+
+{% set serviceName %}Review the health and welfare of your livestock{% endset %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <form class="form" method="POST" onsubmit="return validateForm()">
+      <div class="govuk-form-group govuk-form-group--error">
+
+        <h1 class="govuk-heading-l">Date of visit and testing</h1>
+
+        <div class="govuk-error-summary" data-module="govuk-error-summary" style="display: none;">
+          <div role="alert">
+            <h2 class="govuk-error-summary__title">
+              There is a problem
+            </h2>
+            <div class="govuk-error-summary__body">
+              <ul class="govuk-list govuk-error-summary__list" id="error-list">
+                <!-- Error messages will be added dynamically here -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="when-review-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              When did the vet visit your farm?
+            </h2>
+          </legend>
+          <div id="when-review-hint" class="govuk-hint">
+            When the vet last visited the farm for the review. <br><br>For example, 27 3 2022
+          </div>
+          <div class="govuk-date-input" id="when-review">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="when-review-day">
+                  Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="when-review-day"
+                  name="when-review-day" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="when-review-month">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="when-review-month"
+                  name="when-review-month" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="when-review-year">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="when-review-year"
+                  name="when-review-year" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+          </div>
+          <p id="passport-issued-error" class="govuk-error-message" style="display: none;">
+            <span class="govuk-visually-hidden">Error:</span> The date your passport was issued must be in the past
+          </p>
+        </fieldset>
+
+        <div id="validation-error" class="govuk-error-message govuk-!-margin-top-2" style="display: none;">
+          <span class="govuk-visually-hidden">Error:</span>Select at least one disease
+        </div>
+      </div>
+
+      <p class="govuk-body govuk-!-margin-top-4">
+        <button class="govuk-button" type="submit">
+          Continue
+        </button>
+      </p>
+    </form>
+  </div>
+</div>
+
+<script>
+  function validateForm() {
+    var day = document.getElementById('when-review-day').value.trim();
+    var month = document.getElementById('when-review-month').value.trim();
+    var year = document.getElementById('when-review-year').value.trim();
+
+    var errorList = document.getElementById('error-list');
+    errorList.innerHTML = ''; // Clear previous error messages
+
+    if (day === '' && month === '' && year === '') {
+      addValidationError('Select a disease status category');
+    }
+
+    // Additional validation logic here...
+
+    if (errorList.childElementCount > 0) {
+      var errorSummary = document.querySelector('.govuk-error-summary');
+      errorSummary.style.display = 'block';
+      return false; // Prevent form submission
+    }
+
+    // Redirect to "valid-page" on successful validation
+    window.location.href = 'valid-page';
+
+    return false; // Prevent form submission (in case of any issues)
+  }
+
+  function addValidationError(message) {
+    var errorList = document.getElementById('error-list');
+    var errorListItem = document.createElement('li');
+    errorListItem.innerHTML = '<a href="#eligibility-bps">' + message + '</a>';
+    errorList.appendChild(errorListItem);
+  }
+</script>
+
+{% endblock %}
