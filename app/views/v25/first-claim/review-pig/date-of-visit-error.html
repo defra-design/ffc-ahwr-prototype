@@ -17,11 +17,21 @@ Livestock health and welfare
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-    <h1 class="govuk-heading-l">You cannot claim for reviews or follow-ups for this business</h1>
+    <h1 class="govuk-heading-l">You cannot continue with your claim</h1>
     <br>
     <p class="govuk-body">
-      The Dairy Farm - SBI 123456789 had a claim for pigs in the last 10 months.
+      <a href="#">There must be at least 10 months between your annual health and welfare reviews</a>.
     </p>
+
+    <p class="govuk-body">If you entered the wrong date, you’ll need to go back and enter the correct date.</p>
+    <p class="govuk-body"><a class="govuk-back-link" href="javascript:history.go(-1)">Enter the date the vet last visited your farm</a></p>
+
+    {% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
+
+{{ govukWarningText({
+  text: "Your claim will be checked by our team.",
+  iconFallbackText: "Warning"
+}) }}
    
     <h2 class="govuk-heading-m">Get help with your claim</h2>
     
@@ -36,7 +46,7 @@ Livestock health and welfare
 
       </ul>
       <p class="govuk-body"><a class="govuk-link" href="https://www.gov.uk/call-charges">Find out about call charges (opens in new tab)</a></p>
-
+      <p class="govuk-body">Have your agreement number with you when you call or include it in your email.</p>
 
     <br><br><br><br>
   </div>
