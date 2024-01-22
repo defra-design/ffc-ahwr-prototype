@@ -3,9 +3,15 @@
 {% block pageTitle %}
 Index page
 {% endblock %}
+<<<<<<< HEAD
       {% set serviceName %}
   Review the health and welfare of your livestock 
 {% endset %}
+=======
+       {% set serviceName %}
+Review the health and welfare of your livestock
+{% endset%}
+>>>>>>> main
 
 
 {% block beforeContent %}
@@ -20,11 +26,11 @@ Index page
     <h1 class="govuk-heading-l">You cannot continue with your claim</h1>
     <br>
     <p class="govuk-body">
-      You do not have the <a href="#">minimum number of liverstock</a>.
+      You do not have the <a href="https://apply-for-an-annual-health-and-welfare-review.defra.gov.uk/apply/guidance-for-farmers">minimum number of livestock</a>.
     </p>
 
     <p class="govuk-body">If you selected the wrong option, you’ll need to change your answer.</p>
-    <p class="govuk-body"><a class="govuk-back-link" href="javascript:history.go(-1)">Change your answer for number of livestock</a></p>
+    <p class="govuk-body"><a class="govuk-link" href="javascript:history.go(-1)">Change your answer for number of livestock</a></p>
 
     {% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
 
