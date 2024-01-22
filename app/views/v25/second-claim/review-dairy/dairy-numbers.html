@@ -3,9 +3,9 @@
 {% block pageTitle %}
 Question page
 {% endblock %}
-      {% set serviceName %}
-Livestock health and welfare
-{% endset%}
+{% set serviceName %}
+Review the health and welfare of your livestock 
+{% endset %}
 
 
 {% block beforeContent %}
@@ -23,7 +23,7 @@ Livestock health and welfare
           <fieldset class="govuk-fieldset" aria-describedby="eligibility-cattle-hint">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
               <h1 class="govuk-fieldset__heading">
-                Did you have 11 or more beef cattle on the date of the review?
+                Did you have 11 or more dairy cattle on the date of the review?
               </h1>
             </legend>
             <div id="eligibility-hint" class="govuk-hint">
@@ -32,7 +32,7 @@ Livestock health and welfare
 
             <div class="govuk-radios govuk-radios--inline">
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="eligibility-cattle" name="eligibility-cattle" type="radio" value="eligible" onclick="setLocation(this);" {{ checked("eligibility-cattle", "eligibility-cattle-yes") }}>
+                <input class="govuk-radios__input" id="eligibility-cattle" name="eligibility-cattle" type="radio" value="vet-name" onclick="setLocation(this);" {{ checked("eligibility-cattle", "eligibility-cattle-yes") }}>
                 <label class="govuk-label govuk-radios__label" for="eligibility-cattle">
                   Yes
               </div>
