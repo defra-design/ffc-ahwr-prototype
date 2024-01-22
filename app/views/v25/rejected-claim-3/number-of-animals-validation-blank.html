@@ -1,0 +1,54 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+{% set serviceName %}Livestock and welffare{% endset%}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    {{ govukErrorSummary({
+      titleText: "There is a problem",
+      errorList: [
+        {
+          text: "Enter the number of animals tested",
+          href: "#animals"
+        }
+      ]
+    }) }}
+
+    <h1 class="govuk-heading-l">How many animals did the vet test?</h1>
+    <p class="govuk-body">Enter the number of animals the vet tested. You can find it on the review summary the vet has given you.</p>
+    <p class="govuk-body">You cannot use test results from tests carried out before your agreement start date or after you claim. If you do, your claim will be rejected.</p>
+    <form class="form" action="/number-of-animals-answer" method="post">
+    {% from "govuk/components/input/macro.njk" import govukInput %}
+
+
+    {{ govukInput({
+
+      classes: "govuk-input--width-4",
+
+      errorMessage: {
+        text: "Enter the number of animals tested"
+      },
+      id: "animals",
+      name: "animals",
+      value: data['animals'],
+      inputmode: "numeric",
+      spellcheck: false
+    }) }}
+
+    {{ govukButton({
+      text: "Continue"
+    }) }}
+  </form>
+  </div>
+</div>
+
+{% endblock %}
