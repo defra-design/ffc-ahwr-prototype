@@ -1,0 +1,45 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+       {% set serviceName %}
+Review the health and welfare of your livestock
+{% endset%}
+
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">You cannot continue with your claim</h1>
+    <br>
+
+    <p class="govuk-body"><a href="#">There must be at least 10 months between your annual health and welfare reviews.</a></p>
+    <p class="govuk-body">If you entered the wrong date, you’ll need to go back and enter the correct date.</p>
+    <p class="govuk-body"><a href="#">Enter the date the vet last visited your farm</a></p>
+    
+
+   
+    
+    {{ govukWarningText({
+      text: "Your claim will be checked by our team.",
+      iconFallbackText: "Warning"
+    }) }}
+    <h2 class="govuk-heading-m">Get help with your claim</h2>
+    <p class="govuk-body">If you need help, contact the Rural Payments Agency by email or phone.</p>
+    <p class="govuk-body">Email: <a href="mailto:ruralpayments@defra.gov.uk" class="govuk-link">ruralpayments@defra.gov.uk</a></p>
+    <p class="govuk-body">Telephone: 03000 200 301<br>Monday to Friday, 8:30am to 5pm, except bank holidays</p>
+    <p class="govuk-body"><a href="https://www.gov.uk/call-charges" class="govuk-link" rel="noreferrer noopener" target="_blank">Find out about call charges (opens in a new tab)</a></p>
+
+
+    <br><br><br><br>
+  </div>
+</div>
+
+{% endblock %}
