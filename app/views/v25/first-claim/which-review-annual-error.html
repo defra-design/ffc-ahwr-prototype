@@ -1,0 +1,83 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+      {% set serviceName %}
+  Review the health and welfare of your livestock 
+{% endset %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-error-summary" data-module="govuk-error-summary">
+      <div role="alert">
+        <h2 class="govuk-error-summary__title">
+          There is a problem
+        </h2>
+        <div class="govuk-error-summary__body">
+          <ul class="govuk-list govuk-error-summary__list">
+            <li>
+              <a href="#">Select livestock type</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 class="govuk-heading-l">Choose your livestock</h1>
+    <p><a href="https://apply-for-an-annual-health-and-welfare-review.defra.gov.uk/apply/claim-guidance-for-farmers">All your future reviews and follow-ups must be for the same species you are claiming for</a>.</p>
+    <form class="form" method="post">
+
+      <div class="govuk-form-group govuk-form-group--error">
+        <fieldset class="govuk-fieldset" aria-describedby="eligibility-bps-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h2 class="govuk-heading-m">
+             Which livestock are you claiming for?
+            </h2>
+            
+          </legend>
+          <p id="passport-issued-error" class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span> Select a livestock type
+          </p>
+          <!-- -->
+          <div class="govuk-radios govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="eligibility-bps" name="eligibility-bps" type="radio" value="review-beef/date-of-visit" onclick="setLocation(this);" {{ checked("eligibility-cattle", "eligibility-bps-yes") }}>
+              <label class="govuk-label govuk-radios__label" for="eligibility-bps">
+                Beef cattle
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="eligibility-bps-2" name="eligibility-bps" type="radio" value="review-dairy/date-of-visit" onclick="setLocation(this);" {{ checked("eligibility-cattle", "ineligible") }}>
+              <label class="govuk-label govuk-radios__label" for="eligibility-bps-2">
+                Dairy cattle
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="eligibility-bps-2" name="eligibility-bps" type="radio" value="review-sheep/date-of-visit" onclick="setLocation(this);" {{ checked("eligibility-cattle", "eligibility-bps-maybe") }}>
+              <label class="govuk-label govuk-radios__label" for="eligibility-bps-2">
+                Sheep
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="eligibility-bps-2" name="eligibility-bps" type="radio" value="review-pig/date-of-visit" onclick="setLocation(this);" {{ checked("eligibility-cattle", "eligibility-bps-maybe") }}>
+              <label class="govuk-label govuk-radios__label" for="eligibility-bps-2">
+                Pigs
+              </label>
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+
+      <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+    </form>
+
+  </div>
+
+{% endblock %}
