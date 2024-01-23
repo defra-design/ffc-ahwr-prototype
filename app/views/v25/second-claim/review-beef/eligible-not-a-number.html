@@ -24,7 +24,7 @@
         <div class="govuk-error-summary__body">
           <ul class="govuk-list govuk-error-summary__list">
             <li id="validation-error-item">
-              <a href="#eligibility-bps">You must enter a numeric value</a>
+              <a href="#eligibility-bps">Number of animals tested must only include numbers</a>
             </li>
           </ul>
         </div>
@@ -45,13 +45,14 @@
             You can find this on the summary the vet gave you.
           </div>
 
-          <p id="validation-error" class="govuk-error-message">
-            <span class="govuk-visually-hidden">Error:</span>Enter a numeric value
-          </p>
+
 
           <label class="govuk-label" for="number-of-animals">
             Enter a number
           </label>
+          <p id="validation-error" class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span>Number of animals tested must only include numbers
+          </p>
           <input type="text" id="number-of-animals" name="number-of-animals" class="govuk-input govuk-input--width-10">
 
         </fieldset>
@@ -89,11 +90,11 @@
             return true; // Form submission allowed
           } else {
             // Non-numeric input, display error message and add error styling
-            validationErrorItem.innerHTML = 'You must enter a numeric value';
+            validationErrorItem.innerHTML = 'Number of animals tested must only include numbers';
           }
         } else {
           // Empty input, display error message and add error styling
-          validationErrorItem.innerHTML = 'Enter a numeric value';
+          validationErrorItem.innerHTML = 'Number of animals tested must only include numbers';
         }
     
         errorElement.style.display = 'block';
