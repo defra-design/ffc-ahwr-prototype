@@ -27,7 +27,7 @@ Certainly! I've modified the JavaScript code to redirect the user based on the s
         <div class="govuk-error-summary__body">
           <ul class="govuk-list govuk-error-summary__list">
             <li id="validation-error-item">
-              <a href="#eligibility-bps">You must enter a number</a>
+              <a href="#eligibility-bps">Enter the number of animals tested</a>
             </li>
           </ul>
         </div>
@@ -49,7 +49,7 @@ Certainly! I've modified the JavaScript code to redirect the user based on the s
           </div>
 
           <p id="validation-error" class="govuk-error-message" style="display: none;">
-            <span class="govuk-visually-hidden">Error:</span>Enter a number
+            <span class="govuk-visually-hidden">Error:</span>Enter the number of animals tested
           </p>
 
           <label class="govuk-label" for="number-of-animals">
@@ -92,11 +92,11 @@ Certainly! I've modified the JavaScript code to redirect the user based on the s
             return true; // Form submission allowed
           } else {
             // Non-numeric input, display error message and add error styling
-            validationErrorItem.innerHTML = 'You must enter a numeric value';
+            validationErrorItem.innerHTML = 'Enter the number of animals tested';
           }
         } else {
           // Empty input, display error message and add error styling
-          validationErrorItem.innerHTML = 'You must enter a number';
+          validationErrorItem.innerHTML = 'Enter the number of animals tested';
         }
     
         errorElement.style.display = 'block';

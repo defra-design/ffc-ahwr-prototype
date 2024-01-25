@@ -27,7 +27,7 @@ Certainly! I've modified the JavaScript code to redirect the user based on the s
         <div class="govuk-error-summary__body">
           <ul class="govuk-list govuk-error-summary__list">
             <li id="validation-error-item">
-              <a href="#eligibility-bps">You must enter a number</a>
+              <a href="#eligibility-bps">Enter the number of oral fluid samples collected</a>
             </li>
           </ul>
         </div>
@@ -49,7 +49,7 @@ Certainly! I've modified the JavaScript code to redirect the user based on the s
           </div>
 
           <p id="validation-error" class="govuk-error-message" style="display: none;">
-            <span class="govuk-visually-hidden">Error:</span>Enter a number
+            <span class="govuk-visually-hidden">Error:</span>Enter the number of oral fluid samples collected
           </p>
 
           <input type="text" id="number-of-animals" name="number-of-animals" class="govuk-input govuk-input--width-10">
@@ -93,7 +93,7 @@ Certainly! I've modified the JavaScript code to redirect the user based on the s
           }
         } else {
           // Empty input, display error message and add error styling
-          validationErrorItem.innerHTML = 'You must enter a number';
+          validationErrorItem.innerHTML = 'Enter the number of oral fluid samples collected';
         }
     
         errorElement.style.display = 'block';
