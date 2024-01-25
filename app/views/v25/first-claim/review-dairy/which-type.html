@@ -22,7 +22,7 @@ Index page
           <div class="govuk-error-summary__body">
               <ul class="govuk-list govuk-error-summary__list">
                   <li>
-                      <a href="#eligibility-bps">You must select which type of review you are claiming for</a>
+                      <a href="#eligibility-bps">Select which type of review you are claiming for</a>
                   </li>
               </ul>
           </div>
@@ -36,7 +36,7 @@ Index page
           <fieldset class="govuk-fieldset" aria-describedby="eligibility-bps-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                   <h1 class="govuk-fieldset__heading">
-                    Which type of review are you claiming for dairy cattle? cattle?
+                    Which type of review are you claiming for dairy cattle?
                   </h1>
               </legend>
   
@@ -87,8 +87,8 @@ Index page
                   formGroup.classList.remove('govuk-form-group--error');
                   errorSummary.style.display = 'none'; // Hide error summary
                  
-                  // Redirect to the desired URL when a radio button is selected
-                  window.location.href = 'date-of-visit.html'; // Replace with the actual URL
+                  
+                  window.location.href = 'date-of-visit.html'; 
                   return true; // Form submission allowedd
               }
           }
