@@ -59,14 +59,39 @@
       </div>
       <br>
 
-      {{ govukButton({
-        text: "Continue",
-        href: "test-reference"
-      
-        }) }}
+      <button class="govuk-button" data-module="govuk-button" onclick="validateForm()">Continue</button>
+
     </div>
   </div>
 </div>
 
+<script>
+  function validateForm() {
+    var radios = document.getElementsByName('contact');
+    var errorSummary = document.querySelector('.govuk-error-summary');
+    var errorSummaryLink = document.getElementById('error-summary-link');
+    var validationError = document.getElementById('validation-error');
+    var formGroup = document.querySelector('.govuk-form-group');
+
+    // Check if at least one radio button is selected
+    var isSelected = Array.from(radios).some(radio => radio.checked);
+
+    if (!isSelected) {
+      errorSummary.style.display = 'block';
+      errorSummaryLink.innerText = 'Select a test result';
+      validationError.style.display = 'block'; // Show validation error message
+      formGroup.classList.add('govuk-form-group--error');
+      return false;
+    }
+
+    // If radio button is selected, remove error class and redirect to 'check-answers'
+    formGroup.classList.remove('govuk-form-group--error');
+    validationError.style.display = 'none'; // Hide validation error message
+
+    // Redirect to 'check-answers'
+    window.location.href = 'check-answers.html';
+    return true;
+  }
+</script>
 
 {% endblock %}
