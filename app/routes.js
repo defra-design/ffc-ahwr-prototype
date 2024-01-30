@@ -186,13 +186,6 @@ router.post('/diseases', function (req, res) {
   }
   if (disease == "disease-7"){
     // Send user to next page
-    res.redirect('/positive-negative')
-  } else {
-    // Send user to ineligible page
-    res.redirect('/ineligible')
-  }
-  if (disease == "disease-8"){
-    // Send user to next page
     res.redirect('/other')
   } else {
     // Send user to ineligible page
