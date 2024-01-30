@@ -156,7 +156,7 @@ router.post('*/endemics-disease', function (req, res) {
     res.redirect('/v25/second-claim/endemics-sheep/other');
   } else {
     // Handle other cases or redirect to an error page
-    res.redirect('/error-page');
+    res.redirect('/v25/second-claim/endemics-sheep/endemics-disease-error');
   }
 });
 
