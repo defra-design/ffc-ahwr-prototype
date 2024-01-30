@@ -1,5 +1,5 @@
-const express = require('express')
-const router = express.Router()
+const express = require('express');
+const router = express.Router();
 
 // Route for picker journey
 
@@ -134,64 +134,30 @@ router.post('/number-of-animals-answer', function (req, res) {
   }
 });
 
-// Run this code when a form is submitted to 'diseases'
-router.post('/diseases', function (req, res) {
+// Route for the diseases form submission
+router.post('*/endemics-disease', function (req, res) {
+  // Retrieve selected diseases from the form data
+  const selectedDiseases = req.body.diseases;
 
-  // Make a variable and give it the value from 'how-many-balls'
-  var diseases = req.session.data['how-many-balls']
-
-  // Check whether the variable matches a condition
-  if (disease == "disease-1"){
-    // Send user to next page
-    res.redirect('/')
+  // Perform logic based on the selected diseases
+  if (selectedDiseases.includes("disease-1")) {
+    res.redirect('/v25/second-claim/endemics-sheep/positive-negative');
+  } else if (selectedDiseases.includes("disease-2")) {
+    res.redirect('/v25/second-claim/endemics-sheep/positive-negative');
+  } else if (selectedDiseases.includes("disease-3")) {
+    res.redirect('/v25/second-claim/endemics-sheep/positive-negative');
+  } else if (selectedDiseases.includes("disease-4")) {
+    res.redirect('/v25/second-claim/endemics-sheep/problem-identified');
+  } else if (selectedDiseases.includes("disease-5")) {
+    res.redirect('/v25/second-claim/endemics-sheep/clinical-symptoms');
+  } else if (selectedDiseases.includes("disease-6")) {
+    res.redirect('/v25/second-claim/endemics-sheep/positive-negative');
+  } else if (selectedDiseases.includes("disease-7")) {
+    res.redirect('/v25/second-claim/endemics-sheep/other');
   } else {
-    // Send user to ineligible page
-    res.redirect('/ineligible')
+    // Handle other cases or redirect to an error page
+    res.redirect('/error-page');
   }
-
-  if (disease == "disease-2"){
-    // Send user to next page
-    res.redirect('/positive-negative')
-  } else {
-    // Send user to ineligible page
-    res.redirect('/ineligible')
-  }
-  if (disease == "disease-3"){
-    // Send user to next page
-    res.redirect('/positive-negative')
-  } else {
-    // Send user to ineligible page
-    res.redirect('/ineligible')
-  }
-  if (disease == "disease-4"){
-    // Send user to next page
-    res.redirect('/positive-negative')
-  } else {
-    // Send user to ineligible page
-    res.redirect('/ineligible')
-  }
-  if (disease == "disease-5"){
-    // Send user to next page
-    res.redirect('/positive-negative')
-  } else {
-    // Send user to ineligible page
-    res.redirect('/ineligible')
-  }
-  if (disease == "disease-6"){
-    // Send user to next page
-    res.redirect('/clinical-symptoms')
-  } else {
-    // Send user to ineligible page
-    res.redirect('/ineligible')
-  }
-  if (disease == "disease-7"){
-    // Send user to next page
-    res.redirect('/other')
-  } else {
-    // Send user to ineligible page
-    res.redirect('/ineligible')
-  }
-
-})
+});
 
 module.exports = router
