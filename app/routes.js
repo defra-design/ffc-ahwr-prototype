@@ -134,4 +134,71 @@ router.post('/number-of-animals-answer', function (req, res) {
   }
 });
 
+// Run this code when a form is submitted to 'diseases'
+router.post('/diseases', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var diseases = req.session.data['how-many-balls']
+
+  // Check whether the variable matches a condition
+  if (disease == "disease-1"){
+    // Send user to next page
+    res.redirect('/')
+  } else {
+    // Send user to ineligible page
+    res.redirect('/ineligible')
+  }
+
+  if (disease == "disease-2"){
+    // Send user to next page
+    res.redirect('/positive-negative')
+  } else {
+    // Send user to ineligible page
+    res.redirect('/ineligible')
+  }
+  if (disease == "disease-3"){
+    // Send user to next page
+    res.redirect('/positive-negative')
+  } else {
+    // Send user to ineligible page
+    res.redirect('/ineligible')
+  }
+  if (disease == "disease-4"){
+    // Send user to next page
+    res.redirect('/positive-negative')
+  } else {
+    // Send user to ineligible page
+    res.redirect('/ineligible')
+  }
+  if (disease == "disease-5"){
+    // Send user to next page
+    res.redirect('/positive-negative')
+  } else {
+    // Send user to ineligible page
+    res.redirect('/ineligible')
+  }
+  if (disease == "disease-6"){
+    // Send user to next page
+    res.redirect('/clinical-symptoms')
+  } else {
+    // Send user to ineligible page
+    res.redirect('/ineligible')
+  }
+  if (disease == "disease-7"){
+    // Send user to next page
+    res.redirect('/positive-negative')
+  } else {
+    // Send user to ineligible page
+    res.redirect('/ineligible')
+  }
+  if (disease == "disease-8"){
+    // Send user to next page
+    res.redirect('/other')
+  } else {
+    // Send user to ineligible page
+    res.redirect('/ineligible')
+  }
+
+})
+
 module.exports = router
