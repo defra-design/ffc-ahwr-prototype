@@ -141,17 +141,17 @@ router.post('*/reproductive', function (req, res) {
 
   // Perform logic based on the selected diseases
   if (selectedDiseases.includes("disease-1")) {
-    res.redirect('/v25/second-claim/endemics-sheep/positive-negative');
+    res.redirect('/v25/second-claim/endemics-sheep/positive-negative-1');
   } else if (selectedDiseases.includes("disease-2")) {
-    res.redirect('/v25/second-claim/endemics-sheep/positive-negative');
+    res.redirect('/v25/second-claim/endemics-sheep/positive-negative-2');
   } else if (selectedDiseases.includes("disease-3")) {
-    res.redirect('/v25/second-claim/endemics-sheep/positive-negative');
+    res.redirect('/v25/second-claim/endemics-sheep/positive-negative-3');
   } else if (selectedDiseases.includes("disease-4")) {
     res.redirect('/v25/second-claim/endemics-sheep/problem-identified');
   } else if (selectedDiseases.includes("disease-5")) {
     res.redirect('/v25/second-claim/endemics-sheep/clinical-symptoms');
   } else if (selectedDiseases.includes("disease-6")) {
-    res.redirect('/v25/second-claim/endemics-sheep/positive-negative');
+    res.redirect('/v25/second-claim/endemics-sheep/positive-negative-6');
   } else if (selectedDiseases.includes("disease-7")) {
     res.redirect('/v25/second-claim/endemics-sheep/other');
   } else {
