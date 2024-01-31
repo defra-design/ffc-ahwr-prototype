@@ -134,6 +134,32 @@ router.post('/number-of-animals-answer', function (req, res) {
   }
 });
 
+
+
+
+// Route for the reviews form submission
+router.post('*/review-sheep/which-type', function (req, res) {
+  // Retrieve selected reviews from the form data
+  const selectedType = req.body['which-type'];
+
+  // Perform logic based on the selected types
+  if (selectedType === "review-1") {
+    res.redirect('/v25/second-claim/review-sheep/date-of-visit');
+  } else if (selectedType === "review-2") {
+    res.redirect('/v25/second-claim/endemics-sheep/endemics-package');
+  } else {
+    // Handle other cases or redirect to an error page
+    res.redirect('/v25/second-claim/endemics-sheep/*');
+  }
+});
+
+
+
+
+
+
+
+
 // Route for the diseases form submission
 router.post('*/ewe', function (req, res) {
   // Retrieve selected diseases from the form data
