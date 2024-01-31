@@ -1,0 +1,54 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+ {% set serviceName %}
+Review the health and welfare of your livestock
+{% endset%}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-form-group">
+      <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="urn">
+        Give details about the test for ‘other’
+        </label>
+      </h1>
+      <div id="passport-number-hint" class="govuk-hint">
+        You can find this on the summary the vet gave you.
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="two-thirds">
+          Enter the name of the condition or disease
+        </label>
+        <input class="govuk-input govuk-!-width-two-thirds" id="two-thirds" name="twoThirds" type="text">
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="width-20">
+          Enter the test result
+        </label>
+        <input class="govuk-input govuk-input--width-20" id="width-20" name="width20" type="text">
+      </div>
+
+
+    <br>
+ 
+
+
+    {{ govukButton({
+      text: "Continue",
+      href: "check-answers"
+    }) }}
+
+  </div>
+</div>
+
+{% endblock %}
