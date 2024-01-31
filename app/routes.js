@@ -135,7 +135,7 @@ router.post('/number-of-animals-answer', function (req, res) {
 });
 
 // Route for the diseases form submission
-router.post('*/endemics-disease', function (req, res) {
+router.post('*/reproductive', function (req, res) {
   // Retrieve selected diseases from the form data
   const selectedDiseases = req.body.diseases;
 
@@ -157,6 +157,30 @@ router.post('*/endemics-disease', function (req, res) {
   } else {
     // Handle other cases or redirect to an error page
     res.redirect('/v25/second-claim/endemics-sheep/endemics-disease-error');
+  }
+});
+
+// Route for the packages form submission
+router.post('*/endemics-package', function (req, res) {
+  // Retrieve selected packages from the form data
+  const selectedPackages = req.body.package;
+
+  // Perform logic based on the selected packages
+  if (selectedPackages.includes("package-1")) {
+    res.redirect('/v25/second-claim/endemics-sheep/*');
+  } else if (selectedPackages.includes("package-2")) {
+    res.redirect('/v25/second-claim/endemics-sheep/reproductive');
+  } else if (selectedPackages.includes("package-3")) {
+    res.redirect('/v25/second-claim/endemics-sheep/*');
+  } else if (selectedPackages.includes("package-4")) {
+    res.redirect('/v25/second-claim/endemics-sheep/*');
+  } else if (selectedPackages.includes("package-5")) {
+    res.redirect('/v25/second-claim/endemics-sheep/*');
+  } else if (selectedPackages.includes("package-6")) {
+    res.redirect('/v25/second-claim/endemics-sheep/*');
+  } else {
+    // Handle other cases or redirect to an error page
+    res.redirect('/v25/second-claim/endemics-sheep/endemics-package-error');
   }
 });
 
