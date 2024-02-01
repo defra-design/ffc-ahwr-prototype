@@ -51,49 +51,58 @@
           <p id="nationality-error" class="govuk-error-message">
             <span class="govuk-visually-hidden">Error:</span> You must select a disease
           </p>
-          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="nationality" name="nationality" type="checkbox" value="disease-1" aria-describedby="nationality-item-hint">
-              <label class="govuk-label govuk-checkboxes__label" for="nationality">
-                Enzootic abortion of ewes (EAE)
-              </label>
-            </div>
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="disease-2">
-              <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
-                Border disease (BD)
-              </label>
-            </div>
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="disease-3">
-              <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
-                Toxoplasmosis
-              </label>
-            </div>
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="disease-4">
-              <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
-                Ewe nutrition status
-              </label>
-            </div>
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="disease-5">
-              <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
-                Liver fluke
-              </label>
-            </div>
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="disease-6">
-              <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
-                Tick-borne fever
-              </label>
-            </div>
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="disease-7">
-              <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
-                Other
-              </label>
-            </div>
+          {% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+
+          {{ govukCheckboxes({
+            name: "diseases",
+            fieldset: {
+           
+            },
+          
+            items: [
+              {
+                value: "disease-1",
+                text: "Joint ill"
+              },
+              {
+                value: "disease-2",
+                text: "Lameness"
+              },
+              {
+                value: "disease-3",
+                text: "Foot rot"
+              },
+              {
+                value: "disease-4",
+                text: "Scald"
+              },
+              {
+                value: "disease-5",
+                text: "Contagious ovine digital dermatitis (CODD)"
+              },
+              {
+                value: "disease-6",
+                text: "Granuloma"
+              },
+              {
+                value: "disease-7",
+                text: "Heel or toe abscess"
+              },
+              {
+                value: "disease-8",
+                text: "Shelly hoof"
+              },
+              {
+                value: "disease-9",
+                text: "Tick pyaemia"
+              },
+              {
+                value: "disease-10",
+                text: "Other"
+              }
+            ]
+          }) }}
+         
           </div>
         </fieldset>
       </div>

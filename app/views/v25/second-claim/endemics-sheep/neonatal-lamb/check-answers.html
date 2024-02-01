@@ -50,6 +50,19 @@ Review the health and welfare of your livestock
         </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key govuk-!-width-one-third">
+            21 or more sheep
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="visit-date">
+              Change<span class="govuk-visually-hidden"> visit date</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-width-one-third">
             Number of animals
           </dt>
           <dd class="govuk-summary-list__value">
@@ -89,23 +102,37 @@ Review the health and welfare of your livestock
 
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Test results URN
+            Disease-focused package chosen
           </dt>
           <dd class="govuk-summary-list__value">
-            URN-7374-48BC 
+            [Disease-focused package type]
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="test-reference">
-              Change<span class="govuk-visually-hidden"> test reference</span>
+            <a class="govuk-link" href="vet-rcvs">
+              Change<span class="govuk-visually-hidden"> RCVS number</span>
             </a>
           </dd>
         </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Test results
+            Disease the vet tested for
           </dt>
           <dd class="govuk-summary-list__value">
-            Positive 
+            [Disease selected]
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="vet-rcvs">
+              Change<span class="govuk-visually-hidden"> RCVS number</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Results
+          </dt>
+          <dd class="govuk-summary-list__value">
+            [Result selected]
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="test-reference">
@@ -114,9 +141,18 @@ Review the health and welfare of your livestock
           </dd>
         </div>
 
+
       </dl>
 
     </div>
+
+    <p>By submitting your claim, you confirm that:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>you understand you may have to provide evidence to the Rural Payments Agency to support this claim</li>
+      <li>all the information you have provided in this claim is correct to the best of your knowledge</li>
+    </ul>
+
+   <br>
 
     <form action="/form-handler" method="post" novalidate>
 
