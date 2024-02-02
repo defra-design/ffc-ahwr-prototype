@@ -1,4 +1,4 @@
-{% extends "layouts/layout.html" %}
+ {% extends "layouts/layout.html" %}
 
 {% block pageTitle %}
 Index page
@@ -76,6 +76,20 @@ Review the health and welfare of your livestock
         </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key govuk-!-width-one-third">
+            Date of testing
+          </dt>
+          <dd class="govuk-summary-list__value">
+            6 November 2022
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="visit-date">
+   Change <span class="govuk-visually-hidden"> visit date</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-width-one-third">
             21 or more sheep
           </dt>
           <dd class="govuk-summary-list__value">
@@ -128,10 +142,11 @@ Review the health and welfare of your livestock
 
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Disease-focused package chosen
+            Disease test and result
           </dt>
           <dd class="govuk-summary-list__value">
-            [Disease-focused package type]
+            Condition 1 (Positive)
+Condition 2 (Clinical symptoms present)
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="vet-rcvs">
@@ -139,34 +154,6 @@ Review the health and welfare of your livestock
             </a>
           </dd>
         </div>
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Disease the vet tested for
-          </dt>
-          <dd class="govuk-summary-list__value">
-            [Disease selected]
-          </dd>
-          <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="vet-rcvs">
-              Change<span class="govuk-visually-hidden"> RCVS number</span>
-            </a>
-          </dd>
-        </div>
-
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Results
-          </dt>
-          <dd class="govuk-summary-list__value">
-            [Result selected]
-          </dd>
-          <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="test-reference">
-              Change<span class="govuk-visually-hidden"> test reference</span>
-            </a>
-          </dd>
-        </div>
-
 
       </dl>
 
