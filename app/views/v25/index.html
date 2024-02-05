@@ -23,10 +23,11 @@ AHWR Private Beta
   <div class="govuk-grid-column-two-thirds">
     <span class="govuk-caption-xl">Private Beta Prototype</span>
     <h1 class="govuk-heading-xl govuk-!-margin-bottom-7">The Annual Health and Welfare Review & Endemics Disease</h1>
-    <span class="govuk-caption-m">Vet Visits Sprint 43 - 45</span>
+    <span class="govuk-caption-m">Vet Visits Sprint 48 -  49</span>
     <h2 class="govuk-heading-m govuk-!-margin-bottom-7">Version 25.0</h2>
 
-
+<!-- Review table -->
+<h2 class="govuk-heading-l">Claim journey: annual health and welfare review</h2>
 <table class="govuk-table">
 
   <thead class="govuk-table__head">
@@ -45,18 +46,12 @@ AHWR Private Beta
       </th>
       <td class="govuk-table__cell">
         <ul class="govuk-list">
-          <li><a href="../v25/first-claim/start.html" target="_blank">First claim journey</a></li>
+          <li><a href="../v25/first-claim/start.html" target="_blank">First review claim</a></li>
         </ul>
       </td>
   <td class="govuk-table__cell">
-    <ul class="govuk-list">
-      <li>Starting point of the service</li>
-      <li>The farmer is sent to a guidance page providing an overview of what to expect from the review.
-        From there, a link passes the user onto the service start page.
-        The start button initialises the application process.
-        The farmer enters into an agreement with Defra and arranges their own vet visit.
-      </li>
-  </ul></td>
+  The first claim a farmer makes through the service.  They must select a species which they'll claim for throughout the life of the service.  
+  </td>
 </tr>
 <tr class="govuk-table__row">
   <th scope="row" class="govuk-table__header">
@@ -64,7 +59,7 @@ AHWR Private Beta
   </th>
   <td class="govuk-table__cell">
     <ul class="govuk-list">
-      <li>Second claim journey:
+      <li>Second review claim:
         <ul>
           <li><a href="../v25/second-claim/review-beef/vet-visits-beef.html">Beef cattle</a></li>
           <li><a href="../v25/second-claim/review-dairy/vet-visits-dairy.html">Dairy cattle</a></li>
@@ -75,13 +70,356 @@ AHWR Private Beta
     </ul>
   </td>
 <td class="govuk-table__cell">
+  This journey simulates a subsequent review claim, where the species being claimed for was defined in the first review claim.
+</td>
+</tr>
+</table>
+
+<h3 class="govuk-heading-m">Exceptions screens</h3>
+
+<table class="govuk-table">
+
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+    <th class="govuk-table__header" scope="col">User</th>
+    <th class="govuk-table__header" scope="col">Journey</th>
+    <th class="govuk-table__header" scope="col">Description</th>
+    </tr>
+  </thead>
+
+
+  <tbody class="govuk-table__body">
+    
+
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+  </th>
+  <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      <li><a href="#" target="_blank">You cannot continue with your claim</a></li>
+    </ul>
+  </td>
+<td class="govuk-table__cell">
+  10 months has not elapsed since the last time the vet visited the farm.
+</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+  </th>
+  <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      <li><a href="#" target="_blank">You cannot continue with your claim</a></li>
+    </ul>
+  </td>
+<td class="govuk-table__cell">
+  10 months has not elapsed since the last time the vet visited the farm.
+</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+  </th>
+  <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      <li><a href="#" target="_blank">You cannot continue with your claim</a></li>
+    </ul>
+  </td>
+<td class="govuk-table__cell">
+  You do not have the minimum number of livestock.
+</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+  </th>
+  <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      <li><a href="#" target="_blank">You cannot continue with your claim</a></li>
+    </ul>
+  </td>
+<td class="govuk-table__cell">
+  The number of animals you have entered does not meet the minimum required.
+</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+  </th>
+  <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      <li><a href="#" target="_blank">There could be a problem with your claim</a></li>
+    </ul>
+  </td>
+<td class="govuk-table__cell">
+  If all the lambs weren’t tested, you cannot continue and need to ask the vet to test again. 
+</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+  </th>
+  <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      <li><a href="#" target="_blank">You cannot continue with your claim    </a></li>
+    </ul>
+  </td>
+<td class="govuk-table__cell">
+  There must have been at least five oral fluid samples tested. 
+</td>
+</tr>
+
+
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+  </th>
+  <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      <li><a href="../v25/rejected-claim-2/vet-visits-progress.html" target="_blank">You cannot continue with your claim</a></li>
+    </ul>
+  </td>
+<td class="govuk-table__cell">
+A new claim cannot be made as the farmer had a review or endemics claim rejected within the past 10 months. They must wait unti 10 months has elapsed to make anew claim.
+  </td>
+</tr>
+</table>
+
+<!-- Endemics table -->
+<br><h2 class="govuk-heading-l">Claim journey: endemics follow-up</h2>
+<table class="govuk-table">
+
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+    <th class="govuk-table__header" scope="col">User</th>
+    <th class="govuk-table__header" scope="col">Journey</th>
+    <th class="govuk-table__header" scope="col">Description</th>
+    </tr>
+  </thead>
+
+
+  <tbody class="govuk-table__body">
+  <tr class="govuk-table__row">
+    <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+    </th>
+    <td class="govuk-table__cell">
+      <ul class="govuk-list">
+        <li><a href="£" target="_blank">Pigs</a></li>
+        <li><a href="£" target="_blank">Pigs (returning old world user)</a></li>
+      </ul>
+    </td>
+    <td class="govuk-table__cell">
+      
+    </td>
+    </tr> 
+
+  <tr class="govuk-table__row">
+    <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+    </th>
+    <td class="govuk-table__cell">
+      <ul class="govuk-list">
+        <li><a href="£" target="_blank">Beef cattle</a></li>
+        <li><a href="£" target="_blank">Beef cattle (returning old world user)</a></li>
+      </ul>
+    </td>
+    <td class="govuk-table__cell">
+      <a href="£" target="_blank">Date of endemics vet visit less than ten months since previous endemics visit</a>
+    </td>
+    </tr>  
+
+
+  <tr class="govuk-table__row">
+    <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+    </th>
+    <td class="govuk-table__cell">
+      You cannot continue with your claim
+    </ul>
+    </td>
+    <td class="govuk-table__cell">
+      <a href="£" target="_blank">Date of endemics sampling more than 10 months since last review visit date</a>
+    </td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">
+      <p>Farmer</p>
+      </th>
+      <td class="govuk-table__cell">
+      You cannot continue your journey
+      </td>
+      <td class="govuk-table__cell">
+        <a href="£" target="_blank">Date of endemics sampling less than 10 months since last endemic visit date</a>
+      </td>
+      </tr>
+  
+
+
+</table>
+
+<br><h3 class="govuk-heading-m">Exceptions screens</h3>
+<table class="govuk-table">
+
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+    <th class="govuk-table__header" scope="col">User</th>
+    <th class="govuk-table__header" scope="col">Journey</th>
+    <th class="govuk-table__header" scope="col">Description</th>
+    </tr>
+  </thead>
+
+
+  <tbody class="govuk-table__body">
+  <tr class="govuk-table__row">
+    <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+    </th>
+    <td class="govuk-table__cell">
+      You cannot continue with your claim
+    </ul>
+    </td>
+    <td class="govuk-table__cell">
+      <a href="£" target="_blank">More than 10 months have elapsed since last review visit and endemics visit date</a>
+    </td>
+    </tr> 
+
+  <tr class="govuk-table__row">
+    <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+    </th>
+    <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      You cannot continue with your claim
+    </ul>
+    </td>
+    <td class="govuk-table__cell">
+      <a href="£" target="_blank">Date of endemics vet visit less than ten months since previous endemics visit</a>
+    </td>
+    </tr>  
+
+
+  <tr class="govuk-table__row">
+    <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+    </th>
+    <td class="govuk-table__cell">
+      You cannot continue with your claim 
+    </ul>
+    </td>
+    <td class="govuk-table__cell">
+      <a href="£" target="_blank">Date of endemics sampling more than 10 months since last review visit date</a>
+    </td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">
+      <p>Farmer</p>
+      </th>
+      <td class="govuk-table__cell">
+        You cannot continue with your claim 
+      </td>
+      <td class="govuk-table__cell">
+        <a href="£" target="_blank">Date of endemics sampling less than 10 months since last endemic visit date</a>
+      </td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">
+        <p>Farmer</p>
+        </th>
+        <td class="govuk-table__cell">
+          You cannot continue with your claim 
+        </td>
+        <td class="govuk-table__cell">
+          <a href="£" target="_blank">The number of samples tested does not match the amount needed to complete your claim.</a>
+        </td>
+        </tr>
+
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">
+          <p>Farmer</p>
+          </th>
+          <td class="govuk-table__cell">
+            You cannot continue with your claim 
+          </td>
+          <td class="govuk-table__cell">
+            <a href="£" target="_blank">You need to ask the vet to complete a  biosecurity assessment.</a>
+          </td>
+          </tr>
+  
+
+
+</table>
+
+<!-- Inline validation errors table -->
+<h2 class="govuk-heading-l">Inline validation errors</h2>
+<table class="govuk-table">
+
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+    <th class="govuk-table__header" scope="col">User</th>
+    <th class="govuk-table__header" scope="col">Screen</th>
+    <th class="govuk-table__header" scope="col">Description</th>
+    </tr>
+  </thead>
+
+
+  <tbody class="govuk-table__body">
+    
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+  </th>
+  <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      <li>Choose your livestock</li>
+    </ul>
+  </td>
+<td class="govuk-table__cell">
 <ul class="govuk-list">
-  <li>Starting point of the service</li>
-  <li>The farmer is sent to a guidance page providing an overview of what to expect from the review.
-    From there, a link passes the user onto the service start page.
-    The start button initialises the application process.
-    The farmer enters into an agreement with Defra and arranges their own vet visit.
-  </li>
+  <li><a href="../v25/first-claim/which-review-annual-error">Livestock type not selected</a></li>
+</ul></td>
+</tr>
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+  </th>
+  <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      <li>Which type of review are you claiming for [species]?</li>
+    </ul>
+  </td>
+<td class="govuk-table__cell">
+<ul class="govuk-list">
+  <li><a href="../v25/second-claim/review-beef/which-type-error">Review type not selected</a> </li>
+</ul></td>
+</tr>
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+  </th>
+  <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      <li>Date of visit</li>
+    </ul>
+  </td>
+<td class="govuk-table__cell">
+<ul class="govuk-list">
+  <li><a href="../v25/second-claim/review-beef/date-of-visit-empty.html">Day/ year/ month is blank</a></li>
+  <li><a href="../v25/second-claim/review-beef/date-of-visit-no-year.html">Input did not include a year</a> </li>
+  <li><a href="../v25/second-claim/review-beef/date-of-visit-no-month.html">Input did not include a month</a></li>
+  <li><a href="../v25/second-claim/review-beef/date-of-visit-no-day.html">Input did not include a day</a> </li>
+  <li><a href="../v25/second-claim/review-beef/date-of-visit-not-real-date.html">Input was not a real date (i.e. included days and months that do not exist)</a> </li>
+  <li><a href="../v25/second-claim/review-beef/date-of-visit-not-real-date.html">Input was not in the past</a> </li>
+  <li><a href="../v25/second-claim/review-beef/date-of-visit-not-agreement-date.html">Date was given as before agreement date</a> </li>
 </ul></td>
 </tr>
 
@@ -91,17 +429,19 @@ AHWR Private Beta
   </th>
   <td class="govuk-table__cell">
     <ul class="govuk-list">
-      <li><a href="../v25/rejected-claim-3/vet-visits-progress.html" target="_blank">Second claim too early journey</a></li>
+      <li>When were samples taken?</li>
     </ul>
   </td>
 <td class="govuk-table__cell">
 <ul class="govuk-list">
-  <li>Starting point of the service</li>
-  <li>The farmer is sent to a guidance page providing an overview of what to expect from the review.
-    From there, a link passes the user onto the service start page.
-    The start button initialises the application process.
-    The farmer enters into an agreement with Defra and arranges their own vet visit.
-  </li>
+  <li><a href="../v25/second-claim/review-beef/date-of-testing-empty.html">Day/ year/ month is blank</a></li>
+  <li><a href="../v25/second-claim/review-beef/date-of-testing-no-year.html">Input did not include a year</a> </li>
+  <li><a href="../v25/second-claim/review-beef/date-of-testing-no-month.html">Input did not include a month</a></li>
+  <li><a href="../v25/second-claim/review-beef/date-of-testing-no-day.html">Input did not include a day</a> </li>
+  <li><a href="../v25/second-claim/review-beef/date-of-testing-not-real-date.html">Input was not a real date (i.e. included days and months that do not exist)</a> </li>
+  <li><a href="../v25/second-claim/review-beef/date-of-testing-not-real-date.html">Input was not in the past</a> </li>
+  <li><a href="../v25/second-claim/review-beef/date-of-testing-not-agreement-date.html">Date was given as before agreement date</a> </li>
+
 </ul></td>
 </tr>
 
@@ -111,17 +451,12 @@ AHWR Private Beta
   </th>
   <td class="govuk-table__cell">
     <ul class="govuk-list">
-      <li><a href="../v25/endemics-rejected/vet-visits-progress.html" target="_blank">Endemics rejected 1</a></li>
+      <li>Did you have [X] or more [species] on the date of the review?</li>
     </ul>
   </td>
 <td class="govuk-table__cell">
 <ul class="govuk-list">
-  <li>Starting point of the service</li>
-  <li>The farmer is sent to a guidance page providing an overview of what to expect from the review.
-    From there, a link passes the user onto the service start page.
-    The start button initialises the application process.
-    The farmer enters into an agreement with Defra and arranges their own vet visit.
-  </li>
+  <li><a href="../v25/second-claim/review-beef/beef-numbers-error">User did not select an option</a></li>
 </ul></td>
 </tr>
 
@@ -131,17 +466,13 @@ AHWR Private Beta
   </th>
   <td class="govuk-table__cell">
     <ul class="govuk-list">
-      <li><a href="../v25/endemics-rejected-2/vet-visits-progress.html" target="_blank">Endemics rejected 2</a></li>
+      <li>How many animals did the vet test?</li>
     </ul>
   </td>
 <td class="govuk-table__cell">
 <ul class="govuk-list">
-  <li>Starting point of the service</li>
-  <li>The farmer is sent to a guidance page providing an overview of what to expect from the review.
-    From there, a link passes the user onto the service start page.
-    The start button initialises the application process.
-    The farmer enters into an agreement with Defra and arranges their own vet visit.
-  </li>
+  <li><a href="../v25/second-claim/review-beef/eligible-empty">User did not enter a value</a></li>
+  <li><a href="../v25/second-claim/review-beef/eligible-not-a-number">User did not enter a numeric value</a> </li>
 </ul></td>
 </tr>
 
@@ -151,17 +482,13 @@ AHWR Private Beta
   </th>
   <td class="govuk-table__cell">
     <ul class="govuk-list">
-      <li><a href="../v25/second-claim/endemics-pig-old-world/old-world.html" target="_blank">Pig old world journey</a></li>
+      <li>What is the vet’s name?</li>
     </ul>
   </td>
 <td class="govuk-table__cell">
 <ul class="govuk-list">
-  <li>Starting point of the service</li>
-  <li>The farmer is sent to a guidance page providing an overview of what to expect from the review.
-    From there, a link passes the user onto the service start page.
-    The start button initialises the application process.
-    The farmer enters into an agreement with Defra and arranges their own vet visit.
-  </li>
+
+  <li><a href="../v25/second-claim/review-beef/vet-name-error">User did not enter a value</a> </li>
 </ul></td>
 </tr>
 
@@ -171,17 +498,12 @@ AHWR Private Beta
   </th>
   <td class="govuk-table__cell">
     <ul class="govuk-list">
-      <li><a href="../v25/rejected-claim-2/vet-visits-progress.html" target="_blank">Rejected claim journey</a></li>
+      <li>What is the vet's Royal College of Veterinary Surgeons (RCVS) number?</li>
     </ul>
   </td>
 <td class="govuk-table__cell">
 <ul class="govuk-list">
-  <li>Starting point of the service</li>
-  <li>The farmer is sent to a guidance page providing an overview of what to expect from the review.
-    From there, a link passes the user onto the service start page.
-    The start button initialises the application process.
-    The farmer enters into an agreement with Defra and arranges their own vet visit.
-  </li>
+  <li><a href="../v25/second-claim/review-beef/vet-rcvs-error">User did not enter a value</a> </li>
 </ul></td>
 </tr>
 
@@ -191,38 +513,198 @@ AHWR Private Beta
   </th>
   <td class="govuk-table__cell">
     <ul class="govuk-list">
-      <li>Inline validation errors</li>
+      <li>What’s the laboratory unique reference number (URN) for the test results?</li>
     </ul>
   </td>
 <td class="govuk-table__cell">
 <ul class="govuk-list">
-  <li><a href="../v25/first-claim/which-review-annual-error">Choose your livestock</a> livestock type not selected</li>
-  <li><a href="../v25/second-claim/review-beef/which-type-error">Which type of review are you claiming for beef cattle?</a> review type not selected</li>
-  <li><a href="../v25/second-claim/review-beef/date-of-visit-empty.html">Date of visit</a> day/ year/ month is blank</li>
-  <li><a href="../v25/second-claim/review-beef/date-of-visit-no-year.html">Date of visit</a> input did not include a year</li>
-  <li><a href="../v25/second-claim/review-beef/date-of-visit-no-month.html">Date of visit</a> input did not include a month</li>
-  <li><a href="../v25/second-claim/review-beef/date-of-visit-no-day.html">Date of visit</a> input did not include a day</li>
-  <li><a href="../v25/second-claim/review-beef/date-of-visit-not-real-date.html">Date of visit</a> input was not a real date (i.e., date is in the future)</li>
-  <li><a href="../v25/second-claim/review-beef/date-of-visit-not-agreement-date.html">Date of visit</a> date was given as before agreement date</li>
-  <li><a href="../v25/second-claim/review-beef/date-of-testing-radio-not-selected.html">When were samples taken?</a> radio button was not selected</li>
-  <li><a href="../v25/second-claim/review-beef/date-of-testing-blank.html">When were samples taken?</a> “on another date” is left blank</li>
-  <li><a href="../v25/second-claim/review-beef/date-of-testing-no-year.html">When were samples taken?</a> date of testing must include a year</li>
-  <li><a href="../v25/second-claim/review-beef/date-of-testing-no-month.html">When were samples taken?</a> date of testing must include a month</li>
-  <li><a href="../v25/second-claim/review-beef/date-of-testing-no-day.html">When were samples taken?</a> date of testing must include a day</li>
-  <li><a href="../v25/second-claim/review-beef/date-of-testing-not-real-date.html">When were samples taken?</a> input was not a real date (i.e., date is in the future)</li>
-  <li><a href="../v25/second-claim/review-beef/date-of-testing-not-review-date.html">When were samples taken?</a> date of testing was given as before review visit date</li>
-  <li><a href="../v25/second-claim/review-beef/beef-numbers-error">Did you have [X] or more [species] on the date of the review? </a>user did not select an option</li>
-  <li><a href="../v25/second-claim/review-beef/eligible-empty">How many animals did the vet test?</a> user did not enter a value</li>
-  <li><a href="../v25/second-claim/review-beef/eligible-not-a-number">How many animals did the vet test?</a> user did not enter a numeric value</li>
-  <li><a href="../v25/second-claim/review-beef/vet-name-error">What is the vet’s name?</a> user did not enter a value</li>
-  <li><a href="../v25/second-claim/review-beef/vet-rcvs-error">What is the vet's Royal College of Veterinary Surgeons (RCVS) number?</a> user did not enter a value</li>
-  <li><a href="../v25/second-claim/review-beef/test-reference-error">What’s the laboratory unique reference number (URN) for the test results?</a> user did not enter a value</li>
-  <li><a href="../v25/second-claim/review-beef/test-results-error">What was the test result?</a> user did not select a test result</li>
-  <li><a href="../v25/second-claim/review-pig/pigs-endemics-empty">How many oral fluid samples did the vet do?</a> user did not enter a value</li>
-  <li><a href="../v25/second-claim/review-pig/pigs-endemics-not-a-number">How many oral fluid samples did the vet do?</a> user did not enter a numeric value</li>
+  <li><a href="../v25/second-claim/review-beef/test-reference-error">User did not enter a value</a></li>
 </ul></td>
 </tr>
 
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+  </th>
+  <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      <li>What’s the laboratory unique reference number (URN) or certificate number of the test results?</li>
+    </ul>
+  </td>
+<td class="govuk-table__cell">
+<ul class="govuk-list">
+  <li><a href="#">User did not enter a value</a></li>
+</ul></td>
+</tr>
+
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+  </th>
+  <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      <li>What was the test result?</li>
+    </ul>
+  </td>
+<td class="govuk-table__cell">
+<ul class="govuk-list">
+  <li><a href="../v25/second-claim/review-beef/test-results-error">User did not select a test result</a></li>
+</ul></td>
+</tr>
+
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+  </th>
+  <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      <li>What was the review test result?</li>
+    </ul>
+  </td>
+<td class="govuk-table__cell">
+<ul class="govuk-list">
+  <li><a href="#">User did not select a test result</a></li>
+</ul></td>
+</tr>
+
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+  </th>
+  <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      <li>What was the endemic disease test result?</li>
+    </ul>
+  </td>
+<td class="govuk-table__cell">
+<ul class="govuk-list">
+  <li><a href="#">User did not select a test result</a></li>
+</ul></td>
+</tr>
+
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+  </th>
+  <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      <li>How many oral fluid samples did the vet do?</li>
+    </ul>
+  </td>
+<td class="govuk-table__cell">
+<ul class="govuk-list">
+  <li><a href="../v25/second-claim/review-pig/pigs-endemics-empty">User did not enter a value</a> </li>
+  <li><a href="../v25/second-claim/review-pig/pigs-endemics-not-a-number">User did not enter a numeric value</a></li>
+</ul></td>
+</tr>
+
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+  </th>
+  <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      <li>Which package did you choose?</li>
+    </ul>
+  </td>
+<td class="govuk-table__cell">
+<ul class="govuk-list">
+  <li><a href="#">User did not select a package</a></li>
+</ul></td>
+</tr>
+
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+  </th>
+  <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      <li>What did the vet test or sample for?</li>
+    </ul>
+  </td>
+<td class="govuk-table__cell">
+<ul class="govuk-list">
+  <li><a href="#">User did not select an option</a></li>
+</ul></td>
+</tr>
+
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+  </th>
+  <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      <li>What was the [disease or condition] test result?</li>
+    </ul>
+  </td>
+<td class="govuk-table__cell">
+<ul class="govuk-list">
+  <li><a href="#">User did not select an option</a></li>
+</ul></td>
+</tr>
+
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+  </th>
+  <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      <li>What is the herd vaccination status?</li>
+    </ul>
+  </td>
+<td class="govuk-table__cell">
+<ul class="govuk-list">
+  <li><a href="#">User did not select an option</a></li>
+</ul></td>
+</tr>
+
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+  </th>
+  <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      <li>How many samples were tested?</li>
+    </ul>
+  </td>
+<td class="govuk-table__cell">
+<ul class="govuk-list">
+  <li><a href="#">User did not enter a value</a></li>
+  <li><a href="#">User did not enter a numeric value</a></li>
+</ul></td>
+</tr>
+
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+  </th>
+  <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      <li>What is the disease status category?</li>
+    </ul>
+  </td>
+<td class="govuk-table__cell">
+<ul class="govuk-list">
+  <li><a href="#">User did not enter a value</a></li>
+</ul></td>
+</tr>
+
+<tr class="govuk-table__row">
+  <th scope="row" class="govuk-table__header">
+    <p>Farmer</p>
+  </th>
+  <td class="govuk-table__cell">
+    <ul class="govuk-list">
+      <li>Did the vet do a biosecurity assessment?</li>
+    </ul>
+  </td>
+<td class="govuk-table__cell">
+<ul class="govuk-list">
+  <li><a href="#">User did not select an option</a></li>
+  <li><a href="#">User did not provide a value for assessment percentage (where applicable)</a></li>
+  <li><a href="#">User did not provide a numeric value for assessment percentage (where applicable)</a></li>
+</ul></td>
+</tr>
 
 </table>
 
