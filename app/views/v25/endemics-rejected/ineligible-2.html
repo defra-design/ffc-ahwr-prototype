@@ -1,0 +1,56 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+      {% set serviceName %}
+  Review the health and welfare of your livestock 
+{% endset %}
+
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">You cannot continue with your claim </h1>
+
+
+
+    <p class="govuk-body"><a href="*">There must be at least 10 months between your endemics follow-ups.</a></p>
+    <p class="govuk-body">If you entered the wrong date, you’ll need to go back and enter the correct date.</p>
+
+    <p class="govuk-body"><a href="../second-claim/endemics-sheep/date-of-visit.html">Enter the date the vet last visited your farm.</a></p>
+
+
+    {{ govukWarningText({
+      text: "Your claim will be checked by our team.",
+      iconFallbackText: "Warning"
+    }) }}
+
+   
+    <h2 class="govuk-heading-m">Get help with your claim</h2>
+    
+    <p class="govuk-body">
+     If you need help with your claim, contact the Rural Payments Agency by email or phone.
+    </p>
+      <ul class="govuk-list">
+        <li>Email: <a class="govuk-link" href="mailto:ruralpayments@defra.gov.uk">ruralpayments@defra.gov.uk</a></li>
+        <br>
+        <li>Telephone: 03000 200 301</li>
+        <li>Monday to Friday, 8:30am to 5pm, except bank holidays</li>
+
+      </ul>
+      <p class="govuk-body"><a class="govuk-link" href="https://www.gov.uk/call-charges">Find out about call charges (opens in new tab)</a></p>
+
+      <p class="govuk-body">Have your agreement number with you when you call or include it in your email.</p>
+
+    <br><br><br><br>
+  </div>
+</div>
+
+{% endblock %}

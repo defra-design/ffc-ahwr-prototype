@@ -146,7 +146,7 @@ router.post('*/review-sheep/which-type', function (req, res) {
   if (selectedType === "review-1") {
     res.redirect('/v25/second-claim/review-sheep/date-of-visit');
   } else if (selectedType === "review-2") {
-    res.redirect('/v25/second-claim/endemics-sheep/endemics-package');
+    res.redirect('/v25/second-claim/endemics-sheep/date-of-visit');
   } else {
     // Handle other cases or redirect to an error page
     res.redirect('/v25/second-claim/endemics-sheep/*');
@@ -385,5 +385,41 @@ router.post('*/endemics-package', function (req, res) {
     res.redirect('/v25/second-claim/endemics-sheep/endemics-package-error');
   }
 });
+
+// Route for the form submission
+router.post('*/test-numbers', function (req, res) {
+  // Retrieve the submitted value
+  const testedSamples = req.body.width2;
+
+  // Check the submitted value
+  if (testedSamples === '6' || testedSamples === '30') {
+    // Continue to the next page
+    res.redirect('/v25/second-claim/endemics-pig/disease-status');
+  } else {
+    // Redirect to the error page
+    res.redirect('/v25/second-claim/endemics-pig/test-numbers-error.html');
+  }
+});
+
+// Route for the form submission
+router.post('*/biosecurity-pigs', function (req, res) {
+  // Retrieve the submitted value
+  const biosecurityAssessment = req.body.contact;
+
+  // Check the submitted value
+  if (biosecurityAssessment === 'email') {
+    // Continue to the check-answers page
+    res.redirect('/v25/second-claim/endemics-pig/check-answers.html');
+  } else if (biosecurityAssessment === 'phone') {
+    // Redirect to the biosecurity-error page
+    res.redirect('/v25/second-claim/endemics-pig/biosecurity-error.html');
+  } else {
+    // Handle other cases or redirect to an error page
+    res.redirect('/v25/second-claim/endemics-pig/biosecurity-error.html');
+  }
+});
+
+
+
 
 module.exports = router
