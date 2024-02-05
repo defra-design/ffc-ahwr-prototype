@@ -16,7 +16,7 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-    <div class="govuk-error-summary" data-module="govuk-error-summary" style="display: none;">
+    <div class="govuk-error-summary" data-module="govuk-error-summary">
       <div role="alert">
         <h2 class="govuk-error-summary__title">
           There is a problem
@@ -24,7 +24,7 @@
         <div class="govuk-error-summary__body">
           <ul class="govuk-list govuk-error-summary__list">
             <li id="validation-error-item">
-              <a href="#eligibility-bps">Enter the number of animals tested</a>
+              <a href="#eligibility-bps">Number of animals tested cannot be 0</a>
             </li>
           </ul>
         </div>
@@ -33,7 +33,7 @@
 
     <form class="form" method="post" onsubmit="return validateForm(event);">
 
-      <div class="govuk-form-group">
+      <div class="govuk-form-group govuk-form-group--error">
         <fieldset class="govuk-fieldset" aria-describedby="eligibility-bps-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h1 class="govuk-fieldset__heading">
@@ -50,8 +50,8 @@
           <label class="govuk-label" for="number-of-animals">
             Enter a number
           </label>
-          <p id="validation-error" class="govuk-error-message" style="display: none;">
-            <span class="govuk-visually-hidden">Error:</span>Enter the number of animals tested
+          <p id="validation-error" class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span> Number of animals tested cannot be 0
           </p>
           <input type="text" id="number-of-animals" name="number-of-animals" class="govuk-input govuk-input--width-10">
 
@@ -82,19 +82,19 @@
     
             // Redirect to the desired URL based on the input value
             var numberOfAnimals = parseInt(input.value.trim());
-            if (numberOfAnimals >= 10) {
+            if (numberOfAnimals >= 5) {
               window.location.href = 'vet-name.html';
             } else {
-              window.location.href = 'lamb-error.html';
+              window.location.href = 'number-of-animals-ineligible.html';
             }
             return true; // Form submission allowed
           } else {
             // Non-numeric input, display error message and add error styling
-            validationErrorItem.innerHTML = 'Enter the number of animals tested';
+            validationErrorItem.innerHTML = 'Number of animals tested must only include numbers';
           }
         } else {
           // Empty input, display error message and add error styling
-          validationErrorItem.innerHTML = 'Enter the number of animals tested';
+          validationErrorItem.innerHTML = 'Number of animals tested must only include numbers';
         }
     
         errorElement.style.display = 'block';
