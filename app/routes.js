@@ -312,7 +312,7 @@ router.post('*/parasites', function (req, res) {
 
   // Perform logic based on the selected diseases
   if (selectedDiseases.includes("disease-1")) {
-    res.redirect('/v25/second-claim/endemics-sheep/parasites/positive-negative-1');
+    res.redirect('/v25/second-claim/endemics-sheep/parasites/clinical-symptoms-1');
   } else if (selectedDiseases.includes("disease-2")) {
     res.redirect('/v25/second-claim/endemics-sheep/parasites/positive-negative-2');
 
