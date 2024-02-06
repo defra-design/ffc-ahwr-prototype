@@ -19,6 +19,21 @@
 
   <div class="govuk-grid-column-two-thirds">
 
+    <div class="govuk-error-summary" data-module="govuk-error-summary">
+      <div role="alert">
+        <h2 class="govuk-error-summary__title">
+          There is a problem
+        </h2>
+        <div class="govuk-error-summary__body">
+          <ul class="govuk-list govuk-error-summary__list">
+            <li>
+              <a href="#" id="error-summary-link">Enter the disease status category</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
 
 <form class="form" action="biosecurity-pigs.html" method="get">
 
@@ -31,8 +46,13 @@
         <div id="waste-hint" class="govuk-hint">
           You can find this on the summary the vet gave you.
         </div>
+
+        
    
-    <div class="govuk-form-group">
+    <div class="govuk-form-group govuk-form-group--error">
+      <div id="validation-error" class="govuk-error-message">
+      <span class="govuk-visually-hidden">Error:</span> Enter the disease status category
+    </div>
     <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
     </legend>

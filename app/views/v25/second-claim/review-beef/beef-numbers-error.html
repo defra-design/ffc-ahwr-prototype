@@ -25,7 +25,7 @@ Question page
           <div class="govuk-error-summary__body">
             <ul class="govuk-list govuk-error-summary__list">
               <li>
-                <a href="#eligibility-bps">Select a response</a>
+                <a href="#eligibility-bps">Select yes or no</a>
               </li>
             </ul>
           </div>
@@ -44,10 +44,10 @@ Question page
             <div id="eligibility-hint" class="govuk-hint">
               You can find this on the summary the vet gave you.
             </div>
-            <p id="passport-issued-error" class="govuk-error-message">
-              <span class="govuk-visually-hidden">Error:</span> Select a response
-            </p>
-            <div class="govuk-radios govuk-radios--inline">
+            <div id="passport-issued-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span> Select yes or no
+            </div>
+            <div class="govuk-radios govuk-radios--inline govuk-form-group--error">
               <div class="govuk-radios__item">
                 <input class="govuk-radios__input" id="eligibility-cattle" name="eligibility-cattle" type="radio" value="eligible" onclick="setLocation(this);" {{ checked("eligibility-cattle", "eligibility-cattle-yes") }}>
                 <label class="govuk-label govuk-radios__label" for="eligibility-cattle">
