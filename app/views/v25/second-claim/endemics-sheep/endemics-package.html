@@ -22,63 +22,60 @@
 
     <form class="form" method="post">
       <div class="govuk-form-group">
-
+    
         <h1 class="govuk-label-wrapper">
           <label class="govuk-label govuk-label--l" for="rcvs-number">
             Which package did you choose?
           </label>
         </h1>
-
+    
         <div id="dob-hint" class="govuk-hint">
-        You can find this on the summary the vet gave you.</div>
-  
+          You can find this on the summary the vet gave you.
+        </div>
+    
         <br>
-  
+    
         {% from "govuk/components/radios/macro.njk" import govukRadios %}
-
+    
         {{ govukRadios({
-    name: "package",
-    fieldset: {
-   
-    },
-  
-    items: [
-      {
-        value: "package-1",
-        text: "Improved ewe performance"
-      },
-      {
-        value: "package-2",
-        text: "Improved reproductive performance"
-      },
-      {
-        value: "package-3",
-        text: "Improved lamb performance"
-      },
-      {
-        value: "package-4",
-        text: "Improved neonatal lamb survival"
-      },
-      {
-        value: "package-5",
-        text: " Reduced level of external parasites"
-      },
-      {
-        value: "package-6",
-        text: "Reduced level of lameness"
-      }
-    ]
-  }) }}
-
-    <br>
-    <br>
+          name: "package",
+          fieldset: {},
+          items: [
+            {
+              value: "package-1",
+              text: "Improved ewe performance"
+            },
+            {
+              value: "package-2",
+              text: "Improved reproductive performance"
+            },
+            {
+              value: "package-3",
+              text: "Improved lamb performance"
+            },
+            {
+              value: "package-4",
+              text: "Improved neonatal lamb survival"
+            },
+            {
+              value: "package-5",
+              text: " Reduced level of external parasites"
+            },
+            {
+              value: "package-6",
+              text: "Reduced level of lameness"
+            }
+          ]
+        }) }}
     
-    <button class="govuk-button" data-module="govuk-button">Continue</button>
+        <br>
+        <br>
     
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+    
+      </div>
     </form>
-     
-      <!-- autocomplete form end -->
-
+    
 
 
 
