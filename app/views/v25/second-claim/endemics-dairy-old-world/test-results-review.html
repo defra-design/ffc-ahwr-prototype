@@ -3,15 +3,9 @@
 {% block pageTitle %}
 Index page
 {% endblock %}
-<<<<<<< HEAD
-{% set serviceName %}
-  Review the health and welfare of your livestock 
-{% endset %}
-=======
  {% set serviceName %}
 Review the health and welfare of your livestock
 {% endset%}
->>>>>>> main
 
 {% block beforeContent %}
   <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
@@ -23,12 +17,18 @@ Review the health and welfare of your livestock
   <div class="govuk-grid-column-two-thirds">
     <div class="govuk-form-group">
       <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="urn">
-        What was the endemic disease test result?
+        What was the review test result?
         </label>
       </h1>
-      <div id="passport-number-hint" class="govuk-hint">
-        You can find this on the summary the vet gave you.
-      </div>
+      <p class="govuk-body">This should:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>be the test result from your last livestock health and welfare review</li>
+        <li>have happened within the last 10 months</li>
+      </ul>
+      <p class="govuk-body">You may need to provide evidence of the summary from this review. </p>
+
+
+
       <div class="govuk-radios" data-module="govuk-radios">
         <div class="govuk-radios__item">
           <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
@@ -50,7 +50,7 @@ Review the health and welfare of your livestock
 
     {{ govukButton({
       text: "Continue",
-      href: "biosecurity-cattle"
+      href: "test-reference-cattle"
     }) }}
 
   </div>
