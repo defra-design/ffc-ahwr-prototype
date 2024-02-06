@@ -364,35 +364,27 @@ router.post('*/lameness', function (req, res) {
 
 // Route for the packages form submission
 router.post('*/endemics-package', function (req, res) {
-  // Log the entire req.body to the console
-  console.log(req.body);
-
   // Retrieve selected packages from the form data
   const selectedPackages = req.body.package;
 
   // Perform logic based on the selected packages
-  if (selectedPackages && Array.isArray(selectedPackages) && selectedPackages.length > 0) {
-    if (selectedPackages.includes("package-1")) {
-      res.redirect('/v25/second-claim/endemics-sheep/ewe');
-    } else if (selectedPackages.includes("package-2")) {
-      res.redirect('/v25/second-claim/endemics-sheep/reproductive');
-    } else if (selectedPackages.includes("package-3")) {
-      res.redirect('/v25/second-claim/endemics-sheep/lamb');
-    } else if (selectedPackages.includes("package-4")) {
-      res.redirect('/v25/second-claim/endemics-sheep/neonatal-lamb');
-    } else if (selectedPackages.includes("package-5")) {
-      res.redirect('/v25/second-claim/endemics-sheep/parasites');
-    } else if (selectedPackages.includes("package-6")) {
-      res.redirect('/v25/second-claim/endemics-sheep/lameness');
-    } else {
-      // Handle other cases if needed
-    }
+  if (selectedPackages.includes("package-1")) {
+    res.redirect('/v25/second-claim/endemics-sheep/ewe');
+  } else if (selectedPackages.includes("package-2")) {
+    res.redirect('/v25/second-claim/endemics-sheep/reproductive');
+  } else if (selectedPackages.includes("package-3")) {
+    res.redirect('/v25/second-claim/endemics-sheep/lamb');
+  } else if (selectedPackages.includes("package-4")) {
+    res.redirect('/v25/second-claim/endemics-sheep/neonatal-lamb');
+  } else if (selectedPackages.includes("package-5")) {
+    res.redirect('/v25/second-claim/endemics-sheep/parasites');
+  } else if (selectedPackages.includes("package-6")) {
+    res.redirect('/v25/second-claim/endemics-sheep/lameness');
   } else {
-    // Handle the case where no checkbox is selected
+    // Handle other cases or redirect to an error page
     res.redirect('/v25/second-claim/endemics-sheep/endemics-package-error');
   }
 });
-
 
 // Route for the form submission
 router.post('*/test-numbers', function (req, res) {
