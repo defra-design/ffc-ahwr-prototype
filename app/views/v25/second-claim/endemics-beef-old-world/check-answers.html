@@ -3,15 +3,9 @@
 {% block pageTitle %}
 Index page
 {% endblock %}
-<<<<<<< HEAD
             {% set serviceName %}
   Review the health and welfare of your livestock 
 {% endset %}
-=======
-             {% set serviceName %}
-Review the health and welfare of your livestock
-{% endset%}
->>>>>>> main
 
 {% block beforeContent %}
   <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
@@ -27,7 +21,31 @@ Review the health and welfare of your livestock
 
       <dl class="govuk-summary-list govuk-!-margin-bottom-9">
         
- 
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-width-one-third">
+            Business name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Arthington Farm
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="check-details">
+              <span class="govuk-visually-hidden"> check-details</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-width-one-third">
+            Livestock          </dt>
+          <dd class="govuk-summary-list__value">
+            [Livestock type]
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="check-details">
+              <span class="govuk-visually-hidden"> check-details</span>
+            </a>
+          </dd>
+        </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key govuk-!-width-one-third">
             Type of review
@@ -53,10 +71,10 @@ Review the health and welfare of your livestock
         </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key govuk-!-width-one-third">
-            Number of animals
+            Date of testing
           </dt>
           <dd class="govuk-summary-list__value">
-            34
+            6 November 2022
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="visit-date">
@@ -64,6 +82,33 @@ Review the health and welfare of your livestock
             </a>
           </dd>
         </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            11 or more beef cattle
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+   <dd class="govuk-summary-list__actions">
+     <a class="govuk-link" href="vet-name">
+       Change<span class="govuk-visually-hidden"> 11 or more beef cattle</span>
+     </a>
+   </dd>
+ </div>
+
+ <div class="govuk-summary-list__row">
+  <dt class="govuk-summary-list__key">
+    Animals tested
+  </dt>
+  <dd class="govuk-summary-list__value">
+    [Number]
+  </dd>
+<dd class="govuk-summary-list__actions">
+<a class="govuk-link" href="vet-name">
+Change<span class="govuk-visually-hidden"> number of animals tested</span>
+</a>
+</dd>
+</div>
         <div class="govuk-summary-list__row">
                  <dt class="govuk-summary-list__key">
             Vet's name
@@ -92,7 +137,21 @@ Review the health and welfare of your livestock
 
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Test results URN
+           Review result
+          </dt>
+          <dd class="govuk-summary-list__value">
+            [result]
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="vet-rcvs">
+              Change<span class="govuk-visually-hidden"> review result</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            URN  or test certificate
           </dt>
           <dd class="govuk-summary-list__value">
             URN-7374-48BC 
@@ -105,21 +164,41 @@ Review the health and welfare of your livestock
         </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Test results
+           Endemic disease result
           </dt>
           <dd class="govuk-summary-list__value">
-            Positive 
+            [Result]
+
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="test-reference">
-              Change<span class="govuk-visually-hidden"> test reference</span>
+              Change<span class="govuk-visually-hidden"> endemic disease result</span>
             </a>
           </dd>
         </div>
-
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Biosecurity assessment
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="test-reference">
+              Change<span class="govuk-visually-hidden"> biosecurity assessment</span>
+            </a>
+          </dd>
+        </div>
       </dl>
 
-    </div>
+  
+    <p>By submitting your claim, you confirm that:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>you understand you may have to provide evidence to the Rural Payments Agency to support this claim</li>
+      <li>all the information you have provided in this claim is correct to the best of your knowledge</li>
+    </ul>
+
+   <br>
 
     <form action="/form-handler" method="post" novalidate>
 
@@ -133,7 +212,7 @@ Review the health and welfare of your livestock
       </a>
  -->
       {{ govukButton({
-      text: "Continue",
+      text: "Submit your claim",
       href: "confirmation"
       }) }}
 

@@ -32,57 +32,74 @@ Index page
     <form class="form" method="POST">
       <div class="govuk-form-group govuk-form-group--error">
 
-                  <h1 class="govuk-heading-l">Date of visit</h1>
+<h1 class="govuk-heading-l">When were samples taken?</h1>
 
 
-        <fieldset class="govuk-fieldset" role="group" aria-describedby="when-review-hint">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-            
-
           </legend>
-         
-          <div id="when-review-hint" class="govuk-hint">
-            When the vet last visited the farm for the review. 
-            <br><br>
-            For example, 27 3 2022
+
+          <div id="changed-name-hint" class="govuk-hint">
+           This is the date samples were taken to test for health conditions or diseases.
           </div>
-          <p id="validation-error" class="govuk-error-message">
-            <span class="govuk-visually-hidden">Error:</span>Date of sampling cannot be before the date your agreement began
-          </p>
-          <div class="govuk-date-input" id="when-review">
-            <div class="govuk-date-input__item">
-              <div class="govuk-form-group">
-                <label class="govuk-label govuk-date-input__label" for="when-review-day">
-                  Day
-                </label>
-                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="when-review-day"
-                  name="when-review-day" type="text" pattern="[0-9]*" inputmode="numeric">
-              </div>
+          
+
+
+
+
+
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email"
+                data-aria-controls="conditional-contact">
+              <label class="govuk-label govuk-radios__label" for="contact">
+              During the review visit
+              </label>
             </div>
-            <div class="govuk-date-input__item">
-              <div class="govuk-form-group">
-                <label class="govuk-label govuk-date-input__label" for="when-review-month">
-                  Month
-                </label>
-                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="when-review-month"
-                  name="when-review-month" type="text" pattern="[0-9]*" inputmode="numeric">
-              </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone"
+                data-aria-controls="conditional-contact-2">
+              <label class="govuk-label govuk-radios__label" for="contact-2">
+                On another date
+              </label>
+              
             </div>
-            <div class="govuk-date-input__item">
-              <div class="govuk-form-group">
-                <label class="govuk-label govuk-date-input__label" for="when-review-year">
-                  Year
-                </label>
-                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="when-review-year"
-                  name="when-review-year" type="text" pattern="[0-9]*" inputmode="numeric">
+            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+              <div class="govuk-date-input" id="when-review">
+                <p id="validation-error" class="govuk-error-message">
+                  <span class="govuk-visually-hidden">Error:</span>Date of sampling cannot be before the date your agreement began
+                </p>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="when-review-day">
+                      Day
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="when-review-day"
+                      name="when-review-day" type="text" pattern="[0-9]*" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="when-review-month">
+                      Month
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="when-review-month"
+                      name="when-review-month" type="text" pattern="[0-9]*" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="when-review-year">
+                      Year
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="when-review-year"
+                      name="when-review-year" type="text" pattern="[0-9]*" inputmode="numeric">
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
         </fieldset>
       </div>
-
-
-      
 
 
 
@@ -94,7 +111,7 @@ Index page
                 -->
             {{ govukButton({
             text: "Continue",
-            href: "date-of-testing"
+            href: "beef-numbers"
             
             }) }}
     </form>
