@@ -6,7 +6,7 @@ Index page
 
 {% set serviceName %}
 Review the health and welfare of your livestock
-{% endset%}
+{% endset %}
 
 {% block beforeContent %}
   <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
@@ -49,19 +49,20 @@ Review the health and welfare of your livestock
             </label>
           </div>
           <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-contact">
-            <div class="govuk-form-group">
+            <div class="govuk-form-group disease-condition-group">
               <label class="govuk-label" for="contact-by-email">
-                Enter the name of the condition or disease
+                Enter the name of the disease or condition
               </label>
-              <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contactByEmail" type="email" spellcheck="false" autocomplete="email">
-            </div>
-            <div class="govuk-form-group">
+              <input class="govuk-input govuk-!-width-one-third" name="disease[]" type="text" spellcheck="false" autocomplete="off">
               <label class="govuk-label" for="contact-by-email">
                 Enter the test result
               </label>
-              <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contactByEmail" type="email" spellcheck="false" autocomplete="email">
+              <input class="govuk-input govuk-!-width-one-third" name="condition[]" type="text" spellcheck="false" autocomplete="off">
             </div>
+            <br>
+            <button type="button" class="govuk-button add-another-btn" onclick="addDiseaseCondition()">Add Another</button>
           </div>
+
         </div>
       </div>
 
@@ -75,5 +76,13 @@ Review the health and welfare of your livestock
     </div>
   </div>
 </div>
+
+<script>
+  function addDiseaseCondition() {
+    const container = document.querySelector('.disease-condition-group');
+    const clone = container.cloneNode(true);
+    container.parentNode.appendChild(clone);
+  }
+</script>
 
 {% endblock %}
