@@ -3,7 +3,8 @@
 {% block pageTitle %}
 Index page
 {% endblock %}
- {% set serviceName %}
+
+{% set serviceName %}
 Review the health and welfare of your livestock
 {% endset%}
 
@@ -16,8 +17,9 @@ Review the health and welfare of your livestock
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <div class="govuk-form-group">
-      <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="urn">
-        Give details about the test for ‘Other’
+      <h1 class="govuk-label-wrapper">
+        <label class="govuk-label govuk-label--l" for="urn">
+          Give details about the test for ‘Other’
         </label>
       </h1>
       <div id="passport-number-hint" class="govuk-hint">
@@ -38,16 +40,39 @@ Review the health and welfare of your livestock
         <input class="govuk-input govuk-input--width-20" id="width-20" name="width20" type="text">
       </div>
 
+      <div class="govuk-form-group">
+        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email" data-aria-controls="conditional-contact">
+            <label class="govuk-label govuk-checkboxes__label" for="contact">
+              Add another disease or condition
+            </label>
+          </div>
+          <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-contact">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="contact-by-email">
+                Enter the name of the condition or disease
+              </label>
+              <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contactByEmail" type="email" spellcheck="false" autocomplete="email">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="contact-by-email">
+                Enter the test result
+              </label>
+              <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contactByEmail" type="email" spellcheck="false" autocomplete="email">
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <br>
- 
+      <br>
 
+      {{ govukButton({
+        text: "Continue",
+        href: "check-answers"
+      }) }}
 
-    {{ govukButton({
-      text: "Continue",
-      href: "check-answers"
-    }) }}
-
+    </div>
   </div>
 </div>
 
