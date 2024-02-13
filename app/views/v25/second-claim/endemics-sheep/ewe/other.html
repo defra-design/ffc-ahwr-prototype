@@ -1,11 +1,11 @@
 {% extends "layouts/layout.html" %}
 
 {% block pageTitle %}
-Index page
+  Index page
 {% endblock %}
 
 {% set serviceName %}
-Review the health and welfare of your livestock
+  Review the health and welfare of your livestock
 {% endset %}
 
 {% block beforeContent %}
@@ -13,76 +13,65 @@ Review the health and welfare of your livestock
 {% endblock %}
 
 {% block content %}
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-    <div class="govuk-form-group">
-      <h1 class="govuk-label-wrapper">
-        <label class="govuk-label govuk-label--l" for="urn">
-          Give details about the test for ‘Other’
-        </label>
-      </h1>
-      <div id="passport-number-hint" class="govuk-hint">
-        You can find this on the summary the vet gave you.
-      </div>
-
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
       <div class="govuk-form-group">
-        <label class="govuk-label" for="two-thirds">
-          Enter the name of the condition or disease
-        </label>
-        <input class="govuk-input govuk-!-width-two-thirds" id="two-thirds" name="twoThirds" type="text">
-      </div>
+        <h1 class="govuk-label-wrapper">
+          <label class="govuk-label govuk-label--l" for="urn">
+            Give details about the test for ‘Other’
+          </label>
+        </h1>
+        <div id="passport-number-hint" class="govuk-hint">
+          You can find this on the summary the vet gave you.
+        </div>
 
-      <div class="govuk-form-group">
-        <label class="govuk-label" for="width-20">
-          Enter the test result
-        </label>
-        <input class="govuk-input govuk-input--width-20" id="width-20" name="width20" type="text">
-      </div>
+        <form method="post">
+          <fieldset class="govuk-fieldset moj-add-another__item">
 
-      <div class="govuk-form-group">
-        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email" data-aria-controls="conditional-contact">
-            <label class="govuk-label govuk-checkboxes__label" for="contact">
-              Add another disease or condition
-            </label>
-          </div>
-          <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-contact">
-            <div class="govuk-form-group disease-condition-group">
-              <label class="govuk-label" for="contact-by-email">
-                Enter the name of the disease or condition
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="condition">
+                Enter the name of the condition or disease
               </label>
-              <input class="govuk-input govuk-!-width-one-third" name="disease[]" type="text" spellcheck="false" autocomplete="off">
-              <label class="govuk-label" for="contact-by-email">
+              <input class="govuk-input govuk-!-width-two-thirds" id="condition" name="condition" type="text">
+            </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="test-result">
                 Enter the test result
               </label>
-              <input class="govuk-input govuk-!-width-one-third" name="condition[]" type="text" spellcheck="false" autocomplete="off">
+              <input class="govuk-input govuk-input--width-20" id="test-result" name="testResult" type="text">
             </div>
+
             <br>
-            <button type="button" class="govuk-button govuk-button--secondary" onclick="addDiseaseCondition()">Add another</button>
-          </div>
 
-        </div>
+            <button type="button" class="govuk-button govuk-button--secondary moj-add-another__add-button govuk-!-margin-bottom-4" data-module="govuk-button" onclick="addAnother()">
+              Add another
+            </button>
+
+            <a class="govuk-button" data-module="govuk-button" href="check-answers">
+              Continue
+            </a>
+
+          </fieldset>
+        </form>
       </div>
-
-      <br>
-
-      {{ govukButton({
-        text: "Continue",
-        href: "check-answers"
-      }) }}
-
     </div>
   </div>
-</div>
 
-<script>
-  function addDiseaseCondition() {
-    const container = document.querySelector('.disease-condition-group');
-    const clone = container.cloneNode(true);
-    container.parentNode.appendChild(clone);
-  }
-</script>
+  <script>
+    function addAnother() {
+      const container = document.querySelector('.moj-add-another__item');
+      const clone = container.cloneNode(true);
+      const removeButton = document.createElement('button');
+      removeButton.type = 'button';
+      removeButton.classList.add('govuk-button', 'govuk-button--secondary', 'moj-add-another__remove-button');
+      removeButton.textContent = 'Remove';
+      removeButton.onclick = function () {
+        container.parentNode.removeChild(clone);
+      };
+      clone.appendChild(removeButton);
+      container.parentNode.appendChild(clone);
+    }
+  </script>
 
 {% endblock %}
