@@ -1,4 +1,4 @@
-{% extends "layouts/layout-defra-authoriser.html" %}
+{% extends "layouts/layout-defra.html" %}
 
 {% block pageTitle %}
 Back office: User application
@@ -26,15 +26,50 @@ Annual Health and Welfare Back Office
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-panel govuk-panel--confirmation govuk-!-text-align-left" style="background-color:#fafafa; border-color:#000000; border-width:medium;">
+      <a href="x-fearnley-farm-pig.html" role="button" draggable="false" class="govuk-link govuk-body" style="color:#505a5f; float:right;" data-module="govuk-button">
+        Back
+      </a>
+      <br>
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Reject claim
+            </h1>
+            <div class="govuk-!-padding-bottom-7"></div>
+    
+            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="on-hold-validation" name="on-hold-validation" type="checkbox" value="on-hold-validation">
+                <label class="govuk-label govuk-checkboxes__label" for="on-hold-validation">
+                  I have reviewed the completed verification check and agree the claim has not passed the checks. I'm satisfied we have tried to resolve the failures with the agreement holder, but they’re unable to do so. I reject this claim for payment.
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="issues-log" name="issues-log" type="checkbox" value="issues-log">
+                <label class="govuk-label govuk-checkboxes__label" for="issues-log">
+                  I have updated the verification checklist. I have sent it back to the recommender to attach to the customer’s record in the Customer Relationship Management system.
+                </label>
+              </div>
+            </div>
+          </legend></fieldset>
+        </div>
+    
+        <a href="/v25/back-office-authoriser/internal/x-fearnley-farm-dairy-rejected" role="button" draggable="false" class="govuk-button govuk-button govuk-!-margin-bottom-2" data-module="govuk-button">
+          Confirm and continue
+        </a>
+      </div>
     
     <h1 class="govuk-caption-l govuk-!-margin-bottom-3">
-      Agreement number: AHWR-F021-723B
+      Claim number: AHWR-F021-715S
     </h1>
 
     <h2 class="govuk-heading-l">
-      Arthington Farm
-      <strong class="govuk-tag govuk-tag--blue">
-        Claimed
+      Dairy Cattle K
+      <strong class="govuk-tag govuk-tag--orange">
+       Recommended to reject
       </strong>
     </h2>
 
@@ -45,7 +80,7 @@ Annual Health and Welfare Back Office
           Name
         </dt>
         <dd class="govuk-summary-list__value">
-          <p>Jane Doe</p>
+          <p>Phil Fearnley</p>
         </dd>
       </div>
 
@@ -54,7 +89,7 @@ Annual Health and Welfare Back Office
           SBI number
         </dt>
         <dd class="govuk-summary-list__value">
-          106599006
+          103491987
         </dd>
       </div>
 
@@ -63,7 +98,7 @@ Annual Health and Welfare Back Office
           Address
         </dt>
         <dd class="govuk-summary-list__value">
-          Primrose Ln, Arthington, Otley LS21 1PH
+          Manor Farm Rd, Harleston IP20 0AX
         </dd>
       </div>
 
@@ -72,7 +107,7 @@ Annual Health and Welfare Back Office
           Email address 
         </dt>
         <dd class="govuk-summary-list__value">
-          <p>janedoe@yahoo.com</p>
+          <p>fearnley-sons@hotmail.com</p>
         </dd>
       </div>
     </dl>
@@ -83,12 +118,12 @@ Annual Health and Welfare Back Office
         Contents
       </h2>
       <ul class="govuk-tabs__list">
-        <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+        <!--<li class="govuk-tabs__list-item">
           <a class="govuk-tabs__tab" href="#applied">
             Agreement
           </a>
-        </li>
-        <li class="govuk-tabs__list-item">
+        </li>-->
+        <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
           <a class="govuk-tabs__tab" href="#claimed">
             Claim
           </a>
@@ -100,25 +135,21 @@ Annual Health and Welfare Back Office
             </li>
       </ul>
 
-      <div class="govuk-tabs__panel" id="applied">
-        <h2 class="govuk-heading-l">Claimed</h2>
+      <!--<div class="govuk-tabs__panel" id="applied">
+        <h2 class="govuk-heading-l">In check</h2>
         <table class="govuk-table">
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
               <tr class="govuk-table__row">
                 <th scope="row" class="govuk-table__header">Date of agreement</th>
-                <td class="govuk-table__cell">1/11/2022</td>
+                <td class="govuk-table__cell">13/02/2023</td>
               </tr>
               <th scope="row" class="govuk-table__header">Business details correct</th>
               <td class="govuk-table__cell">Yes</td>
             </tr>
             <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Type of review</th>
-              <td class="govuk-table__cell">Beef</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Number of livestock</th>
-              <td class="govuk-table__cell">Minimum 11</td>
+              <th scope="row" class="govuk-table__header">Terms and conditions</th>
+              <td class="govuk-table__cell">Accepted</td>
             </tr>
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Agreement accepted</th>
@@ -126,45 +157,58 @@ Annual Health and Welfare Back Office
             </tr>
           </tbody>
         </table>
-      </div>
+      </div>-->
+      
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-        <h2 class="govuk-heading-l">Claimed</h2>
+        <h2 class="govuk-heading-l">In check</h2>
         <table class="govuk-table">
           <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Date of review</th>
-              <td class="govuk-table__cell">10/10/2022</td>
-            </tr>
-            <tbody class="govuk-table__body">
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header">Date of testing</th>
-                <td class="govuk-table__cell">10/10/2022</td>
-              </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Date of claim	</th>
-              <td class="govuk-table__cell">16/10/2022</td>
+ <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Date of review	</th>
+              <td class="govuk-table__cell">19/04/2023</td>
             </tr>
             <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Date of claim</th>
+              <td class="govuk-table__cell">18/02/2023</td>
+            </tr> 
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Type of review</th>
+              <td class="govuk-table__cell">Dairy</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Number of livestock</th>
+              <td class="govuk-table__cell">Minimum 11</td>
+            </tr>
+  <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Review details confirmed</th>
               <td class="govuk-table__cell">Yes</td>
-            </tr>
+            </tr>   
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Vet’s name</th>
-              <td class="govuk-table__cell">Joe Bloggs</td>
+              <td class="govuk-table__cell">Corrine Bailey</td>
             </tr>
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Vet’s RCVS number</th>
-              <td class="govuk-table__cell">1234567</td>
+              <td class="govuk-table__cell">10938475</td>
             </tr>
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Test results unique 
                 reference number (URN)</th>
-              <td class="govuk-table__cell">URN-7374-48BC</td>
+              <td class="govuk-table__cell">URN-7366-28DE</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">BVD test result </th>
+              <td class="govuk-table__cell">Negative</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Biosecurity assessment result </th>
+              <td class="govuk-table__cell">67%</td>
             </tr>
           </tbody>
         </table>
       </div>
+
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
         <h2 class="govuk-heading-l">History</h2>
         <table class="govuk-table">
@@ -201,21 +245,48 @@ Annual Health and Welfare Back Office
               <td class="govuk-table__cell">Authorise to pay</td>
               <td class="govuk-table__cell">Amanda Hassan</td>
             </tr>
+      </div>    
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+              <!--<h2 class="govuk-cookie-banner__heading govuk-heading-m">Recommender action required</h2>
+
+              <div class="govuk-cookie-banner__content">
+              <p class="govuk-body">This customer has successfully submitted an application.</p>
+              <p class="govuk-body">Use the case information to decide whether to recommend or reject this applicant for payment.</p>
+          
+          <div class="govuk-button-group">
+            <a href="x-greenfield-&-co-approvingclaim#claimed" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+              Pay</a>
+            </button>
+            <a href="x-greenfield-&-co-rejectingclaim#claimed" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+              Reject</a>
+            </button>
+
+          </div>
+          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+        </div>-->
+
       </div>
 
-    </tbody>
-  </table>
-</div>
-      
-      
-      <br>
-      <a href="x-arthington-farm-withdrawing.html" class="govuk-link govuk-body" style="color:#d4351c">
-        Withdraw
-      </a>
+
+      </form>
+
+      </div>
+
       
       
     </div>
+
   </div>
 </div>
 
+
+
+
 {% endblock %}
+
+
