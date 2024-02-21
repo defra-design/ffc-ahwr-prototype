@@ -26,6 +26,24 @@ Annual Health and Welfare Back Office
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" data-module="govuk-error-summary" tabindex="-1">
+      <h2 class="govuk-error-summary__title" id="error-summary-title">
+        There is a problem
+      </h2>
+      <div class="govuk-error-summary__body">
+        
+        <ul class="govuk-list govuk-error-summary__list">
+        
+          <li>
+          
+            <a href="#">Select both checkboxes</a>
+          
+          </li>
+        
+        </ul>
+      </div>
+    </div>
     
     <h1 class="govuk-caption-l govuk-!-margin-bottom-3">
       Reference: AHWR-F021-724S
@@ -40,7 +58,7 @@ Annual Health and Welfare Back Office
 
     <!-- "Pop-up" box -->
     <div class="govuk-panel govuk-panel--confirmation govuk-!-text-align-left" style="background-color:#fafafa; border-color:#000000; border-width:medium;">
-      <div class="govuk-form-group">
+      <div class="govuk-form-group govuk-form-group--error">
         <a href="x-greenfield.html" role="button" draggable="false" class="govuk-link govuk-body" style="color:#505a5f; float:right;" data-module="govuk-button">
           Back
         </a>
@@ -52,7 +70,9 @@ Annual Health and Welfare Back Office
             </h1>
             <div class="govuk-!-padding-bottom-7"></div>
 
-
+            <p id="checkbox-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span> Select both checkboxes
+            </p>
 
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">
             <div class="govuk-checkboxes__item">

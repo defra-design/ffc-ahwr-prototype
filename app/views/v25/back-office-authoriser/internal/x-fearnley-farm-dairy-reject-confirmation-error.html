@@ -26,8 +26,9 @@ Annual Health and Welfare Back Office
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
+    
 
-    <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" data-module="govuk-error-summary">
+    <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" data-module="govuk-error-summary" tabindex="-1">
       <h2 class="govuk-error-summary__title" id="error-summary-title">
         There is a problem
       </h2>
@@ -50,9 +51,9 @@ Annual Health and Welfare Back Office
     </h1>
 
     <h2 class="govuk-heading-l">
-      Pig herd M
-      <strong class="govuk-tag govuk-tag--purple">
-       On hold
+      Dairy Cattle K
+      <strong class="govuk-tag govuk-tag--orange">
+       Recommended to reject
       </strong>
     </h2>
 
@@ -67,33 +68,33 @@ Annual Health and Welfare Back Office
         <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h1 class="govuk-fieldset__heading">
-              Move claim to 'in check'
+              Reject claim
             </h1>
             <div class="govuk-!-padding-bottom-7"></div>
             <p id="checkbox-error" class="govuk-error-message">
               <span class="govuk-visually-hidden">Error:</span> Select both checkboxes
             </p>
-          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-              <label class="govuk-label govuk-checkboxes__label" for="waste">
-                I have reviewed this claim and recommend it is&nbsp;moved to ‘in check‘
-            </label></div>
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="issues-log" name="issues-log" type="checkbox" value="carcasses">
-              <label class="govuk-label govuk-checkboxes__label" for="waste">
-                I have updated the issues log to show this claim is now ‘in check’
-            </label></div>
-          </div>
-  
-        </legend></fieldset>
+            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="on-hold-validation" name="on-hold-validation" type="checkbox" value="on-hold-validation">
+                <label class="govuk-label govuk-checkboxes__label" for="on-hold-validation">
+                  I have reviewed the completed verification check and agree the claim has not passed the checks. I'm satisfied we have tried to resolve the failures with the agreement holder, but they’re unable to do so. I reject this claim for payment.
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="issues-log" name="issues-log" type="checkbox" value="issues-log">
+                <label class="govuk-label govuk-checkboxes__label" for="issues-log">
+                  I have updated the verification checklist. I have sent it back to the recommender to attach to the customer’s record in the Customer Relationship Management system.
+                </label>
+              </div>
+            </div>
+          </legend></fieldset>
+        </div>
+    
+        <a href="/v25/back-office-authoriser/internal/x-fearnley-farm-dairy-rejected" role="button" draggable="false" class="govuk-button govuk-button govuk-!-margin-bottom-2" data-module="govuk-button">
+          Confirm and continue
+        </a>
       </div>
-
-      <a href="../internal/x-fearnley-farm-pig-in-check" role="button" draggable="false" class="govuk-button govuk-button govuk-!-margin-bottom-2" data-module="govuk-button">
-        Confirm and continue
-      </a>
-
-    </div>
 
     <!--User details-->
     <dl class="govuk-summary-list govuk-!-margin-bottom-9">
@@ -108,7 +109,7 @@ Annual Health and Welfare Back Office
 
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-          SBI number:
+          SBI number
         </dt>
         <dd class="govuk-summary-list__value">
           103491987
@@ -126,7 +127,7 @@ Annual Health and Welfare Back Office
 
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-          Email Address
+          Email address 
         </dt>
         <dd class="govuk-summary-list__value">
           <p>fearnley-sons@hotmail.com</p>
@@ -158,7 +159,7 @@ Annual Health and Welfare Back Office
       </ul>
 
       <!--<div class="govuk-tabs__panel" id="applied">
-        <h2 class="govuk-heading-l">On hold</h2>
+        <h2 class="govuk-heading-l">In check</h2>
         <table class="govuk-table">
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
@@ -183,7 +184,7 @@ Annual Health and Welfare Back Office
       
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
-        <h2 class="govuk-heading-l">On hold</h2>
+        <h2 class="govuk-heading-l">In check</h2>
         <table class="govuk-table">
           <tbody class="govuk-table__body">
  <tr class="govuk-table__row">
@@ -196,11 +197,11 @@ Annual Health and Welfare Back Office
             </tr> 
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Type of review</th>
-              <td class="govuk-table__cell">Pig</td>
+              <td class="govuk-table__cell">Dairy</td>
             </tr>
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Number of livestock</th>
-              <td class="govuk-table__cell">Minimum 51</td>
+              <td class="govuk-table__cell">Minimum 11</td>
             </tr>
   <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">Review details confirmed</th>
@@ -220,28 +221,15 @@ Annual Health and Welfare Back Office
               <td class="govuk-table__cell">URN-7366-28DE</td>
             </tr>
             <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Herd vaccination status </th>
-              <td class="govuk-table__cell">Vaccinated</td>
+              <th scope="row" class="govuk-table__header">BVD test result </th>
+              <td class="govuk-table__cell">Negative</td>
             </tr>
             <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Tests carried out by vet </th>
-              <td class="govuk-table__cell">4</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Herd vaccination status </th>
-              <td class="govuk-table__cell">Vaccinated</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Disease status category</th>
-              <td class="govuk-table__cell">4</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Biosecurity assessment</th>
-              <td class="govuk-table__cell">85%</td>
+              <th scope="row" class="govuk-table__header">Biosecurity assessment result </th>
+              <td class="govuk-table__cell">67%</td>
             </tr>
           </tbody>
         </table>
-      
       </div>
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
@@ -283,11 +271,27 @@ Annual Health and Welfare Back Office
       </div>    
           </tbody>
         </table>
-
-        
       </div>
     </div>
-  
+
+              <!--<h2 class="govuk-cookie-banner__heading govuk-heading-m">Recommender action required</h2>
+
+              <div class="govuk-cookie-banner__content">
+              <p class="govuk-body">This customer has successfully submitted an application.</p>
+              <p class="govuk-body">Use the case information to decide whether to recommend or reject this applicant for payment.</p>
+          
+          <div class="govuk-button-group">
+            <a href="x-greenfield-&-co-approvingclaim#claimed" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+              Pay</a>
+            </button>
+            <a href="x-greenfield-&-co-rejectingclaim#claimed" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+              Reject</a>
+            </button>
+
+          </div>
+          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+        </div>-->
 
       </div>
 
@@ -302,59 +306,6 @@ Annual Health and Welfare Back Office
 
   </div>
 </div>
-
-<!--<script>
-  function handleConfirmation() {
-    var onHoldCheckbox = document.getElementById('on-hold-validation');
-    var issuesLogCheckbox = document.getElementById('issues-log');
-
-    if (onHoldCheckbox.checked && issuesLogCheckbox.checked) {
-      // Redirect user to Google if both checkboxes are selected
-      window.location.href = 'https://www.google.com';
-    } else {
-      // Display error message if both checkboxes are not selected
-      var errorSummary = document.createElement('div');
-      errorSummary.className = 'govuk-error-summary';
-      errorSummary.setAttribute('aria-labelledby', 'error-summary-title');
-      errorSummary.setAttribute('role', 'alert');
-      errorSummary.setAttribute('data-module', 'govuk-error-summary');
-
-      var errorTitle = document.createElement('h2');
-      errorTitle.className = 'govuk-error-summary__title';
-      errorTitle.id = 'error-summary-title';
-      errorTitle.textContent = 'There is a problem';
-
-      var errorBody = document.createElement('div');
-      errorBody.className = 'govuk-error-summary__body';
-
-      var errorList = document.createElement('ul');
-      errorList.className = 'govuk-list govuk-error-summary__list';
-
-      var errorItem = document.createElement('li');
-      var errorLink = document.createElement('a');
-      errorLink.href = '/back-office/v18/internal/x-greenfield-recommend-to-pay-check-error#checkbox-error';
-      errorLink.textContent = 'Select both checkboxes';
-      errorItem.appendChild(errorLink);
-
-      errorList.appendChild(errorItem);
-      errorBody.appendChild(errorList);
-
-      errorSummary.appendChild(errorTitle);
-      errorSummary.appendChild(errorBody);
-
-      // Remove existing error summary if it exists
-      var existingErrorSummary = document.querySelector('.govuk-error-summary');
-      if (existingErrorSummary) {
-        existingErrorSummary.parentNode.removeChild(existingErrorSummary);
-      }
-
-      // Insert new error summary below the h2 element
-      var h2Element = document.querySelector('.govuk-heading-l');
-      h2Element.parentNode.insertBefore(errorSummary, h2Element.nextSibling);
-    }
-  }
-</script>-->
-
 
 
 
