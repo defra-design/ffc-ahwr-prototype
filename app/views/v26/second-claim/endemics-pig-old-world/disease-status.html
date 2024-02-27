@@ -1,0 +1,69 @@
+{% extends "layouts/layout.html" %}
+{% set serviceName = "Review the health and welfare of your livestock" %}
+
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+
+<form class="form" action="biosecurity-pigs.html" method="get">
+
+  <div class="govuk-form-group">
+      <h1 class="govuk-label-wrapper">
+        <label class="govuk-label govuk-label--l" for="rcvs-number">
+          What is the disease status catergory?
+        </label>
+      </h1>
+        <div id="waste-hint" class="govuk-hint">
+          You can find this on the summary the vet gave you.
+        </div>
+   
+    <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+    </legend>
+    <div class="govuk-radios" data-module="govuk-radios">
+    <div class="govuk-radios__item">
+    <input class="govuk-radios__input" id="business" name="business" type="radio" value="business1">
+    <label class="govuk-label govuk-radios__label" for="business-1">1
+    </label>
+    </div>
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="business" name="business" type="radio" value="business2">
+      <label class="govuk-label govuk-radios__label" for="business-2">2
+      </label>
+      </div>
+    <div class="govuk-radios__item">
+    <input class="govuk-radios__input" id="business" name="business" type="radio" value="business3">
+    <label class="govuk-label govuk-radios__label" for="business-3">3
+    </label>
+    </div>
+    <div class="govuk-radios__item">
+    <input class="govuk-radios__input" id="business" name="business" type="radio" value="business4">
+    <label class="govuk-label govuk-radios__label" for="business-4">4
+    </label>
+    </div>
+
+<br>
+
+  </div>
+    <button class="govuk-button" data-module="govuk-button">Continue</button>
+    </form>
+     
+      <!-- autocomplete form end -->
+
+  {% endblock %}

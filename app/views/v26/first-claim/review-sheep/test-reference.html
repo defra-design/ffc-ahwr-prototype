@@ -1,0 +1,48 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+<<<<<<< HEAD
+{% set serviceName %}
+  Review the health and welfare of your livestock 
+{% endset %}
+=======
+ {% set serviceName %}
+Review the health and welfare of your livestock
+{% endset%}
+>>>>>>> main
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-form-group">
+      <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="urn">
+What’s the laboratory unique reference number (URN) for the test results?
+        </label>
+      </h1>
+      <label class="govuk-label" for="urn">
+You can find this on the summary the vet gave you.
+      </label>
+      <!--
+      <div id="email-hint" class="govuk-hint govuk-!-width-three-quarters">
+        This number can be found on the test result document or given to you by the vet.
+      </div>
+      -->
+      <input class="govuk-input govuk-!-width-three-quarters" id="urn">
+    </div>
+
+    {{ govukButton({
+      text: "Continue",
+      href: "check-answers"
+    }) }}
+
+  </div>
+</div>
+
+{% endblock %}

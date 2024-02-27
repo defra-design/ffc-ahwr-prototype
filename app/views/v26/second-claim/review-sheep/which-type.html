@@ -1,0 +1,62 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+       {% set serviceName %}
+Review the health and welfare of your livestock
+{% endset%}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <form class="form" method="post" action="*/review-sheep/which-type">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="eligibility-bps-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              What are you claiming for sheep?
+            </h1>
+          </legend>
+
+          <br>
+          
+          {% from "govuk/components/radios/macro.njk" import govukRadios %}
+
+          {{ govukRadios({
+              name: "which-type",
+              fieldset: {
+          
+              },
+          
+              items: [
+                  {
+                      value: "review-1",
+                      text: "Annual health and welfare review"
+                  },
+                  {
+                      value: "review-2",
+                      text: "Endemics follow-up"
+                  }
+              ]
+          }) }}
+
+          <br>
+          <br>
+
+          <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+        </fieldset>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

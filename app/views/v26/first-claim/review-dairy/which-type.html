@@ -1,0 +1,107 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+{% set serviceName %}Review the health and welfare of your livestock{% endset%}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-error-summary" data-module="govuk-error-summary" style="display: none;">
+      <div role="alert">
+          <h2 class="govuk-error-summary__title">
+              There is a problem
+          </h2>
+          <div class="govuk-error-summary__body">
+              <ul class="govuk-list govuk-error-summary__list">
+                  <li>
+                      <a href="#eligibility-bps">Select which type of review you are claiming for</a>
+                  </li>
+              </ul>
+          </div>
+
+      </div>
+  </div>
+
+    <form class="form" method="post" onsubmit="return validateForm(event);">
+
+      <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="eligibility-bps-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                  <h1 class="govuk-fieldset__heading">
+                    Which type of review are you claiming for dairy cattle?
+                  </h1>
+              </legend>
+  
+              <!--<div id="vet-registered-hint" class="govuk-hint govuk-!-margin-bottom-5">
+                  You can have one review every 12 months for one type of livestock
+                  <br><br>
+                  If you’re eligible for more than one type of livestock, you must choose which one you want reviewed.
+              </div>-->
+  
+              <p id="validation-error" class="govuk-error-message" style="display: none;">
+                  <span class="govuk-visually-hidden">Error:</span>Select which type of review you are claiming for
+              </p>
+  
+              <div class="govuk-radios govuk-radios">
+                  <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="eligibility-bps" name="eligibility-bps" type="radio" value="date-of-visit">
+                      <label class="govuk-label govuk-radios__label" for="eligibility-bps">
+                        Annual health and welfare review
+                      </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="eligibility-bps-2" name="eligibility-bps" type="radio" value="../endemics-dairy/test-reference">
+                      <label class="govuk-label govuk-radios__label" for="eligibility-bps-2">
+                        Endemic disease follow-ups
+                      </label>
+                  </div>
+              </div>
+  
+          </fieldset>
+      </div>
+  
+      <button class="govuk-button" data-module="govuk-button" type="submit">Continue</button>
+  
+  </form>
+  
+  <script>
+      function validateForm(event) {
+          event.preventDefault(); // Prevent the default form submission behavior
+  
+          var radios = document.getElementsByName('eligibility-bps');
+          var errorElement = document.getElementById('validation-error');
+          var formGroup = document.querySelector('.govuk-form-group');
+          var errorSummary = document.querySelector('.govuk-error-summary');
+  
+          for (var i = 0; i < radios.length; i++) {
+              if (radios[i].checked) {
+                  errorElement.style.display = 'none';
+                  formGroup.classList.remove('govuk-form-group--error');
+                  errorSummary.style.display = 'none'; // Hide error summary
+                 
+                  
+                  window.location.href = 'date-of-visit.html'; 
+                  return true; // Form submission allowedd
+              }
+          }
+  
+          // No radio button selected, display error message and add error styling
+          errorElement.style.display = 'block';
+          formGroup.classList.add('govuk-form-group--error');
+          errorSummary.style.display = 'block'; // Show error summary
+          return false; // Form submission blocked
+      }
+  </script>
+  
+  </div>
+</div>
+
+{% endblock %}

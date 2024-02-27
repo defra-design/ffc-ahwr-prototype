@@ -1,0 +1,108 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+  Index page
+{% endblock %}
+
+{% set serviceName %}
+  Review the health and welfare of your livestock
+{% endset %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-error-summary" data-module="govuk-error-summary">
+        <div role="alert">
+          <h2 class="govuk-error-summary__title">
+            There is a problem
+          </h2>
+          <div class="govuk-error-summary__body">
+            <ul class="govuk-list govuk-error-summary__list">
+              <li id="validation-error-item">
+                <a href="#eligibility-bps">
+                  Date of visit must be a real date
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <form class="form" method="POST">
+        <div class="govuk-form-group govuk-form-group--error">
+          <h1 class="govuk-heading-l">Date of visit</h1>
+
+          <fieldset class="govuk-fieldset" role="group" aria-describedby="when-review-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m"></legend>
+
+            <div id="when-review-hint" class="govuk-hint">
+              When the vet last visited the farm for the review.
+              <br><br>
+              For example, 27 3 2022
+            </div>
+
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email"
+                  data-aria-controls="conditional-contact">
+                <label class="govuk-label govuk-radios__label" for="contact">
+                  During the visit
+                </label>
+
+                <p id="validation-error" class="govuk-error-message">
+                  <span class="govuk-visually-hidden">Error:</span> Date of visit must be a real date
+                </p>
+
+                <div class="govuk-date-input" id="when-review">
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="when-review-day">
+                        Day
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="when-review-day"
+                        name="when-review-day" type="text" pattern="[0-9]*" inputmode="numeric">
+
+                    </div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="when-review-month">
+                        Month
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="when-review-month"
+                        name="when-review-month" type="text" pattern="[0-9]*" inputmode="numeric">
+                    </div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="when-review-year">
+                        Year
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="when-review-year"
+                        name="when-review-year" type="text" pattern="[0-9]*" inputmode="numeric">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <p class="govuk-body govuk-!-margin-top-4">
+            {{ govukButton({
+              text: "Continue",
+              href: "date-of-testing"
+            }) }}
+          </p>
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+{% endblock %}
+
