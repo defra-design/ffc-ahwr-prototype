@@ -1,0 +1,102 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+  Index page
+{% endblock %}
+
+{% set serviceName %}
+  Review the health and welfare of your livestock
+{% endset %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-form-group">
+
+        <div class="govuk-error-summary" data-module="govuk-error-summary">
+          <div role="alert">
+            <h2 class="govuk-error-summary__title">
+              There is a problem
+            </h2>
+            <div class="govuk-error-summary__body">
+              <ul class="govuk-list govuk-error-summary__list">
+                <li>
+                  <a href="#">Enter the test result</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+        
+        <h1 class="govuk-label-wrapper">
+          <label class="govuk-label govuk-label--l" for="urn">
+            Give details of the other disease tested or sampled for
+          </label>
+        </h1>
+        <div id="passport-number-hint" class="govuk-hint">
+          You can find this on the summary the vet gave you.
+        </div>
+
+        <form method="post">
+          <div id="form-container">
+            <fieldset class="govuk-fieldset moj-add-another__item">
+
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="condition">
+                  Enter the name of the condition or disease
+                </label>
+                <input class="govuk-input govuk-!-width-two-thirds" id="condition" name="condition" type="text">
+              </div>
+
+              <div class="govuk-form-group govuk-form-group--error">
+                <label class="govuk-label" for="national-insurance-number">
+                  Enter the test result
+                </label>
+                <p id="national-insurance-number-error" class="govuk-error-message">
+                  <span class="govuk-visually-hidden">Error:</span> Enter the test result
+
+                </p>
+                <input class="govuk-input govuk-input--error govuk-!-width-two-thirds" id="national-insurance-number" name="nationalInsuranceNumber" type="text" aria-describedby="national-insurance-number-hint national-insurance-number-error">
+              </div>
+
+              <br>
+
+            </fieldset>
+          </div>
+
+          <button type="button" class="govuk-button govuk-button--secondary moj-add-another__add-button govuk-!-margin-bottom-4" data-module="govuk-button" onclick="addAnother()">
+            Add another
+          </button>
+
+          <a class="govuk-button" data-module="govuk-button" href="check-answers">
+            Continue
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function addAnother() {
+      const container = document.getElementById('form-container');
+      const clone = container.firstElementChild.cloneNode(true);
+      container.appendChild(clone);
+      const removeButton = document.createElement('button');
+      removeButton.type = 'button';
+      removeButton.classList.add('govuk-button', 'govuk-button--secondary', 'moj-add-another__remove-button');
+      removeButton.textContent = 'Remove';
+      removeButton.onclick = function () {
+        container.removeChild(clone);
+      };
+      clone.appendChild(removeButton);
+    }
+  </script>
+
+{% endblock %}
