@@ -16,6 +16,25 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <div class="govuk-form-group">
+
+        <div class="govuk-error-summary" data-module="govuk-error-summary">
+          <div role="alert">
+            <h2 class="govuk-error-summary__title">
+              There is a problem
+            </h2>
+            <div class="govuk-error-summary__body">
+              <ul class="govuk-list govuk-error-summary__list">
+                <li>
+                  <a href="#">You've already included this kind of disease</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+        
         <h1 class="govuk-label-wrapper">
           <label class="govuk-label govuk-label--l" for="urn">
             Give details of the other disease tested or sampled for
@@ -29,11 +48,15 @@
           <div id="form-container">
             <fieldset class="govuk-fieldset moj-add-another__item">
 
-              <div class="govuk-form-group">
-                <label class="govuk-label" for="condition">
+              <div class="govuk-form-group govuk-form-group--error">
+                <label class="govuk-label" for="national-insurance-number">
                   Enter the name of the condition or disease
                 </label>
-                <input class="govuk-input govuk-!-width-two-thirds" id="condition" name="condition" type="text">
+                <p id="national-insurance-number-error" class="govuk-error-message">
+                  <span class="govuk-visually-hidden">Error:</span> You've already included this kind of disease
+
+                </p>
+                <input class="govuk-input govuk-input--error govuk-!-width-two-thirds" id="national-insurance-number" name="nationalInsuranceNumber" type="text" aria-describedby="national-insurance-number-hint national-insurance-number-error">
               </div>
 
               <div class="govuk-form-group">
@@ -77,5 +100,3 @@
   </script>
 
 {% endblock %}
-
-
