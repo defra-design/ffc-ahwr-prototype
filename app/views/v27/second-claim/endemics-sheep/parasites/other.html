@@ -1,0 +1,78 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+  Index page
+{% endblock %}
+
+{% set serviceName %}
+  Get funding to improve livestock health and welfare
+{% endset %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-form-group">
+        <h1 class="govuk-label-wrapper">
+          <label class="govuk-label govuk-label--l" for="urn">
+            Give details of the other disease tested or sampled for
+          </label>
+        </h1>
+        <div id="passport-number-hint" class="govuk-hint">
+          You can find this on the summary the vet gave you.
+        </div>
+
+        <form method="post">
+          <fieldset class="govuk-fieldset moj-add-another__item">
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="condition">
+                Enter the name of the condition or disease
+              </label>
+              <input class="govuk-input govuk-!-width-two-thirds" id="condition" name="condition" type="text">
+            </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="test-result">
+                Enter the test result
+              </label>
+              <input class="govuk-input govuk-input--width-20" id="test-result" name="testResult" type="text">
+            </div>
+
+            <br>
+
+            <button type="button" class="govuk-button govuk-button--secondary moj-add-another__add-button govuk-!-margin-bottom-4" data-module="govuk-button" onclick="addAnother()">
+              Add another
+            </button>
+
+            <a class="govuk-button" data-module="govuk-button" href="check-answers">
+              Continue
+            </a>
+
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function addAnother() {
+      const container = document.querySelector('.moj-add-another__item');
+      const clone = container.cloneNode(true);
+      const removeButton = document.createElement('button');
+      removeButton.type = 'button';
+      removeButton.classList.add('govuk-button', 'govuk-button--secondary', 'moj-add-another__remove-button');
+      removeButton.textContent = 'Remove';
+      removeButton.onclick = function () {
+        container.parentNode.removeChild(clone);
+      };
+      clone.appendChild(removeButton);
+      container.parentNode.appendChild(clone);
+    }
+  </script>
+
+{% endblock %}
+

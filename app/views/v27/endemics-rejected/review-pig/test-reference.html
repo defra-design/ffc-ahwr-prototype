@@ -1,0 +1,95 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+  Index page
+{% endblock %}
+{% set serviceName %}
+  Get funding to improve livestock health and welfare 
+{% endset %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-error-summary" data-module="govuk-error-summary" style="display: none;">
+      <div role="alert">
+        <h2 class="govuk-error-summary__title">
+          There is a problem
+        </h2>
+        <div class="govuk-error-summary__body">
+          <ul class="govuk-list govuk-error-summary__list">
+            <li>
+              <a href="#eligibility-bps">You must Enter the URN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <form class="form" method="post" onsubmit="return validateForm(event);">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="eligibility-bps-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              What’s the laboratory unique reference number (URN) for the test results?
+            </h1>
+          </legend>
+
+          <div id="vet-registered-hint" class="govuk-hint govuk-!-margin-bottom-5">
+           You can find this on the summary the vet gave you.
+          </div>
+
+          <p id="validation-error" class="govuk-error-message" style="display: none;">
+            <span class="govuk-visually-hidden">Error:</span>Enter the URN
+          </p>
+
+          <input type="text" id="eligibility-bps" name="eligibility-bps" class="govuk-input govuk-input--width-20" id="vet-name">
+
+        </fieldset>
+      </div>
+
+      <button class="govuk-button" data-module="govuk-button" type="submit">Continue</button>
+
+    </form>
+
+    <script>
+      function validateForm(event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+
+        var input = document.getElementById('eligibility-bps');
+        var errorElement = document.getElementById('validation-error');
+        var formGroup = document.querySelector('.govuk-form-group');
+        var errorSummary = document.querySelector('.govuk-error-summary');
+
+        if (input.value.trim() !== '') {
+          errorElement.style.display = 'none';
+          formGroup.classList.remove('govuk-form-group--error');
+          errorSummary.style.display = 'none'; // Hide error summary
+
+          // Redirect to the desired URL based on the input value
+          if (input.value.trim().toLowerCase() === 'yes') {
+            window.location.href = 'eligible.html'; // Redirect to eligible.html for 'Yes'
+          } else {
+            window.location.href = 'pigs-endemics.html'; // Redirect to numbers-ineligible.html for 'No'
+          }
+          return true; // Form submission allowed
+        }
+
+        // Empty input, display error message and add error styling
+        errorElement.style.display = 'block';
+        formGroup.classList.add('govuk-form-group--error');
+        errorSummary.style.display = 'block'; // Show error summary
+        return false; // Form submission blocked
+      }
+    </script>
+
+  </div>
+</div>
+
+{% endblock %}

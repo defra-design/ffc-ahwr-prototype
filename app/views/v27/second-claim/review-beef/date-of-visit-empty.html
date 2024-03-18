@@ -1,0 +1,104 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+{% set serviceName %}Get funding to improve livestock health and welfare{% endset%}   
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-error-summary" data-module="govuk-error-summary">
+      <div role="alert">
+        <h2 class="govuk-error-summary__title">
+          There is a problem
+        </h2>
+        <div class="govuk-error-summary__body">
+          <ul class="govuk-list govuk-error-summary__list">
+            <li id="validation-error-item">
+              <a href="#eligibility-bps">Enter the date the vet completed the review</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <form class="form" method="POST">
+      <div class="govuk-form-group govuk-form-group--error">
+
+                  <h1 class="govuk-heading-l">Date of review or follow-up </h1>
+
+
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="when-review-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            
+
+          </legend>
+         
+          <div id="when-review-hint" class="govuk-hint">
+       This is the date the vet last visited the farm for this review or follow-up. You can find it on the summary the vet gave you. 
+            <br><br>
+            For example, 27 3 2022
+          </div>
+          <p id="validation-error" class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span>Enter the date the vet completed the review
+          </p>
+          <div class="govuk-date-input" id="when-review">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="when-review-day">
+                  Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="when-review-day"
+                  name="when-review-day" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="when-review-month">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="when-review-month"
+                  name="when-review-month" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="when-review-year">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="when-review-year"
+                  name="when-review-year" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+
+      
+
+
+
+
+
+          <p class="govuk-body govuk-!-margin-top-4">
+            <!--
+                <input class="govuk-button" type="submit" name="saveAndContinue" value="Continue" id="Button-SaveAndContinue" data-qa-id="Button-SaveAndContinue">
+                -->
+            {{ govukButton({
+            text: "Continue",
+            href: "date-of-testing"
+            
+            }) }}
+    </form>
+  </div>
+</div>
+
+{% endblock %}

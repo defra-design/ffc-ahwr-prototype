@@ -1,0 +1,73 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+{% set serviceName %}Get funding to improve livestock health and welfare{% endset%}   
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-width-container">
+
+
+              <h1 class="govuk-heading-l">
+                Timing of reviews and follow-ups
+              </h1>
+  
+              <p class="govuk-body">There must be:</p>
+              
+              <ul class="govuk-list govuk-list--bullet">
+                <li>at least 10 months between your reviews</li>
+                <li>at least 10 months between your follow-ups</li>
+                <li>no more than 10 months between your reviews and subsequent follow-ups </li>
+              </ul>
+
+              <p class="govuk-body">You must have:</p>
+
+              <ul class="govuk-list govuk-list--bullet">
+                <li>had your review before the follow-up that happened after it</li>
+                <li>claimed for a review before you claim for the follow-up that happened after it</li>
+              </ul>
+
+              
+              <div class="govuk-button-group">
+                <a href="declaration.html" class="govuk-button" data-module="govuk-button">
+                  I agree
+                </a></button>
+                <a href="offer-rejected.html"class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                  I do not agree – reject agreement
+                </a></button>
+              </div>
+            
+            </div>
+          </div>
+        </main>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+
+{% endblock %}

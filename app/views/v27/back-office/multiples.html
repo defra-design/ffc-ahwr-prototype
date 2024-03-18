@@ -1,0 +1,239 @@
+{% extends "layouts/layout-defra.html" %}
+
+{% block pageTitle %}
+Back office: Applications
+{% endblock %}
+{% set serviceName %}
+Annual Health and Welfare Back Office
+{% endset%}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner govuk-!-padding-top-0">
+  <p class="govuk-phase-banner__content">
+    <strong style="background-color:#00a33b;" class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<!-- Title + Search -->
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+    <h1 class="govuk-caption-l govuk-!-margin-bottom-3">
+      All business claims
+    </h1>
+
+    <h2 class="govuk-heading-l">
+      P & D Fearnley & Sons
+    </h2>
+
+    <!--User details-->
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p>Phil Fearnley</p>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          SBI number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          103491987
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Manor Farm Rd, Harleston IP20 0AX
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Email address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p>fearnley-sons@hotmail.com</p>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Date of agreement
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p>1/11/2022</p>
+        </dd>
+      </div>
+    </dl>
+    
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-7">
+ 
+
+  </div>
+</div>
+
+
+
+<table class="govuk-table" data-module="moj-sortable-table">
+
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+
+      <th scope="col" class="govuk-table__header" aria-sort="none">Claim number</th>
+
+      <th scope="col" class="govuk-table__header" aria-sort="none">Type of visit</th>
+
+      <th scope="col" class="govuk-table__header" aria-sort="none">Species</th>
+
+      <th scope="col" class="govuk-table__header" aria-sort="none">Claim date</th>
+
+      <th scope="col" class="govuk-table__header" aria-sort="none">Status</th>
+
+      <th scope="col" class="govuk-table__header" aria-sort="none">Details</th>
+
+
+    </tr>
+  </thead>
+
+  <tbody class="govuk-table__body">
+
+    <tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">AHWR-F021-721B</td>
+
+      <td class="govuk-table__cell" data-sort-value="Beef cattle">Review</td>
+
+      <td class="govuk-table__cell">Beef cattle</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="11/08/2022">11/08/2022</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="Agreed"><strong class="govuk-tag govuk-tag--orange">In check</strong></td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='../back-office/internal/x-fearnley-farm-beef.html'>View details</a></td>
+
+    </tr>
+
+    
+    <!--<tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">AHWR-F021-715S</td>
+
+      <td class="govuk-table__cell" data-sort-value="Dairy cattle">Dairy cattle</td>
+
+      <td class="govuk-table__cell">Dairy cattle K</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="01/11/2022">01/11/2022</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="On hold"><strong class="govuk-tag govuk-tag--orange">In check</strong></td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='../back-office/internal/x-fearnley-farm-dairy.html'>View details</a></td>
+
+    </tr>-->
+
+    <tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">AHWR-F022-321G</td>
+
+      <td class="govuk-table__cell" data-sort-value="Pig">Review</td>
+
+      <td class="govuk-table__cell">Pigs</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="01/11/2022">13/02/2023</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="In check"><strong class="govuk-tag govuk-tag--purple">On hold</strong></td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="In check"><a href='../back-office/internal/x-fearnley-farm-pig.html'>View details</a></td>
+
+    </tr>
+
+
+    <tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">AHWR-F001-432L</td>
+
+      <td class="govuk-table__cell" data-sort-value="Sheep">Review</td>
+
+      <td class="govuk-table__cell">Sheep</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="02/01/2023">02/01/2023</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="Rejected"><strong class="govuk-tag govuk-tag--red">Rejected</strong></td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='../back-office/internal/x-fearnley-farm-sheep.html'>View details</a></td>
+
+    </tr>
+
+    <tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">AHWR-F021-721B</td>
+
+      <td class="govuk-table__cell" data-sort-value="Beef cattle">Review</td>
+
+      <td class="govuk-table__cell">Sheep</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="11/08/2022">11/08/2022</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="Agreed"><strong class="govuk-tag govuk-tag--orange">Recommended to pay</strong></td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='../back-office/internal/x-greenfield-approving-sheep.html'>View details</a></td>
+
+    </tr>
+
+    <tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">AHWR-F021-721B</td>
+
+      <td class="govuk-table__cell" data-sort-value="Beef cattle">Review</td>
+
+      <td class="govuk-table__cell">Dairy cattle</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="11/08/2022">11/08/2022</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="Agreed"><strong class="govuk-tag govuk-tag--orange">Recommended to reject</strong></td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='../back-office/internal/x-greenfield-rejecting-sheep.html'>View details</a></td>
+
+    </tr>
+
+
+
+  </tbody>
+</table>
+
+
+        <!--Withdraw process-->
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-m">Further action</h2>
+            <p class="govuk-body">This customer has successfully submitted an application but, if they ask, they can withdraw from an agreement.</p>
+            {{ govukButton({
+              text: "Withdraw",
+              href: "multiples-withdraw-confirmation"
+            
+              }) }}
+          </div>
+        </div>
+
+
+
+
+
+{% endblock %}
