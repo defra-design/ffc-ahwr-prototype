@@ -1,0 +1,97 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+
+{% set serviceName %}
+Get funding to improve livestock health and welfare
+{% endset %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <form class="form" method="POST">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="signIn-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            
+  
+          {% from "govuk/components/radios/macro.njk" import govukRadios %}
+
+          {{ govukRadios({
+            name: "package",
+            fieldset: {
+              legend: {
+                text: "Which sheep health package did you choose?",
+                isPageHeading: true,
+                classes: "govuk-fieldset__legend--l"
+              }
+            },
+              hint: {
+                text: "You can find this on the summary the vet gave you. The diseases the vet can test for are listed with each package."
+              
+            },
+            items: [
+              {
+                value: "thin-ewes",
+                text: "Thin ewes",
+                hint: {
+                  text: "Includes: Adenocarcinoma (OPA), Caseous Lymphadenitis (CLA), Ewe nutrition status, Haemonchosis, Johne’s, Louping ill, Maedi Visna (MV), Mastitis, Orf, Ovine Pulmonary, Pulpy kidney, Tick-borne fever, Trace elements"
+                }
+              },
+              {
+                value: "reproductive-performance",
+                text: "Reproductive performance",
+                hint: {
+                  text: "Includes: Border disease (BD), Enzootic abortion of ewes (EAE), Ewe nutrition status, Liver fluke, Tick-borne fever, Toxoplasmosis"
+                }
+              },
+              {
+                value: "lamb-performance",
+                text: "Lamb performance",
+                hint: {
+                  text: "Includes: Border disease (BD), Coccidiosis, Lamb dysentery, Lamb nutrition status, Lameness, Liver fluke, Louping ill, Mastitis, Orf, Parasitic gastroenteritis (PGE), Pasteurellosis, Pulpy Kidney, Tick pyaemia, Tick-borne fever, Trace elements"
+                }
+              },
+              {
+                value: "neonatal-lamb-diseases",
+                text: "Neonatal lamb diseases",
+                hint: {
+                  text: "Includes: Border disease (BD); Toxoplasmosis; Joint ill; Ewe nutrition status; Trace elements; Watery mouth; Mastitis; Tick pyaemia; Lamb dysentery; Pasteurellosis"
+                }
+              },
+              {
+                value: "external-parasites",
+                text: "External parasites",
+                hint: {
+                  text: "Includes: Flystrike, Sheep scab"
+                }
+              },
+              {
+                value: "lameness",
+                text: "Lameness",
+                hint: {
+                  text: "Includes: Joint ill; Lameness; Foot rot; Scald; CODD; Granuloma; Heel or toe abscess; Shelly hoof; Tick pyaemia"
+                }
+              }
+            ]
+          }) }}
+          
+          
+    <br>
+    
+
+      <button class="govuk-button" data-module="govuk-button">Continue</button>
+    
+    </form>
+     
+
+  </div>
+</div>
+
+{% endblock%}

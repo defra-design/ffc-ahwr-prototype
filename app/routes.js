@@ -420,6 +420,29 @@ router.post('*/biosecurity-pigs', function (req, res) {
 });
 
 
+// Route for the packages form submission
+router.post('*/endemics-packages-2', function (req, res) {
+  // Retrieve selected packages from the form data
+  const selectedPackages = req.body.package;
+
+  // Perform logic based on the selected packages
+  if (selectedPackages.includes("thin-ewes")) {
+    res.redirect('/v27/second-claim/endemics-sheep/ewe');
+  } else if (selectedPackages.includes("reproductive-performance")) {
+    res.redirect('/v27/second-claim/endemics-sheep/reproductive');
+  } else if (selectedPackages.includes("lamb-performance")) {
+    res.redirect('/v27/second-claim/endemics-sheep/lamb');
+  } else if (selectedPackages.includes("neonatal-lamb-diseases")) {
+    res.redirect('/v27/second-claim/endemics-sheep/neonatal-lamb');
+  } else if (selectedPackages.includes("external-parasites")) {
+    res.redirect('/v27/second-claim/endemics-sheep/parasites');
+  } else if (selectedPackages.includes("lameness")) {
+    res.redirect('/v27/second-claim/endemics-sheep/lameness');
+  } else {
+    // Handle other cases or redirect to an error page
+    res.redirect('/v27/second-claim/endemics-sheep/endemics-package-error');
+  }
+});
 
 
 module.exports = router
