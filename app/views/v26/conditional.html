@@ -1,0 +1,108 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Apply for an Annual Health and Welfare Review
+{% endblock %}
+
+{% set serviceName %}
+Annual health and welfare review of livestock
+{% endset %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <h1 class="govuk-fieldset__heading">
+                        How would you prefer to be contacted?
+                    </h1>
+                </legend>
+                <div id="contact-hint" class="govuk-hint">
+                    Select one option.
+                </div>
+                <div class="govuk-radios" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="contact-1" name="contact" type="radio" value="email" data-aria-controls="conditional-contact-1">
+                        <label class="govuk-label govuk-radios__label" for="contact-1">
+                            Email
+                        </label>
+                        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-1">
+                            <div class="govuk-form-group">
+                                <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                                    <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="option1-1" name="option1" type="checkbox" value="option1-1">
+                                        <label class="govuk-label govuk-checkboxes__label" for="option1-1">
+                                            Option 1-1
+                                        </label>
+                                    </div>
+                                    <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="option1-2" name="option1" type="checkbox" value="option1-2">
+                                        <label class="govuk-label govuk-checkboxes__label" for="option1-2">
+                                            Option 1-2
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+                        <label class="govuk-label govuk-radios__label" for="contact-2">
+                            Phone
+                        </label>
+                        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+                            <div class="govuk-form-group">
+                                <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                                    <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="option2-1" name="option2" type="checkbox" value="option2-1">
+                                        <label class="govuk-label govuk-checkboxes__label" for="option2-1">
+                                            Option 2-1
+                                        </label>
+                                    </div>
+                                    <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="option2-2" name="option2" type="checkbox" value="option2-2">
+                                        <label class="govuk-label govuk-checkboxes__label" for="option2-2">
+                                            Option 2-2
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="contact-3" name="contact" type="radio" value="mail" data-aria-controls="conditional-contact-3">
+                        <label class="govuk-label govuk-radios__label" for="contact-3">
+                            Mail
+                        </label>
+                        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-3">
+                            <div class="govuk-form-group">
+                                <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                                    <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="option3-1" name="option3" type="checkbox" value="option3-1">
+                                        <label class="govuk-label govuk-checkboxes__label" for="option3-1">
+                                            Option 3-1
+                                        </label>
+                                    </div>
+                                    <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="option3-2" name="option3" type="checkbox" value="option3-2">
+                                        <label class="govuk-label govuk-checkboxes__label" for="option3-2">
+                                            Option 3-2
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</div>
+</main>
+</div>
+{% endblock %}
