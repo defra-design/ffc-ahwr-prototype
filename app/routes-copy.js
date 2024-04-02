@@ -144,17 +144,17 @@ router.post('*/review-sheep/which-type', function (req, res) {
 
   // Perform logic based on the selected types
   if (selectedType === "review-1") {
-    res.redirect('/v25/second-claim/review-sheep/date-of-visit');
+    res.redirect('/v27/second-claim/review-sheep/date-of-visit');
   } else if (selectedType === "review-2") {
-    res.redirect('/v25/second-claim/endemics-sheep/date-of-visit');
+    res.redirect('/v27/second-claim/endemics-sheep/date-of-visit');
   } else {
     // Handle other cases or redirect to an error page
-    res.redirect('/v25/second-claim/endemics-sheep/*');
+    res.redirect('/v27/second-claim/endemics-sheep/*');
   }
 });
 
 
-
+//Amended references above
 
 
 
@@ -421,7 +421,7 @@ router.post('*/biosecurity-pigs', function (req, res) {
 
 
 // Route for the packages form submission
-router.post('*/endemics-packages-2', function (req, res) {
+router.post('*/endemics-package-2', function (req, res) {
   // Retrieve selected packages from the form data
   const selectedPackages = req.body.package;
 
