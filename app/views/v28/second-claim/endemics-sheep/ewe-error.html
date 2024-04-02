@@ -1,0 +1,124 @@
+{% extends "layouts/layout.html" %}
+{% set serviceName = "Get funding to improve animal health and welfare" %}
+
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <form class="form" method="post">
+    <div class="govuk-form-group">
+
+      <div class="govuk-error-summary" data-module="govuk-error-summary">
+        <div role="alert">
+          <h2 class="govuk-error-summary__title">
+            There is a problem
+          </h2>
+          <div class="govuk-error-summary__body">
+            <ul class="govuk-list govuk-error-summary__list">
+              <li>
+                <a href="#">You must select a disease</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="govuk-form-group govuk-form-group--error">
+        <fieldset class="govuk-fieldset" aria-describedby="nationality-hint nationality-error">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              What did the vet test for?
+            </h1>
+          </legend>
+          {% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+
+          {{ govukCheckboxes({
+            name: "diseases",
+            fieldset: {
+           
+            },
+          
+            items: [
+              {
+                value: "disease-1",
+                text: "Johne’s"
+              },
+              {
+                value: "disease-2",
+                text: "Maedi Visna (MV)"
+              },
+              {
+                value: "disease-3",
+                text: "Caseous Lymphadenitis (CLA)"
+              },
+              {
+                value: "disease-4",
+                text: "Ovine Pulmonary Adenocarcinoma (OPA)"
+              },
+              {
+                value: "disease-5",
+                text: "Trace elements"
+              },
+              {
+                value: "disease-6",
+                text: "Haemonchosis"
+              },
+              {
+                value: "disease-7",
+                text: "Ewe nutrition status"
+              },
+              {
+                value: "disease-8",
+                text: "Mastitis"
+              },
+              {
+                value: "disease-9",
+                text: "Tick-borne fever"
+              },
+              {
+                value: "disease-10",
+                text: "Louping ill"
+              },
+              {
+                value: "disease-11",
+                text: "Orf"
+              },
+              {
+                value: "disease-12",
+                text: "Pulpy kidney"
+              },
+              {
+                value: "disease-13",
+                text: "Other - something not listed"
+              }
+            ]
+          }) }}
+          </div>
+        </fieldset>
+      </div>
+
+    <br>
+    <br>
+    
+    <button class="govuk-button" data-module="govuk-button">Continue</button>
+    
+    </form>
+
+
+
+{% endblock %}
