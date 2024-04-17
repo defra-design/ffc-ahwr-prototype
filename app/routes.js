@@ -421,7 +421,7 @@ router.post('*/biosecurity-pigs', function (req, res) {
 
 
 // Route for the packages form submission
-router.post('*/endemics-package-3', function (req, res) {
+router.post('*/endemics-package-2', function (req, res) {
   // Retrieve selected packages from the form data
   const selectedPackages = req.body.package;
 
