@@ -146,10 +146,10 @@ router.post('*/review-sheep/which-type', function (req, res) {
   if (selectedType === "review-1") {
     res.redirect('/v27/second-claim/review-sheep/date-of-visit');
   } else if (selectedType === "review-2") {
-    res.redirect('/v28/second-claim/endemics-sheep/date-of-visit');
+    res.redirect('/v27/second-claim/endemics-sheep/date-of-visit');
   } else {
     // Handle other cases or redirect to an error page
-    res.redirect('/v28/second-claim/endemics-sheep/*');
+    res.redirect('/v27/second-claim/endemics-sheep/*');
   }
 });
 
@@ -167,35 +167,35 @@ router.post('*/ewe', function (req, res) {
 
   // Perform logic based on the selected diseases
   if (selectedDiseases.includes("disease-1")) {
-    res.redirect('/v28/second-claim/endemics-sheep/ewe/positive-negative-1');
+    res.redirect('/v27/second-claim/endemics-sheep/ewe/positive-negative-1');
   } else if (selectedDiseases.includes("disease-2")) {
-    res.redirect('/v28/second-claim/endemics-sheep/ewe/positive-negative-2');
+    res.redirect('/v27/second-claim/endemics-sheep/ewe/positive-negative-2');
   } else if (selectedDiseases.includes("disease-3")) {
-    res.redirect('/v28/second-claim/endemics-sheep/ewe/positive-negative-3');
+    res.redirect('/v27/second-claim/endemics-sheep/ewe/positive-negative-3');
   } else if (selectedDiseases.includes("disease-4")) {
-    res.redirect('/v28/second-claim/endemics-sheep/ewe/clinical-symptoms-4');
+    res.redirect('/v27/second-claim/endemics-sheep/ewe/clinical-symptoms-4');
   } else if (selectedDiseases.includes("disease-5")) {
-    res.redirect('/v28/second-claim/endemics-sheep/ewe/problem-identified-5');
+    res.redirect('/v27/second-claim/endemics-sheep/ewe/problem-identified-5');
   } else if (selectedDiseases.includes("disease-6")) {
-    res.redirect('/v28/second-claim/endemics-sheep/ewe/clinical-symptoms-6');
+    res.redirect('/v27/second-claim/endemics-sheep/ewe/clinical-symptoms-6');
   } else if (selectedDiseases.includes("disease-7")) {
-    res.redirect('/v28/second-claim/endemics-sheep/ewe/problem-identified-7');
+    res.redirect('/v27/second-claim/endemics-sheep/ewe/problem-identified-7');
   } else if (selectedDiseases.includes("disease-8")) {
-    res.redirect('/v28/second-claim/endemics-sheep/ewe/clinical-symptoms-8');
+    res.redirect('/v27/second-claim/endemics-sheep/ewe/clinical-symptoms-8');
   } else if (selectedDiseases.includes("disease-9")) {
-    res.redirect('/v28/second-claim/endemics-sheep/ewe/positive-negative-9');
+    res.redirect('/v27/second-claim/endemics-sheep/ewe/positive-negative-9');
   } else if (selectedDiseases.includes("disease-10")) {
-    res.redirect('/v28/second-claim/endemics-sheep/ewe/clinical-symptoms-10');
+    res.redirect('/v27/second-claim/endemics-sheep/ewe/clinical-symptoms-10');
   } else if (selectedDiseases.includes("disease-11")) {
-    res.redirect('/v28/second-claim/endemics-sheep/ewe/clinical-symptoms-11');
+    res.redirect('/v27/second-claim/endemics-sheep/ewe/clinical-symptoms-11');
   } else if (selectedDiseases.includes("disease-12")) {
-    res.redirect('/v28/second-claim/endemics-sheep/ewe/positive-negative-12');
+    res.redirect('/v27/second-claim/endemics-sheep/ewe/positive-negative-12');
   } else if (selectedDiseases.includes("disease-13")) {
 
-    res.redirect('/v28/second-claim/endemics-sheep/ewe/other');
+    res.redirect('/v27/second-claim/endemics-sheep/ewe/other');
   } else {
     // Handle other cases or redirect to an error page
-    res.redirect('/v28/second-claim/endemics-sheep/ewe-error');
+    res.redirect('/v27/second-claim/endemics-sheep/ewe-error');
   }
 });
 
@@ -206,22 +206,22 @@ router.post('*/reproductive', function (req, res) {
 
   // Perform logic based on the selected diseases
   if (selectedDiseases.includes("disease-1")) {
-    res.redirect('/v28/second-claim/endemics-sheep/reproductive/positive-negative-1');
+    res.redirect('/v27/second-claim/endemics-sheep/reproductive/positive-negative-1');
   } else if (selectedDiseases.includes("disease-2")) {
-    res.redirect('/v28/second-claim/endemics-sheep/reproductive/positive-negative-2');
+    res.redirect('/v27/second-claim/endemics-sheep/reproductive/positive-negative-2');
   } else if (selectedDiseases.includes("disease-3")) {
-    res.redirect('/v28/second-claim/endemics-sheep/reproductive/positive-negative-3');
+    res.redirect('/v27/second-claim/endemics-sheep/reproductive/positive-negative-3');
   } else if (selectedDiseases.includes("disease-4")) {
-    res.redirect('/v28/second-claim/endemics-sheep/reproductive/problem-identified');
+    res.redirect('/v27/second-claim/endemics-sheep/reproductive/problem-identified');
   } else if (selectedDiseases.includes("disease-5")) {
-    res.redirect('/v28/second-claim/endemics-sheep/reproductive/clinical-symptoms');
+    res.redirect('/v27/second-claim/endemics-sheep/reproductive/clinical-symptoms');
   } else if (selectedDiseases.includes("disease-6")) {
-    res.redirect('/v28/second-claim/endemics-sheep/reproductive/positive-negative-6');
+    res.redirect('/v27/second-claim/endemics-sheep/reproductive/positive-negative-6');
   } else if (selectedDiseases.includes("disease-7")) {
-    res.redirect('/v28/second-claim/endemics-sheep/reproductive/other');
+    res.redirect('/v27/second-claim/endemics-sheep/reproductive/other');
   } else {
     // Handle other cases or redirect to an error page
-    res.redirect('/v28/second-claim/endemics-sheep/reproductive-error');
+    res.redirect('/v27/second-claim/endemics-sheep/reproductive-error');
   }
 });
 
@@ -232,40 +232,40 @@ router.post('*/lamb', function (req, res) {
 
   // Perform logic based on the selected diseases
   if (selectedDiseases.includes("disease-1")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lamb/clinical-symptoms-1');
+    res.redirect('/v27/second-claim/endemics-sheep/lamb/clinical-symptoms-1');
   } else if (selectedDiseases.includes("disease-2")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lamb/positive-negative-2');
+    res.redirect('/v27/second-claim/endemics-sheep/lamb/positive-negative-2');
   } else if (selectedDiseases.includes("disease-3")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lamb/problem-identified-3');
+    res.redirect('/v27/second-claim/endemics-sheep/lamb/problem-identified-3');
   } else if (selectedDiseases.includes("disease-4")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lamb/clinical-symptoms-4');
+    res.redirect('/v27/second-claim/endemics-sheep/lamb/clinical-symptoms-4');
   } else if (selectedDiseases.includes("disease-5")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lamb/clinical-symptoms-5');
+    res.redirect('/v27/second-claim/endemics-sheep/lamb/clinical-symptoms-5');
   } else if (selectedDiseases.includes("disease-6")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lamb/clinical-symptoms-6');
+    res.redirect('/v27/second-claim/endemics-sheep/lamb/clinical-symptoms-6');
   } else if (selectedDiseases.includes("disease-7")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lamb/clinical-symptoms-7');
+    res.redirect('/v27/second-claim/endemics-sheep/lamb/clinical-symptoms-7');
   } else if (selectedDiseases.includes("disease-8")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lamb/clinical-symptoms-8');
+    res.redirect('/v27/second-claim/endemics-sheep/lamb/clinical-symptoms-8');
   } else if (selectedDiseases.includes("disease-9")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lamb/clinical-symptoms-9');
+    res.redirect('/v27/second-claim/endemics-sheep/lamb/clinical-symptoms-9');
   } else if (selectedDiseases.includes("disease-10")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lamb/positive-negative-10');
+    res.redirect('/v27/second-claim/endemics-sheep/lamb/positive-negative-10');
   } else if (selectedDiseases.includes("disease-11")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lamb/clinical-symptoms-11');
+    res.redirect('/v27/second-claim/endemics-sheep/lamb/clinical-symptoms-11');
   } else if (selectedDiseases.includes("disease-12")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lamb/positive-negative-12');
+    res.redirect('/v27/second-claim/endemics-sheep/lamb/positive-negative-12');
   } else if (selectedDiseases.includes("disease-13")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lamb/positive-negative-13');
+    res.redirect('/v27/second-claim/endemics-sheep/lamb/positive-negative-13');
   } else if (selectedDiseases.includes("disease-14")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lamb/positive-negative-14');
+    res.redirect('/v27/second-claim/endemics-sheep/lamb/positive-negative-14');
   } else if (selectedDiseases.includes("disease-15")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lamb/clinical-symptoms-15');
+    res.redirect('/v27/second-claim/endemics-sheep/lamb/clinical-symptoms-15');
   } else if (selectedDiseases.includes("disease-16")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lamb/other');
+    res.redirect('/v27/second-claim/endemics-sheep/lamb/other');
   } else {
     // Handle other cases or redirect to an error page
-    res.redirect('/v28/second-claim/endemics-sheep/lamb-error');
+    res.redirect('/v27/second-claim/endemics-sheep/lamb-error');
   }
 });
 
@@ -276,32 +276,32 @@ router.post('*/neonatal-lamb', function (req, res) {
 
   // Perform logic based on the selected diseases
   if (selectedDiseases.includes("disease-1")) {
-    res.redirect('/v28/second-claim/endemics-sheep/neonatal-lamb/positive-negative-1');
+    res.redirect('/v27/second-claim/endemics-sheep/neonatal-lamb/positive-negative-1');
   } else if (selectedDiseases.includes("disease-2")) {
-    res.redirect('/v28/second-claim/endemics-sheep/neonatal-lamb/positive-negative-2');
+    res.redirect('/v27/second-claim/endemics-sheep/neonatal-lamb/positive-negative-2');
   } else if (selectedDiseases.includes("disease-3")) {
-    res.redirect('/v28/second-claim/endemics-sheep/neonatal-lamb/clinical-symptoms-3');
+    res.redirect('/v27/second-claim/endemics-sheep/neonatal-lamb/clinical-symptoms-3');
   } else if (selectedDiseases.includes("disease-4")) {
-    res.redirect('/v28/second-claim/endemics-sheep/neonatal-lamb/positive-negative-4');
+    res.redirect('/v27/second-claim/endemics-sheep/neonatal-lamb/positive-negative-4');
   } else if (selectedDiseases.includes("disease-5")) {
-    res.redirect('/v28/second-claim/endemics-sheep/neonatal-lamb/positive-negative-5');
+    res.redirect('/v27/second-claim/endemics-sheep/neonatal-lamb/positive-negative-5');
   } else if (selectedDiseases.includes("disease-6")) {
-    res.redirect('/v28/second-claim/endemics-sheep/neonatal-lamb/clinical-symptoms-6');
+    res.redirect('/v27/second-claim/endemics-sheep/neonatal-lamb/clinical-symptoms-6');
   } else if (selectedDiseases.includes("disease-7")) {
-    res.redirect('/v28/second-claim/endemics-sheep/neonatal-lamb/clinical-symptoms-7');
+    res.redirect('/v27/second-claim/endemics-sheep/neonatal-lamb/clinical-symptoms-7');
   } else if (selectedDiseases.includes("disease-8")) {
-    res.redirect('/v28/second-claim/endemics-sheep/neonatal-lamb/clinical-symptoms-8');
+    res.redirect('/v27/second-claim/endemics-sheep/neonatal-lamb/clinical-symptoms-8');
   } else if (selectedDiseases.includes("disease-9")) {
-    res.redirect('/v28/second-claim/endemics-sheep/neonatal-lamb/positive-negative-9');
+    res.redirect('/v27/second-claim/endemics-sheep/neonatal-lamb/positive-negative-9');
   } else if (selectedDiseases.includes("disease-10")) {
-    res.redirect('/v28/second-claim/endemics-sheep/neonatal-lamb/clinical-symptoms-10');
+    res.redirect('/v27/second-claim/endemics-sheep/neonatal-lamb/clinical-symptoms-10');
   } else if (selectedDiseases.includes("disease-11")) {
 
 
-    res.redirect('/v28/second-claim/endemics-sheep/neonatal-lamb/other');
+    res.redirect('/v27/second-claim/endemics-sheep/neonatal-lamb/other');
   } else {
     // Handle other cases or redirect to an error page
-    res.redirect('/v28/second-claim/endemics-sheep/neonatal-lamb-error');
+    res.redirect('/v27/second-claim/endemics-sheep/neonatal-lamb-error');
   }
 });
 
@@ -312,18 +312,18 @@ router.post('*/parasites', function (req, res) {
 
   // Perform logic based on the selected diseases
   if (selectedDiseases.includes("disease-1")) {
-    res.redirect('/v28/second-claim/endemics-sheep/parasites/clinical-symptoms-1');
+    res.redirect('/v27/second-claim/endemics-sheep/parasites/clinical-symptoms-1');
   } else if (selectedDiseases.includes("disease-2")) {
-    res.redirect('/v28/second-claim/endemics-sheep/parasites/positive-negative-2');
+    res.redirect('/v27/second-claim/endemics-sheep/parasites/positive-negative-2');
 
-    res.redirect('/v28/second-claim/endemics-sheep/parasites/clinical-symptoms-10');
+    res.redirect('/v27/second-claim/endemics-sheep/parasites/clinical-symptoms-10');
   } else if (selectedDiseases.includes("disease-3")) {
 
 
-    res.redirect('/v28/second-claim/endemics-sheep/parasites/other');
+    res.redirect('/v27/second-claim/endemics-sheep/parasites/other');
   } else {
     // Handle other cases or redirect to an error page
-    res.redirect('/v28/second-claim/endemics-sheep/parasites-error');
+    res.redirect('/v27/second-claim/endemics-sheep/parasites-error');
   }
 });
 
@@ -334,29 +334,29 @@ router.post('*/lameness', function (req, res) {
 
   // Perform logic based on the selected diseases
   if (selectedDiseases.includes("disease-1")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lameness/clinical-symptom-1');
+    res.redirect('/v27/second-claim/endemics-sheep/lameness/clinical-symptom-1');
   } else if (selectedDiseases.includes("disease-2")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lameness/clinical-symptom-2');
+    res.redirect('/v27/second-claim/endemics-sheep/lameness/clinical-symptom-2');
   } else if (selectedDiseases.includes("disease-3")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lameness/clinical-symptoms-3');
+    res.redirect('/v27/second-claim/endemics-sheep/lameness/clinical-symptoms-3');
   } else if (selectedDiseases.includes("disease-4")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lameness/clinical-symptom-4');
+    res.redirect('/v27/second-claim/endemics-sheep/lameness/clinical-symptom-4');
   } else if (selectedDiseases.includes("disease-5")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lameness/clinical-symptom-5');
+    res.redirect('/v27/second-claim/endemics-sheep/lameness/clinical-symptom-5');
   } else if (selectedDiseases.includes("disease-6")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lameness/clinical-symptoms-6');
+    res.redirect('/v27/second-claim/endemics-sheep/lameness/clinical-symptoms-6');
   } else if (selectedDiseases.includes("disease-7")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lameness/clinical-symptom-7');
+    res.redirect('/v27/second-claim/endemics-sheep/lameness/clinical-symptom-7');
   } else if (selectedDiseases.includes("disease-8")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lameness/clinical-symptom-8');
+    res.redirect('/v27/second-claim/endemics-sheep/lameness/clinical-symptom-8');
   } else if (selectedDiseases.includes("disease-9")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lameness/clinical-symptom-9');
+    res.redirect('/v27/second-claim/endemics-sheep/lameness/clinical-symptom-9');
   } else if (selectedDiseases.includes("disease-10")) {
 
-    res.redirect('/v28/second-claim/endemics-sheep/lameness/other');
+    res.redirect('/v27/second-claim/endemics-sheep/lameness/other');
   } else {
     // Handle other cases or redirect to an error page
-    res.redirect('/v28/second-claim/endemics-sheep/lameness-error');
+    res.redirect('/v27/second-claim/endemics-sheep/lameness-error');
   }
 });
 
@@ -369,20 +369,20 @@ router.post('*/endemics-package', function (req, res) {
 
   // Perform logic based on the selected packages
   if (selectedPackages.includes("package-1")) {
-    res.redirect('/v28/second-claim/endemics-sheep/ewe');
+    res.redirect('/v27/second-claim/endemics-sheep/ewe');
   } else if (selectedPackages.includes("package-2")) {
-    res.redirect('/v28/second-claim/endemics-sheep/reproductive');
+    res.redirect('/v27/second-claim/endemics-sheep/reproductive');
   } else if (selectedPackages.includes("package-3")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lamb');
+    res.redirect('/v27/second-claim/endemics-sheep/lamb');
   } else if (selectedPackages.includes("package-4")) {
-    res.redirect('/v28/second-claim/endemics-sheep/neonatal-lamb');
+    res.redirect('/v27/second-claim/endemics-sheep/neonatal-lamb');
   } else if (selectedPackages.includes("package-5")) {
-    res.redirect('/v28/second-claim/endemics-sheep/parasites');
+    res.redirect('/v27/second-claim/endemics-sheep/parasites');
   } else if (selectedPackages.includes("package-6")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lameness');
+    res.redirect('/v27/second-claim/endemics-sheep/lameness');
   } else {
     // Handle other cases or redirect to an error page
-    res.redirect('/v28/second-claim/endemics-sheep/endemics-package-error');
+    res.redirect('/v27/second-claim/endemics-sheep/endemics-package-error');
   }
 });
 
@@ -394,10 +394,10 @@ router.post('*/test-numbers', function (req, res) {
   // Check the submitted value
   if (testedSamples === '6' || testedSamples === '30') {
     // Continue to the next page
-    res.redirect('/v28/second-claim/endemics-pig/disease-status');
+    res.redirect('/v27/second-claim/endemics-pig/disease-status');
   } else {
     // Redirect to the error page
-    res.redirect('/v28/second-claim/endemics-pig/test-numbers-error.html');
+    res.redirect('/v27/second-claim/endemics-pig/test-numbers-error.html');
   }
 });
 
@@ -409,13 +409,13 @@ router.post('*/biosecurity-pigs', function (req, res) {
   // Check the submitted value
   if (biosecurityAssessment === 'email') {
     // Continue to the check-answers page
-    res.redirect('/v28/second-claim/endemics-pig/check-answers.html');
+    res.redirect('/v27/second-claim/endemics-pig/check-answers.html');
   } else if (biosecurityAssessment === 'phone') {
     // Redirect to the biosecurity-error page
-    res.redirect('/v28/second-claim/endemics-pig/biosecurity-error.html');
+    res.redirect('/v27/second-claim/endemics-pig/biosecurity-error.html');
   } else {
     // Handle other cases or redirect to an error page
-    res.redirect('/v28/second-claim/endemics-pig/biosecurity-error.html');
+    res.redirect('/v27/second-claim/endemics-pig/biosecurity-error.html');
   }
 });
 
@@ -427,20 +427,20 @@ router.post('*/endemics-package-3', function (req, res) {
 
   // Perform logic based on the selected packages
   if (selectedPackages.includes("thin-ewes")) {
-    res.redirect('/v28/second-claim/endemics-sheep/ewe');
+    res.redirect('/v27/second-claim/endemics-sheep/ewe');
   } else if (selectedPackages.includes("reproductive-performance")) {
-    res.redirect('/v28/second-claim/endemics-sheep/reproductive');
+    res.redirect('/v27/second-claim/endemics-sheep/reproductive');
   } else if (selectedPackages.includes("lamb-performance")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lamb');
+    res.redirect('/v27/second-claim/endemics-sheep/lamb');
   } else if (selectedPackages.includes("neonatal-lamb-diseases")) {
-    res.redirect('/v28/second-claim/endemics-sheep/neonatal-lamb');
+    res.redirect('/v27/second-claim/endemics-sheep/neonatal-lamb');
   } else if (selectedPackages.includes("external-parasites")) {
-    res.redirect('/v28/second-claim/endemics-sheep/parasites');
+    res.redirect('/v27/second-claim/endemics-sheep/parasites');
   } else if (selectedPackages.includes("lameness")) {
-    res.redirect('/v28/second-claim/endemics-sheep/lameness');
+    res.redirect('/v27/second-claim/endemics-sheep/lameness');
   } else {
     // Handle other cases or redirect to an error page
-    res.redirect('/v28/second-claim/endemics-sheep/endemics-package-error');
+    res.redirect('/v27/second-claim/endemics-sheep/endemics-package-error');
   }
 });
 
