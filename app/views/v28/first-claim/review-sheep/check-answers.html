@@ -1,0 +1,181 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+             {% set serviceName %}
+Get funding to improve animal health and welfare
+{% endset%}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-width-container">
+
+      <h1 class="govuk-heading-l">Check your answers</h1>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-width-one-third">
+            Business name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Arthington Farm
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="check-details">
+              <span class="govuk-visually-hidden"> check-details</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-width-one-third">
+            Livestock          </dt>
+          <dd class="govuk-summary-list__value">
+            [Livestock type]
+          </dd>
+          <dd class="govuk-summary-list__actions">
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-width-one-third">
+            Review or follow-up
+          </dt>
+          <dd class="govuk-summary-list__value">
+            [Review type]
+          </dd>
+          <dd class="govuk-summary-list__actions">
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-width-one-third">
+            Date of review
+          </dt>
+          <dd class="govuk-summary-list__value">
+            6 November 2022
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="visit-date">
+              Change<span class="govuk-visually-hidden"> visit date</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-width-one-third">
+            Date of sampling
+          </dt>
+          <dd class="govuk-summary-list__value">
+            6 November 2022
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="visit-date">
+              Change<span class="govuk-visually-hidden"> visit date</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            21 or more sheep
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="vet-name">
+              Change<span class="govuk-visually-hidden"> vet name</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Number of animals tested
+          </dt>
+          <dd class="govuk-summary-list__value">
+            8
+
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="test-reference">
+              Change<span class="govuk-visually-hidden"> test reference</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+                 <dt class="govuk-summary-list__key">
+            Vet's name
+          </dt>    <dd class="govuk-summary-list__value">
+            Nora Williams 
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="vet-name">
+              Change<span class="govuk-visually-hidden"> vet name</span>
+            </a>
+          </dd>
+        </div>
+         <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Vet's RCVS number
+          </dt>
+          <dd class="govuk-summary-list__value">
+            7116359
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="vet-rcvs">
+              Change<span class="govuk-visually-hidden"> RCVS number</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            URN
+          </dt>
+          <dd class="govuk-summary-list__value">
+            URN-7374-48BC 
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="test-reference">
+              Change<span class="govuk-visually-hidden"> test reference</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+  
+    <p>By submitting your claim, you confirm that:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>you understand you may have to provide evidence to the Rural Payments Agency to support this claim</li>
+      <li>all the information you have provided in this claim is correct to the best of your knowledge</li>
+    </ul>
+
+   <br>
+
+    <form action="/form-handler" method="post" novalidate>
+
+      <input type="hidden" name="answers-checked" value="true">
+
+      <!-- <button class="govuk-button" data-module="govuk-button">
+        Confirm and send
+      </button>
+      <a href="confirmation" role="button" draggable="false" class="govuk-button docs-creator" data-module="govuk-button">
+        Confirm and send
+      </a>
+ -->
+      {{ govukButton({
+      text: "Submit your claim",
+      href: "confirmation"
+      }) }}
+
+    </form>
+
+  </div>
+
+
+</div>
+{% endblock %}

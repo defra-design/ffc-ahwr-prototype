@@ -1,0 +1,121 @@
+{% extends "layouts/layout.html" %}
+{% set serviceName = "Get funding to improve animal health and welfare" %}
+
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <form class="form" method="post">
+    <div class="govuk-form-group">
+
+      <h1 class="govuk-label-wrapper">
+        <label class="govuk-label govuk-label--l" for="rcvs-number">
+          What did the vet test or sample for?
+        </label>
+      </h1>
+
+      <div id="dob-hint" class="govuk-hint">
+        This is on the summary the vet gave you.</div>
+
+      <br>
+
+      {% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+
+{{ govukCheckboxes({
+  name: "diseases",
+  fieldset: {
+ 
+  },
+
+  items: [
+    {
+      value: "disease-1",
+      text: "Lameness"
+    },
+    {
+      value: "disease-2",
+      text: "Border disease (BD)"
+    },
+    {
+      value: "disease-3",
+      text: "Trace elements"
+    },
+    {
+      value: "disease-4",
+      text: "Liver fluke"
+    },
+    {
+      value: "disease-5",
+      text: "Parasitic gastroenteritis (PGE)"
+    },
+    {
+      value: "disease-6",
+      text: "Coccidiosis"
+    },
+    {
+      value: "disease-7",
+      text: "Mastitis"
+    },
+    {
+      value: "disease-8",
+      text: "Tick-borne fever"
+    },
+    {
+      value: "disease-9",
+      text: "Louping ill"
+    },
+    {
+      value: "disease-10",
+      text: "Tick pyaemia"
+    },
+    {
+      value: "disease-11",
+      text: "Lamb nutrition status"
+    },
+    {
+      value: "disease-12",
+      text: "Orf"
+    },
+    {
+      value: "disease-13",
+      text: "Pulpy Kidney"
+    },
+    {
+      value: "disease-14",
+      text: "Lamb dysentery"
+    },
+    {
+      value: "disease-15",
+      text: "Pasteurellosis "
+    },
+    {
+      value: "disease-16",
+      text: "Other"
+    }
+  ]
+}) }}
+
+    <br>
+    <br>
+    
+    <button class="govuk-button" data-module="govuk-button">Continue</button>
+    
+    </form>
+
+
+
+{% endblock %}

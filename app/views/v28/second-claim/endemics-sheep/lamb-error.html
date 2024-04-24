@@ -1,0 +1,144 @@
+{% extends "layouts/layout.html" %}
+{% set serviceName = "Get funding to improve animal health and welfare" %}
+
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <form class="form" method="post">
+    <div class="govuk-form-group">
+
+      <div class="govuk-error-summary" data-module="govuk-error-summary">
+        <div role="alert">
+          <h2 class="govuk-error-summary__title">
+            There is a problem
+          </h2>
+          <div class="govuk-error-summary__body">
+            <ul class="govuk-list govuk-error-summary__list">
+              <li>
+                <a href="#">You must select a disease</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="govuk-form-group govuk-form-group--error">
+        <fieldset class="govuk-fieldset" aria-describedby="nationality-hint nationality-error">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              What did the vet test for?
+            </h1>
+          </legend>
+          <div id="nationality-hint" class="govuk-hint">
+            This is on the summary the vet gave you.
+          </div>
+          <p id="nationality-error" class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span> You must select a disease
+          </p>
+
+          {% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+
+          {{ govukCheckboxes({
+            name: "diseases",
+            fieldset: {
+           
+            },
+          
+            items: [
+              {
+                value: "disease-1",
+                text: "Lameness"
+              },
+              {
+                value: "disease-2",
+                text: "Border disease (BD)"
+              },
+              {
+                value: "disease-3",
+                text: "Trace elements"
+              },
+              {
+                value: "disease-4",
+                text: "Liver fluke"
+              },
+              {
+                value: "disease-5",
+                text: "Parasitic gastroenteritis (PGE)"
+              },
+              {
+                value: "disease-6",
+                text: "Coccidiosis"
+              },
+              {
+                value: "disease-7",
+                text: "Mastitis"
+              },
+              {
+                value: "disease-8",
+                text: "Tick-borne fever"
+              },
+              {
+                value: "disease-9",
+                text: "Louping ill"
+              },
+              {
+                value: "disease-10",
+                text: "Tick pyaemia"
+              },
+              {
+                value: "disease-11",
+                text: "Lamb nutrition status"
+              },
+              {
+                value: "disease-12",
+                text: "Orf"
+              },
+              {
+                value: "disease-13",
+                text: "Pulpy Kidney"
+              },
+              {
+                value: "disease-14",
+                text: "Lamb dysentery"
+              },
+              {
+                value: "disease-15",
+                text: "Pasteurellosis "
+              },
+              {
+                value: "disease-16",
+                text: "Other"
+              }
+            ]
+          }) }}
+          
+          </div>
+        </fieldset>
+      </div>
+
+    <br>
+    <br>
+    
+    <button class="govuk-button" data-module="govuk-button">Continue</button>
+    
+    </form>
+
+
+
+{% endblock %}

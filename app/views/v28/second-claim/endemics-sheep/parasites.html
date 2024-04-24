@@ -1,0 +1,69 @@
+{% extends "layouts/layout.html" %}
+{% set serviceName = "Get funding to improve animal health and welfare" %}
+
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <form class="form" method="post">
+    <div class="govuk-form-group">
+
+      <h1 class="govuk-label-wrapper">
+        <label class="govuk-label govuk-label--l" for="rcvs-number">
+          What did the vet test or sample for?
+        </label>
+      </h1>
+
+      <div id="dob-hint" class="govuk-hint">
+     This is on the summary the vet gave you.</div>
+
+      <br>
+
+      {% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+
+{{ govukCheckboxes({
+  name: "diseases",
+  fieldset: {
+ 
+  },
+
+  items: [
+    {
+      value: "disease-1",
+      text: "Flystrike"
+    },
+    {
+      value: "disease-2",
+      text: "Sheep scab"
+    },
+    {
+      value: "disease-3",
+      text: "Other"
+    }
+  ]
+}) }}
+
+    <br>
+    <br>
+    
+    <button class="govuk-button" data-module="govuk-button">Continue</button>
+    
+    </form>
+
+
+
+{% endblock %}
