@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    <form class="form" method="post" onsubmit="return validateForm(event);" action="pi-hunt.html">
+    <form class="form" method="post" onsubmit="return validateForm(event);" action="biosecurity-cattle">
 
       <div class="govuk-form-group">
         <fieldset class="govuk-fieldset" aria-describedby="eligibility-bps-hint">
@@ -74,9 +74,9 @@
 
           // Redirect to the desired URL based on the input value
           if (input.value.trim().toLowerCase() === 'yes') {
-            window.location.href = 'pi-hunt.html'; // Redirect to eligible.html for 'Yes'
+            window.location.href = 'eligible.html'; // Redirect to eligible.html for 'Yes'
           } else {
-            window.location.href = 'pi-hunt.html'; // Redirect to numbers-ineligible.html for 'No'
+            window.location.href = 'biosecurity-cattle.html'; // Redirect to numbers-ineligible.html for 'No'
           }
           return true; // Form submission allowed
         }

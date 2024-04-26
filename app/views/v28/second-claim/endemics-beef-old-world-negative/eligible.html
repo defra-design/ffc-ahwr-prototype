@@ -23,21 +23,21 @@
         </h2>
         <div class="govuk-error-summary__body">
           <ul class="govuk-list govuk-error-summary__list">
-            <li>
-              <a href="#eligibility-bps">Enter the RCVS number</a>
+            <li id="validation-error-item">
+              <a href="#eligibility-bps">Enter the number of animals tested</a>.
             </li>
           </ul>
         </div>
       </div>
     </div>
 
-    <form class="form" method="post" onsubmit="return validateForm(event);" action="pi-hunt.html">
+    <form class="form" method="post" onsubmit="return validateForm(event);">
 
       <div class="govuk-form-group">
         <fieldset class="govuk-fieldset" aria-describedby="eligibility-bps-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h1 class="govuk-fieldset__heading">
-              What is the vet's Royal College of Veterinary Surgeons (RCVS) number?
+              How many animals were tested?
             </h1>
           </legend>
 
@@ -45,11 +45,15 @@
             You can find this on the summary the vet gave you.
           </div>
 
-          <p id="validation-error" class="govuk-error-message" style="display: none;">
-            <span class="govuk-visually-hidden">Error:</span>Enter the RCVS number
-          </p>
+          
 
-          <input type="text" id="eligibility-bps" name="eligibility-bps" class="govuk-input govuk-input--width-20" id="vet-name">
+          <label class="govuk-label" for="number-of-animals">
+            Enter a number
+          </label>
+          <p id="validation-error" class="govuk-error-message" style="display: none;">
+            <span class="govuk-visually-hidden">Error:</span>Enter the number of animals tested
+          </p>
+          <input type="text" id="number-of-animals" name="number-of-animals" class="govuk-input govuk-input--width-10">
 
         </fieldset>
       </div>
@@ -61,33 +65,45 @@
     <script>
       function validateForm(event) {
         event.preventDefault(); // Prevent the default form submission behavior
-
-        var input = document.getElementById('eligibility-bps');
+    
+        var input = document.getElementById('number-of-animals');
         var errorElement = document.getElementById('validation-error');
         var formGroup = document.querySelector('.govuk-form-group');
         var errorSummary = document.querySelector('.govuk-error-summary');
 
+        var validationErrorItem = document.getElementById('validation-error-item');
+
         if (input.value.trim() !== '') {
-          errorElement.style.display = 'none';
-          formGroup.classList.remove('govuk-form-group--error');
-          errorSummary.style.display = 'none'; // Hide error summary
-
-          // Redirect to the desired URL based on the input value
-          if (input.value.trim().toLowerCase() === 'yes') {
-            window.location.href = 'pi-hunt.html'; // Redirect to eligible.html for 'Yes'
+          // Check if the input is numeric
+          if (!isNaN(input.value.trim())) {
+            errorElement.style.display = 'none';
+            formGroup.classList.remove('govuk-form-group--error');
+            errorSummary.style.display = 'none'; // Hide error summary
+    
+            // Redirect to the desired URL based on the input value
+            var numberOfAnimals = parseInt(input.value.trim());
+            if (numberOfAnimals >= 5) {
+              window.location.href = 'vet-name.html';
+            } else {
+              window.location.href = 'number-of-animals-ineligible.html';
+            }
+            return true; // Form submission allowed
           } else {
-            window.location.href = 'pi-hunt.html'; // Redirect to numbers-ineligible.html for 'No'
+            // Non-numeric input, display error message and add error styling
+            validationErrorItem.innerHTML = 'Enter the number of animals tested';
           }
-          return true; // Form submission allowed
+        } else {
+          // Empty input, display error message and add error styling
+          validationErrorItem.innerHTML = 'Enter the number of animals tested';
         }
-
-        // Empty input, display error message and add error styling
+    
         errorElement.style.display = 'block';
         formGroup.classList.add('govuk-form-group--error');
         errorSummary.style.display = 'block'; // Show error summary
         return false; // Form submission blocked
       }
     </script>
+    
 
   </div>
 </div>

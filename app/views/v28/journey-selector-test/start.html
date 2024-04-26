@@ -1,0 +1,65 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Apply for the Annual Health and Welfare Review funding
+{% endblock %}
+
+{% block header %}
+<!-- Blank header with no service name for the start page -->
+{{ govukHeader() }}
+{% endblock %}
+
+<!-- Adds spacing for pages without a back button -->
+{% set mainClasses = "govuk-main-wrapper--l" %}
+
+{% block content %}
+    
+<h1>Radio Buttons Form</h1>
+    
+<form id="myForm" action="next" method="post">
+    <fieldset>
+        <legend>Visit:</legend>
+        <input type="radio" id="review" name="visit" value="review">
+        <label for="review">Review</label><br>
+        <input type="radio" id="endemics" name="visit" value="endemics">
+        <label for="endemics">Endemics</label><br>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Species:</legend>
+        <input type="radio" id="beef" name="species" value="beef">
+        <label for="beef">Beef</label><br>
+        <input type="radio" id="dairy" name="species" value="dairy">
+        <label for="dairy">Dairy</label><br>
+        <input type="radio" id="sheep" name="species" value="sheep">
+        <label for="sheep">Sheep</label><br>
+        <input type="radio" id="pigs" name="species" value="pigs">
+        <label for="pigs">Pigs</label><br>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Old world or new world:</legend>
+        <input type="radio" id="new" name="world" value="new">
+        <label for="new">New</label><br>
+        <input type="radio" id="old" name="world" value="old">
+        <label for="old">Old</label><br>
+    </fieldset>
+    
+    <button type="submit">Next</button>
+</form>
+
+<script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        // Get the selected values
+        var selectedValues = {
+            visit: document.querySelector('input[name="visit"]:checked').value,
+            species: document.querySelector('input[name="species"]:checked').value,
+            world: document.querySelector('input[name="world"]:checked').value
+        };
+
+        // Store the selected values in a JavaScript variable
+        sessionStorage.setItem("selectedValues", JSON.stringify(selectedValues));
+    });
+</script>
+
+    {% endblock %}
