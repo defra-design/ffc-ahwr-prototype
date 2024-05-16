@@ -22,7 +22,7 @@ Index page
         <div class="govuk-error-summary__body">
           <ul class="govuk-list govuk-error-summary__list">
             <li id="validation-error-item">
-              <a href="#eligibility-bps">Date of testing must include a month</a>
+              <a href="#eligibility-bps">Enter the date samples were taken</a>
             </li>
           </ul>
         </div>
@@ -43,7 +43,9 @@ Index page
           <div id="changed-name-hint" class="govuk-hint">
            This is the date samples were taken to test for health conditions or diseases. You can find it on the summary the vet gave you.  
           </div>
-          
+          <p id="validation-error" class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span> Enter the date samples were taken
+          </p>
 
 
 
@@ -54,7 +56,7 @@ Index page
               <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email"
                 data-aria-controls="conditional-contact">
               <label class="govuk-label govuk-radios__label" for="contact">
-              When the vet visited the farm for the review
+                When the vet visited the farm for the follow-up
               </label>
             </div>
             <div class="govuk-radios__item">
@@ -63,13 +65,9 @@ Index page
               <label class="govuk-label govuk-radios__label" for="contact-2">
                 On another date
               </label>
-              
             </div>
             <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
               <div class="govuk-date-input" id="when-review">
-                <p id="validation-error" class="govuk-error-message">
-                  <span class="govuk-visually-hidden">Error:</span>Date of testing must include a month
-                </p>
                 <div class="govuk-date-input__item">
                   <div class="govuk-form-group">
                     <label class="govuk-label govuk-date-input__label" for="when-review-day">
