@@ -1,0 +1,50 @@
+{% extends "layouts/layout-defra.html" %}
+
+{% block pageTitle %}
+Back office: Applications
+{% endblock %}
+{% set serviceName %}
+Annual Health and Welfare Back Office
+{% endset%}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner govuk-!-padding-top-0">
+  <p class="govuk-phase-banner__content">
+    <strong style="background-color:#00a33b;" class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+{% endblock %}
+
+{% block content %}
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m">Role based access</caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">User</th>
+              <td class="govuk-table__cell">Sam Smith</td>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Role</th>
+              <td class="govuk-table__cell"><a href="../v15/a-digital.html">Recommender</a></td>
+            </tr>
+          </tbody>
+        </table>
+   
+</div>
+
+
+
+{% endblock %}
+
+
