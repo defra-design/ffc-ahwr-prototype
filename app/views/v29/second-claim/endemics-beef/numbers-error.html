@@ -17,20 +17,37 @@ Question page
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
+      <div class="govuk-error-summary" data-module="govuk-error-summary">
+        <div role="alert">
+          <h2 class="govuk-error-summary__title">
+            There is a problem
+          </h2>
+          <div class="govuk-error-summary__body">
+            <ul class="govuk-list govuk-error-summary__list">
+              <li>
+                <a href="#eligibility-bps">Select if you had [number] or more [species] on the date of the follow-up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <form class="form" method="post">
 
-        <div class="govuk-form-group">
+        <div class="Enter a numeric value">
           <fieldset class="govuk-fieldset" aria-describedby="eligibility-cattle-hint">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
               <h1 class="govuk-fieldset__heading">
-                Did you have 11 or more beef cattle on the date of the follow-up?
+                Did you have [number] or more [species] on the date of the follow-up?
               </h1>
             </legend>
             <div id="eligibility-hint" class="govuk-hint">
               You can find this on the summary the vet gave you.
             </div>
-
-            <div class="govuk-radios govuk-radios--inline">
+            <div id="passport-issued-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span> Select if you had [number] or more [species] on the date of the follow-up
+            </div>
+            <div class="govuk-radios govuk-radios--inline govuk-form-group--error">
               <div class="govuk-radios__item">
                 <input class="govuk-radios__input" id="eligibility-cattle" name="eligibility-cattle" type="radio" value="eligible" onclick="setLocation(this);" {{ checked("eligibility-cattle", "eligibility-cattle-yes") }}>
                 <label class="govuk-label govuk-radios__label" for="eligibility-cattle">
