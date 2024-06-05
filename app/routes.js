@@ -363,28 +363,28 @@ router.post('*/lameness', function (req, res) {
 
 
 // Route for the packages form submission
-router.post('*/endemics-package', function (req, res) {
+router.post('*/endemics-package-3', function (req, res) {
   // Retrieve selected packages from the form data
   const selectedPackages = req.body.package;
 
   // Perform logic based on the selected packages
-  if (selectedPackages.includes("package-1")) {
+  if (selectedPackages.includes("thin-ewes")) {
     res.redirect('/v29/second-claim/endemics-sheep/ewe');
-  } else if (selectedPackages.includes("package-2")) {
+  } else if (selectedPackages.includes("reproductive-performance")) {
     res.redirect('/v29/second-claim/endemics-sheep/reproductive');
-  } else if (selectedPackages.includes("package-3")) {
+  } else if (selectedPackages.includes("lamb-performance")) {
     res.redirect('/v29/second-claim/endemics-sheep/lamb');
-  } else if (selectedPackages.includes("package-4")) {
+  } else if (selectedPackages.includes("neonatal-lamb-diseases")) {
     res.redirect('/v29/second-claim/endemics-sheep/neonatal-lamb');
-  } else if (selectedPackages.includes("package-5")) {
+  } else if (selectedPackages.includes("external-parasites")) {
     res.redirect('/v29/second-claim/endemics-sheep/parasites');
-  } else if (selectedPackages.includes("package-6")) {
+  } else if (selectedPackages.includes("lameness")) {
     res.redirect('/v29/second-claim/endemics-sheep/lameness');
   } else {
     // Handle other cases or redirect to an error page
     res.redirect('/v29/second-claim/endemics-sheep/endemics-package-error');
   }
-});
+}); 
 
 // Route for the form submission
 router.post('*/test-numbers', function (req, res) {
