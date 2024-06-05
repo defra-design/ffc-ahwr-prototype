@@ -3,15 +3,9 @@
 {% block pageTitle %}
 Index page
 {% endblock %}
-<<<<<<< HEAD
       {% set serviceName %}
   Get funding to improve animal health and welfare 
 {% endset %}
-=======
-       {% set serviceName %}
-Get funding to improve animal health and welfare
-{% endset%}
->>>>>>> main
 
 
 {% block beforeContent %}
@@ -26,11 +20,11 @@ Get funding to improve animal health and welfare
     <h1 class="govuk-heading-l">You cannot continue with your claim</h1>
     <br>
     <p class="govuk-body">
-      You did not have the <a href="https://apply-for-an-annual-health-and-welfare-review.defra.gov.uk/apply/guidance-for-farmers">minimum number of livestock</a> on the date of the review. 
+      You must have had the <a href="https://apply-for-an-annual-health-and-welfare-review.defra.gov.uk/apply/guidance-for-farmers">minimum number of livestock</a> on the date of the follow-up. 
     </p>
 
-    <p class="govuk-body">If you selected the wrong option, you’ll need to change your answer.</p>
-    <p class="govuk-body"><a class="govuk-link" href="javascript:history.go(-1)">Change your answer for number of livestock</a>.</p>
+    <p class="govuk-body">If you had the minimum number, you'll need to go back and change your answer.</p>
+    <p class="govuk-body"><a class="govuk-link" href="javascript:history.go(-1)">Change your answer if you had the minimum number of livestock on the date of the follow-up</a>.</p>
 
     {% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
 
