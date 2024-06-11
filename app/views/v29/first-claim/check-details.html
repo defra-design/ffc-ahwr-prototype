@@ -14,27 +14,11 @@ Health and welfare review funding for this organisation
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-
-    <div class="govuk-error-summary" data-module="govuk-error-summary">
-      <div role="alert">
-        <h2 class="govuk-error-summary__title">
-          There is a problem
-        </h2>
-        <div class="govuk-error-summary__body">
-          <ul class="govuk-list govuk-error-summary__list">
-            <li>
-              <a href="#">Select if your details are correct</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
     <h1 class="govuk-heading-l">
       Check your details
     </h1>
 <!--
-    <h2 class="govuk-heading-m">Arthington Farm Ltd</h2>
+    <h2 class="govuk-heading-m">Arthington Farm</h2>
 -->
     <dl class="govuk-summary-list govuk-!-margin-bottom-8">
       <div class="govuk-summary-list__row">
@@ -54,7 +38,7 @@ Health and welfare review funding for this organisation
           Business name
         </dt>
         <dd class="govuk-summary-list__value">
-          Arthington Farm Ltd 
+          Arthington Farm 
         </dd>
         <dd class="govuk-summary-list__actions">
 
@@ -63,12 +47,25 @@ Health and welfare review funding for this organisation
 
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-          SBI number
+          CRN
+        </dt>
+        <dd class="govuk-summary-list__value">
+          11234567890
+        </dd>
+        <dd class="govuk-summary-list__actions">
+
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          SBI
         </dt>
         <dd class="govuk-summary-list__value">
           1234567890
         </dd>
         <dd class="govuk-summary-list__actions">
+
 
         </dd>
       </div>
@@ -112,36 +109,35 @@ Health and welfare review funding for this organisation
 -->
     </dl>
     
-    <form class="form" action="../claim/vet-visits.html" method="post">
+    <form class="form" action="vet-visits.html" method="post">
 
-      <div class="govuk-form-group govuk-form-group--error">
-        <fieldset class="govuk-fieldset" aria-describedby="whereDoYouLive-error">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-            <h1 class="govuk-fieldset__heading">
-             Are your details correct?
-            </h1>
+           
+            <h2 class="govuk-fieldset__heading">
+              Are these details correct?
+            </h2>
           </legend>
-          <p id="whereDoYouLive-error" class="govuk-error-message">
-            <span class="govuk-visually-hidden">Error:</span> Select if your details are correct
-          </p>
-          <div class="govuk-radios" data-module="govuk-radios">
+          <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
-              <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+              <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="vet-visits" onclick="setLocation(this);">
+              <label class="govuk-label govuk-radios__label" for="changed-name">
                 Yes
               </label>
             </div>
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLive" type="radio" value="scotland">
-              <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
+              <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="offer-rejected-9" onclick="setLocation(this);">
+              <label class="govuk-label govuk-radios__label" for="changed-name-2">
                 No
               </label>
             </div>
           </div>
+
         </fieldset>
       </div>
 
-      <a href="../apply/declaration-2.html" class="govuk-button" data-module="govuk-button">Continue</a>
+      <a href="vet-visits.html" class="govuk-button" data-module="govuk-button">Continue</a>
 
     </form>
 
