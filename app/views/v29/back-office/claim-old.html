@@ -1,0 +1,287 @@
+{% extends "layouts/layout-defra.html" %}
+
+{% block pageTitle %}
+Back office: User application
+{% endblock %}
+{% set serviceName %}
+Annual Health and Welfare Back Office
+{% endset%}
+
+{% block beforeContent %}
+
+
+<a class="govuk-back-link govuk-!-margin-bottom-0" href="#">Back</a>
+<a style="float:right;" class="govuk-!-margin-bottom-0 govuk-!-margin-top-2" href="index.html">Claims and agreements dashboard</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    
+    <h1 class="govuk-caption-l govuk-!-margin-bottom-3">
+      Claim details
+    </h1>
+
+    <h2 class="govuk-heading-l">
+      Claim number: AHWR-F021-721B
+      <strong class="govuk-tag">
+       Ready to pay
+      </strong>
+    </h2>
+    <h3 class="govuk-heading-m">Business overview</h3>
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Business name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p><a href="business.html">Bill Fearnley and sons</a></p>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          SBI number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          103491987
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p>Coronation Drive, Harleston IP20 0AX</p>
+          <details class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                View change
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+             Address at start of agreement: Manor Farm Rd, Harleston IP20 0AX
+            </div>
+          </details>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Organisation email 
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p>hello@fearnley-sons.com</p>
+          <details class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                View change
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              Organisation email at start of agreement: fearnley-sons@hotmail.com
+            </div>
+          </details>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          User email 
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p>bill-fearnley-sons@hotmail.com</p>
+          <details class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                View change
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              User email at start of agreement: phil-fearnley-sons@hotmail.com
+            </div>
+          </details>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Date of agreement
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p>1/11/2022</p>
+        </dd>
+      </div>
+    </dl>
+
+    <!--Application stages (in tabs)-->
+    <h3 class="govuk-heading-m">Claim overview</h3>
+    <div class="govuk-tabs" data-module="govuk-tabs">
+      <h2 class="govuk-tabs__title">
+        Contents
+      </h2>
+      <ul class="govuk-tabs__list">
+        <!--<li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#applied">
+            Agreement
+          </a>
+        </li>-->
+        <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+          <a class="govuk-tabs__tab" href="#claimed">
+            Summary
+          </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#history">
+              History
+            </a>
+            </li>
+      </ul>
+
+      <!--<div class="govuk-tabs__panel" id="applied">
+        <h2 class="govuk-heading-l">In check</h2>
+        <table class="govuk-table">
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Date of agreement</th>
+                <td class="govuk-table__cell">13/02/2023</td>
+              </tr>
+              <th scope="row" class="govuk-table__header">Business details correct</th>
+              <td class="govuk-table__cell">Yes</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Terms and conditions</th>
+              <td class="govuk-table__cell">Accepted</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Agreement accepted</th>
+              <td class="govuk-table__cell">Yes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>-->
+      
+
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="claimed">
+        <h2 class="govuk-heading-l">In check</h2>
+        <table class="govuk-table">
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Date of claim</th>
+              <td class="govuk-table__cell">1/12/2022</td>
+            </tr>
+ <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Livestock</th>
+              <td class="govuk-table__cell">[Livestock type]</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Type of visit</th>
+              <td class="govuk-table__cell">Review</td>
+            </tr> 
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Date of visit</th>
+              <td class="govuk-table__cell">6/11/2022</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Date of testing</th>
+              <td class="govuk-table__cell">6/11/2022</td>
+            </tr>
+  <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">11 or more beef cattle</th>
+              <td class="govuk-table__cell">Yes</td>
+            </tr>   
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Number of animals tested</th>
+              <td class="govuk-table__cell">[Number]</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Vet's name</th>
+              <td class="govuk-table__cell">[Vet name]</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Vet’s RCVS number</th>
+              <td class="govuk-table__cell">[Number]</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">URN</th>
+              <td class="govuk-table__cell">
+                [Number]</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Test results</th>
+              <td class="govuk-table__cell">
+                [Result]</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">
+        <h2 class="govuk-heading-l">History</h2>
+        <table class="govuk-table">
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Date</th>
+              <th scope="col" class="govuk-table__header">Time</th>
+              <th scope="col" class="govuk-table__header">Action</th>
+              <th scope="col" class="govuk-table__header">User</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Date</th>
+              <th scope="col" class="govuk-table__header">Time</th>
+              <th scope="col" class="govuk-table__header">Action</th>
+              <th scope="col" class="govuk-table__header">User</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">24/03/2023</td>
+              <td class="govuk-table__cell">10:00:12</td>
+              <td class="govuk-table__cell">Ready to pay</td>
+              <td class="govuk-table__cell">Daniel Jones</td>
+            </tr>
+      </div>    
+          </tbody>
+        </table>
+      </div>
+    </div>
+  
+          
+          <!--<div class="govuk-button-group">
+            <a href="x-greenfield-&-co-approvingclaim#claimed" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+              Recommend to pay</a>
+            </button>
+            <a href="x-greenfield-&-co-rejectingclaim#claimed" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
+              Recommend to reject</a>
+            </button>
+
+          </div>
+          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">-->
+
+        </div>
+
+      </div>
+
+
+      </form>
+
+      </div>
+
+      
+      
+    </div>
+
+  </div>
+</div>
+
+
+
+
+{% endblock %}
+
+
