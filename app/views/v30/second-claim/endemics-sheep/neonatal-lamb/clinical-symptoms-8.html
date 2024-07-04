@@ -1,0 +1,53 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+ {% set serviceName %}
+Get funding to improve animal health and welfare
+{% endset%}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-form-group">
+      <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="urn">
+        What was the tick pyaemia test result?
+        </label>
+      </h1>
+      <div id="passport-number-hint" class="govuk-hint">
+        You can find this on the summary the vet gave you.
+      </div>
+      <div class="govuk-radios" data-module="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+          <label class="govuk-label govuk-radios__label" for="contact">
+            Clinical symptoms present
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+          <label class="govuk-label govuk-radios__label" for="contact-2">
+            Clinical symptoms not present
+          </label>
+        </div>
+      </fieldset>
+    </div>
+    <br>
+ 
+
+
+    {{ govukButton({
+      text: "Continue",
+      href: "check-answers"
+    }) }}
+
+  </div>
+</div>
+
+{% endblock %}
