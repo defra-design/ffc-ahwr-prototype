@@ -1,0 +1,49 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+{% set serviceName %}
+  Get funding to improve animal health and welfare 
+{% endset %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">You cannot continue with your claim</h1>
+    <p class="govuk-body">The number of animals you entered does not meet the minimum required.</p>
+    <p class="govuk-body">If samples were not taken from the minimum required number of animals, they need to be taken again from the minimum number.</p>
+    <p class="govuk-body">The number required for each species is included in the guidance:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>   
+        <a class="govuk-link" href="https://apply-for-an-annual-health-and-welfare-review.defra.gov.uk/apply/test-cattle">testing cattle for animal health and welfare review and endemic disease follow-up </a>
+      </li>
+      <li>
+        <a class="govuk-link" href="https://apply-for-an-annual-health-and-welfare-review.defra.gov.uk/apply/test-pigs">testing pigs for animal health and welfare review and endemic disease follow-up </a>
+      </li>
+    </ul>
+    <p class="govuk-body">When samples have been taken from the required number, start your claim again.</p>
+    <p class="govuk-body">If you have entered the wrong number, you’ll need to go back and enter the correct number.</p>
+    <p class="govuk-body"> <a class="govuk-link" href="javascript:history.go(-1)">Enter the number of animals samples were taken from </a>.</p>
+    {% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
+
+    {{ govukWarningText({
+      text: "Your claim will be checked by our team.",
+      iconFallbackText: "Warning"
+    }) }}
+    <h2 class="govuk-heading-m">Get help with your claim</h2>
+    <p class="govuk-body">If you need help with your claim, contact the Rural Payments Agency and give your agreement number.</p>
+    <p class="govuk-body">Email: <a href="mailto:ruralpayments@defra.gov.uk" class="govuk-link">ruralpayments@defra.gov.uk</a></p>
+    <p class="govuk-body">Telephone: 03000 200 301<br>Monday to Friday, 8:30am to 5pm, except bank holidays</p>
+    <p class="govuk-body"><a href="https://www.gov.uk/call-charges" class="govuk-link" rel="noreferrer noopener" target="_blank">Find out about call charges (opens in a new tab)</a></p>
+    
+  </div>
+</div>
+
+
+{% endblock %}

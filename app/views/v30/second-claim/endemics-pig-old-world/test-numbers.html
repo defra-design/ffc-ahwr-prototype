@@ -1,0 +1,31 @@
+{% extends "layouts/layout.html" %}
+{% set serviceName = "Get funding to improve animal health and welfare" %}
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-form-group">
+      <form class="form" method="post" action="disease-status">
+
+      <h1 class="govuk-label-wrapper">
+        <label class="govuk-label govuk-label--l" for="rcvs-number">
+          How many samples were tested?
+        </label>
+      </h1>
+    <p class="govuk-body">You can find this on the summary the vet gave you.</p>
+    <input class="govuk-input govuk-input--width-2" id="width-2" name="width2" type="number">
+  </div>
+   
+    <button class="govuk-button" data-module="govuk-button">Continue</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
