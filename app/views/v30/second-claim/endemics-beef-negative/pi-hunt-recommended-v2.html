@@ -23,16 +23,16 @@
         <fieldset class="govuk-fieldset" aria-describedby="eligibility-cattle-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h1 class="govuk-fieldset__heading">
-              Was a persistently infected (PI) hunt for bovine viral diarrhoea (BVD) done on all cattle in the herd?
+              Did the vet tell you to do a persistently infected (PI) hunt?
             </h1>
           </legend>
           <div id="eligibility-hint" class="govuk-hint">
-            You can find this on the summary the vet gave you.
+            The vet will have made a recommendation if you should do a PI hunt. You can find this on the summary the vet gave you.
           </div>
 
           <div class="govuk-radios govuk-radios--inline">
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="eligibility-cattle" name="eligibility-cattle" type="radio" value="test-reference-cattle" onclick="setLocation(this);" {{ checked("eligibility-cattle", "eligibility-cattle-yes") }}>
+              <input class="govuk-radios__input" id="eligibility-cattle" name="eligibility-cattle" type="radio" value="pi-hunt" onclick="setLocation(this);" {{ checked("eligibility-cattle", "eligibility-cattle-yes") }}>
               <label class="govuk-label govuk-radios__label" for="eligibility-cattle">
                 Yes
             </div>
