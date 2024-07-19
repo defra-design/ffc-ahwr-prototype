@@ -1109,7 +1109,7 @@
   border-bottom: 0;
 }
 
-.govuk-header__link--service-name {
+.govuk-header__service-name {
   display: inline-block;
   margin-bottom: 10px;
   font-family: "nta",arial,sans-serif;
@@ -1120,18 +1120,18 @@
   line-height: 1.1111111111;
 }
 @media print {
-  .govuk-header__link--service-name {
+  .govuk-header__service-name {
     font-family: sans-serif;
   }
 }
 @media (min-width: 40.0625em) {
-  .govuk-header__link--service-name {
+  .govuk-header__service-name {
     font-size: 24px;
     line-height: 1.25;
   }
 }
 @media print {
-  .govuk-header__link--service-name {
+  .govuk-header__service-name {
     font-size: 18pt;
     line-height: 1.15;
   }
@@ -1286,10 +1286,6 @@
     padding: 5px 0;
     text-align: right;
   }
-}
-
-.govuk-header__navigation--no-service-name {
-  padding-top: 40px;
 }
 
 .govuk-header__navigation-item {
