@@ -8,8 +8,7 @@ Annual Health and Welfare Back Office
 {% endset%}
 
 {% block beforeContent %}
-
-<a class="govuk-back-link govuk-!-margin-bottom-0" onclick="history.back()">Back</a>
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
 <!--<a style="float:right;" class="govuk-!-margin-bottom-0 govuk-!-margin-top-2" href="index.html">Claims and agreements dashboard</a>-->
 {% endblock %}
 
@@ -102,7 +101,8 @@ Annual Health and Welfare Back Office
         
       </dl>
       
-
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-three-thirds">
   <!--Application stages (in tabs)-->
   
   <div class="govuk-tabs" data-module="govuk-tabs">
@@ -131,6 +131,16 @@ Annual Health and Welfare Back Office
         <h2 class="govuk-heading-l">Claim details</h2>
         <dl class="govuk-summary-list">
             <!-- Content for the 'Claim' tab goes here -->
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key govuk-!-width-one-third">
+                  Status
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <strong class="govuk-tag govuk-tag--purple">
+                  On hold
+                 </strong>
+              </dd>
+          </div>
                   <div class="govuk-summary-list__row">
                       <dt class="govuk-summary-list__key govuk-!-width-one-third">
                           Livestock
@@ -277,6 +287,7 @@ Annual Health and Welfare Back Office
       </div>
     </div>
   </div>
+</div>
 </div>
 
 {% endblock %}
