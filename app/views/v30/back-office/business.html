@@ -30,7 +30,7 @@ Annual Health and Welfare Back Office
 
 
     <h1 class="govuk-caption-l govuk-!-margin-bottom-3">
-       <!--Agreement summary and claims-->All business claims
+       <!--Agreement summary and claims-->Agreement details and claims
     </h1>
 
     <h2 class="govuk-heading-l">
@@ -132,12 +132,14 @@ Annual Health and Welfare Back Office
       </div>
     </dl>
     
-    <h1 class="govuk-heading-xl govuk-!-margin-bottom-7">
  
 
   </div>
 </div>
 
+<h3 class="govuk-heading-m">
+  P & D Fearnley & Sons
+</h3>
 
 <!--<h3 class="govuk-heading-m">All claims for this business</h3>-->
 <table class="govuk-table" data-module="moj-sortable-table">
@@ -178,7 +180,47 @@ Annual Health and Welfare Back Office
 
     </tr>
 
-  
+  <!-- Start pagination-->
+  <nav class="govuk-pagination" aria-label="Pagination">
+    <div class="govuk-pagination__prev">
+      <a class="govuk-link govuk-pagination__link" href="#" rel="prev">
+        <svg class="govuk-pagination__icon govuk-pagination__icon--prev" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+          <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+        </svg>
+        <span class="govuk-pagination__link-title">
+          Previous<span class="govuk-visually-hidden"> page</span>
+        </span>
+      </a>
+    </div>
+    <ul class="govuk-pagination__list">
+      <li class="govuk-pagination__item">
+        <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 1">
+          1
+        </a>
+      </li>
+      <li class="govuk-pagination__item govuk-pagination__item--current">
+        <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 2" aria-current="page">
+          2
+        </a>
+      </li>
+      <li class="govuk-pagination__item">
+        <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 3">
+          3
+        </a>
+      </li>
+    </ul>
+    <div class="govuk-pagination__next">
+      <a class="govuk-link govuk-pagination__link" href="#" rel="next">
+        <span class="govuk-pagination__link-title">
+          Next<span class="govuk-visually-hidden"> page</span>
+        </span>
+        <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+          <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+        </svg>
+      </a>
+    </div>
+  </nav>
+  <!-- End pagination -->
 
     
 
@@ -206,27 +248,6 @@ Annual Health and Welfare Back Office
 
   </tbody>
 </table>
-
-
-        <!--Withdraw process-->
-
-        <div class="govuk-grid-row">
-          <div class="govuk-grid-column-two-thirds">
-            <h2 class="govuk-heading-m">Withdraw this agreement</h2>
-            <p class="govuk-body">This customer has successfully submitted an application but, if they ask, they can withdraw from an agreement.</p>
-            
-
-  
-    
-  
-
-<a href="../back-office-authoriser/multiples-withdraw-confirmation.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-  Withdraw
-</a>
-
-          </div>
-        </div>
-
 
 
 
