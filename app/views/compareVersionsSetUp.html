@@ -1,0 +1,57 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+<!-- Make sure you have set up your serviceName correctly in the config.json file -->
+{{serviceName}} Prototype Compare Versions
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <!-- On page routing to link to compareVersions HTML file on submit -->
+
+    <form class="form" action="compareVersions" method="post">
+
+    <!-- Javascript that allows users to go back to the previous page -->
+
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+      <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-two-thirds">
+
+          <!-- Basic HTML to set the page with the text input up, feel free to redesign this or adapt for your prototype -->
+
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                    <span class="govuk-caption-xl">Prototype tool</span>
+                    <h1 class="govuk-fieldset__heading">
+                        What page would you like to compare?
+                    </h1>                    
+                  </legend>
+                </fieldset>
+
+                <p class="govuk-hint">Enter the page URL to generate a comparision of this page across prototype versions.</p>
+
+                <!-- Setting the text input ID to 'pageURL' this is what we will use to call this throughout the prototype -->
+                <input class="govuk-input" id="pageURL" name="pageURL" type="text">
+
+                <button class="govuk-button" data-module="govuk-button">
+                  Compare versions
+                </button>
+
+                <!-- Optional: Provides a way to return back to your prototype index page -->
+
+                <p><a href="index">Return to prototype index page</a></p>
+
+            </div>
+
+       </form>
+
+      </div>
+
+</div>
+
+{% endblock content %}

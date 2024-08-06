@@ -1,0 +1,93 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+<!-- Make sure you have set up your serviceName correctly in the config.json file -->
+{{serviceName}} Prototype Compare Versions
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <form class="form" action="#" method="post">
+
+      <div class="govuk-grid-row">
+
+        <!-- Allow users to go back to set up page for comparing versions feature -->
+
+        <a href="compareVersionsSetUp" class="govuk-back-link">Back to page search</a>
+
+            <div class="govuk-form-group">
+                <!-- Dynamic page heading to include the URL provided on the compareVersionsSetUp page -->
+                <h1 class="govuk-heading-xl">Versions of {{ data['pageURL'] }}</h1>
+
+                <!-- Place all your Discovery versions here! -->
+
+                <h2 class="govuk-heading-m">Discovery</h2>
+                <div class="govuk-grid-row">
+
+                        <!-- Start to staticly render each iFrame. Remember this is the basic approach to this feature, for those that are more confident feel free to make this more dynamic -->
+                        <!-- Note: With this static approach each time you create a new version within your prototype you will need to come and add an additional row -->
+
+                        <!-- Use this column-one-half class to have a side by side view of your pages -->
+                        <div class="govuk-grid-column-one-half">
+                            <!-- Create a link to the page from that version -->
+                            <p class="govuk-body">
+                                <!-- Ensure you have changed the routing path to match your prototype set up. In this row we are calling from the v1 prototype folder. Each '/' represents a folder -->
+                                <a href="/v1/{{ data['pageURL'] }}">Version 1</a>
+                            </p>
+                                <!-- Use the iFrame tag to render each version in it's own box, this is where the CSS comes in -->
+                            <div class="page-version">
+                                <!-- Use the same routing path as above for the src tag -->
+                                <!-- By setting the frameborder to 1 you help seperate the frames -->
+                                <iframe src="/v1/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                            </div>
+                        </div>
+
+                        <!-- Repeat the same apporach as above ensuring you update your version number in the href and src tags -->
+
+                        <div class="govuk-grid-column-one-half">
+                            <p class="govuk-body"><a href="/v2/{{ data['pageURL'] }}">Version 2</a></p>
+                            <div class="page-version"><iframe src="/v2/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
+                        </div>
+                    
+                </div>
+
+                <!-- Place all your Alpha versions here! -->
+
+                <h2 class="govuk-heading-m">Alpha</h2>
+                <div class="govuk-grid-row">
+
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v3/{{ data['pageURL'] }}">Version 3</a></p>
+                        <div class="page-version"><iframe src="/v3/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
+                    </div>
+
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v4/{{ data['pageURL'] }}">Version 4</a></p>
+                        <div class="page-version"><iframe src="/v4/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
+                    </div>
+                    
+                </div>
+
+                <!-- Place all your Beta versions here! -->
+
+                <h2 class="govuk-heading-m">Beta</h2>
+                <div class="govuk-grid-row">
+                    
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v5/{{ data['pageURL'] }}">Version 5</a></p>
+                        <div class="page-version"><iframe src="/v5/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
+                    </div>
+
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v6/{{ data['pageURL'] }}">Version 6</a></p>
+                        <div class="page-version"><iframe src="/v10/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
+                    </div>
+                    
+                </div>
+
+</form>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,111 @@
+{% extends "layouts/main2.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <!-- Insert your service name here -->
+    <h1 class="govuk-heading-xl">
+      {Service Name}
+    </h1>
+
+    <!-- Insert your team name here -->
+    <p>This prototype is maintained by the {Team Name}.</p>
+
+    <!-- Add email contacts for key members of your team -->
+    <p>
+      <a href="mailto:enterEmailAddress">Insert Name</a> (Insert Role) <br>
+      <a href="mailto:enterEmailAddress">Insert Name</a> (Insert Role) <br>
+      <a href="mailto:enterEmailAddress">Insert Name</a> (Insert Role) <br>
+
+      <br>
+
+      <h2 class="govuk-heading-m">About the service</h2>
+
+      <!-- Insert a summary of your service -->
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <!-- How would you like to break your service down? e.g. is there a register side of the service and then a manage account side? The below example is for a service that is split into two. -->
+      <div class="govuk-grid-row">
+      <!-- First half of your service -->
+      <div class="govuk-grid-column-one-half">
+        <h2 class="govuk-heading-l" style="border-bottom: 1px solid lightgray; margin-bottom: 0">{Service side name}<br>
+          <span class="govuk-hint">{Summary of this side of the service}</span>
+        </h2>
+  
+        <hr class="govuk-!-margin-top-0">
+  
+        <h2 class="govuk-heading-m">
+          Latest version
+        </h2>
+  
+        <!-- Add a link to your latest version here -->
+        <ul
+          class="govuk-list govuk-list--bullet">
+          <li>
+            <a href="#">V 3.0</a>
+          </li>
+        </ul>
+
+        <!-- An optional changelog to show the main points of what this version covers -->
+        <p>
+          <span class="govuk-!-font-weight-bold">Changelog:</span>
+          <br>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>{Change log option 1}</li>
+          </ul>
+        </p>
+
+        <!-- How would you like to display the other versions of your prototype? You could use a details component here -->
+  
+        <hr>
+
+      </div>
+
+      <!-- Second half of your service -->
+      <div class="govuk-grid-column-one-half">
+        <h2 class="govuk-heading-l" style="border-bottom: 1px solid lightgray; margin-bottom: 0">{Service side name}<br>
+          <span class="govuk-hint">{Summary of this side of the service}</span>
+        </h2>
+  
+        <hr class="govuk-!-margin-top-0">
+  
+        <h2 class="govuk-heading-m">
+          Latest version
+        </h2>
+  
+        <!-- Add a link to your latest version here -->
+        <ul
+          class="govuk-list govuk-list--bullet">
+          <li>
+            <a href="#">V 3.0</a>
+          </li>
+        </ul>
+
+        <!-- An optional changelog to show the main points of what this version covers -->
+        <p>
+          <span class="govuk-!-font-weight-bold">Changelog:</span>
+          <br>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>{Change log option 1}</li>
+          </ul>
+        </p>
+
+        <!-- How would you like to display the other versions of your prototype? You could use a details component here -->
+  
+        <hr>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
