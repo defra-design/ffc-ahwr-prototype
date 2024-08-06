@@ -57,17 +57,26 @@
       meta: {
         items: [
           {
-            href: "https://govuk-prototype-kit.herokuapp.com/",
-            text: "GOV.UK Prototype Kit " + releaseVersion
+            href: "/privacy",
+            text: "Privacy policy"
           },
           {
-            href: "/prototype-admin/clear-data",
+            href: "/manage-prototype",
+            text: "Manage your prototype"
+          },
+          {
+            href: "/manage-prototype/clear-data",
             text: "Clear data"
+          },
+          {
+           href: "/compareVersionsSetUp",
+           text: "Compare versions"
           }
-        ]
+        ],
+        visuallyHiddenTitle: "Footer links"
       }
     }) }}
-  {% endblock %}
+   {% endblock %}
 {% endif %}
 
 {% block bodyEnd %}
