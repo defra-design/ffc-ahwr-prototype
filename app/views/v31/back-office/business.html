@@ -1,0 +1,294 @@
+{% extends "layouts/layout-defra-agreements.html" %}
+
+{% block pageTitle %}
+Back office: Applications
+{% endblock %}
+{% set serviceName %}
+Annual Health and Welfare Back Office
+{% endset%}
+
+{% block beforeContent %}
+<!--<div class="govuk-phase-banner govuk-!-padding-top-0">
+  <p class="govuk-phase-banner__content">
+    <strong style="background-color:#00a33b;" class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>-->
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+<!--<a style="float:right;" class="govuk-!-margin-bottom-0 govuk-!-margin-top-2" href="index.html">Claims and agreements dashboard</a>-->
+{% endblock %}
+
+{% block content %}
+
+<!-- Title + Search -->
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+    <h1 class="govuk-caption-l govuk-!-margin-bottom-3">
+       <!--Agreement summary and claims-->Agreement details and claims
+    </h1>
+
+    <h2 class="govuk-heading-l">
+      P & D Fearnley & Sons
+    </h2>
+
+    <!--User details-->
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Agreement number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p>AHWR-F001-432L</p>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Agreement date
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p>1/11/2022</p>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Agreement holder
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p>Bill Fearnley</p>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Agreement holder email
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p>bill@fearnly.test</p>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          SBI number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          103491987
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p>Coronation Drive<br>Harleston<br>IP20 0AX</p>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Business email
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p>hello@fearnley-sons.com</p>
+        </dd>
+      </div>
+    </dl>
+    
+ 
+
+  </div>
+</div>
+
+<h3 class="govuk-heading-m">
+  Claims by this business
+</h3>
+
+<!--<h3 class="govuk-heading-m">All claims for this business</h3>-->
+<table class="govuk-table" data-module="moj-sortable-table">
+
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+
+      <th scope="col" class="govuk-table__header" aria-sort="none">Claim number</th>
+
+      <th scope="col" class="govuk-table__header" aria-sort="none">Type of visit</th>
+
+      <th scope="col" class="govuk-table__header" aria-sort="none">Species</th>
+
+      <th scope="col" class="govuk-table__header" aria-sort="none">Claim date</th>
+
+      <th scope="col" class="govuk-table__header" aria-sort="none">Status</th>
+
+      <th scope="col" class="govuk-table__header" aria-sort="none">Details</th>
+
+
+    </tr>
+  </thead>
+
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">REPI-6844-3029</td>
+
+      <td class="govuk-table__cell" data-sort-value="Type of visit">Review</td>
+
+      <td class="govuk-table__cell" data-sort-value="Sheep">Pigs</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="02/01/2023">11/07/2024</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="Rejected"><strong class="govuk-tag govuk-tag--purple">On hold</strong></td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='claim.html'>View claim</a></td>
+
+    </tr>
+    <tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">REPI-6844-3029</td>
+
+      <td class="govuk-table__cell" data-sort-value="Type of visit">Review</td>
+
+      <td class="govuk-table__cell" data-sort-value="Sheep">Pigs</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="02/01/2023">11/07/2024</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="Rejected"><strong class="govuk-tag govuk-tag--purple">On hold</strong></td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='claim.html'>View claim</a></td>
+
+    </tr>
+    <tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">REPI-6844-3029</td>
+
+      <td class="govuk-table__cell" data-sort-value="Type of visit">Review</td>
+
+      <td class="govuk-table__cell" data-sort-value="Sheep">Pigs</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="02/01/2023">11/07/2024</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="Rejected"><strong class="govuk-tag govuk-tag--purple">On hold</strong></td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='claim.html'>View claim</a></td>
+
+    </tr>
+    <tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">REPI-6844-3029</td>
+
+      <td class="govuk-table__cell" data-sort-value="Type of visit">Review</td>
+
+      <td class="govuk-table__cell" data-sort-value="Sheep">Pigs</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="02/01/2023">11/07/2024</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="Rejected"><strong class="govuk-tag govuk-tag--purple">On hold</strong></td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='claim.html'>View claim</a></td>
+
+    </tr>
+    <tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">REPI-6844-3029</td>
+
+      <td class="govuk-table__cell" data-sort-value="Type of visit">Review</td>
+
+      <td class="govuk-table__cell" data-sort-value="Sheep">Pigs</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="02/01/2023">11/07/2024</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="Rejected"><strong class="govuk-tag govuk-tag--purple">On hold</strong></td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='claim.html'>View claim</a></td>
+
+    </tr>
+    <tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">REPI-6844-3029</td>
+
+      <td class="govuk-table__cell" data-sort-value="Type of visit">Review</td>
+
+      <td class="govuk-table__cell" data-sort-value="Sheep">Pigs</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="02/01/2023">11/07/2024</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="Rejected"><strong class="govuk-tag govuk-tag--purple">On hold</strong></td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="#"><a href='claim.html'>View claim</a></td>
+
+    </tr>
+  
+
+    
+
+   <!-- <tr class="govuk-table__row">
+
+      <td class="govuk-table__cell">AHWR-F022-321G</td>
+
+      <td class="govuk-table__cell" data-sort-value="Pig">Pig</td>
+
+      <td class="govuk-table__cell">Pig Herd M</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="01/11/2022">13/02/2023</td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="In check"><strong class="govuk-tag govuk-tag--purple">On hold</strong></td>
+
+      <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="In check"><a href='../back-office/internal/x-fearnley-farm-pig.html'>View claim</a></td>
+
+    </tr>-->
+
+
+
+
+
+
+
+  </tbody>
+</table>
+
+<!-- Start pagination-->
+<nav class="govuk-pagination" aria-label="Pagination">
+  <!--div class="govuk-pagination__prev">
+    <a class="govuk-link govuk-pagination__link" href="#" rel="prev">
+      <svg class="govuk-pagination__icon govuk-pagination__icon--prev" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+        <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+      </svg>
+      <span class="govuk-pagination__link-title">
+        Previous<span class="govuk-visually-hidden"> page</span>
+      </span>
+    </a>
+  </div>-->
+  <ul class="govuk-pagination__list">
+    <li class="govuk-pagination__item govuk-pagination__item--current">
+      <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 1"  aria-current="page">
+        1
+      </a>
+    </li>
+    <li class="govuk-pagination__item ">
+      <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 2">
+        2
+      </a>
+    </li>
+    <li class="govuk-pagination__item">
+      <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 3">
+        3
+      </a>
+    </li>
+  </ul>
+  <div class="govuk-pagination__next">
+    <a class="govuk-link govuk-pagination__link" href="#" rel="next">
+      <span class="govuk-pagination__link-title">
+        Next<span class="govuk-visually-hidden"> page</span>
+      </span>
+      <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+        <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+      </svg>
+    </a>
+  </div>
+</nav>
+<!-- End pagination -->
+
+
+{% endblock %}
