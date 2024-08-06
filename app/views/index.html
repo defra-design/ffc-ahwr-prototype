@@ -1,952 +1,178 @@
 {% extends "layouts/layout.html" %}
 
 {% block pageTitle %}
-Apply for the Annual Health and Welfare Review funding
+Home – {{serviceName}} – GOV.UK Prototype Kit
 {% endblock %}
-
-{% block header %}
-<!-- Blank header with no service name for the start page -->
-{{ govukHeader() }}
-{% endblock %}
-
-<!-- Adds spacing for pages without a back button -->
-{% set mainClasses = "govuk-main-wrapper--l" %}
 
 {% block content %}
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-three-quarters">
-    <span class="govuk-caption-xl">Prototypes</span>
+  <div class="govuk-grid-column-full">
+
     <h1 class="govuk-heading-xl">
-      The Annual Health and Welfare Review
+      Get funding to improve animal welfare
     </h1>
 
-  <h2 class="govuk-heading-m">Internal User Guide</h2>
+    <p>This prototype is maintained by the Vet Visits team.</p>
 
-  <table class="govuk-table">
+    <p>
+      <a href="mailto:enterEmailAddress">Melissa Wills</a>Interaction Designer<br>
+      <a href="mailto:enterEmailAddress">Aaron Boland</a>Interaction Designer<br>
+      <a href="mailto:enterEmailAddress">Berkin Gurakan</a>Service Designer<br>
 
-    <thead class="govuk-table__head">
-      <tr class="govuk-table__row">
-        <th class="govuk-table__header" scope="col">Latest Version</th>
-        <th class="govuk-table__header" scope="col">Sprint</th>
-        <th class="govuk-table__header" scope="col">Date</th>
-        <th class="govuk-table__header" scope="col"> Guidance & Instructions</th>
-      </tr>
-    </thead>
+      <br>
+
+      <h2 class="govuk-heading-m">About the service</h2>
+
+
+      <p>The Animal Health and Welfare Pathway (the Pathway) was launched in 2023.
+
+        The Pathway supports continual improvement in farm animal health and welfare. It is a partnership with farmers, vets, the wider industry and the supply chain.
+        
+        The Pathway is a critical part of the farming reforms set out in the Agricultural Transition Plan, delivering benefits for animal health and welfare, farm productivity, food security, public health, UK trade and the environment.</p>
+
+      <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-one-half">
+        <h2 class="govuk-heading-l" style="border-bottom: 1px solid lightgray; margin-bottom: 0">Guidance<br>
+          <span class="govuk-hint">{Summary of this side of the service}</span>
+        </h2>
   
-    <tbody class="govuk-table__body">
-      <tr class="govuk-table__row">
-        <th scope="row" class="govuk-table__header">
-          <ul class="govuk-list">
-            <li><a href="v3">v3.0</a></li>
-          </ul>
-        </th>
-        <td class="govuk-table__cell">
-          <p> Sprint 22</p>
-        </td>
-        <td class="govuk-table__cell">
-          <p>17 January 2023</p>
-        </td>
-        <td class="govuk-table__cell">
-          <ul class="govuk-list">
-          <li>The Vet Visits team are currently building and reiterating our solution. We are sharing a Miniumm Viable Product</li>
-          </ul>
-          <ul class="govuk-list--bullet">
-            <li>Be open minded and share your feedback about your experience of the Vets Visits service.
-            </li>
-            <li>Use links such as <a href="#">email@address.com</a> to progress further through the product  journey.
-            </li>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
+        <hr class="govuk-!-margin-top-0">
   
-  </table>
-
-  {{ govukInsetText({
-    text: "Use this section for more guidance on how to use and navigate this prototype"
-  }) }}
+        <h2 class="govuk-heading-m">
+          Latest version
+        </h2>
   
-
-    
-  <h2 class="govuk-heading-m">SFI (before Vet Visits)</h2>
-
-  <table class="govuk-table">
-
-    <thead class="govuk-table__head">
-      <tr class="govuk-table__row">
-        <th class="govuk-table__header" scope="col">Version</th>
-        <th class="govuk-table__header" scope="col">Sprint</th>
-        <th class="govuk-table__header" scope="col">Date</th>
-        <th class="govuk-table__header" scope="col">Details</th>
-      </tr>
-    </thead>
-  
-    <tbody class="govuk-table__body">
-      <tr class="govuk-table__row">
-        <th scope="row" class="govuk-table__header">
-          <ul class="govuk-list">
-            <li><a href="https://sfi-prototype.herokuapp.com/ahw/pre-vv">Handover <br> at v23</a></li>
-          </ul>
-        </th>
-        <td class="govuk-table__cell">
-          <p>SFI Sprint 22</p>
-        </td>
-        <td class="govuk-table__cell">
-          <p>25 January 2022</p>
-        </td>
-        <td class="govuk-table__cell">
-          <ul class="govuk-list">
-            <li>AHWR pages developed as part of the Sustainable Farming Incentive.</li>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-  
-  </table>
-
-{{ govukInsetText({
-  text: "Vet Visits started as independent project on 16 sprint1 2022."
-}) }}
-
-  <h2 class="govuk-heading-m">Alpha</h2>
-
-  <table class="govuk-table">
-
-    <thead class="govuk-table__head">
-      <tr class="govuk-table__row">
-        <th class="govuk-table__header" scope="col">Versions</th>
-        <th class="govuk-table__header" scope="col">Sprints</th>
-        <th class="govuk-table__header" scope="col">Dates</th>
-        <th class="govuk-table__header" scope="col">Details</th>
-      </tr>
-    </thead>
-
-    <tbody class="govuk-table__body">
-      <tr class="govuk-table__row">
-        <th scope="row" class="govuk-table__header">
-          <ul class="govuk-list">
-            <li><a href="https://sfi-prototype.herokuapp.com/ahw/vv-0/">v0.0 - 0.4</a></li>
-          </ul>
-        </th>
-        <td class="govuk-table__cell">
-          <p class="govuk-body">Sprint <br> 1 - 5</p>
-        </td>
-        <td class="govuk-table__cell">
-          <p>16 - 31 May</p>
-        </td>
-        <td class="govuk-table__cell">
-          <ul class="govuk-list">
-            <li>Prototype used in user testing.</li>
-            <li>Key development is shaping of the end-to-end farmer apply, vet review and farmer claim journeys.</li>
-          </ul>
-          <ul class="govuk-list govuk-list--bullet">
-            <li>v0.0 - Guidance replaces step-by-step approach</li>
-            <li>v0.1 - Reduced number of questions for vets <!-- for simplicity and policy alignment --></li>
-            <li>v0.2 - Simplified process for farmers to choose review and check eligibility</li>
-            <li>v0.3 - Improved content, consistent interactions throughout journeys, species-specific screens</li>
-            <li>v0.4 - File upload introduced for claim checks</li>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-
-  </table>
-
-
-  <h2 class="govuk-heading-m">Private Beta</h2>
-
-  <table class="govuk-table">
-
-    <thead class="govuk-table__head">
-      <tr class="govuk-table__row">
-        <th class="govuk-table__header" scope="col">Version</th>
-        <th class="govuk-table__header" scope="col">Sprint</th>
-        <th class="govuk-table__header" scope="col">Dates</th>
-        <th class="govuk-table__header" scope="col">Details</th>
-      </tr>
-    </thead>
-
-    <tbody class="govuk-table__body">
-      <tr class="govuk-table__row">
-        <th scope="row" class="govuk-table__header">
-          <ul class="govuk-list">
-            <li><a href="https://sfi-prototype.herokuapp.com/ahw/vv-1/">v1.0</a></li>
-          </ul>
-        </th>
-        <td class="govuk-table__cell">
-          <p class="govuk-body">Sprint 6</p>
-        </td>
-        <td class="govuk-table__cell">
-          <p>1 June - <br> 14 June</p>
-        </td>
-        <td class="govuk-table__cell">
-          <ul class="govuk-list">
-            <li>Introduction of back office for internal users</li>
-          </ul>
-        </td>
-      </tr>
-
-      <tr class="govuk-table__row">
-        <th scope="row" class="govuk-table__header">
-          <ul class="govuk-list">
-            <li><a href="v1" target="_blank">v1.1 - 1.4</a></li>
-          </ul>
-        </th>
-        <td class="govuk-table__cell">
-          <p class="govuk-body">Sprint 7 - 10</p>
-        </td>
-        <td class="govuk-table__cell">
-          <p>15 June - 9 August</p>
-        </td>
-        <td class="govuk-table__cell">
-          <ul class="govuk-list">
-            <li>Prototype gets its own environment and URL</li>
-            <li>Key development is the extension of the back office and addition of technical guidance.</li>
-          </ul>
-          <ul class="govuk-list govuk-list--bullet">
-            <li>v1.1 - Example applications w/ status and tabs for recorded info can be viewed in back office</li>
-            <li>v1.2 - Front end service extended by technical guidance and content updated</li>
-            <li>v1.3 - Back office rebranded in green and gets filter functionality</li>
-            <li>v1.4 - Fraud check questions, commenting function, history log and withdrawal button introduced to back office</li>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-
-  </table>
-
-  {{ govukInsetText({
-    text: "Vets are removed from service on 3 August 2022."
-  }) }}
-
-  <table class="govuk-table">
-
-    <thead class="govuk-table__head">
-      <tr class="govuk-table__row">
-        <th class="govuk-table__header" scope="col">Version</th>
-        <th class="govuk-table__header" scope="col">Sprint</th>
-        <th class="govuk-table__header" scope="col">Dates</th>
-        <th class="govuk-table__header" scope="col">Details</th>
-      </tr>
-    </thead>
-
-    <tbody class="govuk-table__body">
-      <tr class="govuk-table__row">
-        <th scope="row" class="govuk-table__header">
-          <ul class="govuk-list">
-            <li><a href="v2">v2.0 - v2.5</a></li>
-          </ul>
-        </th>
-        <td class="govuk-table__cell">
-          <p class="govuk-body">Sprint 11 - 17</p>
-        </td>
-        <td class="govuk-table__cell">
-          <p>10 August - <br> 18 October</p>
-        </td>
-        <td class="govuk-table__cell">
-          <ul class="govuk-list">
-            <li>New version excluding vets as user group</li>
-            <li>Key development is a new service blueprint and prototype to test with farmers only.</li>
-          </ul>
-          <ul class="govuk-list govuk-list--bullet">
-            <li>v2.0 - First basic farmer-only journey including upload of review form and test result</li>
-            <li>v2.1 - Refined all-digital claim journey including questions on disease testing</li>
-            <li>v2.2 - Simplified claim journey without data collection</li>
-            <li>v2.3 - Agreement offer added to apply journey</li>
-            <li>v2.4 - Technical guidance & apply content update</li>
-            <li>v2.5 - Alignment and preparation for PB Release 1</li>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-
-  </table>
-
-  {{ govukInsetText({
-    text: "Private Beta Release 1 user testing"
-  }) }}
-
-  <h2 class="govuk-heading-m">Private Beta - Magic Link/Back Office - Payments</h2>
-
-  <table class="govuk-table">
-
-    <thead class="govuk-table__head">
-      <tr class="govuk-table__row">
-        <th class="govuk-table__header" scope="col">Version</th>
-        <th class="govuk-table__header" scope="col">Sprint</th>
-        <th class="govuk-table__header" scope="col">Dates</th>
-        <th class="govuk-table__header" scope="col">Details</th>
-      </tr>
-    </thead>
-    <tbody class="govuk-table__body">
-      <tr class="govuk-table__row">
-        <th scope="row" class="govuk-table__header">
-          <ul class="govuk-list">
-            <li><a href="v3">v3.0 onwards</a></li>
-          </ul>
-        </th>
-        <td class="govuk-table__cell">
-          <p class="govuk-body">Sprint 19 - 22</p>
-        </td>
-        <td class="govuk-table__cell">
-          <p>19 October - <br> 24 January</p>
-        </td>
-        <td class="govuk-table__cell">
-          <ul class="govuk-list">
-            <li>New version reintroducing back office for internal RPA staff</li>
-            <li>Key development will be revision of the service based on user testing findings.</li>
-          </ul>
-          <ul class="govuk-list govuk-list--bullet">
-            <li>v3.0 - Colour code and labels updated to agree, not agreed, paid, claimed, rejected, authorised, in check</li>
-            <li>v3.0 - Simplifed user interface with reduced table content and bold title</li>
-            <li>v3.0 - Detail links updated to match technical capabilities</li>
-            <li>v3.0 - Search bar and filter removed. Sort functionality added</li>
-            <li>v3.0 - Registration and auto eligibility journey added</li>
-            <li>v3.0 - Content design changes implemented across the enitre prototype</li>
-            <li>v3.0 - Multiple interations of the internal user journey available</li>
-            <li>v3.0 - Content updated based on legislation and compliance regulations</li>
-            <li>v3.0 - BO colours updated due to accessibility design review</li>
-            <li>v3.0 - Apply journey agreement confirmation page updated due to accessiblity design review</li>
-            <li>v3.0 - Accept and send button updated, terms and conditions page now has continue button</li>
-            <li>v3.0 - Status checker, authoriser action and withdraw function added to Back Office journey</li>
-           <li>v3.0 - Colour code and labels updated to agree, not agreed, ready to pay, claimed, rejected, withdrawn, in check</li> 
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-
-  </table>
-
-  {{ govukInsetText({
-    text: "Private Beta Release 2 user testing"
-  }) }}
-
-  <h2 class="govuk-heading-m">Private Beta - Magic Link and Picker/Back Office - Status Change </h2>
-
-  <table class="govuk-table">
-
-    <thead class="govuk-table__head">
-      <tr class="govuk-table__row">
-        <th class="govuk-table__header" scope="col">Version</th>
-        <th class="govuk-table__header" scope="col">Sprint</th>
-        <th class="govuk-table__header" scope="col">Dates</th>
-        <th class="govuk-table__header" scope="col">Details</th>
-      </tr>
-    </thead>
-
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <th scope="row" class="govuk-table__header">
-        <ul class="govuk-list">
-          <li><a href="v6">v4.0</a></li>
+        <ul
+          class="govuk-list govuk-list--bullet">
+          <li>
+            <a href="../v30">V.30</a>
+          </li>
         </ul>
-      </th>
-      <td class="govuk-table__cell">
-        <p class="govuk-body">Sprint <br> 22 - 23</p>
-      </td>
-      <td class="govuk-table__cell">
-        <p>11 January- 24 January<br> </p>
-      </td>
-      <td class="govuk-table__cell">
-        <ul class="govuk-list">
-          <li>Key development will be revision of the service based on business requirements and intergration of DEFRA ID.</li>
-          <li>User research will be synthesised to create business requirements and influence product development </li>
+
+        <p>
+          <span class="govuk-!-font-weight-bold">Changelog:</span>
+          <br>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>{Change log option 1}</li>
+          </ul>
+        </p>
+
+  
+        <hr>
+
+      </div>
+
+      <!-- Second half of your service -->
+      <div class="govuk-grid-column-one-half">
+        <h2 class="govuk-heading-l" style="border-bottom: 1px solid lightgray; margin-bottom: 0">Apply<br>
+          <span class="govuk-hint">{Summary of this side of the service}</span>
+        </h2>
+  
+        <hr class="govuk-!-margin-top-0">
+  
+        <h2 class="govuk-heading-m">
+          Latest version
+        </h2>
+  
+        <!-- Add a link to your latest version here -->
+        <ul
+          class="govuk-list govuk-list--bullet">
+          <li>
+            <a href="../v30">V.31</a>
+          </li>
         </ul>
-        <ul class="govuk-list--bullet">
-          <li>v4.0 - Apply Picker: Display all businesses (SBIs) the customer has expressed an interest for, that have passed through the waiting list but have not reached agreed stage.  
-          <li>v4.0 - Claim Picker: Display all businesses (SBIs) that are at 'Agreed' status.</li>   
-          <li>v4.0 - Picker to come after the magic link is clicked.</li>
-          <li>v4.0 - Users with more than one of business, with multiple SBI's, at RYI stage can choose to create an agreement against an AHWR for all the eligible livestock.</li>
-          <li>v4.0 - Back Office now includes history tab to allow internal users to cross reference and keep audit trail of compliance check.</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
 
-</table>
+        <!-- An optional changelog to show the main points of what this version covers -->
+        <p>
+          <span class="govuk-!-font-weight-bold">Changelog:</span>
+          <br>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>{Change log option 1}</li>
+          </ul>
+        </p>
 
-{{ govukInsetText({
-  text: "Private Beta Release 2 & 3 user testing"
-}) }}
+        <!-- How would you like to display the other versions of your prototype? You could use a details component here -->
+  
+        <hr>
 
-<h2 class="govuk-heading-m">Private Beta - Defra ID</h2>
+      </div>
 
-<table class="govuk-table">
+  <!-- Third half of your service -->
+  <div class="govuk-grid-column-one-half">
+    <h2 class="govuk-heading-l" style="border-bottom: 1px solid lightgray; margin-bottom: 0">Claim<br>
+      <span class="govuk-hint">{Summary of this side of the service}</span>
+    </h2>
 
-  <thead class="govuk-table__head">
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="col">Version</th>
-      <th class="govuk-table__header" scope="col">Sprint</th>
-      <th class="govuk-table__header" scope="col">Dates</th>
-      <th class="govuk-table__header" scope="col">Details</th>
-    </tr>
-  </thead>
+    <hr class="govuk-!-margin-top-0">
 
-<tbody class="govuk-table__body">
-  <tr class="govuk-table__row">
-    <th scope="row" class="govuk-table__header">
-      <ul class="govuk-list">
-        <li><a href="v7">v5.0</a></li>
-      </ul>
-    </th>
-    <td class="govuk-table__cell">
-      <p class="govuk-body">Sprint <br> 23 - 24</p>
-    </td>
-    <td class="govuk-table__cell">
-      <p>30 January- 7 Feburary<br> </p>
-    </td>
-    <td class="govuk-table__cell">
-      <ul class="govuk-list">
-        <li>Vet Visits full integration with DEFRA ID</li>
-        <li>Multiple features removed from Vets Visit service</li>
-      </ul>
-      <ul class="govuk-list--bullet">
-        <li>v5.0 - Magic link removed from service</li>   
-        <li>v5.0 - Registration removed from service</li>
-        <li>v5.0 - Users with more than one of business, with multiple SBI's, at RYI stage can choose to create an agreement against an AHWR for all the eligible livestock.</li>
-        <li>v5.0 - Back Office now includes history tab to allow internal users to cross reference and keep audit trail of compliance check.</li>
-      </ul>
-    </td>
-  </tr>
-</tbody>
-<tbody class="govuk-table__body">
-  <tr class="govuk-table__row">
-    <th scope="row" class="govuk-table__header">
-      <ul class="govuk-list">
-        <li><a href="v10">v10.0</a></li>
-      </ul>
-    </th>
-    <td class="govuk-table__cell">
-      <p class="govuk-body">Sprint <br> 23 - 24</p>
-    </td>
-    <td class="govuk-table__cell">
-      <p>3 March- 19 April<br> </p>
-    </td>
-    <td class="govuk-table__cell">
-      <ul class="govuk-list">
-        <li>Vet Visits full integration with DEFRA ID</li>
-        <li>Multiple features removed from Vets Visit service</li>
-      </ul>
-      <ul class="govuk-list--bullet">
-        <li>v10.0 - AHWR start page updated to stress the importance of eligibility requirements</li>   
-        <li>v10.0 - Farmer picker content updated to </li>
-        <li>v10.0 - Exception screens made dynamic and content updated</li>
-        <li>v10.0 - Users with more than one of business, with multiple SBI's, at RYI stage can choose to create an agreement against an AHWR for all the eligible livestock.</li>
-      </ul>
-    </td>
-  </tr>
-</tbody>
-<tbody class="govuk-table__body">
-  <tr class="govuk-table__row">
-    <th scope="row" class="govuk-table__header">
-      <ul class="govuk-list">
-        <li><a href="v13">v11.0</a></li>
-      </ul>
-    </th>
-    <td class="govuk-table__cell">
-      <p class="govuk-body">Sprint <br> 29 - 30</p>
-    </td>
-    <td class="govuk-table__cell">
-      <p>3 March- 19 April<br> </p>
-    </td>
-    <td class="govuk-table__cell">
-      <ul class="govuk-list">
-        <li>Vet Visits full integration with DEFRA ID</li>
-        <li>A generic version of DEFRA ID to communicate across servers in a consistent way for users</li>
-      </ul>
-      <ul class="govuk-list--bullet">
-        <li>v11.0 - AHWR start page updated to stress the importance of eligibility requirements</li>   
-        <li>v11.0 - Farmer picker content updated to </li>
-        <li>v11.0 - Exception screens made dynamic and content updated</li>
-        <li>v11.0 - Users with more than one of business, with multiple SBI's, at RYI stage can choose to create an agreement against an AHWR for all the eligible livestock.</li>
-      </ul>
-    </td>
-  </tr>
-</tbody>
-<tbody class="govuk-table__body">
-  <tr class="govuk-table__row">
-    <th scope="row" class="govuk-table__header">
-      <ul class="govuk-list">
-        <li><a href="v16">v16.0</a></li>
-      </ul>
-    </th>
-    <td class="govuk-table__cell">
-      <p class="govuk-body">Sprint <br> 32 - 35</p>
-    </td>
-    <td class="govuk-table__cell">
-      <p>31 May - 25 Jul<br> </p>
-    </td>
-    <td class="govuk-table__cell">
-      <ul class="govuk-list">
-        <li>Vet Visits full integration with DEFRA ID</li>
-        <li>A generic version of DEFRA ID to communicate across servers in a consistent way for users</li>
-      </ul>
-      <ul class="govuk-list--bullet"> 
-        <li>v16.0 - Farmer emails updated for new guidance strucuture</li>
-        <li>v16.0 - Exception screens made dynamic and content updated</li>
-        <li>v16.0 - Users with more than one of business, with multiple SBI's, at RYI stage can choose to create an agreement against an AHWR for all the eligible livestock.</li>
-      </ul>
-    </td>
-  </tr>
-</tbody>
-<tbody class="govuk-table__body">
-  <tr class="govuk-table__row">
-    <th scope="row" class="govuk-table__header">
-      <ul class="govuk-list">
-        <li><a href="v17">v17.0</a></li>
-      </ul>
-    </th>
-    <td class="govuk-table__cell">
-      <p class="govuk-body">Sprint <br> 34 - 35</p>
-    </td>
-    <td class="govuk-table__cell">
-      <p>3 July - 25 July<br> </p>
-    </td>
-    <td class="govuk-table__cell">
-      <ul class="govuk-list">
-        <li>Vet Visits full integration with DEFRA ID</li>
-        <li>A generic version of DEFRA ID to communicate across servers in a consistent way for users</li>
-      </ul>
-      <ul class="govuk-list--bullet"> 
-        <li>v17.0 - Farmer emails updated for new guidance strucuture</li>
-        <li>v17.0 - Exception screens made dynamic and content updated</li>
-        <li>v17.0 - Users with more than one of business, with multiple SBI's, at RYI stage can choose to create an agreement against an AHWR for all the eligible livestock.</li>
-      </ul>
-    </td>
-  </tr>
-</tbody>
+    <h2 class="govuk-heading-m">
+      Latest version
+    </h2>
 
+    <!-- Add a link to your latest version here -->
+    <ul
+      class="govuk-list govuk-list--bullet">
+      <li>
+        <a href="../v30">V.30</a>
+      </li>
+    </ul>
 
-
-<table class="govuk-table">
-
-  {{ govukInsetText({
-    text: "10 month rule implemented for multiple applications"
-  }) }}
-
-  <h2 class="govuk-heading-m">Multiple Visits & Endemics </h2>
-
-  <thead class="govuk-table__head">
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="col">Version</th>
-      <th class="govuk-table__header" scope="col">Sprint</th>
-      <th class="govuk-table__header" scope="col">Dates</th>
-      <th class="govuk-table__header" scope="col">Details</th>
-    </tr>
-
-<tbody class="govuk-table__body">
-  <tr class="govuk-table__row">
-    <th scope="row" class="govuk-table__header">
-      <ul class="govuk-list">
-        <li><a href="/v18">v18.0</a></li>
+    <!-- An optional changelog to show the main points of what this version covers -->
+    <p>
+      <span class="govuk-!-font-weight-bold">Changelog:</span>
+      <br>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>{Change log option 1}</li>
       </ul>
-    </th>
-    <td class="govuk-table__cell">
-      <p class="govuk-body">Sprint <br> 39 - 42</p>
-    </td>
-    <td class="govuk-table__cell">
-      <p>20 Sep- 31 Oct<br></p>
-    </td>
-    <td class="govuk-table__cell">
-      <ul class="govuk-list">
-        <li>Adopting a one unfied service approach to ensure users are experiencing a correlated and consistent journey across all grant and funding applications</li>
-        <li></li>
-      </ul>
-      <ul class="govuk-list--bullet">
-        <li>v18.0 - Creating a dashboard where users can view and understand the progress of their vet and endemic disease visits</li>
-        <li>v18.0 - Users must be able to view, manage and create new vet visit and endemic disease applications</li>
-        <li>v18.0 - Users must be able read and understand the guidance</li>
-      </ul>
-    </td>
-  </tr>
+    </p>
 
-</tbody>
+    <!-- How would you like to display the other versions of your prototype? You could use a details component here -->
 
-<tbody class="govuk-table__body">
-  <tr class="govuk-table__row">
-    <th scope="row" class="govuk-table__header">
-      <ul class="govuk-list">
-        <li><a href="/v19">v19.0</a></li>
-      </ul>
-    </th>
-    <td class="govuk-table__cell">
-      <p class="govuk-body">Sprint <br> 43 - 45</p>
-    </td>
-    <td class="govuk-table__cell">
-      <p>01 Nov- 15 Nov<br></p>
-    </td>
-    <td class="govuk-table__cell">
-      <ul class="govuk-list">
-        <li>Adopting a one unfied service approach to ensure users are experiencing a correlated and consistent journey across all grant and funding applications</li>
-        <li></li>
-      </ul>
-      <ul class="govuk-list--bullet">
-        <li>v19.0 - Creating a claim-as-you-go vet visits service where farmers can manage applications in an agile way</li>
-        <li>v19.0 - Users must be able to view, manage and create new vet visit and endemic disease applications</li>
-        <li>v19.0 - Users must be able read and understand the guidance</li>
-      </ul>
-    </td>
-  </tr>
-</tbody>
-<tbody class="govuk-table__body">
-  <tr class="govuk-table__row">
-    <th scope="row" class="govuk-table__header">
-      <ul class="govuk-list">
-        <li><a href="/v23">v20.0</a></li>
-      </ul>
-    </th>
-    <td class="govuk-table__cell">
-      <p class="govuk-body">Sprint <br> 45 - 47</p>
-    </td>
-    <td class="govuk-table__cell">
-      <p>21 Dec - 10 Jan<br></p>
-    </td>
-    <td class="govuk-table__cell">
-      <ul class="govuk-list">
-        <li>Adopting a one unfied service approach to ensure users are experiencing a correlated and consistent journey across all grant and funding applications</li>
-        <li></li>
-      </ul>
-      <ul class="govuk-list--bullet">
-        <li>v20.0 - Users will now have an updated apply journey with screens to explain new business rules</li>
-        <li>v20.0 - Users must be able to view, manage and create new vet visit and endemic disease applications</li>
-        <li>v20.0 - Users must be able read and understand the terms and conditions</li>
-      </ul>
-    </td>
-  </tr>
-</tbody>
+    <hr>
 
-<tbody class="govuk-table__body">
-  <tr class="govuk-table__row">
-    <th scope="row" class="govuk-table__header">
-      <ul class="govuk-list">
-        <li><a href="/v29">v29.0</a></li>
+  </div>
+
+   <!-- Third half of your service -->
+   <div class="govuk-grid-column-one-half">
+    <h2 class="govuk-heading-l" style="border-bottom: 1px solid lightgray; margin-bottom: 0">Back Office<br>
+      <span class="govuk-hint">{Summary of this side of the service}</span>
+    </h2>
+
+    <hr class="govuk-!-margin-top-0">
+
+    <h2 class="govuk-heading-m">
+      Latest version
+    </h2>
+
+    <!-- Add a link to your latest version here -->
+    <ul
+      class="govuk-list govuk-list--bullet">
+      <li>
+        <a href="../">TBC</a>
+      </li>
+    </ul>
+
+    <!-- An optional changelog to show the main points of what this version covers -->
+    <p>
+      <span class="govuk-!-font-weight-bold">Changelog:</span>
+      <br>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>{Change log option 1}</li>
       </ul>
-    </th>
-    <td class="govuk-table__cell">
-      <p class="govuk-body">Sprint <br> 57</p>
-    </td>
-    <td class="govuk-table__cell">
-      <p>20 May - 29 May <br></p>
-    </td>
-    <td class="govuk-table__cell">
-      <ul class="govuk-list">
-        <li>Adopting a one unfied service approach to ensure users are experiencing a correlated and consistent journey across all grant and funding applications</li>
-        <li></li>
-      </ul>
-      <ul class="govuk-list--bullet">
-        <li>v29.0 - Timeline added to apply journey</li>
-        <li>v29.0 - End to end content updates implemented across the entire prototype</li>
-        <li>v29.0 - Guidance and terms and conditions pages to be updated</li>
-      </ul>
-    </td>
-  </tr>
-</tbody>
+    </p>
 
-</table>
+    <!-- How would you like to display the other versions of your prototype? You could use a details component here -->
 
-<h2 class="govuk-heading-m">Private Beta - Assisted Digital</h2>
-
-<table class="govuk-table">
-
-  <thead class="govuk-table__head">
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="col">Version</th>
-      <th class="govuk-table__header" scope="col">Sprint</th>
-      <th class="govuk-table__header" scope="col">Dates</th>
-      <th class="govuk-table__header" scope="col">Details</th>
-    </tr>
-  </thead>
-
-<tbody class="govuk-table__body">
-  <tr class="govuk-table__row">
-    <th scope="row" class="govuk-table__header">
-      <ul class="govuk-list">
-        <li><a href="v8">v6.0</a></li>
-      </ul>
-    </th>
-    <td class="govuk-table__cell">
-      <p class="govuk-body">Sprint <br> 23 - 24</p>
-    </td>
-    <td class="govuk-table__cell">
-      <p>30 January- 7 Feburary<br> </p>
-    </td>
-    <td class="govuk-table__cell">
-      <ul class="govuk-list">
-        <li>Vet Visits will offer users who do not have access to digital technology, the opportunity to apply for annual funding with accessible ways to communicate </li>
-      </ul>
-      <ul class="govuk-list--bullet">
-        <li>v6.0 - Log in screen created</li>   
-        <li>v6.0 - New application button added</li>
-        <li>v6.0 - Farmer data check and application replication added</li>
-        <li>v6.0 - Update to allow back office to replicate apply and claim journey</li>
-      </ul>
-    </td>
-  </tr>
-</tbody>
-
-</table>
-<h2 class="govuk-heading-m">Private Beta - Role Based Access</h2>
-
-<table class="govuk-table">
-
-  <thead class="govuk-table__head">
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="col">Version</th>
-      <th class="govuk-table__header" scope="col">Sprint</th>
-      <th class="govuk-table__header" scope="col">Dates</th>
-      <th class="govuk-table__header" scope="col">Details</th>
-    </tr>
-  </thead>
-
-<tbody class="govuk-table__body">
-  <tr class="govuk-table__row">
-    <th scope="row" class="govuk-table__header">
-      <ul class="govuk-list">
-        <li><a href="v9/a-digital-rbac.html">v7.0</a></li>
-        <li><a href="v11/a-digital-rbac.html">v7.0</a></li>
-      </ul>
-    </th>
-    <td class="govuk-table__cell">
-      <p class="govuk-body">Sprint <br> 27 - 29</p>
-    </td>
-    <td class="govuk-table__cell">
-      <p>04 April- 14 April<br></p>
-    </td>
-    <td class="govuk-table__cell">
-      <ul class="govuk-list">
-        <li>Role based access is being given to internal users to authorise and recommend payments to public users</li>
-      </ul>
-      <ul class="govuk-list--bullet">
-        <li>v7.0 - Log in screen created</li>   
-        <li>v7.0 - New application button added</li>
-        <li>v7.0 - Role based access created for recommenders</li>
-        <li>v7.0 - Role based access required for auhtorisers to go through to strategic payments</li>
-      </ul>
-    </td>
-  </tr>
-</tbody>
-<tbody class="govuk-table__body">
-  <tr class="govuk-table__row">
-    <th scope="row" class="govuk-table__header">
-      <ul class="govuk-list">
-        <li><a href="back-office/v15/a-digital-rbac.html">v8.0</a></li>
-        <li><a href="back-office/v16/a-digital-rbac.html">v8.0</a></li>
-        <li><a href="back-office/v17/march-applications.html">v8.0</a></li>
-      </ul>
-    </th>
-    <td class="govuk-table__cell">
-      <p class="govuk-body">Sprint <br> 29 - 31</p>
-    </td>
-    <td class="govuk-table__cell">
-      <p>27 April- 05 May<br></p>
-    </td>
-    <td class="govuk-table__cell">
-      <ul class="govuk-list">
-        <li>Role based access is being given to internal users to authorise and recommend payments to public users</li>
-      </ul>
-      <ul class="govuk-list--bullet">
-        <li>v8.0 - Role based access created for recommenders</li>
-        <li>v8.0 - Role based access required for auhtorisers to go through to strategic payments</li>
-      </ul>
-    </td>
-  </tr>
-</tbody>
-
-
-
-</table>
-
-<h2 class="govuk-heading-m">Private Beta - Back office: status updates</h2>
-
-<table class="govuk-table">
-
-  <thead class="govuk-table__head">
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="col">Version</th>
-      <th class="govuk-table__header" scope="col">Sprint</th>
-      <th class="govuk-table__header" scope="col">Dates</th>
-      <th class="govuk-table__header" scope="col">Details</th>
-    </tr>
-  </thead>
-
-<tbody class="govuk-table__body">
-  <tr class="govuk-table__row">
-    <th scope="row" class="govuk-table__header">
-      <ul class="govuk-list">
-        <li><a href="back-office/v18/march-applications">v18.0</a></li>
-      </ul>
-    </th>
-    <td class="govuk-table__cell">
-      <p class="govuk-body">Sprint <br> 42</p>
-    </td>
-    <td class="govuk-table__cell">
-      <p>18 October - 31 October<br></p>
-    </td>
-    <td class="govuk-table__cell">
-      <ul class="govuk-list">
-        <li>All new claims are now on hold for 24 hours to allow for additional checks</li>
-      </ul>
-      <ul class="govuk-list--bullet">
-        <li>v7.0 - "On hold" tag added to list of claims</li>   
-        <li>v7.0 - "Move to in-check" button added"</li>
-        <li>v7.0 - Confirmation check before moving claim into "in check" added</li>
-      </ul>
-    </td>
-  </tr>
-  <tr class="govuk-table__row">
-    <th scope="row" class="govuk-table__header">
-      <ul class="govuk-list">
-        <li><a href="back-office/v18/march-applications">v18.0</a></li>
-      </ul>
-    </th>
-    <td class="govuk-table__cell">
-      <p class="govuk-body">Sprint <br> 46 and 47</p>
-    </td>
-    <td class="govuk-table__cell">
-      <p>13 Dec - 9 Jan<br></p>
-    </td>
-    <td class="govuk-table__cell">
-      <ul class="govuk-list">
-        <li>"Recommended to pay" and "recommended to reject" statuses are now available in the prototype</li>
-        <li></li>
-      </ul>
-      <ul class="govuk-list--bullet">
-        <li>v18.0 - "Recommended to pay" status added</li>
-        <li>v18.0 - "Recommended to reject" status added</li>
-        <li>v18.0 - Prototype updated to include "recommend to pay" and "recommend to reject" interactions and confirmation stage</li>
-        <li>Validation added for "On hold" and "In check" statuses</li>
-      </ul>
-    </td>
-  </tr>
-</tbody>
-
-</table>
-
-
-<h2 class="govuk-heading-m">Private Beta: existing journey, claims journey update</h2>
-
-<table class="govuk-table">
-
-  <thead class="govuk-table__head">
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="col">Version</th>
-      <th class="govuk-table__header" scope="col">Sprint</th>
-      <th class="govuk-table__header" scope="col">Dates</th>
-      <th class="govuk-table__header" scope="col">Details</th>
-    </tr>
-  </thead>
-
-<tbody class="govuk-table__body">
-  <tr class="govuk-table__row">
-    <th scope="row" class="govuk-table__header">
-      <ul class="govuk-list">
-        <li><a href="v20">v20.0</a></li>
-      </ul>
-    </th>
-    <td class="govuk-table__cell">
-      <p class="govuk-body">Sprint <br> 44</p>
-    </td>
-    <td class="govuk-table__cell">
-      <p>15 November - 28 November<br></p>
-    </td>
-    <td class="govuk-table__cell">
-      <ul class="govuk-list">
-        <li>Checks added to ensure claims complies with minimum number of animals guidance</li>
-      </ul>
-      <ul class="govuk-list--bullet">
-        <li>"Number of animals tested" screen added</li>   
-        <li>Added validation to check field has content and is formatted as in numeric format</li>
-        <li>Updated "start" screen with guidelines</li>
-        <li>Updated "start" screen with guidelines</li>
-        <li>Updated "check your answer" screen to reflect new screen </li>
-        <li>Updated "submit your claim" screen</li>
-      </ul>
-    </td>
-  </tr>
-</tbody>
-
-</table>
-
-<table class="govuk-table">
-
-  <thead class="govuk-table__head">
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="col">Version</th>
-      <th class="govuk-table__header" scope="col">Sprint</th>
-      <th class="govuk-table__header" scope="col">Dates</th>
-      <th class="govuk-table__header" scope="col">Details</th>
-    </tr>
-  </thead>
-
-<tbody class="govuk-table__body">
-  <tr class="govuk-table__row">
-    <th scope="row" class="govuk-table__header">
-      <ul class="govuk-list">
-        <li><a href="v20">v21.0</a></li>
-      </ul>
-    </th>
-    <td class="govuk-table__cell">
-      <p class="govuk-body">Sprint <br> 44</p>
-    </td>
-    <td class="govuk-table__cell">
-      <p>15 November - 28 November<br></p>
-    </td>
-    <td class="govuk-table__cell">
-      <ul class="govuk-list">
-        <li>v21.0 Updated farmer guidance page</li>
-      </ul>
-    </td>
-  </tr>
-</tbody>
-
-</table>
+    <hr>
 
   </div>
 
 
-  <div class="govuk-grid-column-one-quarter">
-    <aside class="app-related-items" role="complementary">
-      <h2 class="govuk-heading-m" id="subsection-title">
-        Related content
-      </h2>
-      <nav role="navigation" aria-labelledby="subsection-title">
-        <h3 class="govuk-heading-s">Resources</h3>
-        <ul class="govuk-list govuk-!-font-size-16">
-          <li>
-            <a href="https://defra.sharepoint.com/:x:/r/sites/MST-Defra-SustainableFarmingIncentive2022ProductTeam/_layouts/15/Doc.aspx?sourcedoc=%7BB2E55787-6DC5-46B2-BCBC-3F986E87CC46%7D&file=User%20insights%20and%20needs.xlsx&action=default&mobileredirect=true" target="_blank">
-              User insight and needs
-            </a>
-          </li>
-          <li>
-            <a href="https://eaflood.atlassian.net/wiki/spaces/SFI/pages/3588849665/Vet+Visits" target="_blank">
-              Project Confluence
-            </a>
-          </li>
-          <li>
-            <a href="https://defra.sharepoint.com/sites/MST-Defra-SustainableFarmingIncentive2022ProductTeam/Shared%20Documents/Forms/AllItems.aspx?viewid=c001e37e%2D0f18%2D46ce%2D96ab%2D4070d6882140&id=%2Fsites%2FMST%2DDefra%2DSustainableFarmingIncentive2022ProductTeam%2FShared%20Documents%2FAnimal%20Health%20and%20Welfare&CT=1631111182054&OR=OWA%2DNT&CID=770c6880%2Daf78%2D57d2%2D1344%2Ddb0aacf43184" target="_blank">
-              Team Sharepoint
-            </a>
-          </li>
-        </ul>
-        <h3 class="govuk-heading-s">Design assets</h3>
-        <ul class="govuk-list govuk-!-font-size-16">
-          <li>
-            <a href="https://www.figma.com/file/sgwKQ7WBAANnPXA1UfB8NG/Vet-Visits---Apply-and-Claim-journey-for-multiple-visits?type=design&node-id=5563-5598&mode=design" target="_blank">Figma file</a>
-          </li>
-          <li>
-            <a href="https://docs.google.com/drawings/d/1dJIH_7FlDCVj9FPC81DJtrJRtm9TfHJh4p1cxyoT1gs/edit" target="_blank">
-              FFC funding landscape</a>
-          </li>
-          <li>
-            <a href="https://miro.com/app/board/uXjVOIgqslk=/" target="_blank">Miro board</a>
-          </li>
-        </ul>
-      </nav>
-    </aside>
-  </div>
+    </div>
 
+  </div>
 </div>
-
 
 {% endblock %}
