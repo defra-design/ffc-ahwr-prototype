@@ -1,0 +1,59 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Index page
+{% endblock %}
+      {% set serviceName %}
+  Get funding to improve animal health and welfare 
+{% endset %}
+
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">There could be a problem with your claim</h1>
+
+    <p class="govuk-body">To be effective, a PI hunt must be done on all beef cattle in the herd.</p>
+
+    <h2 class="govuk-heading-m">If the PI hunt was not done on all beef cattle in the herd</h2>
+
+    <p class="govuk-body">You cannot claim funding for the PI hunt. You can still continue to claim funding for a biosecurity assessment. If approved, your claim payment will be £215.</p>
+
+    <p class="govuk-body"><a href="biosecurity-cattle.html">Continue your claim</a></p>
+
+    <h2 class="govuk-heading-m">If the PI hunt was done on all beef cattle in the herd</h2>
+
+    <p class="govuk-body">If you selected the wrong answer by mistake, you can change your answer and claim funding for the PI hunt.</p>
+
+    <p class="govuk-body"><a href="pi-hunt-all-cattle.html">Change your answer if the PI hunt was done on all beef cattle in the herd</a>.</p>
+
+    {{ govukWarningText({
+      text: "Your claim will be checked by our team.",
+      iconFallbackText: "Warning"
+    }) }}
+
+    <h2 class="govuk-heading-m">Get help with your claim</h2>
+    
+    <p class="govuk-body">
+    If you need help with your claim, contact the Rural Payments Agency and give your agreement number.</p>
+      <ul class="govuk-list">
+        <li>Email: <a class="govuk-link" href="mailto:ruralpayments@defra.gov.uk">ruralpayments@defra.gov.uk</a></li>
+        <br>
+        <li>Telephone: 03000 200 301</li>
+        <li>Monday to Friday, 8:30am to 5pm, except bank holidays</li>
+
+      </ul>
+      <p class="govuk-body"><a class="govuk-link" href="https://www.gov.uk/call-charges">Find out about call charges (opens in new tab)</a></p>
+
+
+    
+  </div>
+</div>
+
+{% endblock %}
