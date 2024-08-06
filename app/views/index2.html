@@ -1,0 +1,175 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+	<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+    <!-- With the quick access for the journeys you will need to set up your routes file to go to the right pages -->
+	<form action="#" method="post">
+
+	<h1 class="govuk-heading-xl">Service Name - V1.0 Live</h1>
+
+    <!-- Set your Journeys tab -->
+	{% set journeys %}
+	<h2 class="govuk-heading-l">Journeys</h2>
+
+	<h3 class="govuk-heading-m">Select journey type:</h3>
+
+		<div class="govuk-form-group">
+  		<fieldset class="govuk-fieldset">
+            <div class="govuk-radios" data-module="govuk-radios">
+
+                <!-- Journey 1 name -->
+                <div class="govuk-radios__item">
+                     <input class="govuk-radios__input" id="journey1" name="manage-journey" type="radio" value="journey1">
+                     <label class="govuk-label govuk-radios__label" for="journey1">
+                        Guidance
+                     </label>
+                </div>
+
+                <!-- Journey 2 name -->
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="journey2" name="manage-journey" type="radio" value="journey2">
+                    <label class="govuk-label govuk-radios__label" for="journey2">
+		                Apply
+                    </label>
+                </div>
+
+                <!-- Journey 3 name -->
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="journey3" name="manage-journey" type="radio" value="journey3">
+                    <label class="govuk-label govuk-radios__label" for="journey3">
+		                Claim
+                    </label>
+                </div>
+
+
+                <!-- Journey 5 name -->
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="journey3" name="manage-journey" type="radio" value="journey3">
+                    <label class="govuk-label govuk-radios__label" for="journey3">
+		                Back office
+                    </label>
+                </div>
+    
+        </div>
+        </fieldset>
+
+    </div>
+
+    <button type="submit" class="govuk-button">
+        Quick start
+    </button>
+
+    <!-- End your Journeys tab -->
+	{% endset -%}
+	
+    <!-- End your Page Breakdown tab -->
+	{% set pageBreakdown %}
+
+	<h2 class="govuk-heading-l">Page breakdown</h2>
+    <!-- Optional note for those viewing the prototype -->
+	<p class="govuk-hint">Please note that when selecting a page indvidually it may not display data correctly as some pages pull data from previous screens.</p>
+
+	<h3 class="govuk-heading-m">Guidance</h3>
+	
+	<ul class="govuk-list govuk-list--bullet">
+        <!-- This link would open in a new tab -->
+        <li><a href="#" rel="noreferrer noopener" target="_blank">LIVE: Page title name (opens in new tab)</a> <strong class="govuk-tag govuk-tag--blue">Gov.uk owned</strong> </li>
+    </ul>
+
+	<hr>
+
+    <!-- Heading for first journey -->
+    <!-- Keep repeating this section of code for each journey -->
+	<h3 class="govuk-heading-m">Journey 2 - AMLS Dashboard (check status of registration)</h3>
+	
+	<ul class="govuk-list govuk-list--bullet">
+        <!-- Start listing your prototype pages here like the below example -->
+        <li><a href="dashboards/pending">Dashboard</a> <strong class="govuk-tag govuk-tag--blue">status: pending</strong></li>
+		
+    </ul>
+
+	<hr>
+    <!-- End of first Journey section -->
+
+	<!-- End of Page Breakdown tab -->
+	{% endset -%}
+
+    <!-- Start of Functional tab -->
+	{% set functional %}
+
+	<h2 class="govuk-heading-l">Functional pages</h2>
+
+	<table class="govuk-table">
+		<colgroup>
+			<col width="30%">
+			<col width="8%">
+			<col width="62%">
+		</colgroup>
+		<thead class="govuk-table__head">
+			<tr class="govuk-table__row">
+				<th class="govuk-table__header" scope="col">Pages</th>
+				<th class="govuk-table__header" scope="col">Ours</th>
+				<th class="govuk-table__header" scope="col">Description</th>
+			</tr>
+		</thead>
+		<tbody class="govuk-table__body">
+
+            <!-- Example of adding accessibility statement to the functional section -->
+			<tr class="govuk-table__row">
+				<td class="govuk-table__cell">
+					<a href="#">Accessibility Statement</a>
+				</td>
+				<td class="govuk-table__cell">Yes</td>
+				<td class="govuk-table__cell">Accessibility statement for service
+				</td>
+			</tr>
+
+		</tbody>
+	</table>
+
+    <!-- End of Functional tab -->
+	{% endset -%}
+
+    <!-- Keep adding more tabs here, whatever is specific to your service -->
+
+<!-- Set up of tabs here at the bottom of the page, feel free to add more -->
+{{ govukTabs({
+classes: "govuk-!-margin-bottom-6",
+items: [
+
+Journeys tab set up
+{
+label: "Journeys",
+id: "journeys",
+panel: {
+html: journeys
+}
+}
+,
+<!-- Page breakdown tab set up -->
+{
+label: "Page Breakdown",
+id: "pageBreakdown",
+panel: {
+html: pageBreakdown
+}
+}
+,
+<!-- Functional tab set up -->
+{
+label: "Functional",
+id: "functional",
+panel: {
+html: functional
+}
+}
+]
+}) }}
+
+{% endblock %}

@@ -1,0 +1,16 @@
+//
+// For guidance on how to add CSS and SCSS see:
+// https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
+// 
+
+// Add this class below to style your iFrames. If you are confident with CSS have a play around if you want your iFrame to look a little different.
+.page-version {
+    height: 300px;
+    margin-bottom: 3em;
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 1px solid #999;
+      zoom: 0.3; -moz-transform: scale(0.3); -moz-transform-origin: 0 0;
+    }
+  }

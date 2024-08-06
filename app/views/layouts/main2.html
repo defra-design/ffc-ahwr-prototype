@@ -1,0 +1,56 @@
+{#
+For guidance on how to use layouts see:
+https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
+#}
+
+{% extends "govuk-prototype-kit/layouts/govuk-branded.html" %}
+
+{% block footer %}
+ {{ govukFooter({
+   meta: {
+     items: [
+       {
+         href: "/privacy",
+         text: "Privacy policy"
+       },
+       {
+         href: "/manage-prototype",
+         text: "Manage your prototype"
+       },
+       {
+         href: "/manage-prototype/clear-data",
+         text: "Clear data"
+       },
+       <!-- Add the code below to add a 'compare versions' link to the bottom of the prototype footer -->
+       {
+        href: "/compareVersionsSetUp",
+        text: "Compare versions"
+       }
+       <!-- End -->
+     ],
+     visuallyHiddenTitle: "Footer links"
+   }
+ }) }}
+{% endblock %}
+
+{% block footer %}
+{{ govukFooter({
+   meta: {
+     items: [
+       {
+         href: "/manage-prototype",
+         text: "Manage your prototype"
+       },
+       {
+         href: "/manage-prototype/clear-data",
+         text: "Clear data"
+       },
+       {
+        href: "/compareVersionsSetUp",
+        text: "Compare versions"
+       }
+     ],
+     visuallyHiddenTitle: "Footer links"
+   }
+}) }}
+{% endblock %}
