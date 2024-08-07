@@ -11,11 +11,10 @@
 
     <form class="form" action="#" method="post">
 
-      <div class="govuk-grid-row">
+        <div class="govuk-grid-row">
 
-        <!-- Allow users to go back to set up page for comparing versions feature -->
-
-        <a href="compareVersionsSetUp" class="govuk-back-link">Back to page search</a>
+            <!-- Allow users to go back to set up page for comparing versions feature -->
+            <a href="compareVersionsSetUp" class="govuk-back-link">Back to page search</a>
 
             <div class="govuk-form-group">
                 <!-- Dynamic page heading to include the URL provided on the compareVersionsSetUp page -->
@@ -24,177 +23,44 @@
                 <!-- Place all your Discovery versions here! -->
 
                 <h2 class="govuk-heading-m">No Defra ID</h2>
-                <h3 class="govuk-heading-s">Prototype Version 0 -9</h2>
+                <h3 class="govuk-heading-s">Prototype Version 0 - 9</h3>
 
                 <div class="govuk-grid-row">
 
-     
-                        <div class="govuk-grid-column-one-half">
-
-                            <p class="govuk-body">
-
-                                <a href="/v1/{{ data['pageURL'] }}">Version 1</a>
-                            </p>
-                                <!-- Use the iFrame tag to render each version in it's own box, this is where the CSS comes in -->
-                            <div class="page-version">
-                                <!-- Use the same routing path as above for the src tag -->
-                                <!-- By setting the frameborder to 1 you help seperate the frames -->
-                                <iframe src="/v1/{{ data['pageURL'] }}" frameborder="1"></iframe>
-                            </div>
-                        </div>
-
-                        <!-- Repeat the same apporach as above ensuring you update your version number in the href and src tags -->
-
-                        <div class="govuk-grid-column-one-half">
-                            <p class="govuk-body"><a href="/v2/{{ data['pageURL'] }}">Version 2</a></p>
-                            <div class="page-version"><iframe src="/v2/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
-                        </div>
-
-                        <div class="govuk-grid-column-one-half">
-                            <p class="govuk-body"><a href="/v3/{{ data['pageURL'] }}">Version 3</a></p>
-                            <div class="page-version"><iframe src="/v3/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
-                        </div>
-    
-                        <div class="govuk-grid-column-one-half">
-                            <p class="govuk-body"><a href="/v4/{{ data['pageURL'] }}">Version 4</a></p>
-                            <div class="page-version"><iframe src="/v4/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
-                        </div>
-                        
-                    </div>
-    
-                    <div class="govuk-grid-row">
-    
-                        <div class="govuk-grid-column-one-half">
-                            <p class="govuk-body"><a href="/v5/{{ data['pageURL'] }}">Version 5</a></p>
-                            <div class="page-version"><iframe src="/v5/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
-                        </div>
-    
-                        <div class="govuk-grid-column-one-half">
-                            <p class="govuk-body"><a href="/v6/{{ data['pageURL'] }}">Version 6</a></p>
-                            <div class="page-version"><iframe src="/v6/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
-                        </div>
-                        
-                    </div>
-    
-                    <div class="govuk-grid-row">
-    
-                        <div class="govuk-grid-column-one-half">
-                            <p class="govuk-body"><a href="/v7/{{ data['pageURL'] }}">Version 7</a></p>
-                            <div class="page-version"><iframe src="/v7/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
-                        </div>
-    
-                        <div class="govuk-grid-column-one-half">
-                            <p class="govuk-body"><a href="/v8/{{ data['pageURL'] }}">Version 8</a></p>
-                            <div class="page-version"><iframe src="/v8/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
-                        </div>
-    
-                        <div class="govuk-grid-column-one-half">
-                            <p class="govuk-body"><a href="/v9/{{ data['pageURL'] }}">Version 9</a></p>
-                            <div class="page-version"><iframe src="/v9/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
-                        </div>
-                    
-                </div>
-
-                <!-- Place all your Alpha versions here! -->
-
-                <h2 class="govuk-heading-m">Defra ID</h2>
-                <h3 class="govuk-heading-s">Prototype Version 10 -23</h2>
-
-                <div class="govuk-grid-row">
                     <div class="govuk-grid-column-one-half">
-
-                        <p class="govuk-body"><a href="/v10/{{ data['pageURL'] }}">Version 10</a></p>
-                    <!-- Use the iFrame tag to render each version in it's own box, this is where the CSS comes in -->
-                    <div class="page-version">
-                        <!-- Use the same routing path as above for the src tag -->
-                        <!-- By setting the frameborder to 1 you help seperate the frames -->
-                        <iframe src="/v10/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        <p class="govuk-body">
+                            <a href="/v1/{{ data['pageURL'] }}">Version 1</a>
+                        </p>
+                        <div class="page-version">
+                            <iframe src="/v1/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
                     </div>
+
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v2/{{ data['pageURL'] }}">Version 2</a></p>
+                        <div class="page-version">
+                            <iframe src="/v2/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v3/{{ data['pageURL'] }}">Version 3</a></p>
+                        <div class="page-version">
+                            <iframe src="/v3/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v4/{{ data['pageURL'] }}">Version 4</a></p>
+                        <div class="page-version">
+                            <iframe src="/v4/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                    
                 </div>
-
-            <!-- Repeat the same apporach as above ensuring you update your version number in the href and src tags -->
-
-            <div class="govuk-grid-column-one-half">
-                <p class="govuk-body"><a href="/v11/{{ data['pageURL'] }}">Version 11</a></p>
-                <div class="page-version"><iframe src="/v11/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
-            </div>
-
-            <div class="govuk-grid-column-one-half">
-                <p class="govuk-body"><a href="/v12/{{ data['pageURL'] }}">Version 12</a></p>
-                <div class="page-version"><iframe src="/v12/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
-            </div>
-
-            <div class="govuk-grid-column-one-half">
-                <p class="govuk-body"><a href="/v13/{{ data['pageURL'] }}">Version 13</a></p>
-                <div class="page-version"><iframe src="/v13/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
-            </div>
-            
-        </div>
-
-            <div class="govuk-grid-column-one-half">
-                <p class="govuk-body"><a href="/v14/{{ data['pageURL'] }}">Version 14</a></p>
-                <div class="page-version"><iframe src="/v14/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
-            </div>
-
-            <div class="govuk-grid-column-one-half">
-                <p class="govuk-body"><a href="/v15/{{ data['pageURL'] }}">Version 15</a></p>
-                <div class="page-version"><iframe src="/v15/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
-            </div>
-            
-        </div>
-
-            <div class="govuk-grid-column-one-half">
-                <p class="govuk-body"><a href="/v16/{{ data['pageURL'] }}">Version 16</a></p>
-                <div class="page-version"><iframe src="/v16/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
-            </div>
-
-            <div class="govuk-grid-column-one-half">
-                <p class="govuk-body"><a href="/v17/{{ data['pageURL'] }}">Version 17</a></p>
-                <div class="page-version"><iframe src="/v17/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
-            </div>
-
-
-            <div class="govuk-grid-column-one-half">
-                <p class="govuk-body"><a href="/v18/{{ data['pageURL'] }}">Version 18</a></p>
-                <div class="page-version"><iframe src="/v18/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
-      
-        <div class="govuk-grid-column-one-half">
-            <p class="govuk-body"><a href="/v19/{{ data['pageURL'] }}">Version 19</a></p>
-            <div class="page-version"><iframe src="/v19/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
-        </div>
-
-        <div class="govuk-grid-column-one-half">
-            <p class="govuk-body"><a href="/v20/{{ data['pageURL'] }}">Version 20</a></p>
-            <div class="page-version"><iframe src="/v20/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
-        </div>
-
-        <div class="govuk-grid-column-one-half">
-            <p class="govuk-body"><a href="/v21/{{ data['pageURL'] }}">Version 21</a></p>
-            <div class="page-version"><iframe src="/v21/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
-        </div>
-
-        <div class="govuk-grid-column-one-half">
-            <p class="govuk-body"><a href="/v22/{{ data['pageURL'] }}">Version 22</a></p>
-            <div class="page-version"><iframe src="/v22/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
-        </div>
-
-        <div class="govuk-grid-column-one-half">
-            <p class="govuk-body"><a href="/v23/{{ data['pageURL'] }}">Version 23</a></p>
-            <div class="page-version"><iframe src="/v23/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
-        </div>
-
-    
-</div>
-   
-                </div>
-
-                <!-- Place all your Beta versions here! -->
-
-                <h2 class="govuk-heading-m">Multiple reviews</h2>
-                <h3 class="govuk-heading-s">Prototype Version 24 -31</h2>
 
                 <div class="govuk-grid-row">
-                    
+
                     <div class="govuk-grid-column-one-half">
                         <p class="govuk-body"><a href="/v5/{{ data['pageURL'] }}">Version 5</a></p>
                         <div class="page-version"><iframe src="/v5/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
@@ -202,15 +68,214 @@
 
                     <div class="govuk-grid-column-one-half">
                         <p class="govuk-body"><a href="/v6/{{ data['pageURL'] }}">Version 6</a></p>
-                        <div class="page-version"><iframe src="/v10/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
+                        <div class="page-version"><iframe src="/v6/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
                     </div>
-
-
-               
                     
                 </div>
 
-</form>
+                <div class="govuk-grid-row">
+
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v7/{{ data['pageURL'] }}">Version 7</a></p>
+                        <div class="page-version"><iframe src="/v7/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
+                    </div>
+
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v8/{{ data['pageURL'] }}">Version 8</a></p>
+                        <div class="page-version"><iframe src="/v8/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
+                    </div>
+
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v9/{{ data['pageURL'] }}">Version 9</a></p>
+                        <div class="page-version"><iframe src="/v9/{{ data['pageURL'] }}" frameborder="1"></iframe></div>
+                    </div>
+                    
+                </div>
+
+                <!-- Place all your Alpha versions here! -->
+
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v10/{{ data['pageURL'] }}">Version 10</a></p>
+                        <div class="page-version">
+                            <iframe src="/v10/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v11/{{ data['pageURL'] }}">Version 11</a></p>
+                        <div class="page-version">
+                            <iframe src="/v11/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v12/{{ data['pageURL'] }}">Version 12</a></p>
+                        <div class="page-version">
+                            <iframe src="/v12/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v13/{{ data['pageURL'] }}">Version 13</a></p>
+                        <div class="page-version">
+                            <iframe src="/v13/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v14/{{ data['pageURL'] }}">Version 14</a></p>
+                        <div class="page-version">
+                            <iframe src="/v14/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v15/{{ data['pageURL'] }}">Version 15</a></p>
+                        <div class="page-version">
+                            <iframe src="/v15/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v16/{{ data['pageURL'] }}">Version 16</a></p>
+                        <div class="page-version">
+                            <iframe src="/v16/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v17/{{ data['pageURL'] }}">Version 17</a></p>
+                        <div class="page-version">
+                            <iframe src="/v17/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v18/{{ data['pageURL'] }}">Version 18</a></p>
+                        <div class="page-version">
+                            <iframe src="/v18/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v19/{{ data['pageURL'] }}">Version 19</a></p>
+                        <div class="page-version">
+                            <iframe src="/v19/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v20/{{ data['pageURL'] }}">Version 20</a></p>
+                        <div class="page-version">
+                            <iframe src="/v20/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v21/{{ data['pageURL'] }}">Version 21</a></p>
+                        <div class="page-version">
+                            <iframe src="/v21/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v22/{{ data['pageURL'] }}">Version 22</a></p>
+                        <div class="page-version">
+                            <iframe src="/v22/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v23/{{ data['pageURL'] }}">Version 23</a></p>
+                        <div class="page-version">
+                            <iframe src="/v23/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Place all your Beta versions here! -->
+                
+                <h2 class="govuk-heading-m">Multiple reviews</h2>
+                <h3 class="govuk-heading-s">Prototype Version 24 - 31</h3>
+                
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v24/{{ data['pageURL'] }}">Version 24</a></p>
+                        <div class="page-version">
+                            <iframe src="/v24/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v25/{{ data['pageURL'] }}">Version 25</a></p>
+                        <div class="page-version">
+                            <iframe src="/v25/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v26/{{ data['pageURL'] }}">Version 26</a></p>
+                        <div class="page-version">
+                            <iframe src="/v26/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v27/{{ data['pageURL'] }}">Version 27</a></p>
+                        <div class="page-version">
+                            <iframe src="/v27/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v28/{{ data['pageURL'] }}">Version 28</a></p>
+                        <div class="page-version">
+                            <iframe src="/v28/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v29/{{ data['pageURL'] }}">Version 29</a></p>
+                        <div class="page-version">
+                            <iframe src="/v29/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v30/{{ data['pageURL'] }}">Version 30</a></p>
+                        <div class="page-version">
+                            <iframe src="/v30/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                
+                    <div class="govuk-grid-column-one-half">
+                        <p class="govuk-body"><a href="/v31/{{ data['pageURL'] }}">Version 31</a></p>
+                        <div class="page-version">
+                            <iframe src="/v31/{{ data['pageURL'] }}" frameborder="1"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
 </div>
 
 {% endblock content %}
