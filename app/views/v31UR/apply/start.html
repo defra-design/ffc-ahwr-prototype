@@ -1,0 +1,94 @@
+{% extends "layouts/layout.html" %}
+
+{% block pageTitle %}
+Start page
+{% endblock %}
+{% set serviceName %}
+Get funding to improve animal health and welfare
+{% endset%}
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title"
+      data-module="govuk-notification-banner">
+      <div class="govuk-notification-banner__header">
+        <h3 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+          Important
+        </h3>
+      </div>
+      <div class="govuk-notification-banner__content">
+        <p class="govuk-notification-banner__heading">
+        This service used to be the annual health and welfare review. It has been expanded to include:
+        </p>
+        <h2 class="govuk-heading-m list govuk-list--bullet"><li>changes to the review, which is now called the animal health and welfare review</li></h1>
+        <h2 class="govuk-heading-m list govuk-list--bullet"><li>the second part of the service, which is the endemic disease follow-up</li></h2>
+      </div>
+    </div>
+
+    <span class="govuk-caption-l"></span>
+    <h1 class="govuk-heading-l">
+      Get funding to improve animal health and welfare
+    </h1>
+
+
+    <p class="govuk-heading-body">Use this service to apply for funding for a vet to visit your farm to:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>improve the health and welfare of your livestock</li>
+      <li>help reduce diseases</li>
+    </ul>
+
+    <p class="govuk-heading-body">If you’re eligible, you can apply for funding for:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="../farmer/guidance-apply#welfare-review">animal health and welfare reviews</a></li>
+      <li><a href="../farmer/guidance-apply#follow-up">endemic disease follow-ups</a></li>
+    </ul>
+
+    <h2 class="govuk-heading-m">If you already have an agreement in the old service</h2>
+    <p class="govuk-heading-body">If you have claimed for your last review, start now to sign an agreement for the new service.</p>
+
+    <p class="govuk-heading-body">If you have not claimed for your last review, start now to either:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>claim for your last review once it's done</li>
+      <li>withdraw your old agreement</li>
+    </ul>
+
+    <p class="govuk-heading-body">Then you can sign an agreement for the new service.</p>
+
+    <p class="govuk-heading-body">Applying takes around 5 minutes.</p>
+
+    <a href="defra-id.html" role="button" draggable="false"
+      class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8 govuk-button--start" data-module="govuk-button">
+      Start now
+      <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19"
+        viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+      </svg>
+    </a>
+
+    <h2 class="govuk-heading-m">Before you start</h2>
+    <p>You’ll need your Rural Payments service customer reference number (CRN) and password to sign in.</p>
+
+    <p><a href="#">You must be eligible to apply for funding to improve animal health and welfare.</a></p>
+
+    <h2 class="govuk-heading-m">Get help with your application</h2>
+    <p>If you cannot apply online or have a question about your application contact the Rural Payments Agency by email
+      or phone.</p>
+    <ul class="govuk-list">
+      <li>Email: <a class="govuk-link" href="mailto:ruralpayments@defra.gov.uk">ruralpayments@defra.gov.uk</a></li>
+      <br>
+      <li>Telephone: 03000 200 301</li>
+      <li>Monday to Friday, 8:30am to 5pm, except bank holidays</li>
+
+    </ul>
+    <p class="govuk-body"><a class="govuk-link" href="https://www.gov.uk/call-charges">Find out about call charges</a>
+    </p>
+
+  </div>
+</div>
+
+{% endblock %}
