@@ -28,13 +28,19 @@ AHWR Private Beta
 
     <h2 class="govuk-heading-l">Journeys</h2>
     <h3 class="govuk-heading-m">Guidance</h3>
-
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-visually-hidden">Warning</span>
+        These pages are now published via Whitehall Publisher.
+      </strong>
+    </div>
     <!-- Guidance journeys -->
     <table class="govuk-table">
       <thead class="govuk-table__head">
         <tr class="govuk-table__row">
           <th class="govuk-table__header" scope="col">User</th>
-          <th class="govuk-table__header" scope="col">Journey</th>
+          <th class="govuk-table__header" scope="col">Scenario</th>
           <th class="govuk-table__header" scope="col">Description</th>
         </tr>
       </thead>
@@ -49,13 +55,13 @@ AHWR Private Beta
             </ul>
           </td>
           <td class="govuk-table__cell">
-            A collection of guidance pages for farmers and vets.
+            The entry point into guidance about this service. Also includes guidance for vets carrying out reviews and follow-ups.
           </td>
         </tr>
 
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">
-            <p>Farmer</p>
+            <p>Farmers and vets</p>
           </th>
           <td class="govuk-table__cell">
             <ul class="govuk-list">
@@ -103,7 +109,7 @@ AHWR Private Beta
       <thead class="govuk-table__head">
         <tr class="govuk-table__row">
           <th class="govuk-table__header" scope="col">User</th>
-          <th class="govuk-table__header" scope="col">Journey</th>
+          <th class="govuk-table__header" scope="col">Scenario</th>
           <th class="govuk-table__header" scope="col">Description</th>
         </tr>
       </thead>
@@ -118,7 +124,7 @@ AHWR Private Beta
             </ul>
           </td>
           <td class="govuk-table__cell">
-            The first interaction with the service. Old world and new world users will enter the service and agree to the terms and conditions.
+            The first interaction with the service. Users enter the service and agree to the terms and conditions.
           </td>
         </tr>
 
@@ -132,10 +138,10 @@ AHWR Private Beta
             </ul>
           </td>
           <td class="govuk-table__cell">
-            The first interaction with the service. Old world and new world users will enter the service and agree to the terms and conditions.
+          Users enter the service and agree to the terms and conditions. Contains wording variations for old world users making a new world agreement.
           </td>
         </tr>
-
+        <!--
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">
             <p>Farmer</p>
@@ -158,16 +164,20 @@ AHWR Private Beta
             </ul>
           </td>
           <td class="govuk-table__cell">Service name updates</td>
-        </tr>
+        </tr>-->
       </tbody>
     </table>
 
     <h3 class="govuk-heading-m">Claim</h3>
+    <div class="govuk-inset-text">
+      <p class="govuk-body">Iterations to "Manage your claims" to handle multiple species were usability tested during sprint 63.</p>
+      <p class="govuk-body">Version 1: <a href="https://fcp-ahwr-prototype.herokuapp.com/v31UR/myc/v1/first/beef">state following a previous claim</a> and <a href="https://fcp-ahwr-prototype.herokuapp.com/v31UR/myc/v1/second/beef">state following an additional claim</a>.<br><br>Version 2: <a href="https://fcp-ahwr-prototype.herokuapp.com/v31UR/myc/v2/first/beef">state following a previous claim</a> and <a href="https://fcp-ahwr-prototype.herokuapp.com/v31UR/myc/v2/second/beef">state following an additional claim</a>.</p>
+    </div>
     <table class="govuk-table">
       <thead class="govuk-table__head">
         <tr class="govuk-table__row">
           <th class="govuk-table__header" scope="col">User</th>
-          <th class="govuk-table__header" scope="col">Journey</th>
+          <th class="govuk-table__header" scope="col">Scenario</th>
           <th class="govuk-table__header" scope="col">Description</th>
         </tr>
       </thead>
@@ -192,11 +202,11 @@ AHWR Private Beta
           </th>
           <td class="govuk-table__cell">
             <ul class="govuk-list">
-              <li><a href="../v31/second-claim/endemics-pig/vet-visits-pigs.html" target="_blank">Follow up: pigs</a></li>
-              <li><a href="../v31/second-claim/endemics-pig-old-world/vet-visits-pigs.html" target="_blank">Follow up: pigs (returning old world user)</a></li>
+              <li><a href="../v31/second-claim/endemics-pig/vet-visits-pigs.html" target="_blank">Follow-up: pigs</a></li>
+              <li><a href="../v31/second-claim/endemics-pig-old-world/vet-visits-pigs.html" target="_blank">Follow-up: pigs (returning old world user)</a></li>
             </ul>
           </td>
-          <td class="govuk-table__cell">Endemics claim for this species.</td>
+          <td class="govuk-table__cell">Endemics follow-up claim for pigs. If the farmer is coming into the service from the old world, they'll need to confirm the test result of their review.</td>
         </tr>
 
         <tr class="govuk-table__row">
@@ -205,13 +215,13 @@ AHWR Private Beta
           </th>
           <td class="govuk-table__cell">
             <ul class="govuk-list">
-              <li><a href="../v31/second-claim/endemics-beef/vet-visits-beef.html" target="_blank">Follow-up: beef cattle, positive result in corresponding review</a></li>
-              <li><a href="../v31/second-claim/endemics-beef-negative/vet-visits-beef.html" target="_blank">Follow-up: beef cattle, negative result in corresponding review</a></li>
-              <li><a href="../v31/second-claim/endemics-beef-old-world-positive/vet-visits-beef.html" target="_blank">Follow-up: beef cattle, positive result in corresponding review (user is coming from old world)</a></li>
-              <li><a href="../v31/second-claim/endemics-beef-old-world-negative/vet-visits-beef.html" target="_blank">Follow-up: beef cattle, negative result in corresponding review (user is coming from old world)</a></li>
+              <li><a href="../v31/second-claim/endemics-beef/vet-visits-beef.html" target="_blank">Follow-up: beef cattle, positive result</a></li>
+              <li><a href="../v31/second-claim/endemics-beef-negative/vet-visits-beef.html" target="_blank">Follow-up: beef cattle, negative result</a></li>
+              <li><a href="../v31/second-claim/endemics-beef-old-world-positive/vet-visits-beef.html" target="_blank">Follow-up: beef cattle, positive result (returning old world user)</a></li>
+              <li><a href="../v31/second-claim/endemics-beef-old-world-negative/vet-visits-beef.html" target="_blank">Follow-up: beef cattle, negative result (returning old world user)</a></li>
             </ul>
           </td>
-          <td class="govuk-table__cell">Endemics claim for this species.</td>
+          <td class="govuk-table__cell">Endemics follow-up claim for beef cattle. If the farmer is coming into the service from the old world, they'll need to confirm the test result of their review.<br><br>If their review result was positive, they cannot complete their claim without confirming a PI hunt was completed.<br><br>If it was negative, they can claim for a PI hunt if it was recommended and undertaken by the vet.</td>
         </tr>
 
         <tr class="govuk-table__row">
@@ -220,13 +230,24 @@ AHWR Private Beta
           </th>
           <td class="govuk-table__cell">
             <ul class="govuk-list">
-              <li><a href="../v31/second-claim/endemics-dairy-positive/vet-visits-beef.html" target="_blank">Follow-up: dairy cattle, positive result in corresponding review</a></li>
-              <li><a href="../v31/second-claim/endemics-dairy-negative/vet-visits-beef.html" target="_blank">Follow-up: dairy cattle, negative result in corresponding review</a></li>
-              <li><a href="../v31/second-claim/endemics-dairy-old-world-positive/vet-visits-beef.html" target="_blank">Follow-up: dairy cattle, positive result in corresponding review (user is coming from old world)</a></li>
-              <li><a href="../v31/second-claim/endemics-dairy-old-world-negative/vet-visits-beef.html" target="_blank">Follow-up: dairy cattle, negative result in corresponding review (user is coming from old world)</a></li>
+              <li><a href="../v31/second-claim/endemics-dairy-positive/vet-visits-beef.html" target="_blank">Follow-up: dairy cattle, positive result</a></li>
+              <li><a href="../v31/second-claim/endemics-dairy-negative/vet-visits-beef.html" target="_blank">Follow-up: dairy cattle, negative result</a></li>
+              <li><a href="../v31/second-claim/endemics-dairy-old-world-positive/vet-visits-beef.html" target="_blank">Follow-up: dairy cattle, positive result (returning old world user)</a></li>
+              <li><a href="../v31/second-claim/endemics-dairy-old-world-negative/vet-visits-beef.html" target="_blank">Follow-up: dairy cattle, negative result (returning old world user)</a></li>
             </ul>
           </td>
-          <td class="govuk-table__cell">Endemics claim for this species.</td>
+          <td class="govuk-table__cell">Endemics follow-up claim for beef cattle. If the farmer is coming into the service from the old world, they'll need to confirm the test result of their review.<br><br>If their review result was positive, they cannot complete their claim without confirming a PI hunt was completed.<br><br>If it was negative, they can claim for a PI hunt if it was recommended and undertaken by the vet.</td>
+        </tr>
+        <tr class="govuk-table__row"></tr>
+          <th scope="row" class="govuk-table__header">
+            <p>Farmer</p>
+          </th>
+          <td class="govuk-table__cell">
+            <ul class="govuk-list">
+              <li><a href="../v31/second-claim/endemics-sheep/vet-visits-sheep" target="_blank">Follow-up: sheep</a></li>
+            </ul>
+          </td>
+          <td class="govuk-table__cell">Endemics follow-up claim for pigs.</td>
         </tr>
       </tbody>
     </table>
@@ -236,25 +257,37 @@ AHWR Private Beta
       <thead class="govuk-table__head">
         <tr class="govuk-table__row">
           <th class="govuk-table__header" scope="col">User</th>
-          <th class="govuk-table__header" scope="col">Journey</th>
+          <th class="govuk-table__header" scope="col">Scenario</th>
           <th class="govuk-table__header" scope="col">Description</th>
         </tr>
       </thead>
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header">
-            <p>To come</p>
+            <p>Back-office staff with recommender permissions</p>
           </th>
           <td class="govuk-table__cell">
             <ul class="govuk-list">
-              <li><a href="" target="_blank">To come</a></li>
+              <li><a href="https://fcp-ahwr-prototype.herokuapp.com/v31/back-office/claims" target="_blank">Claim and agreement lookup and management</a></li>
             </ul>
           </td>
           <td class="govuk-table__cell">
-            To come
+            Used to find claim and agreement details and perform basic management, such as changing the status of claims and and approving payment.
           </td>
         </tr>
-
+        <tr class="govuk-table__row"></tr>
+          <th scope="row" class="govuk-table__header">
+            <p>Back-office staff with authoriser permissions</p>
+          </th>
+          <td class="govuk-table__cell">
+            <ul class="govuk-list">
+              <li>Payment authorisation</li>
+            </ul>
+          </td>
+          <td class="govuk-table__cell">
+            Used to approve claims for payment.
+          </td>
+        </tr>
       
       </tbody>
     </table>
@@ -299,6 +332,11 @@ AHWR Private Beta
           <li>
             <a href="https://miro.com/app/board/uXjVOIgqslk=/?moveToWidget=3458764527581122081&cot=14" target="_blank">
               Miro board
+            </a>
+          </li>
+          <li></li>
+            <a href="https://www.figma.com/design/sgwKQ7WBAANnPXA1UfB8NG/Vet-Visits---Apply-and-Claim-journey-for-multiple-visits?node-id=7969-22721&node-type=canvas&t=P85J6CTWkabw1X15-0" target="_blank">
+              Figma
             </a>
           </li>
         </ul>

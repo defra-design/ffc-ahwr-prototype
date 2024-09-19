@@ -6,7 +6,7 @@ const usePromoMode = process.env.PROMO_MODE || 'false'
 
 module.exports = {
   port: '3000',
-  serviceName: 'Animal Health and Welfare Review Service',
+  serviceName: 'Get funding to improve animal health and welfare',
   serviceUrl,
 
   // Enable or disable password protection on production
