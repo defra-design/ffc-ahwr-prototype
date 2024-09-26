@@ -10,7 +10,7 @@ Annual Health and Welfare Back Office
 
 {% block content %}
 
-<a class="govuk-back-link govuk-!-margin-bottom-0" href="#">Back</a>
+<a class="govuk-back-link govuk-!-margin-bottom-0" href="javascript:history.back()">Back</a>
 
   <div class="govuk-phase-banner">
   </div>
@@ -22,9 +22,11 @@ Annual Health and Welfare Back Office
             <h1 class="govuk-caption-l govuk-!-margin-bottom-3">Claim by <a href="business.html">P&D Fearnley & Sons</a></p>
         </div>
 
+
+
         <div class="govuk-grid-column-one-third">
-          <h2 class="govuk-heading-m" style="float:right; margin-bottom: 8px;"><strong class="govuk-tag govuk-tag--purple">
-            On hold
+          <h2 class="govuk-heading-m" style="float:right; margin-bottom: 8px;"><strong class="govuk-tag govuk-tag--orange">
+            In check
           </strong></h2>
         </div>
         <div>
@@ -143,8 +145,8 @@ Annual Health and Welfare Back Office
               Status
             </dt>
             <dd class="govuk-summary-list__value">
-              <strong class="govuk-tag govuk-tag--purple">
-                On hold
+              <strong class="govuk-tag govuk-tag--orange">
+                In check
               </strong>
             </dd>
           </div>
@@ -245,13 +247,12 @@ Annual Health and Welfare Back Office
             </dd>
           </div>
         </dl>
-        <p class="govuk-body">If you recommend this claim for a full verification check, move it to ‘in check’.</p>
         <div class="govuk-button-group">
-          <a href="claim-move-to-in-check.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-            Move claim to 'in check'
-          </a>
-          <p class="govuk-body">If no further checks are required, you do not need to do anything. The claim will automatically move to ‘ready to pay’.</p>
-        </div>
+          <a href="claim-recommend-to-pay" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+          Recommend to pay</a>
+          <a href="claim-recommend-to-reject" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+            Recommend to reject</a>
+          </div>
       </div>
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">

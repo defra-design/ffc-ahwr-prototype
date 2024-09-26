@@ -10,11 +10,10 @@ Annual Health and Welfare Back Office
 
 {% block content %}
 
-<a class="govuk-back-link govuk-!-margin-bottom-0" href="#">Back</a>
+<a class="govuk-back-link govuk-!-margin-bottom-0" href="javascript:history.back()">Back</a>
 
   <div class="govuk-phase-banner">
   </div>
-  <div class="govuk-width-container">
     <main class="govuk-main-wrapper" style="padding-top: 0px; padding-bottom: 0px;">
       <div class="govuk-grid-row" style="padding-top:16px;">
         <div class="govuk-grid-column-two-thirds">
@@ -23,13 +22,14 @@ Annual Health and Welfare Back Office
         </div>
 
         <div class="govuk-grid-column-one-third">
-          <h2 class="govuk-heading-m" style="float:right; margin-bottom: 8px;"><strong class="govuk-tag govuk-tag--purple">
-            On hold
+          <h2 class="govuk-heading-m" style="float:right; margin-bottom: 8px;"><strong class="govuk-tag govuk-tag--orange">
+            In check
           </strong></h2>
         </div>
         <div>
           <h1 class="govuk-caption-l"style="float:right; govuk-!-margin-bottom"><a href="claims">Back to all claims</a></h1>
         </div>
+      </div>
     </main>
     <hr>
 
@@ -105,9 +105,62 @@ Annual Health and Welfare Back Office
         </dd>
       </div>
     </dl>
+
+    <!-- Start dialogue box -->
+    <div class="govuk-panel govuk-panel--confirmation govuk-!-text-align-left" style="background-color:#fafafa; border-color:#000000; border-width:medium;">
+      <a href="claim-in-check.html" role="button" draggable="false" class="govuk-link govuk-body" style="color:#505a5f; float:right;" data-module="govuk-button">
+        Back
+      </a>
+      <br>
+      <div class="govuk-form-group govuk-form-group--error">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Recommend to reject
+            </h1>
+            <div class="govuk-!-padding-bottom-7"></div>
+            <p id="checkbox-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span> Select both checkboxes
+            </p>
+            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="on-hold-validation" name="on-hold-validation" type="checkbox" value="on-hold-validation">
+                <label class="govuk-label govuk-checkboxes__label" for="on-hold-validation">
+                  I have reviewed the completed verification check and agree the claim has not passed the checks. I'm satisfied we have tried to resolve the failures with the agreement holder, but they’re unable to do so. I reject this claim for payment.
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="issues-log" name="issues-log" type="checkbox" value="issues-log">
+                <label class="govuk-label govuk-checkboxes__label" for="issues-log">
+                  I have updated the verification checklist. I have sent it back to the recommender to attach to the customer’s record in the Customer Relationship Management system.
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+    
+        <button class="govuk-button govuk-button govuk-!-margin-bottom-2" data-module="govuk-button" onclick="handleConfirmation()">
+          Confirm and continue
+        </button>
+      </div>
+    
+      <script>
+        function handleConfirmation() {
+          var onHoldValidationCheckbox = document.getElementById('on-hold-validation');
+          var issuesLogCheckbox = document.getElementById('issues-log');
+    
+          if (!onHoldValidationCheckbox.checked || !issuesLogCheckbox.checked) {
+            window.location.href = 'claim-recommend-to-reject-error';
+          } else {
+            window.location.href = 'claim-recommended-to-reject-recommender';
+          }
+        }
+      </script>
+    </div>
+    <!-- End dialogue -->
   </div>
 </div>
-
+<div class="govuk-width-container">
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-three-thirds">
 
@@ -143,8 +196,8 @@ Annual Health and Welfare Back Office
               Status
             </dt>
             <dd class="govuk-summary-list__value">
-              <strong class="govuk-tag govuk-tag--purple">
-                On hold
+              <strong class="govuk-tag govuk-tag--orange">
+                In check
               </strong>
             </dd>
           </div>
@@ -245,13 +298,6 @@ Annual Health and Welfare Back Office
             </dd>
           </div>
         </dl>
-        <p class="govuk-body">If you recommend this claim for a full verification check, move it to ‘in check’.</p>
-        <div class="govuk-button-group">
-          <a href="claim-move-to-in-check.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-            Move claim to 'in check'
-          </a>
-          <p class="govuk-body">If no further checks are required, you do not need to do anything. The claim will automatically move to ‘ready to pay’.</p>
-        </div>
       </div>
 
       <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="history">

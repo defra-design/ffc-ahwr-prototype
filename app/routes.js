@@ -191,8 +191,9 @@ router.post('*/ewe', function (req, res) {
   } else if (selectedDiseases.includes("disease-12")) {
     res.redirect('/v31/second-claim/endemics-sheep/ewe/positive-negative-12');
   } else if (selectedDiseases.includes("disease-13")) {
-
     res.redirect('/v31/second-claim/endemics-sheep/ewe/other');
+  } else if (selectedDiseases.includes("disease-14")) {
+    res.redirect('/v31/second-claim/endemics-sheep/ewe/clinical-symptoms-14');
   } else {
     // Handle other cases or redirect to an error page
     res.redirect('/v31/second-claim/endemics-sheep/ewe-error');
@@ -219,6 +220,8 @@ router.post('*/reproductive', function (req, res) {
     res.redirect('/v31/second-claim/endemics-sheep/reproductive/positive-negative-6');
   } else if (selectedDiseases.includes("disease-7")) {
     res.redirect('/v31/second-claim/endemics-sheep/reproductive/other');
+  } else if (selectedDiseases.includes("disease-8")) {
+    res.redirect('/v31/second-claim/endemics-sheep/reproductive/trace-elements');
   } else {
     // Handle other cases or redirect to an error page
     res.redirect('/v31/second-claim/endemics-sheep/reproductive-error');
