@@ -10,3 +10,15 @@ package: govuk-prototype-kit@13.16.2
 argv: /usr/local/bin/node ~/.npm/_npx/751a68202a4807b7/node_modules/.bin/govuk-prototype-kit migrate
 Started [Check migration is being applied to a pre v13 prototype]
 Failed [Check migration is being applied to a pre v13 prototype]
+2024-09-24T13:38:37.589Z
+cwd: ~/Documents/prototypes/ffc-ahwr-prototype
+package: govuk-prototype-kit@13.16.2
+argv: /usr/local/bin/node ~/.npm/_npx/751a68202a4807b7/node_modules/.bin/govuk-prototype-kit migrate
+Started [Check migration is being applied to a pre v13 prototype]
+Failed [Check migration is being applied to a pre v13 prototype]
+2024-09-24T14:08:22.593Z
+cwd: ~/Documents/prototypes/ffc-ahwr-prototype
+package: govuk-prototype-kit@13.16.2
+argv: /usr/local/bin/node ~/.npm/_npx/751a68202a4807b7/node_modules/.bin/govuk-prototype-kit migrate
+Started [Check migration is being applied to a pre v13 prototype]
+Failed [Check migration is being applied to a pre v13 prototype]
